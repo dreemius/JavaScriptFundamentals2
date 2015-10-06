@@ -14,6 +14,7 @@
   // ============================================================
 
   function transitionEnd() {
+	  // test comment
     var el = document.createElement('bootstrap')
 
     var transEndEventNames = {
@@ -23,11 +24,6 @@
       transition       : 'transitionend'
     }
 
-    for (var name in transEndEventNames) {
-      if (el.style[name] !== undefined) {
-        return { end: transEndEventNames[name] }
-      }
-    }
 
     return false // explicit for ie8 (  ._.)
   }
