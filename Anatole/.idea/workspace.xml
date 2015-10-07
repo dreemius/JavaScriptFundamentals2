@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee032e57-6753-42ff-b71b-7a6ae084291d" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\г67отллт т т тттттот\JavaScriptFundamentals2\Anatole\test.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lesson 2 Home_Work/index.html" afterPath="$PROJECT_DIR$/Lesson 2 Home_Work/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Anatole.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,9 +47,10 @@
         <option value="$PROJECT_DIR$/Lesson 2 Home_Work/Lesson 2 Part 2/script.js" />
         <option value="$PROJECT_DIR$/Lesson 2 Home_Work/Lesson 2 Part 4/index.html" />
         <option value="$PROJECT_DIR$/Lesson 2 Home_Work/Lesson 2 Part 5/index.html" />
-        <option value="$PROJECT_DIR$/Lesson 2 Home_Work/index.html" />
         <option value="$PROJECT_DIR$/Lesson 2 Home_Work/Lesson 2 Part 2/index.html" />
         <option value="$PROJECT_DIR$/Lesson 2 Home_Work/Lesson 2 Part 3/index.html" />
+        <option value="$PROJECT_DIR$/Lesson 2 Home_Work/index2.html" />
+        <option value="$PROJECT_DIR$/Lesson 2 Home_Work/index.html" />
       </list>
     </option>
   </component>
@@ -109,24 +111,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Lesson 2 Home_Work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anatole" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anatole" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lesson 2 Home_Work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lesson 2 Part 4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,14 +260,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lesson 2 Home_Work/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lesson 2 Home_Work/Lesson 2 Part 1/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -320,6 +296,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2437276">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson 2 Home_Work/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5788531">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding />
         </state>
       </provider>
