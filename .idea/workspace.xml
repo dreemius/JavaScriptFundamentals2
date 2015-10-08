@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a00626be-22b7-497a-92ff-161147d3b378" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work1/index.html" afterPath="$PROJECT_DIR$/kostrebadv/Lesson2/Work1/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work1/mainjs.js" afterPath="$PROJECT_DIR$/kostrebadv/Lesson2/Work1/mainjs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work2/index.html" afterPath="$PROJECT_DIR$/kostrebadv/Lesson2/Work2/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work2/mainjs.js" afterPath="$PROJECT_DIR$/kostrebadv/Lesson2/Work2/mainjs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work3/index.html" afterPath="$PROJECT_DIR$/kostrebadv/Lesson2/Work3/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work3/mainjs.js" afterPath="$PROJECT_DIR$/kostrebadv/Lesson2/Work3/mainjs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work4/index.html" afterPath="$PROJECT_DIR$/kostrebadv/Lesson2/Work4/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work4/mainjs.js" afterPath="$PROJECT_DIR$/kostrebadv/Lesson2/Work4/mainjs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaScriptFundamentals2.iws" />
@@ -25,7 +33,60 @@
     <favorites_list name="JavaScriptFundamentals2" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work1/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="360">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work2/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="285">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work3/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="240">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work4/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="255">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainjs.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work1/mainjs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.20053476" vertical-offset="0" max-vertical-offset="374">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Push.Settings">
     <option name="myUpdateMethod" value="REBASE" />
@@ -55,6 +116,10 @@
         <option value="$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1Work4/index.html" />
         <option value="$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1Work4/mainjs.js" />
         <option value="$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work4/mainjs.js" />
+        <option value="$PROJECT_DIR$/kostrebadv/Lesson2/Work1/index.html" />
+        <option value="$PROJECT_DIR$/kostrebadv/Lesson2/Work2/index.html" />
+        <option value="$PROJECT_DIR$/kostrebadv/Lesson2/Work3/index.html" />
+        <option value="$PROJECT_DIR$/kostrebadv/Lesson2/Work4/index.html" />
       </list>
     </option>
   </component>
@@ -63,7 +128,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="9" />
-    <option name="y" value="28" />
+    <option name="y" value="23" />
     <option name="width" value="1260" />
     <option name="height" value="669" />
   </component>
@@ -109,6 +174,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScriptFundamentals2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScriptFundamentals2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kostrebadv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScriptFundamentals2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScriptFundamentals2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BogdanAkrybai" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -135,6 +228,8 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="false" />
             <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 2/DZ1.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 2/DZ1_script.js</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
             <option name="myUpdateName" value="Created" />
@@ -142,28 +237,47 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="false" />
             <option name="myId" value="CREATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/.idea/.name</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/.idea/Anatole.iml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/.idea/misc.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/.idea/modules.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/.idea/vcs.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/.idea/workspace.xml</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/Lesson 2 Home_Work/Lesson 2 Part 1/index.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/Lesson 2 Home_Work/Lesson 2 Part 1/script.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/Lesson 2 Home_Work/Lesson 2 Part 2/index.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/Lesson 2 Home_Work/Lesson 2 Part 2/script.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/Lesson 2 Home_Work/Lesson 2 Part 3/index.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/Lesson 2 Home_Work/Lesson 2 Part 4/index.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/Lesson 2 Home_Work/Lesson 2 Part 5/index.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/Lesson 2 Home_Work/Lesson 2 Part 6/index.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/AntonBurdeniyk/Урок2/homework1.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/AntonBurdeniyk/Урок2/homework2.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/AntonBurdeniyk/Урок2/homework3.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/AntonBurdeniyk/Урок2/homework4.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/AntonBurdeniyk/Урок2/homework5.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/AntonBurdeniyk/Урок2/homework7.html</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/AntonBurdeniyk/Урок2/homeworkjs2.js</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/AntonBurdeniyk/Урок2/homworkjs3.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AndrewJasinsky/Lesson 2/Task_1/Task_1.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AndrewJasinsky/Lesson 2/Task_1/simple.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AndrewJasinsky/Lesson 2/Task_2/Task_2.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AndrewJasinsky/Lesson 2/Task_2/Task_2.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AndrewJasinsky/Lesson 2/Task_3/Task_3.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AndrewJasinsky/Lesson 2/Task_3/Task_3.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AndrewJasinsky/Lesson 2/Task_4/Task_4.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AndrewJasinsky/Lesson 2/Task_4/Task_4.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AndrewJasinsky/Lesson 2/Task_5/Task_5.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AndrewJasinsky/Lesson 2/Task_6/Task_6.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 2/Task 1 (Ext &amp; Int Scripts)/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 2/Task 1 (Ext &amp; Int Scripts)/script.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 2/Task 2 (Comment)/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 2/Task 2 (Comment)/script.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 2/Task 3 (Variables)/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 2/Task 3 (Variables)/variables.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 2/Task 4 (Data Types)/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 2/Task 4 (Data Types)/types.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 2/Task 5 (Operators)/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 2/Task 5 (Operators)/values.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 2/Task 6 (Types)/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 2/Task 6 (Types)/types.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/test.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOD/test.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/test.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VildanovVladislav/lesson 2/homework1/Homework1.1.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VildanovVladislav/lesson 2/homework1/Homework1.2.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VildanovVladislav/lesson 2/homework1/Homework1.2.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VildanovVladislav/lesson 2/homework2/Homework2.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VildanovVladislav/lesson 2/homework3/Homework3.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VildanovVladislav/lesson 2/homework3/Homework3.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VildanovVladislav/lesson 2/homework4/Homework4.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VildanovVladislav/lesson 2/homework4/Homework4.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VildanovVladislav/lesson 2/homework5/Homework5.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VildanovVladislav/lesson 2/homework5/Homework5.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VildanovVladislav/lesson 2/homework6/Homework6.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VildanovVladislav/lesson 2/homework6/Homework6.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/maxim san/test.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/maxim san/work 1/first.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/maxim san/work 1/first.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/maxim san/work 1/work 1 - Ярлыкlnk</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
             <option name="myUpdateName" value="Deleted" />
@@ -171,7 +285,6 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="true" />
             <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/Anatole/test.txt</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
             <option name="myUpdateName" value="Restored" />
@@ -335,11 +448,17 @@
       <option name="project" value="LOCAL" />
       <updated>1444249018750</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="kostrebadv">
+      <created>1444249194402</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1444249194402</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="28" width="1260" height="669" extended-state="0" />
+    <frame x="9" y="23" width="1260" height="669" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -475,39 +594,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47142857" vertical-offset="0" max-vertical-offset="350">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work1/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21428572" vertical-offset="0" max-vertical-offset="360">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work3/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="240">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work1/mainjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work3/mainjs.js">
+    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work3/mainjs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6791444" vertical-offset="1" max-vertical-offset="375">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
@@ -515,7 +602,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work2/mainjs.js">
+    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work2/mainjs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
           <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
@@ -523,7 +610,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work4/mainjs.js">
+    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work4/mainjs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6016043" vertical-offset="0" max-vertical-offset="435">
           <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
@@ -531,11 +618,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson1/Lesson1 Work4/index.html">
+    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work1/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21428572" vertical-offset="0" max-vertical-offset="350">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="360">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="285">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work3/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="240">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work4/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="255">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work1/mainjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20053476" vertical-offset="0" max-vertical-offset="374">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
