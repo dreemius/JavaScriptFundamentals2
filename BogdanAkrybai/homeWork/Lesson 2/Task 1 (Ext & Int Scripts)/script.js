@@ -1,0 +1,1 @@
+alert("Launching external script");
