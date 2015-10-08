@@ -9,11 +9,9 @@ function yard () {
     if (fruit1 = 'apple ') {
         var fruit2 = 'orange ';
         var fruit3 = 'palm ';
-        console.log(fruit1 + fruit2 + fruit3)
+        console.log(fruit1 + fruit2 + fruit3);
     }
-else{
 
-    }
 
         }
 yard ();
