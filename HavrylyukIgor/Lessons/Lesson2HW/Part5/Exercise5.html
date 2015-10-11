@@ -1,0 +1,25 @@
+<html>
+  <head>
+   <Part 5>
+  </head>
+  <body>
+  <h1>Type Conversion</h1>
+   <script>
+   var variable;
+       console.log(variable)// undefine
+       console.log(typeof(variable));// undefine
+       variable=parseInt(variable);
+       console.log(variable);// NaN
+       console.log(typeof(variable));// number
+	   variable=null;
+       console.log(variable);// null
+       console.log(typeof(variable));// Object
+       variable=!!(variable);
+       console.log(variable)// false
+       console.log(typeof(variable));// boolean
+	   variable=String(variable);
+       console.log(variable);// "false"
+       console.log(typeof(variable));// String
+   </script>
+  </body>
+  </html>
