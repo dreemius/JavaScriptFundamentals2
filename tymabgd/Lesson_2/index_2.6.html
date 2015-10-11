@@ -18,12 +18,20 @@
 </head>
 <body>
 <script>
-    var x = 100;
+    var x;
+    console.log(typeof x); // undefined
+    x  = 100;
     console.log(typeof x); // number
-    z = x/0;
-    console.log(typeof z); // infifity ???
-    
-
+    var z = x / 0;
+    console.log(typeof z); // number - infinity
+    var z = x * "hello";
+    console.log(typeof z); // number - NaN
+    var z = x + "Hello";
+    console.log(typeof z); // string
+    var z = !x;
+    console.log(typeof z); // boolean
+    var z = {x};
+    console.log(typeof z); //oblect
 
 </script>
 </body>
