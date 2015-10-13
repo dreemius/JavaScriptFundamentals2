@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Play </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game_name"> D I C E </div>
+
+<table class="table" align="center">
+    <tbody>
+    <tr>
+        <td id="Nickname_player-1">
+        </td>
+        <td>
+            <button onclick="Nickname_Player_1()" class="button_enterLogin">Enter Your Login</button>
+        </td>
+        <td id="Nickname_player-2" class="td"></td>
+        <td>
+            <button onclick="Nickname_Player_2()" class="button_enterLogin">Enter Your Login</button>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="td">
+            <button onclick="Lets_Start_Player_1()" class="button_RunGame">Drop Dices!</button>
+        </td>
+        <td></td>
+        <td colspan="2" class="td">
+            <button onclick="Lets_Start_Player_2()" class="button_RunGame">Drop Dices!</button>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="2" class="td">
+            <a onclick="hidetxt('Result-details_Player-1'); return false" href="#" rel="nofollow"
+               class="button_gameDetails">Game Details Player</a>
+            <div style="display:none;" id="Result-details_Player-1" class="button_gameDetails"></div>
+        </td>
+        <td></td>
+        <td colspan="2" class="td">
+            <a onclick="hidetxt('Result-details_Player-2'); return false" href="#" rel="nofollow"
+               class="button_gameDetails">Game Details Player</a>
+            <div style="display:none;" id="Result-details_Player-2" class="button_gameDetails"></div>
+        </td>
+        <td></td>
+    </tr>
+    <tr>
+        <td colspan="2" id="Result_Player_1" class="Result_Player_1"></td>
+        <td></td>
+        <td colspan="2" id="Result_Player_2" class="Result_Player_2"></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+
+<p id="result"></p>
+<div id="picture"></div>
+<script src="Bones-game.js"></script>
+</body>
+</html>
