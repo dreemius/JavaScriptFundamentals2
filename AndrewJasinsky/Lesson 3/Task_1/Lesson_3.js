@@ -16,6 +16,7 @@
         if(first == second ) {
             document.getElementById("result").innerHTML +="DOUBLE = " + first + "<br>" + "<br>";
 
+            // remove unnecessary code
           //case with switch
           /*  switch (first) {
                 case 1:
@@ -32,7 +33,9 @@
         }
         total+=first+second;
     }
-    document.getElementById("result").innerHTML +="<hr>"
+    document.getElementById("result").innerHTML +="<hr>";
+
+    // move 6.65 to constant
     document.getElementById("result").innerHTML +=(total>(request*6.65)) ? "LUCKY! YOU WIN! YOU SCORED " + total + " POINTS": "YOU LOOSE! YOU SCORED ONLY " + total + " POINTS";
     document.getElementById("result").innerHTML +="<hr>"
 

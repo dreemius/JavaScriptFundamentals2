@@ -1,5 +1,5 @@
 var 
-i=1; 
+i=1;
 total=0;
 
 for (i=1; i<=15; i++)
@@ -18,6 +18,8 @@ for (i=1; i<=15; i++)
 
 document.getElementById("result").innerHTML += "<br><b>Ваш результат: " + total + "</b><br>";
 
+
+// use ternary operator
 if (total<100)
 document.getElementById("result").innerHTML += "К сожалению Вы проиграли :(";
 else
