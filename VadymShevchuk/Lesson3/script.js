@@ -20,7 +20,4 @@ document.getElementById("result").innerHTML += "<br><b>Ваш результат
 
 
 // use ternary operator
-if (total<100)
-document.getElementById("result").innerHTML += "К сожалению Вы проиграли :(";
-else
-document.getElementById("result").innerHTML += "Вы выиграли!!! Поздравляем!";
+document.getElementById("result").innerHTML += total > 100 ? "Победа, вы набрали " + total + " очков" : "Вы проиграми, у вас " + total + " очков";
