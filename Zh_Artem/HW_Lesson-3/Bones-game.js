@@ -17,6 +17,8 @@ function Nickname_Player_2() {
 //Next we create function for run Dice(Bones)-game;
 
 //Player_1;
+var first;
+var second;
 
 function Lets_Start_Player_1() {
     var total_Player_1 = 0; //for calculate player score;
