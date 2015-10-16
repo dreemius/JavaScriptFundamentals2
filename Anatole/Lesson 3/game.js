@@ -13,11 +13,9 @@
           "<br>";
 
           if((first && second) == 1){
-             document.getElementById("result").innerHTML += "Two numbers: 1" + "<br>" +
-                 "------------------------------------" + "<br>";
+             document.getElementById("result").innerHTML += "Two numbers: 1" + "<br>";
           }else if((first && second) == 6){
-             document.getElementById("result").innerHTML += "Two numbers: 6" + "<br>" +
-                 "------------------------------------" + "<br>";
+             document.getElementById("result").innerHTML += "Two numbers: 6" + "<br>";
           }
       }
 
