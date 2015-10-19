@@ -1,14 +1,16 @@
-	var	total = 0;
+	var	total = 0,
+		out = document.getElementById("result");
 	for(var i = 0; i<15; i++){
 		var first = Math.floor((Math.random() * 6) + 1);
 		var second = Math.floor((Math.random() * 6) + 1);
-		document.getElementById("result").innerHTML +="Первая кость: " + first +" Вторая кость: "+second+"<br>";
+		out.innerHTML +="Первая кость: " + first +" Вторая кость: "+second+"<br>";
 		total += first + second;
 		if (first==second){
-			document.getElementById("result").innerHTML +="Випал дубль. Число "+first+"<br>";
+			out.innerHTML +="Випал дубль. Число "+first+"<br>";
 			if (first == 1 || first == 6){
-				document.getElementById("result").innerHTML +="Две "+(first == 1 ? "единицы <br>" : "шестерки <br>");
+				out.innerHTML +="Две "+(first == 1 ? "единицы" : "шестерки");
+				out.innerHTML +="<br>";
 			}
 		}
 	}
-	document.getElementById("result").innerHTML +=( (total > 100) ? ("Победа, вы набрали "+total+" очков <br>") : ("Вы проиграли, у вас "+total+" очков <br>"));
+	out.innerHTML +="<hr><br><hr>"+( (total > 100) ? ("Победа, вы набрали ") : ("Вы проиграли, у вас")) + total+" очков <br><hr>";
