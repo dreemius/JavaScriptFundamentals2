@@ -1,5 +1,5 @@
   //The game that generate two random numbers and print them.
-  function run() {
+  (function run() {
       var total = 0;
       for (var i = 1; i <= 15; i++) {
           var number1 = getRndNumber1(),number2 = getRndNumber2();
@@ -8,7 +8,7 @@
           total += number1 + number2;
       }
       totalOutput(total);
-  }
+  })();
 
   function getRndNumber1() {
       var first = Math.floor((Math.random() * 6) + 1);
@@ -33,4 +33,3 @@
       return document.getElementById("result").innerHTML += final ;
   }
   // start main function.
-  run();
