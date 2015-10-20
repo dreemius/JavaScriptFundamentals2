@@ -14,7 +14,7 @@ function run (){
 
     }
 
-    result(getRndNumber(),getRndNumber());
+    result();
 
 }
 
