@@ -1,27 +1,26 @@
-var
-    total=0,
-    first=0,
-    second=0;
+var total= 0,
+    first,
+    second;
+
+run();
 
 function run (){
 
     for (var i=0; i<5; ++i){
-
-
-        text("Первая кость: " + first + "; Вторая кость: " + second + "<br>");
+        first=getRndNumber();
+        second=getRndNumber();
+        text("Первая кость: " + first + "   Вторая кость: " + second + "<br>");
         specialNum();
-        getRndNumber();
+
     }
 
-    result();
-
+    result(getRndNumber(),getRndNumber());
 
 }
 
-function getRndNumber()
-{
-     first = Math.floor((Math.random() * 6) + 1);
-     second = Math.floor((Math.random() * 6) + 1);
+function getRndNumber(){
+
+  return Math.floor((Math.random() * 6) + 1);
 }
 
 function text(string){
@@ -38,13 +37,13 @@ function specialNum (){
 
 }
 
-function result(){
+function result(first,second){
 
     total += first + second;
     (total>100) ? text("Вы набрали " + total + ' Вы победили.') : text ('Вы проиграли. Ваш результат ' + total);
 
 }
 
-run();
+
 
 
