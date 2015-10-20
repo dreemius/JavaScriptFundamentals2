@@ -1,8 +1,8 @@
-var a = 15, c;
-	c = 2 + ++a;
-console.log(c);
-
-// replase to a++ three times
-var z, x;
-	z = x = c;
+var a = 2,
+	z,
+	x;
+++a;
+++a;
+++a;
+z = x = a;
 console.log(z, x);
