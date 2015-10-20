@@ -9,6 +9,8 @@ function run (){
     for (var i=0; i<5; i++){
         first=getRndNumber();
         second=getRndNumber();
+        total += first + second;
+
         specialNum();
         text("Первая кость: " + first + "   Вторая кость: " + second + "<br>");
 
@@ -40,8 +42,7 @@ function specialNum (){
 
 function result(){
 
-    total += first + second;
-    (total>100) ? text("Вы набрали " + total + ' Вы победили.') : text ('Вы проиграли. Ваш результат ' + total);
+    (total>40) ? text("Вы набрали " + total + ' Вы победили.') : text ('Вы проиграли. Ваш результат ' + total);
 
 }
 
