@@ -1,6 +1,6 @@
 	var	total = 0,
 		out   = document.getElementById("result"),
-		xNum  = 6;
+		xNum  = 6,
 		yNum  = 1;
 	function run(){
 		var first,
