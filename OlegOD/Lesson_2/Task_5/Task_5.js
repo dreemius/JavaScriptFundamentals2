@@ -1,0 +1,10 @@
+var a = 14;
+console.log (a);
+a++;
+a++;
+a++;
+console.log ('a='+a);
+x=z=a;
+console.log ("--------------");
+console.log ('x='+x);
+console.log ('z='+z);
