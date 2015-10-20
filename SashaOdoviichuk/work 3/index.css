@@ -1,0 +1,9 @@
+body {
+    background-image: url("images/kost.jpg");
+    background-size: 113%;
+    font-size: 13px;
+
+}
+#result {
+    color: sandybrown;		
+}
