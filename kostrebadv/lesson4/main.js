@@ -6,11 +6,12 @@ run();
 
 function run (){
 
-    for (var i=0; i<5; ++i){
+    for (var i=0; i<5; i++){
         first=getRndNumber();
         second=getRndNumber();
-        text("Первая кость: " + first + "   Вторая кость: " + second + "<br>");
         specialNum();
+        text("Первая кость: " + first + "   Вторая кость: " + second + "<br>");
+
 
     }
 
