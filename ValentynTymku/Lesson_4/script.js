@@ -25,9 +25,9 @@ function printText(textForPrint) {
 
 function specificPrint(first, second) {
 	if (first == second) {
-		document.getElementById("result").innerHTML += " Выпал дубль. Число "+ first;
+		printText(" Выпал дубль. Число "+ first);
 		if (first == 1 || first == 6) {
-			document.getElementById("result").innerHTML += " Две " + (first == 6 ? "шестерки" : "единицы");
+			printText(" Две " + (first == 6 ? "шестерки" : "единицы"));
 		};
 	}
 }
