@@ -1,19 +1,17 @@
 var a;
 console.log(a);
 
-var b;
-	b = true;
-console.log(b);
+a = true;
+console.log(a);
 	
-var c = 75;
-console.log(c);
+a = 75;
+console.log(a);
 	
-var d;
-	d = "First String";
-console.log(d);
+a = "First String";
+console.log(a);
 	
-var e = null;
-console.log(e);
+a = null;
+console.log(a);
 
-var f = null;
-console.log(typeof f);
+a = null;
+console.log(typeof a);

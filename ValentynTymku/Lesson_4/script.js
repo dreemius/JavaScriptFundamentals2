@@ -7,8 +7,8 @@ function run() {
 		var second = getRndNumber();
 		total += first + second;
 		printText("Первая кость:" + first + " Вторая кость:" + second);
-		printText(first == second ? " Выпал дубль. Число " + first : "<br>");
 		specificPrint(first, second);
+		printText("<br>");
 	}
 	printTotal();
 }
@@ -24,10 +24,11 @@ function printText(textForPrint) {
 }
 
 function specificPrint(first, second) {
-	if ((first == second) && (first == 1 || first == 6)) {
-		printText(" Две " + (first == 6 ? " шестерки<br>" : " единицы<br>"));
-	} else if (first == second) {
-		printText("<br>");
+	if (first == second) {
+		printText(" Выпал дубль. Число "+ first);
+		if (first == 1 || first == 6) {
+			printText(" Две " + (first == 6 ? "шестерки" : "единицы"));
+		};
 	}
 }
 
