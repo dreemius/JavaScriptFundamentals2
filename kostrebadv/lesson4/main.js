@@ -6,7 +6,7 @@ run();
 
 function run (){
 
-    for (var i=0; i<5; i++){
+    for (var i=0; i<15; i++){
         first=getRndNumber();
         second=getRndNumber();
         total += first + second;
@@ -42,7 +42,7 @@ function specialNum (){
 
 function result(){
 
-    (total>40) ? text("Вы набрали " + total + ' Вы победили.') : text ('Вы проиграли. Ваш результат ' + total);
+    (total>100) ? text("Вы набрали " + total + ' Вы победили.') : text ('Вы проиграли. Ваш результат ' + total);
 
 }
 
