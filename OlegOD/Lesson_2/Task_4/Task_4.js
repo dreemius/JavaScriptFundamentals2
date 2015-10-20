@@ -1,0 +1,13 @@
+console.log("------------------------");
+var goPro;
+console.log(goPro);
+goPro = true;
+console.log(goPro);
+goPro = 13;
+console.log(goPro);
+goPro = "Hero3";
+console.log(goPro);
+goPro = null;
+console.log(goPro);
+console.log("------------------------");
+console.log(typeof goPro);
