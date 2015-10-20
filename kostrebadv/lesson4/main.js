@@ -37,7 +37,7 @@ function specialNum (){
 
 }
 
-function result(first,second){
+function result(){
 
     total += first + second;
     (total>100) ? text("Вы набрали " + total + ' Вы победили.') : text ('Вы проиграли. Ваш результат ' + total);
