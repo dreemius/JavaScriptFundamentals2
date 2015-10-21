@@ -1,5 +1,5 @@
 cd e:\o\JavaScriptFundamentals2
 git add *
-git commit -m "close issue for work 4 + new"
+git commit -m "test.txt kill"
 git pull origin master
 git push origin master
