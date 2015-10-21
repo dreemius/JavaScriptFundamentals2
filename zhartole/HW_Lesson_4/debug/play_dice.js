@@ -10,12 +10,12 @@ function getRndNumber() {
 	var first = getRndNumber(),
 	    second = getRndNumber();
 
-	printResult(viewDouble(first, second));
+	printResult(viewResult(first, second));
 	total += calculateTotal(first, second);
 }
 	printResult(viewTotal(total));
 }
-function viewDouble(first_dice, second_dice){
+function viewResult(first_dice, second_dice){
 	 return (first_dice == second_dice && first_dice == 1 || first_dice ==6)? (first_dice == 1 ? '<div class="double">Two 1' + '<br></div>': '<div class="double">Two 6' + '<br></div>'): (first_dice == second_dice ? '<div class="double">Double ' + first_dice + '<br></div>' :
 	"First Dice  " + first_dice + "Second Dice " + second_dice + "<br>");
 }
