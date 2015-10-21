@@ -1,5 +1,4 @@
-/* Create by tymabgd
-
+/* Create by tymabgd 21/10/2015
  */
 var total = 0;
 
