@@ -1,0 +1,86 @@
+/* In this file we make style*/
+
+/* For table */
+.table {
+    padding:1em;
+    border-collapse:collapse;
+    text-align:left;
+}
+.td {
+    padding:1em 8em 1em 1em;
+}
+.td a {
+    color: #561e07;
+    text-decoration: none;
+}
+
+/*For button*/
+.game-name {
+    padding: 0.4em 0.4em 1.4em 0.4em;
+    background:  url('dice-orange.png') no-repeat scroll 40.7% 25%;
+    text-align:center;
+    font-size: 3em;
+}
+
+/* For button enter-login */
+
+.button-enter-login {
+    padding: 1em 2em 1em 1em;
+    border-radius: 2em;
+    font-size: 1em;
+}
+
+
+/* For another button */
+.button-run-game {
+    padding: 0.7em 1em 0.7em 3em;
+    border-radius: 1em;
+    background: green url('dices.png') no-repeat scroll 10% 55%;
+    color: #561e07;
+    text-decoration: solid;
+    font-size: 1.3em;
+}
+.button-run-game:hover {
+    background: forestgreen url('dices.png') no-repeat scroll 10% 50%;
+}
+
+.button-game-details {
+    padding: 0.4em 0.7em 0.4em 0.7em;
+    background: #dfdee5;
+    border-radius: 0.3em;
+    font-size: 1.1em;
+}
+
+
+/* For result-view */
+.result-player-1 {
+    padding:0.7em;
+    color: #561e07;
+    font-size: 1em;
+}
+.result-player-1:hover {
+    background: #e5e5e5;
+}
+.result-player {
+    padding:0.7em;
+    color: #561e07;
+    font-size: 1em;
+    background: #e5e5e5;
+}
+
+.result-player-2 {
+    padding:0.7em;
+    color: #561e07;
+    font-size: 1em;
+}
+.result-player-2:hover {
+    background: #e5e5e5;
+}
+
+.winner-player {
+    padding: 5em 2em 0.7em 2em;
+    background: #f7e9c3 url('cup_smoll.png') no-repeat scroll 50% 20%;
+    color: #3f3826;
+    font-size: 2em;
+}
+
