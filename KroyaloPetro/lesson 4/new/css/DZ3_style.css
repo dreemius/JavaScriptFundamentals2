@@ -1,0 +1,29 @@
+body{
+	background-color:	#000;
+}
+.header1 {
+	text-align:			center;
+	color:				white;
+}
+span{
+	color:				#ff2c2e;
+}
+#result{
+	background: 		url('../image/background2.jpg') no-repeat center;
+	color:				white;
+	text-align:			center;
+	font-size:			26px;
+	margin:				auto;
+	width:				662px;
+}
+#button1{
+	margin:				0% 0% 0% 45.5%;
+	width:				5%;
+	height:				5%;
+	font-size:			16px;
+	text-align:			center;
+}
+#finish{
+	margin:				auto;
+	width:				280px;
+}

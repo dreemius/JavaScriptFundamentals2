@@ -15,7 +15,7 @@
 }
 
 /*For button*/
-.game_name {
+.game-name {
     padding: 0.4em 0.4em 1.4em 0.4em;
     background:  url('dice-orange.png') no-repeat scroll 40.7% 25%;
     text-align:center;
@@ -24,7 +24,7 @@
 
 /* For button enter-login */
 
-.button_enterLogin {
+.button-enter-login {
     padding: 1em 2em 1em 1em;
     border-radius: 2em;
     font-size: 1em;
@@ -32,7 +32,7 @@
 
 
 /* For another button */
-.button_RunGame {
+.button-run-game {
     padding: 0.7em 1em 0.7em 3em;
     border-radius: 1em;
     background: green url('dices.png') no-repeat scroll 10% 55%;
@@ -40,11 +40,11 @@
     text-decoration: solid;
     font-size: 1.3em;
 }
-.button_RunGame:hover {
+.button-run-game:hover {
     background: forestgreen url('dices.png') no-repeat scroll 10% 50%;
 }
 
-.button_gameDetails {
+.button-game-details {
     padding: 0.4em 0.7em 0.4em 0.7em;
     background: #dfdee5;
     border-radius: 0.3em;
@@ -53,31 +53,31 @@
 
 
 /* For result-view */
-.Result_Player_1 {
+.result-player-1 {
     padding:0.7em;
     color: #561e07;
     font-size: 1em;
 }
-.Result_Player_1:hover {
+.result-player-1:hover {
     background: #e5e5e5;
 }
-.Result_Player {
+.result-player {
     padding:0.7em;
     color: #561e07;
     font-size: 1em;
-    background: #e5e5e5;
-}
-
-.Result_Player_2 {
-    padding:0.7em;
-    color: #561e07;
-    font-size: 1em;
-}
-.Result_Player_2:hover {
     background: #e5e5e5;
 }
 
-.Winner_Player {
+.result-player-2 {
+    padding:0.7em;
+    color: #561e07;
+    font-size: 1em;
+}
+.result-player-2:hover {
+    background: #e5e5e5;
+}
+
+.winner-player {
     padding: 5em 2em 0.7em 2em;
     background: #f7e9c3 url('cup_smoll.png') no-repeat scroll 50% 20%;
     color: #3f3826;

@@ -7,9 +7,8 @@ function run() {
 		var first = randomMath();
 		var second = randomMath();
 		printInner("First bones: - " + first + " <b>|</b>" + " Second bones: - " + second + "<br>");
-		printInner(first == second ? "Rolls doubles. Number - " + first + "<br>" : "<br>");
-		totalSum += first + second;
 		doubleNum(first, second);
+		totalSum += first + second;
 	}
 	printInner("<br>");
 	printTotalSum();
@@ -20,13 +19,14 @@ function randomMath() {
 }
 
 function printInner(textInner) {
-	document.getElementById("result").innerHTML += (textInner);
+	document.getElementById("result").innerHTML += textInner;
 }
 
 function doubleNum(first, second) {
 	if ((first == second) && (first == 6 || first == 1)) {
 		printInner(first == 6 ? "-Two sixes-" + "<br>" : "-Two units-" + "<br>");
-	}	
+	}
+		printInner(first == second ? "Rolls doubles. Number - " + first + "<br>" : "<br>");
 }
 
 function printTotalSum() {
