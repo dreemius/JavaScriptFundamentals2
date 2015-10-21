@@ -1,0 +1,22 @@
+body{
+	background:url(../img/kosti.jpg) fixed;
+}
+h1{
+	font-family:arial;
+	text-align:center;
+	color:white;
+	margin:2% 10%;
+	border:5px dotted black;
+	background:#369;
+}
+div{
+	text-align:center;
+}
+#p1{
+	text-align:justify;
+	font-family:"comic sans MS";
+	margin:1% 5%;
+}
+#p2{
+	text-align:right;
+}
