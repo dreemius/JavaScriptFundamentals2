@@ -1,6 +1,5 @@
-/*
-"Две шестерки"
-"Две единицы"
+/* Create by tymabgd
+
  */
 var total = 0;
 
