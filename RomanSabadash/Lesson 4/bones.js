@@ -1,11 +1,10 @@
 var total = 0,
-	get = document.getElementById("result"),
-	i;
+	element = document.getElementById("result");
 
 run();
 
 function run() {
-	for (i = 0; i < 15; i++) {
+	for (var i = 0; i < 15; i++) {
 		var first = getRndNumber(),
 			second = getRndNumber();
 
@@ -25,15 +24,15 @@ function getRndNumber() {
 }
 
 function printResult(param) {
-	return get.innerHTML += (param);
+	return element.innerHTML += param;
 }
 
 function printSpecResult(first, second) {
 	if ((first === second) && (first == 1 || first == 6)) {
-		return get.innerHTML += (first == 1) ? "Two 1" + "<br>" : "Two 6" + "<br>";
+		return element.innerHTML += (first == 1) ? "Two 1" + "<br>" : "Two 6" + "<br>";
 	}
 }
 
 function printTotal() {
-	return get.innerHTML += (total >= 100) ? "<br>" + "You WIN! Your score is " + total : "<br>" + "You LOSE! Your score is " + total;
+	return element.innerHTML += (total >= 100) ? "<br>" + "You WIN! Your score is " + total : "<br>" + "You LOSE! Your score is " + total;
 }
