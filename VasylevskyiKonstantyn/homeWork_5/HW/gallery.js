@@ -4,6 +4,13 @@ var FINAL_POSITION = 12;
 var countView = $('#item_cnt');
 var resultContainer = $('#result');
 var resultHTML = "";
+
+function p(start,end){
+	return data.filter(function (item) {
+		return item.id >= start && item.id <= end;
+	});
+}
+
 function capFirstLetter(str) {
 	return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 }
@@ -29,14 +36,19 @@ var itemTemplate = '<div class="col-sm-3 col-xs-6">\
 					<div class="text-muted">$date</div>\
 				</div>\
 			</div>';
-data.forEach(function(item){
+
+var filterResult=p(START_POSITION,FINAL_POSITION);
+filterResult.forEach(function(item){
 	resultHTML += itemTemplate
 		.replace("$number", item.id)
 		.replace(/\$name/gi,capFirstLetter(item.name))
 		.replace("$url", item.url)
 		.replace("$description", splitDescription(item.description))
 		.replace("$date", convertData(item.date));
-
-});
+})
 resultContainer.html(resultHTML);
+
+
+
+
 
