@@ -1,0 +1,44 @@
+body {
+    background-color: #000;
+}
+
+.dice {
+    width:20%;
+    margin:auto;
+    padding:10px;
+    display: block;
+}
+.header2    {
+    color:white;
+    font-family: Geneva, Arial, Helvetica, sans-serif;;
+    text-align: center;
+}
+#result {
+    color: white;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    width:25%;
+
+}
+
+.button {
+    margin:auto;
+    display: block;
+    width:10%;
+}
+span  {
+    color:#ff2c2e;
+}
+
+.diceNumberOne {
+    margin:auto;
+    display:block;
+    padding:5px;
+    width:15%;
+    float:inherit;
+
+ 
+
+  }
