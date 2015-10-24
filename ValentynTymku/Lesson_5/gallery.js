@@ -1,15 +1,13 @@
 var ROW_ITEMS_COUNT = 4;
 var ITEMS_SHOW_COUNT = 100;
-var FIRST_ITEM_INDEX = 0; //Indexes starts from 0
+var FIRST_ITEM_INDEX = 0; //Indexes starts with 0
 var LAST_ITEM_INDEX = 55;
 
-var filtredData = filterData(data, { firstItemIndex : FIRST_ITEM_INDEX,
-									 lastItemIndex : LAST_ITEM_INDEX,
-								 	 itemsShowCount : ITEMS_SHOW_COUNT });
-var newData = mapData(filtredData);
+var filtredData = getFiltredData(data, { firstItemIndex : FIRST_ITEM_INDEX,
+									 		lastItemIndex : LAST_ITEM_INDEX,
+								 	 		itemsShowCount : ITEMS_SHOW_COUNT });
+var newData = getMappedData(filtredData);
 var rowsCount = getRowsCount(newData, ROW_ITEMS_COUNT);
-var rowHTML = "";
-
 print(newData, rowsCount, ROW_ITEMS_COUNT);
 
 //***************************************************************************************************************
@@ -21,7 +19,18 @@ function getRowsCount(arr, row_items_count) {
 	};
 }
 
-function filterData(arr, param) {
+function getDate(timestamp) {
+	if (timestamp) {
+		var date = new Date(timestamp);
+		return date.getFullYear() + "/" + 
+		(date.getMonth() + 1 < 10 ? '0' : '') + (date.getMonth() + 1) + "/" + 
+		(date.getDate() < 10 ? '0' : '') + date.getDate() + " " +
+		(date.getHours() < 10 ? '0' : '') + date.getHours() + ":" +
+		(date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
+	};
+}
+
+function getFiltredData(arr, param) {
 	if (arr && param) {
 		var maxItemIndex = param.itemsShowCount + param.firstItemIndex - 1;
 		return arr.filter(function(item, i) {
@@ -30,20 +39,16 @@ function filterData(arr, param) {
 	};
 }
 
-function mapData(arr) {
-	if (arr) {
-		return arr.map(function(obj) {
+function getMappedData(arr) {
+	return arr ? arr.map(function(obj) {
 			obj.name = obj.name.substr(0,1).toLocaleUpperCase() + obj.name.substr(1).toLocaleLowerCase();
 			obj.description = obj.description.substr(0,15);
-			var date = new Date(obj.date);
-			obj.date = date.getFullYear() + "/" + date.getMonth() + "/" + date.getDate() + " " + date.getHours() + ":" + date.getMinutes();
+			obj.date = getDate(obj.date);
 			return obj;
-		});
-	};
+		}) : false;
 }
 
 function itemTemplateReplacer(obj) {
-	if (obj) {
 		var itemTemplate = '<div class="col-sm-3 col-xs-6">\
 								<img src="$url" alt="$name" class="img-thumbnail">\
 								<div class="info-wrapper">\
@@ -52,30 +57,28 @@ function itemTemplateReplacer(obj) {
 									<div class="text-muted">$date</div>\
 								</div>\
 							</div>';
-	return	itemTemplate
+	return	obj ? itemTemplate
 				.replace("$number", obj.id)
 				.replace(/\$name/gi, obj.name)
 				.replace("$url", obj.url)
 				.replace("$description", obj.description)
-				.replace("$date", obj.date);
-	}
+				.replace("$date", obj.date)
+				: false;
 }
 
 function printRow(row) {
 	var rowTemplate = '<div class="row">$items</div>';
-	$('#result').append(rowTemplate.replace("$items", row));
+	$('#result').append( row ? rowTemplate.replace("$items", row) + '<br>' : '' ) ;
 }
 
 function print(arr, rowsCnt, rowItemsCount) {
 	if (arr && rowsCnt && rowItemsCount) {
 		for (var i = 0; i < rowsCnt; i++) {
+			var rowHTML = "";
 			for (var j = i * rowItemsCount; j < i * rowItemsCount + rowItemsCount; j++) {
-				if (arr[j]) {
-					rowHTML += itemTemplateReplacer(arr[j]);
-				}
+				rowHTML += arr[j] ? itemTemplateReplacer(arr[j]) : '';
 			}
-		printRow(rowHTML);
-		rowHTML = "";
+			printRow(rowHTML);
 		};
 	};
 }
