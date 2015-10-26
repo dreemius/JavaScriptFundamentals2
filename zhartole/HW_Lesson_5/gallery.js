@@ -36,7 +36,7 @@ var data = [{
 	description : "ssistive technologies – such as screen readers. Ensure",
 	date : 1428153200637
 },{
-	url: "http://desktopwallpapers.org.ua/mini/201507/40065.jpg",
+	url: "http://desktopwallpapers.org.ua/mini/201507/40069.jpg",
 	name: "ИМЯ МАШИНЫ",
 	id : 5,
 	description : "color to add meaning to a button only provides",
@@ -60,13 +60,13 @@ var data = [{
 	description : "included through alternative means, such as additional text hidden with the",
 	date : 1442153200637
 },{
-	url: "http://desktopwallpapers.org.ua/mini/201507/40061.jpg",
+	url: "http://desktopwallpapers.org.ua/mini/201507/40069.jpg",
 	name: "ДЖИП",
 	id : 9,
 	description : " meaning to a button only provides a visual",
 	date : 1322153200637
 },{
-	url: "http://desktopwallpapers.org.ua/mini/201507/40060.jpg",
+	url: "http://desktopwallpapers.org.ua/mini/201507/40069.jpg",
 	name: "ДАЧА ЛОГАН",
 	id : 10,
 	description : "uded through alternative means, such as additional",
@@ -87,12 +87,12 @@ function extractDataToDisplay() {
 
 extractDataToDisplay().forEach(function(item, i, arg) {
 
-	var capitalizedFirstLetter = item.name.charAt(0) + 
-								 item.name.slice(1).toLowerCase();
+	var capitalizedFirstLetter = item.name.charAt(0) +
+		item.name.slice(1).toLowerCase();
 	var shortDescription = item.description.slice(0, 15);
 	var date = new Date(item.date);
-	var formattedDate = date.getFullYear() + "/" + (+date.getMonth() + 1) 
-						+ "/" + date.getDate();
+	var formattedDate = date.getFullYear() + "/" + (+date.getMonth() + 1)
+		+ "/" + date.getDate();
 	resultHTML += itemTemplate
 		.replace("$number", item.id)
 		.replace(/\$name/gi, capitalizedFirstLetter)
