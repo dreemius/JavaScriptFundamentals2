@@ -38,6 +38,7 @@ for (var i= 1; i <= 15; i++){
     if ( (first == second) && (first == 1 || second == 6)){
         dobleClic(first);
     }
+
     total += first + second;
 }
 
