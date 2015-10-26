@@ -4,14 +4,12 @@ var total = 0;
 
 for (var i = 1; i <= 15; i++){
     var first = Math.floor((Math.random() * 6) + 1),
-        second = Math.floor((Math.random() * 6) + 1),
-        temp;
+        second = Math.floor((Math.random() * 6) + 1);
 
     document.getElementById("result").innerHTML += "Первая кость: " + first + " Вторая кость: " + second + "<br>";
 
     if (first == second && (first == 1 || second == 6) ) {
-        temp = first;
-        document.getElementById("result").innerHTML += "Выпал дубль. Число: " + temp + "<br>";
+        document.getElementById("result").innerHTML += "Выпал дубль. Число: " + first + "<br>";
     }
 
     total += first + second;
