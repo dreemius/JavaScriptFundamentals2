@@ -1,10 +1,13 @@
-     var k = 7;
-	 console.log(k);
-	     k = Boolean(k);
-	 console.log(k);
-         k = !('7');
-	 console.log(k); 
-         k = ("7");
-     console.log(k);
-         k = null;
-     console.log(k);
+
+
+	var k = 7;
+    k = Boolean(k);
+        console.log(typeof k);
+    k = String(k);
+        console.log(typeof k);
+    k = !!(k);
+        console.log(typeof k);
+    k = Number(k);
+	   console.log(typeof k);
+    k = null;
+        console.log(typeof k);
