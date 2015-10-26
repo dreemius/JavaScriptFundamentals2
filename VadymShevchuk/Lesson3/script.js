@@ -1,9 +1,6 @@
-var 
-i=1;
-total=0;
+var i=1, total=0;
 
-for (i=1; i<=15; i++)
-{
+for (i=1; i<=15; i++){
 	var first = Math.floor((Math.random() * 6) + 1); 
 	var second = Math.floor((Math.random() * 6) + 1);
 	document.getElementById("result").innerHTML += "Первая кость: " + first + "; Вторая кость: " + second + "<br>";
@@ -18,6 +15,4 @@ for (i=1; i<=15; i++)
 
 document.getElementById("result").innerHTML += "<br><b>Ваш результат: " + total + "</b><br>";
 
-
-// use ternary operator
 document.getElementById("result").innerHTML += total > 100 ? "Победа, вы набрали " + total + " очков" : "Вы проиграми, у вас " + total + " очков";
