@@ -1,5 +1,6 @@
 body {
   padding-top: 50px;
+  background: lightgray;
 }
 .starter-template {
   padding: 40px 15px;
@@ -10,3 +11,14 @@ body {
 .info-wrapper {
 	padding: 0 5px;
 }
+
+.count {
+  height: 2em;
+  width: 10em;
+  border-radius: 0.2em;
+  padding: 0.2em 0.2em 0.2em 1em;
+  background: lightslategray;
+  text-align: left;
+  font-weight: 500;
+}
+

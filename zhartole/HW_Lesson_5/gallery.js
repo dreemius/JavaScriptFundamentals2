@@ -1,6 +1,8 @@
 
-var NUMBERS_TO_DISPLAY = 0,// if 0 - all, if 1 - odd, if 2 - even
+var COUNT_IMAGE = data.length,
+	NUMBERS_TO_DISPLAY = 0,// if 0 - all, if 1 - odd, if 2 - even
     resultContainer = $('#result'),
+	count_show = $('#count-image'),
     resultHTML = "";
 
 function extractDataToDisplay() {
@@ -42,5 +44,6 @@ extractDataToDisplay().forEach(function(item) {
 });
 
 resultContainer.html(resultHTML);
+count_show.html(COUNT_IMAGE);
 
 
