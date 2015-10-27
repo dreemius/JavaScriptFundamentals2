@@ -2,8 +2,16 @@
 var COUNT_IMAGE = data.length,
 	NUMBERS_TO_DISPLAY = 0,// if 0 - all, if 1 - odd, if 2 - even
     resultContainer = $('#result'),
-	count_show = $('#count-image'),
-    resultHTML = "";
+	countShow = $('#count-image'),
+	resultHTML = "",
+	itemTemplate = '<div class="col-sm-3 col-xs-6">\
+				<img src="$url" alt="$name" class="img-thumbnail">\
+				<div class="info-wrapper">\
+					<div class="text-muted">$number: $name</div>\
+					<div class="text-muted">$description</div>\
+					<div class="text-muted">$date</div>\
+				</div>\
+			</div>';
 
 function extractDataToDisplay() {
 	return data.filter(function(item) {
@@ -24,26 +32,18 @@ function extractDataToDisplay() {
  **/
 
 extractDataToDisplay().forEach(function(item) {
-	var capitalizedFirstLetter = item.name.charAt(0) + item.name.slice(1).toLowerCase(),
-	    shortDescription = item.description.slice(0, 15),
-	    date = new Date(item.date),
-	    formattedDate = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate()+ " " + date.getHours() + ":" + date.getMinutes();
-	resultHTML += '<div class="col-sm-3 col-xs-6">\
-				<img src="$url" alt="$name" class="img-thumbnail">\
-				<div class="info-wrapper">\
-					<div class="text-muted">$number: $name</div>\
-					<div class="text-muted">$description</div>\
-					<div class="text-muted">$date</div>\
-				</div>\
-			</div>'
-		.replace("$number", item.id)
-		.replace(/\$name/gi, capitalizedFirstLetter)
-		.replace("$url", item.url)
-		.replace("$description", shortDescription)
-		.replace("$date", formattedDate);
+		var capitalizedFirstLetter = item.name.charAt(0) + item.name.slice(1).toLowerCase(),
+			shortDescription = item.description.slice(0, 15),
+			date = new Date(item.date),
+			formattedDate = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate()+ " " + date.getHours() + ":" + date.getMinutes();
+		resultHTML += itemTemplate
+			.replace("$number", item.id)
+			.replace(/\$name/gi, capitalizedFirstLetter)
+			.replace("$url", item.url)
+			.replace("$description", shortDescription)
+			.replace("$date", formattedDate);
 });
-
 resultContainer.html(resultHTML);
-count_show.html(COUNT_IMAGE);
+countShow.html(COUNT_IMAGE);
 
 
