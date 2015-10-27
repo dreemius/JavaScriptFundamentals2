@@ -18,7 +18,7 @@ var backgraund = '';
 var galGirls = 'transparent url("gallary/bg/DSC_8520.jpg") no-repeat center center fixed';
 var galCars = 'transparent url("gallary/bg/car.jpg") no-repeat center center fixed';
 var gal18 = 'transparent url("gallary/bg/JTxhG61xZHk.jpg") no-repeat center center fixed';
-var galMountains = 'transparent url("gallary/bg/everest.jpeg") no-repeat center center fixed';
+var galMountains = 'transparent url("gallary/bg/everest.jpg") no-repeat center center fixed';
 var galMyHobbi = 'transparent url("gallary/bg/alp.jpg") no-repeat center center fixed';
 var galChernivtsi = 'transparent url("gallary/bg/DBC_0937.jpg") no-repeat center center fixed';
 // Фукции по работе со стрингами
