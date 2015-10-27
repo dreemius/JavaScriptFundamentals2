@@ -7,10 +7,14 @@ body {
 .starter-template {
   padding: 40px 15px;
   text-align: center;
+
+}
+.text-muted{
+  color: snow;
 }
 
-
 .info-wrapper {
+
   font-size: 20px;
 	padding: 0 5px;
 }
