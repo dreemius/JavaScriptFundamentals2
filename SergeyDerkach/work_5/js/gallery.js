@@ -105,62 +105,45 @@ function loadGallary() {
     // console.log(htmlConteiner);
     resultContainer.html(htmlConteiner);
 }
+function globalLoadGallary() {
+    bgLoad();
+    visibleInput();
+    gallarySliders();
+    changeSliderMax();
+    loadGallary();
+}
 $(document).ready(function () {
     hideInput();
 
     btn18.click(function () {
         backgraund = gal18;
-        bgLoad();
         data = data18;
-        visibleInput();
-        gallarySliders();
-        changeSliderMax();
-        loadGallary();
+        globalLoadGallary();
     });
     btnGirls.click(function () {
         backgraund = galGirls;
-        bgLoad();
         data = dataGirls;
-        visibleInput();
-        gallarySliders();
-        changeSliderMax();
-        loadGallary();
+        globalLoadGallary();
     });
     btnCar.click(function () {
         backgraund = galCars;
-        bgLoad();
         data = dataCars;
-        visibleInput();
-        gallarySliders();
-        changeSliderMax();
-        loadGallary();
+        globalLoadGallary();
     });
     btnMountains.click(function () {
         backgraund = galMountains;
-        bgLoad();
         data = dataMountains;
-        visibleInput();
-        gallarySliders();
-        changeSliderMax();
-        loadGallary();
+        globalLoadGallary();
     });
     btnChernivtsi.click(function () {
         backgraund = galChernivtsi;
-        bgLoad();
         data = dataChernivtsi;
-        visibleInput();
-        gallarySliders();
-        changeSliderMax();
-        loadGallary();
+        globalLoadGallary();
     });
     btnMyHobbi.click(function () {
         backgraund = galMyHobbi;
-        bgLoad();
         data = dataMyHobbi;
-        visibleInput();
-        gallarySliders();
-        changeSliderMax();
-        loadGallary();
+        globalLoadGallary();
     });
 });
 
