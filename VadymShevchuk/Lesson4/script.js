@@ -1,16 +1,21 @@
 var i=1, total=0, first=0, second=0;
 function getRndNumber(){
 	return Math.floor((Math.random() * 6) + 1); 
-}function print(str){
+}
+function print(str){
 	document.getElementById("result").innerHTML +=str;
 }
 function special(first,second){
-	if (first == second)
-	print("Выпал дубль: <b>" + first + "</b><br>");
-	if (first==1 && second==1)
-	print ("<i>Две единицы</i><br>");
-	if (first==6 && second==6)
-	print("<i>Две шестерки</i><br>");	
+	if (first == second){
+		print("Выпал дубль: <b>" + first + "</b><br>");
+		if (first==1){
+		print ("<i>Две единицы</i><br>");
+		}
+		if (first==6){
+		print("<i>Две шестерки</i><br>");
+		}
+	}
+	
 }
 function totalCount(first,second){
 	total=total+first+second;
