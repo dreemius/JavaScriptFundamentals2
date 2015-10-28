@@ -1,0 +1,10 @@
+body {
+	background-image:url(images/brosok.jpg)
+    max-width: inherit;
+    font-family: cursive;
+    font-size: 18px;
+    text-align: center;
+    
+ }
+ 
+#result {color: black;}
