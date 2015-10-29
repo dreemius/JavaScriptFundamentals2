@@ -36,44 +36,7 @@ function run(){
 
 run();
 
-/*
-
-document.getElementById("result").innerHTML += "Первая кость: <span class='number'>" + first + "</span> &nbsp;&nbsp;Вторая кость: <span class='number'>" + second + '</span></br>';
-	
-	
-document.getElementById("result").innerHTML += txt;	
-
-document.getElementById("result").innerHTML += ' Всего: <span class="total">' + total + '</span>';
-
-var score = (total > 100) ? "<div class='score win'>Победа, вы набрали " + total + " очков</div>" : "<div class='score lose'>Вы проиграли, у вас " + total + " очков</div>";
-
-document.getElementById("result").innerHTML += score;
-
-
-	function totalScore(first, second){
-	randomNumber(first, second);
-var total = total + first + second;
-document.getElementById("result").innerHTML = total;
-}
-
-totalScore();
-
-
-if (first == second){
-	switch(first, second) {
-    case 1,1:
-        txt = "<span class='number'>Две единицы </span></br>";
-        break;
-    case 6,6:
-        txt = "<span class='number'>Две шестерки </span></br>";
-        break;
-	default:
-		txt = "Выпал дубль:  <span class='number'>" + first +'</span></br>';
-	}
-	return txt;
-}
-
-*/
+/* the End :) */
 
 
 
