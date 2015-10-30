@@ -22,9 +22,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/style.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/.idea/vcs.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kostrebadv/Lesson3/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/kostrebadv/Lesson3/svg.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kostrebadv/Lesson3/main.js" afterPath="$PROJECT_DIR$/kostrebadv/Lesson3/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kostrebadv/lesson4/main.js" afterPath="$PROJECT_DIR$/kostrebadv/lesson4/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -53,7 +50,7 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kostrebadv/lesson4/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5804196" vertical-offset="238" max-vertical-offset="930">
+            <state vertical-scroll-proportion="0.37062937" vertical-offset="358" max-vertical-offset="930">
               <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
               <folding />
             </state>
@@ -213,24 +210,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="kostrebadv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScriptFundamentals2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScriptFundamentals2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kostrebadv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lesson4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -417,7 +396,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446224842938</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="lesson 4 kostrebadv">
+      <created>1446225832525</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1446225832525</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -871,7 +856,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kostrebadv/lesson4/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5804196" vertical-offset="238" max-vertical-offset="930">
+        <state vertical-scroll-proportion="0.37062937" vertical-offset="358" max-vertical-offset="930">
           <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
           <folding />
         </state>
