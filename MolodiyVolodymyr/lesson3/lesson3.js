@@ -13,5 +13,5 @@ for(var i=0; i<15;i++){
 	    }
 		}
     };
-(total>100)? document.write("Победа, вы набрали"+SPACE+total+SPACE+"очков<br>"):document.write("Вы проиграми, у вас"+ SPACE+total + SPACE+ "очков.<br>");
+(total>100)? document.getElementById("result").innerHTML +="Победа, вы набрали"+SPACE+total+SPACE+"очков<br>":document.getElementById("result").innerHTML +="Вы проиграми, у вас"+ SPACE+total + SPACE+ "очков.<br>";
 
