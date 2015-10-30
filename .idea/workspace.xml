@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40eca9ed-554f-492a-bbac-5ffc6b2fdf31" name="Default" comment="lesson 4 kostrebadv">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/dist/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/dist/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/dist/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/dist/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/dist/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/dist/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/dist/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/dist/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/dist/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/gallery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/dist/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/dist/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/.idea/workspace.xml" />
+    <list default="true" id="40eca9ed-554f-492a-bbac-5ffc6b2fdf31" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kostrebadv/lesson5/gallery.js" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/gallery.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaScriptFundamentals2.iws" />
@@ -49,11 +30,11 @@
       <file leaf-file-name="gallery.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/gallery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47202796" vertical-offset="150" max-vertical-offset="975">
-              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.5506993" vertical-offset="150" max-vertical-offset="915">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
-                <marker date="1446227092000" expanded="true" signature="126:372" placeholder="..." />
-                <marker date="1446227092000" expanded="true" signature="212:361" placeholder="..." />
+                <marker date="1446227256000" expanded="true" signature="126:372" placeholder="..." />
+                <marker date="1446227256000" expanded="true" signature="212:361" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -424,7 +405,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446225979313</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="lesson 5 kostrebadv">
+      <created>1446227162628</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1446227162628</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -491,7 +478,8 @@
     </option>
     <MESSAGE value="lesson 3 kostrebadv" />
     <MESSAGE value="lesson 4 kostrebadv" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 4 kostrebadv" />
+    <MESSAGE value="lesson 5 kostrebadv" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 5 kostrebadv" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -890,11 +878,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/gallery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47202796" vertical-offset="150" max-vertical-offset="975">
-          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.5506993" vertical-offset="150" max-vertical-offset="915">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <marker date="1446227092000" expanded="true" signature="126:372" placeholder="..." />
-            <marker date="1446227092000" expanded="true" signature="212:361" placeholder="..." />
+            <marker date="1446227256000" expanded="true" signature="126:372" placeholder="..." />
+            <marker date="1446227256000" expanded="true" signature="212:361" placeholder="..." />
           </folding>
         </state>
       </provider>

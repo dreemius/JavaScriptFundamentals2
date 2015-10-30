@@ -30,10 +30,6 @@ var cutName = function (name) {
 
 };
 
-var newItemID = function (id){
-
-
-}
 
 var cutDescription = function (str){
 	return str.slice(0,15)
