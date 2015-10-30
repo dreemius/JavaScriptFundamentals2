@@ -55,7 +55,7 @@ function createElement(tag, attributes, _innerHTML) {
 			element.setAttribute(attr, attributes[attr]);
 		}
 	};
-	element.innerHTML =  _innerHTML ? innerHTML = _innerHTML : '';
+	element.innerHTML =  _innerHTML ? _innerHTML : '';
 	return element;
 }
 
