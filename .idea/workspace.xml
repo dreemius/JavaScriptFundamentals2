@@ -22,7 +22,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/style.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/.idea/vcs.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kostrebadv/lesson4/main.js" afterPath="$PROJECT_DIR$/kostrebadv/lesson4/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaScriptFundamentals2.iws" />
@@ -47,31 +46,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kostrebadv/lesson4/main.js">
+      <file leaf-file-name="gallery.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/gallery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37062937" vertical-offset="358" max-vertical-offset="930">
-              <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
-              <folding />
+            <state vertical-scroll-proportion="0.47202796" vertical-offset="150" max-vertical-offset="975">
+              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+              <folding>
+                <marker date="1446227092000" expanded="true" signature="126:372" placeholder="..." />
+                <marker date="1446227092000" expanded="true" signature="212:361" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script_4.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AndreyTymshuk/Lesson_4/script_4.js">
+      <file leaf-file-name="data.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="178" max-vertical-offset="750">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kostrebadv/lesson4/index.html">
+        <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="300">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state vertical-scroll-proportion="-13.208333" vertical-offset="553" max-vertical-offset="1125">
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,11 +113,11 @@
         <option value="$PROJECT_DIR$/kostrebadv/Lesson2/Work1/index.html" />
         <option value="$PROJECT_DIR$/kostrebadv/Lesson2/Work5/main.js" />
         <option value="$PROJECT_DIR$/kostrebadv/lesson5/index.html" />
-        <option value="$PROJECT_DIR$/kostrebadv/lesson5/gallery.js" />
         <option value="$PROJECT_DIR$/kostrebadv/Lesson2/Work2/main.js" />
         <option value="$PROJECT_DIR$/kostrebadv/Lesson2/Work4/main.js" />
         <option value="$PROJECT_DIR$/kostrebadv/Lesson3/main.js" />
         <option value="$PROJECT_DIR$/kostrebadv/lesson4/main.js" />
+        <option value="$PROJECT_DIR$/kostrebadv/lesson5/gallery.js" />
       </list>
     </option>
   </component>
@@ -212,6 +214,24 @@
               <option name="myItemId" value="kostrebadv" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScriptFundamentals2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScriptFundamentals2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kostrebadv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -226,10 +246,6 @@
               <option name="myItemId" value="AndreyTymshuk" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Lesson_4" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -241,7 +257,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AndreyTymshuk" />
+              <option name="myItemId" value="AndrewJasinsky" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -402,7 +418,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446225832525</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="lesson 4 kostrebadv">
+      <created>1446225979313</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1446225979313</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -478,13 +500,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 3/dices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 4/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="58" max-vertical-offset="630">
@@ -556,6 +571,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-26.458334" vertical-offset="730" max-vertical-offset="1845">
           <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -570,6 +586,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="15.625" vertical-offset="375" max-vertical-offset="1110">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -577,6 +594,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -598,13 +616,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndrewJasinsky/Lesson 5/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47142857" vertical-offset="0" max-vertical-offset="1095">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -612,13 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndrewJasinsky/Lesson 5/gallery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48128343" vertical-offset="0" max-vertical-offset="960">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -641,6 +646,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47142857" vertical-offset="0" max-vertical-offset="1665">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -655,6 +661,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34285715" vertical-offset="0" max-vertical-offset="1245">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -669,6 +676,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3857143" vertical-offset="0" max-vertical-offset="1065">
           <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -698,6 +706,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.958333" vertical-offset="985" max-vertical-offset="1830">
           <caret line="80" column="18" selection-start-line="73" selection-start-column="12" selection-end-line="80" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -705,13 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2433155" vertical-offset="0" max-vertical-offset="885">
           <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2857143" vertical-offset="660" max-vertical-offset="1125">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -733,14 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.082167834" vertical-offset="448" max-vertical-offset="1020">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/KroyaloPetro/lesson 5/homework5 origin/gallery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3444056" vertical-offset="13" max-vertical-offset="585">
@@ -759,17 +753,6 @@
           <folding>
             <marker date="1446049271000" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1446049271000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/gallery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <marker date="1446224934000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1446224934000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -846,19 +829,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson4/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="358" max-vertical-offset="930">
+          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AndreyTymshuk/Lesson_4/script_4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+        <state vertical-scroll-proportion="-0.31118882" vertical-offset="178" max-vertical-offset="750">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson4/main.js">
+    <entry file="file://$PROJECT_DIR$/AndrewJasinsky/Lesson 5/gallery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37062937" vertical-offset="358" max-vertical-offset="930">
-          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+        <state vertical-scroll-proportion="0.13111888" vertical-offset="105" max-vertical-offset="960">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <marker date="1446049271000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1446049271000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndrewJasinsky/Lesson 5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndrewJasinsky/Lesson 5/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.208333" vertical-offset="553" max-vertical-offset="1125">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/gallery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47202796" vertical-offset="150" max-vertical-offset="975">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding>
+            <marker date="1446227092000" expanded="true" signature="126:372" placeholder="..." />
+            <marker date="1446227092000" expanded="true" signature="212:361" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
