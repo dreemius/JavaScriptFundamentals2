@@ -12,9 +12,9 @@
           document.getElementById("result").innerHTML += "<br>" + "It is Double! " + first + " & " + second + "<br>" +
           "<br>";
 
-          if((first && second) == 1){
+          if(first == 1){
              document.getElementById("result").innerHTML += "Two numbers: 1" + "<br>";
-          }else if((first && second) == 6){
+          }else if(first == 6){
              document.getElementById("result").innerHTML += "Two numbers: 6" + "<br>";
           }
       }

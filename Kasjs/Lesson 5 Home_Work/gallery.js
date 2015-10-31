@@ -2,14 +2,15 @@
 // это тестовый объект чтоб показать как вставлять в HTML
 // вам надо пользоваться верхним 
 
-var FROM = 1, TO = 8,NUMBER_OF_ELEMENTS = 4;
+var FROM = 1, TO = 8,NUMBER_OF_ELEMENTS = 10;
 //Simplest filter of the object
-(function() {
+function filterObject() {
 	data.length = NUMBER_OF_ELEMENTS;
 	data = data.slice(FROM - 1, TO);
-})();
+}
+filterObject();
 // format object to required layout
-(function () {
+function formatObject () {
 	for (var i = 0; i < data.length; i++) {
 		data[i].name = data[i].name.toLowerCase();
 		data[i].name = data[i].name.replace(/[^abc]/,data[i].name.charAt(0).toUpperCase());
@@ -19,11 +20,13 @@ var FROM = 1, TO = 8,NUMBER_OF_ELEMENTS = 4;
 		data[i].date = data[i].date.slice(0, 16);
 	}
 	return data;
-})();
+}
+formatObject();
 
-var resultContainer = $('#result');
-var resultHTML = "";
-var itemTemplate = '<div class="col-sm-3 col-xs-6">\
+function outputData() {
+	var resultContainer = $('#result');
+	var resultHTML = "";
+	var itemTemplate = '<div class="col-sm-3 col-xs-6">\
 						<img src="$url" alt="$name" class="img-thumbnail">\
 					 <div class="info-wrapper">\
 						<div class="text-muted">$number: $name</div>\
@@ -33,16 +36,18 @@ var itemTemplate = '<div class="col-sm-3 col-xs-6">\
 					</div>';
 
 
-for(var i = 0;i < data.length;i++) {
-	resultHTML += itemTemplate
-		.replace("$number", data[i].id)
-		.replace(/\$name/gi, data[i].name)
-		.replace("$url", data[i].url)
-		.replace("$description", data[i].description)
-		.replace("$date", data[i].date);
+	for (var i = 0; i < data.length; i++) {
+		resultHTML += itemTemplate
+			.replace("$number", data[i].id)
+			.replace(/\$name/gi, data[i].name)
+			.replace("$url", data[i].url)
+			.replace("$description", data[i].description)
+			.replace("$date", data[i].date);
 
-	resultContainer.html(resultHTML);
+		resultContainer.html(resultHTML);
+	}
 }
+outputData();
 
 
 
