@@ -2,16 +2,9 @@
 
 var fruit1 = fruit2 = fruit3 ='apple ';
 
-console.log(fruit1);
+console.log(fruit1 );
 
-function yard () {
-
-    if (fruit1 = 'apple ') {
-        var fruit2 = 'orange ';
-        var fruit3 = 'palm ';
-        console.log(fruit1 + fruit2 + fruit3);
-    }
-
-
-        }
-yard ();
+var fruit1 = 'banana ';
+var fruit2 = 'orange ';
+var fruit3 = 'palm ';
+console.log(fruit1   +  fruit2 +   fruit3);

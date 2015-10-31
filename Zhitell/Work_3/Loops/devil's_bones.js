@@ -5,20 +5,16 @@ for (i=0; i<15; i++){
 	var second = Math.floor((Math.random() * 6) + 1);
 	document.getElementById("result").innerHTML += "Первая кость: <span class='number'>" + first + "</span> &nbsp;&nbsp;Вторая кость: <span class='number'>" + second + '</span></br>';
 	
-if (first == second){
-	switch(first, second) {
-    case 1,1:
-        txt = "<span class='number'>Две единицы </span></br>";
-        break;
-    case 6,6:
-        txt = "<span class='number'>Две шестерки </span></br>";
-        break;
-	default:
-		txt = "Выпал дубль:  <span class='number'>" + first +'</span></br>';
-	}
-	document.getElementById("result").innerHTML += txt;
-	}
-		
+	if (first == second){
+			document.getElementById("result").innerHTML += "Выпал дубль:  <span class='number'>" + first +'</span></br>';
+			if (first == 1 && second == 1){
+			document.getElementById("result").innerHTML += "<span class='number'>Две единицы </span></br>";
+			}
+			if (first == 6 && second == 6){
+			document.getElementById("result").innerHTML += "<span class='number'>Две шестерки </span></br>";
+			}
+		}
+	
 	var total = total + first + second;
 	}
 
@@ -28,6 +24,14 @@ var score = (total > 100) ? "<div class='score win'>Победа, вы набр�
 
 document.getElementById("result").innerHTML += score;
 
+
+/* case 1,1:
+        txt = "<span class='number'>Две единицы </span></br>";
+        break;
+    case 6,6:
+        txt = "<span class='number'>Две шестерки </span></br>";
+        break;
+	default: */
 
 
 
