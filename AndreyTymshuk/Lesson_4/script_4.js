@@ -1,5 +1,5 @@
 /**
- * Created by AndreyTymshuk on 10/26/2015.
+ * Created by AndreyTymshuk on rev.0 - 10/26/2015, rev.1 - 11/10/2015
  */
 
 var total =0;
