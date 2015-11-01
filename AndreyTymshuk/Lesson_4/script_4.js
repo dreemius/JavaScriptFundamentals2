@@ -2,44 +2,43 @@
  * Created by AndreyTymshuk on 10/26/2015.
  */
 
-
-function getRndNumber(){
-    return Math.floor((Math.random() * 6) + 1);
-}
-
-function getRndElement(one, two){
-    return document.getElementById("result").innerHTML += "Первая кость: " + one + " Вторая кость: " + two + "<br>";
-}
-
-function youWin(sum){
-    return document.getElementById("result").innerHTML += "Победа, Вы набрали " + sum + " очков.";
-}
-
-function youLose(sum){
-    return document.getElementById("result").innerHTML += "Вы проиграли, у Вас " + sum + " очков.";
-}
-
-function dobleClic(sum){
-    return  document.getElementById("result").innerHTML += "Выпал дубль. Число: " + sum + "<br>";;
-}
-
-function total(one, two){
-    return one + two;
-}
 var total =0;
 
+// Генератор случайных чисел
+function getRndElement(){
+    return Math.floor((Math.random() * 6) + 1);
+}
+// Вывод строки
+function getIndex (text){
+    return document.getElementById("result").innerHTML += text + "<br>";
+}
+//Цыкл
 for (var i= 1; i <= 15; i++){
+    var first = getRndElement(),
+        second = getRndElement();
 
-    var first = getRndNumber(),
-        second = getRndNumber();
+    //Вывод случайных чисел
+    getIndex("Первая кость: " + first + " Вторая кость: " + second);
 
-    getRndElement(first, second);
-
-    if ( (first == second) && (first == 1 || second == 6)){
-        dobleClic(first);
+    //Проверка на дубль
+    if (first == second) {
+        getIndex("Выпал дубль. Число: " + first);
     }
 
+    //Проверка на 1
+    if (first == second && first == 1) {
+        getIndex(" Две единицы");
+    }
+
+    //Проверка на 6
+    if (first == second && first == 6) {
+        getIndex(" Две шестерки");
+    }
+
+    //Суммирование всех чисел
     total += first + second;
 }
 
-(total > 100) ? youWin(total) : youLose(total);
+(total > 100) ? getIndex("Победа, Вы набрали " + total) : getIndex("Вы проиграли, у Вас " + total);
+
+//&& (first == 1 || second == 6)
