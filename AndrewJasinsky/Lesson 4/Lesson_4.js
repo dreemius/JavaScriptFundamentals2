@@ -14,6 +14,10 @@
 	function printText() {
 		return document.getElementById("result").innerHTML+=arguments[0];
 	}
+
+	function clearText() {
+		return document.getElementById("result").innerHTML=arguments[0];
+	}
 	
 	function printValueBone() {
 		printText("FIRST BONE: " + arguments[0] + " | " + "SECOND BONE " + arguments[1] + "<br>");
@@ -31,6 +35,7 @@
 	//start program
 	
     (function run(){
+		clearText(" ");
 		printText("LET'S START THE GAME:" + "<br>" + "<br>");
 		for (shoots; shoots < inputNumberOfShots; shoots++) {
         	var firstBone = getRndNumber();
