@@ -40,5 +40,3 @@ for (var i= 1; i <= 15; i++){
 }
 
 (total > 100) ? getIndex("Победа, Вы набрали " + total) : getIndex("Вы проиграли, у Вас " + total);
-
-//&& (first == 1 || second == 6)
