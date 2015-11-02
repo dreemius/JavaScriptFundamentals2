@@ -45,7 +45,7 @@ function newDiv() {
 		img.className = "img-thumbnail";
 
 		var infoWrapper = createNewElement('div');
-		infoWrapper.className ='info-wrapper';
+		infoWrapper.className ='info-wrapper' ;
 
 		var idName = createNewElement('div');
 		idName.className = 'text-muted';
