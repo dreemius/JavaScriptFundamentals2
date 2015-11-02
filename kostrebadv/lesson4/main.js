@@ -21,7 +21,7 @@ function run (){
 
 function getRndNumber(){
 
-  return Math.floor((Math.random() * 6) + 1);
+    return Math.floor((Math.random() * 6) + 1);
 }
 
 function text(string){
@@ -31,11 +31,12 @@ function text(string){
 }
 
 function specialNum (){
+
     if (first == second){
         text("Дубль " + '<strong>' + first + '</strong>' + ' ');
     }
-        else if (first == 1 || second == 2){
-            text("Две " + (first ==1 ? 'еденицы' : 'шестерки' ));
+        else if (first == 1 || second == 6){
+            text("Две " + (first ==1 ? 'еденицы ' + first + ' : ' + first: 'шестерки ' + second + ' : ' + second));
             text('<br>')
 
     }
