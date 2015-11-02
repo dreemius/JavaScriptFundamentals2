@@ -22,18 +22,18 @@ var galMountains = 'transparent url("gallary/bg/everest.jpg") no-repeat center c
 var galMyHobbi = 'transparent url("gallary/bg/alp.jpg") no-repeat center center fixed';
 var galChernivtsi = 'transparent url("gallary/bg/DBC_0937.jpg") no-repeat center center fixed';
 // Фукции по работе со стрингами
-function upperFirstEl(k) {
-    var k = k[0].toLocaleUpperCase() + k.slice(1).toLocaleLowerCase();
-    return k;
+function upperFirstEl(upper) {
+    var upper = upper[0].toLocaleUpperCase() + upper.slice(1).toLocaleLowerCase();
+    return upper;
 }
-function crop15El(d) {
-    var k = d.slice(0, 15);
-    return k;
+function crop15El(crash) {
+    var crash = crash.slice(0, 15);
+    return crash;
 }
-function getDate(d) {
+function getDate(clock) {
     moment.locale('ru');
-    var d = moment(d).format('ddd Do MMMM YYYY, HH:mm:ss');
-    return d
+    var clock = moment(clock).format('YYYY/DD/MM, HH:mm');//2015/07/02 14:15
+    return clock;
 }
 //Функции по работе с галереей
 function hideInput() {
