@@ -1,17 +1,6 @@
-
-// это тестовый объект чтоб показать как вставлять в HTML
-// вам надо пользоваться верхним 
-var item = {
-	url: "http://desktopwallpapers.org.ua/mini/201507/40066.jpg",
-	name: "картинка 1",
-	id : 1,
-	description : "Using color to add meaning only",
-	date : 1422153200637
-}
-
-
 var resultContainer = $('#result');
-var resultHTML = "";
+var resultHTML 		= "";
+var elements = 7;
 var itemTemplate = '<div class="col-sm-3 col-xs-6">\
 				<img src="$url" alt="$name" class="img-thumbnail">\
 				<div class="info-wrapper">\
@@ -21,12 +10,23 @@ var itemTemplate = '<div class="col-sm-3 col-xs-6">\
 				</div>\
 			</div>';
 
-resultHTML += itemTemplate
+function changeName(correctName){
+	return correctName[0].toLocaleUpperCase() + correctName.toLocaleLowerCase().slice(1);
+}
+function cutDescription(correctDescription){
+	return correctDescription.slice(0,15);
+}
+function newDate(datef){
+	return datef.getFullYear()+'/'+datef.getMonth()+'/'+datef.getDate()+' '+datef.getHours()+':'+datef.getMinutes();
+
+data.forEach(function(item, index){
+if(index<elements){
+ resultHTML += itemTemplate
 	.replace("$number", item.id)
-	.replace(/\$name/gi, item.name)
+	.replace(/\$name/gi, changeName(item.name))
 	.replace("$url", item.url)
-	.replace("$description", item.description)
-	.replace("$date", item.date);
-			
-resultContainer.html(resultHTML);		
-			
+	.replace("$description", cutDescription(item.description))
+	.replace("$date", newDate(item.date));
+}
+});
+resultContainer.html(resultHTML);

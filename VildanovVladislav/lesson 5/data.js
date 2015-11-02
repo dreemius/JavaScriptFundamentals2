@@ -64,23 +64,3 @@ var data = [{
 
 
 
-var elements = 7;
-var cut = [];
-data.forEach(function(item, index){
-	if(index<elements){
-		cut.push(item);
-		cut[index].name=cut[index].name[0].toLocaleUpperCase() + cut[index].name.toLocaleLowerCase().slice(1);
-		cut[index].description=cut[index].description.slice(0,15);
-	var newDate = function(){
-    var tmpDate = new Date(cut[index].date);
-    return tmpDate.getFullYear() + "/" +
-           tmpDate.getMonth() + "/" +
-           tmpDate.getDate() + " " +
-           tmpDate.getHours() + ":" +
-           tmpDate.getMinutes();
-		};
-		cut[index].date=newDate();
-	}
-
-});
-console.log(cut);
