@@ -6,7 +6,31 @@ var TOTAL_ELEM = 3;
 
 var sliceFrom = --START;
 
-var resultHTML = '';
+
+
+function dateFormat (date){
+	var newDate = new Date (date);
+	return 	newDate.getFullYear() + '/' +
+		newDate.getMonth() + '/' +
+		newDate.getDate() + ' ' +
+		newDate.getHours() + ' : ' +
+		newDate.getMinutes();
+
+};
+
+function cutName (arg) {
+	return arg[0].toLocaleUpperCase()+arg.slice(1).toLocaleLowerCase();
+
+};
+
+
+function cutDescription (str){
+	return str.slice(0,15)
+}
+
+function transformData  (){
+	return data.slice(sliceFrom, END).slice(0,TOTAL_ELEM);
+}
 
 function newDiv() {
 
@@ -49,33 +73,6 @@ function newDiv() {
 newDiv();
 
 
-
-
-
-
- function dateFormat (date){
-	var newDate = new Date (date);
-	return 	newDate.getFullYear() + '/' +
-		newDate.getMonth() + '/' +
-		newDate.getDate() + ' ' +
-		newDate.getHours() + ' : ' +
-		newDate.getMinutes();
-
-};
-
- function cutName (arg) {
-	return arg[0].toLocaleUpperCase()+arg.slice(1).toLocaleLowerCase();
-
-};
-
-
- function cutDescription (str){
-	return str.slice(0,15)
-}
-
- function transformData  (){
-	return data.slice(sliceFrom, END).slice(0,TOTAL_ELEM);
-}
 
 
 /*
