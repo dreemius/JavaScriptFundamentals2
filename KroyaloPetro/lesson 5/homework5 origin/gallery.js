@@ -17,12 +17,13 @@ function run(){
 	data.slice(START_P,END_P).forEach(function (item, index){
 		resultHTML += replaceItemTemplate(itemTemplate, item);
 		buffForDivRow++;
-		if (isPrint(buffForDivRow, index, START_P, END_P)){
+		if (buffForDivRow == 4){
 			buffForDivRow 	= 0;
 			printInHTML('<div class="row">'+resultHTML+'</div>');
 			resultHTML	  	= "";
 		}
 	});
+	if(buffForDivRow != 0){printInHTML('<div class="row">'+resultHTML+'</div>');}
 }
 function printInHTML(stringToHTML){
 	var resultContainer = $('#container');
@@ -35,9 +36,6 @@ function replaceItemTemplate(itemTemplate, item){
 			.replace("$url", item.url)
 			.replace("$description", cutDescription(item.description))
 			.replace("$date", formateDate(new Date(item.date)));
-}
-function isPrint(buffForDivRow, index, START_P, END_P){
-	return ((buffForDivRow == 4)||((index+1) == (END_P-START_P)));
 }
 function correctName(name){
 	return name[0].toLocaleUpperCase()+name.slice(1).toLocaleLowerCase();
