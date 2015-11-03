@@ -1,7 +1,10 @@
-run();
-function run(){
-	var resultHTML 		= '';
-	var itemTemplate    = '<div class="col-sm-3 col-xs-6">\
+
+var resultContainer = $('#result');
+var resultHTML 		= "";
+var MAX 			= 2,
+	STARTP			= 1;
+	ENDP			= data.length;
+var itemTemplate = '<div class="col-sm-3 col-xs-6">\
 				<img src="$url" alt="$name" class="img-thumbnail">\
 				<div class="info-wrapper">\
 					<div class="text-muted">$number: $name</div>\
@@ -9,42 +12,23 @@ function run(){
 					<div class="text-muted">$date</div>\
 				</div>\
 			</div>';
-	var MAX_DISPLAY		= data.length,
-		START_P			= 0,
-		END_P			= data.length,
-		buffForDivRow	= 0;
-	(MAX_DISPLAY < (END_P-START_P)) ? END_P = START_P + MAX_DISPLAY : NaN;
-	data.slice(START_P,END_P).forEach(function (item, index){
-		resultHTML += replaceItemTemplate(itemTemplate, item);
-		buffForDivRow++;
-		if (isPrint(buffForDivRow, index, START_P, END_P)){
-			buffForDivRow 	= 0;
-			printInHTML('<div class="row">'+resultHTML+'</div>');
-			resultHTML	  	= "";
-		}
-	});
+function corectingName(namec){
+	return namec[0].toLocaleUpperCase()+namec.slice(1).toLocaleLowerCase();
 }
-function printInHTML(stringToHTML){
-	var resultContainer = $('#container');
-	resultContainer.html(resultContainer.html()+stringToHTML);
+function cutFromDescription(str){
+	return str.slice(0,15);
 }
-function replaceItemTemplate(itemTemplate, item){
-	return itemTemplate
-			.replace("$number", item.id)
-			.replace(/\$name/gi, correctName(item.name))
-			.replace("$url", item.url)
-			.replace("$description", cutDescription(item.description))
-			.replace("$date", formateDate(new Date(item.date)));
+function formateDate(datef){
+	return datef.getFullYear()+'/'+datef.getMonth()+'/'+datef.getDate()+' '+datef.getHours()+':'+datef.getMinutes();
 }
-function isPrint(buffForDivRow, index, START_P, END_P){
-	return ((buffForDivRow == 4)||((index+1) == (END_P-START_P)));
+data.forEach(function(item, index){
+if ((index < MAX)&&(index >= STARTP-1)&&(index < ENDP)){
+resultHTML += itemTemplate
+	.replace("$number", item.id)
+	.replace(/\$name/gi, corectingName(item.name))
+	.replace("$url", item.url)
+	.replace("$description", cutFromDescription(item.description))
+	.replace("$date", formateDate(new Date(item.date)));
 }
-function correctName(name){
-	return name[0].toLocaleUpperCase()+name.slice(1).toLocaleLowerCase();
-}
-function cutDescription(description){
-	return description.slice(0,15);
-}
-function formateDate(date){
-	return date.getFullYear()+'/'+(date.getMonth()+1)+'/'+date.getDate()+' '+date.getHours()+':'+date.getMinutes();
-}
+});			
+resultContainer.html(resultHTML);

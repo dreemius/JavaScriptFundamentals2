@@ -1,9 +1,11 @@
 
-var COUNT_IMAGE = data.length,
-	NUMBERS_TO_DISPLAY = 0,// if 0 - all, if 1 - odd, if 2 - even
-    resultContainer = $('#result'),
+var FIRST = 1, //id first img;
+	LAST  = data.length,//id last img;
+	NUMBER_OF_IMAGES = data.length,
+	resultContainer = $('#result'),
 	countShow = $('#count-image'),
 	resultHTML = "",
+	showImage,
 	itemTemplate = '<div class="col-sm-3 col-xs-6">\
 				<img src="$url" alt="$name" class="img-thumbnail">\
 				<div class="info-wrapper">\
@@ -13,37 +15,38 @@ var COUNT_IMAGE = data.length,
 				</div>\
 			</div>';
 
-function extractDataToDisplay() {
-	return data.filter(function(item) {
-		return  NUMBERS_TO_DISPLAY == 1 ? item.id % 2 != 0 :(NUMBERS_TO_DISPLAY == 2 ? item.id % 2 == 0 : data);
-	});
-}
-
+function inBetween(START, FINISH) {
+//	data.length = NUMBER_OF_IMAGES; // why its does`nt work ?!
+	return data.slice(START - 1, FINISH);
 /**
- * - - - For range of numbers - - -
- var FIRST = 0, //id first img;
-     LAST  = 10;//id last img;
- function inBetween(START, FINISH) {
-	return data.filter(function(item) {
-		return item.id >= START && item.id <= FINISH;
+ * - - - Alternative variant- - -
+ return data.filter(function(item) {
+		return item.id >= START && item.id <= FINISH && data.length = NUMBER_OF_IMAGES;
 	});
+ */
 }
- inBetween(FIRST, LAST).
- **/
 
-extractDataToDisplay().forEach(function(item) {
-		var capitalizedFirstLetter = item.name.charAt(0) + item.name.slice(1).toLowerCase(),
-			shortDescription = item.description.slice(0, 15),
-			date = new Date(item.date),
-			formattedDate = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate()+ " " + date.getHours() + ":" + date.getMinutes();
-		resultHTML += itemTemplate
+showImage = function(item) {
+	function capitalizedFirstLetter() {
+		return item.name[0].toUpperCase() + item.name.slice(1).toLowerCase();
+	}
+	function doShortDescription() {
+		return item.description.slice(0, 15);
+	}
+	function doFormattedDate() {
+		var date = new Date(item.date);
+		return date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate()+ " " + date.getHours() + ":" + date.getMinutes();
+	}
+	resultHTML += itemTemplate
 			.replace("$number", item.id)
-			.replace(/\$name/gi, capitalizedFirstLetter)
+			.replace(/\$name/gi, capitalizedFirstLetter())
 			.replace("$url", item.url)
-			.replace("$description", shortDescription)
-			.replace("$date", formattedDate);
-});
+			.replace("$description", doShortDescription())
+			.replace("$date", doFormattedDate());
+};
+
+inBetween(FIRST, LAST).forEach(showImage);
 resultContainer.html(resultHTML);
-countShow.html(COUNT_IMAGE);
+countShow.html(NUMBER_OF_IMAGES);
 
 
