@@ -1,11 +1,11 @@
 run();
 function run(){
-	var classOf4Div		= "row"; 
-	var resultHTML 	 	= createNewDiv(classOf4Div, "");
-	var MAX_DISPLAY		= data.length,
-		START_P			= 0,
-		END_P			= data.length,
-		buffForDivRow	= 0;
+	var classOf4Div		  = "row"; 
+	var resultHTML 	 	  = createNewDiv(classOf4Div, "");
+	var MAX_DISPLAY		  = data.length,
+		START_P			  = 0,
+		END_P			  = data.length,
+		buffForDivRow	  = 0;
 	(MAX_DISPLAY < (END_P-START_P)) ? END_P = START_P + MAX_DISPLAY : NaN;
 	data.slice(START_P,END_P).forEach(function (item, index){
 		resultHTML.appendChild(createNewDiv("col-sm-3 col-xs-6", ""));
@@ -13,10 +13,10 @@ function run(){
 		resultHTML.lastChild.appendChild(createNewInfoDiv("info-wrapper","text-muted", item));
 		buffForDivRow++;
 		if (buffForDivRow == 4){
-			resultHTML.id   = "id_"+index;
-			buffForDivRow 	= 0;
+			resultHTML.id = "id_"+index;
+			buffForDivRow = 0;
 			loadInHTML(resultHTML);
-			resultHTML	  	= createNewDiv(classOf4Div,"");
+			resultHTML	  = createNewDiv(classOf4Div,"");
 		}
 	});
 	if(buffForDivRow != 0){loadInHTML(resultHTML);}
