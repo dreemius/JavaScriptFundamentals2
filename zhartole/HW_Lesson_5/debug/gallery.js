@@ -1,10 +1,16 @@
+/**
+ * Here we would be try to improve our "gallery"
+ * Create by zhartole 01.11.2015
+ *
+ */
 
 var FIRST = 1, //id first img;
 	LAST  = data.length,//id last img;
-	NUMBER_OF_IMAGES = data.length,
+	NUMBER_OF_IMAGES = data.length, //number of processing elements;
 	resultContainer = $('#result'),
 	countShow = $('#count-image'),
 	resultHTML = "",
+	newGallery,
 	showImage,
 	itemTemplate = '<div class="col-sm-3 col-xs-6">\
 				<img src="$url" alt="$name" class="img-thumbnail">\
@@ -15,17 +21,12 @@ var FIRST = 1, //id first img;
 				</div>\
 			</div>';
 
+//Filter Gallery;
 function inBetween(START, FINISH) {
-//	data.length = NUMBER_OF_IMAGES; // why its does`nt work ?!
-	return data.slice(START - 1, FINISH);
-/**
- * - - - Alternative variant - - -
- return data.filter(function(item) {
-		return item.id >= START && item.id <= FINISH;
-	});
- */
+	newGallery = data.slice(START - 1, FINISH);
+	return newGallery.slice(0,NUMBER_OF_IMAGES);
 }
-
+//do some change in new gallery;
 showImage = function(item) {
 	function capitalizedFirstLetter() {
 		return item.name[0].toUpperCase() + item.name.slice(1).toLowerCase();
