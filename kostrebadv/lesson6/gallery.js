@@ -1,7 +1,7 @@
 var START = 4;
 var END = 9;
 
-var TOTAL_ELEM = 3;
+var TOTAL_ELEM = 4;
 
 
 var sliceFrom = --START;
