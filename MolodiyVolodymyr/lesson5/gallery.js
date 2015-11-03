@@ -20,19 +20,11 @@ function cutDescription(descript){
 	 }  
 	
 function firstLetterUpper(str){
-   for(var j=0;j<str.length;j++){
-         var SPACE=" ";
-         var capitAftSpace=0;
-         var capitalizRes;
-     if(str.indexOf(SPACE)!=-1){
-capitAftSpace=str.indexOf(SPACE)+1;
-capitalizRes=str.charAt(0).toUpperCase()+str.slice(1,capitAftSpace).toLowerCase()+str.charAt(capitAftSpace).toUpperCase()+str.slice(capitAftSpace+1).toLowerCase();
-      }
-     else{
-capitalizRes=str.charAt(0).toUpperCase()+str.slice(1).toLowerCase();
-	  }	  
+ var capitalizRes;
+ capitalizRes=str.charAt(0).toUpperCase()+str.slice(1).toLowerCase();
+	  
 	 return capitalizRes;
-      }
+    
 	}
 
 function changeData(obj){

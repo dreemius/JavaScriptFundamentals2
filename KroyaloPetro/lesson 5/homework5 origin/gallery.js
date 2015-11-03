@@ -1,34 +1,48 @@
-
-var resultContainer = $('#result');
-var resultHTML 		= "";
-var MAX 			= 2,
-	STARTP			= 1;
-	ENDP			= data.length;
-var itemTemplate = '<div class="col-sm-3 col-xs-6">\
-				<img src="$url" alt="$name" class="img-thumbnail">\
-				<div class="info-wrapper">\
-					<div class="text-muted">$number: $name</div>\
-					<div class="text-muted">$description</div>\
-					<div class="text-muted">$date</div>\
-				</div>\
-			</div>';
-function corectingName(namec){
-	return namec[0].toLocaleUpperCase()+namec.slice(1).toLocaleLowerCase();
+run();
+function run(){
+	var resultHTML 		  = '';
+	var itemTemplate      = '<div class="col-sm-3 col-xs-6">\
+								<img src="$url" alt="$name" class="img-thumbnail">\
+								<div class="info-wrapper">\
+									<div class="text-muted">$number: $name</div>\
+									<div class="text-muted">$description</div>\
+									<div class="text-muted">$date</div>\
+								</div>\
+							</div>';
+	var MAX_DISPLAY		  = data.length,
+		START_P			  = 0,
+		END_P			  = data.length,
+		buffForDivRow	  = 0;
+	(MAX_DISPLAY < (END_P-START_P)) ? END_P = START_P + MAX_DISPLAY : NaN;
+	data.slice(START_P,END_P).forEach(function (item){
+		resultHTML += replaceItemTemplate(itemTemplate, item);
+		buffForDivRow++;
+		if (buffForDivRow == 4){
+			buffForDivRow = 0;
+			printInHTML('<div class="row">'+resultHTML+'</div>');
+			resultHTML	  = "";
+		}
+	});
+	if(buffForDivRow != 0){printInHTML('<div class="row">'+resultHTML+'</div>');}
 }
-function cutFromDescription(str){
-	return str.slice(0,15);
+function printInHTML(stringToHTML){
+	var resultContainer = $('#container');
+	resultContainer.html(resultContainer.html()+stringToHTML);
 }
-function formateDate(datef){
-	return datef.getFullYear()+'/'+datef.getMonth()+'/'+datef.getDate()+' '+datef.getHours()+':'+datef.getMinutes();
+function replaceItemTemplate(itemTemplate, item){
+	return itemTemplate
+			.replace("$number", item.id)
+			.replace(/\$name/gi, correctName(item.name))
+			.replace("$url", item.url)
+			.replace("$description", cutDescription(item.description))
+			.replace("$date", formateDate(new Date(item.date)));
 }
-data.forEach(function(item, index){
-if ((index < MAX)&&(index >= STARTP-1)&&(index < ENDP)){
-resultHTML += itemTemplate
-	.replace("$number", item.id)
-	.replace(/\$name/gi, corectingName(item.name))
-	.replace("$url", item.url)
-	.replace("$description", cutFromDescription(item.description))
-	.replace("$date", formateDate(new Date(item.date)));
+function correctName(name){
+	return name[0].toLocaleUpperCase()+name.slice(1).toLocaleLowerCase();
 }
-});			
-resultContainer.html(resultHTML);
+function cutDescription(description){
+	return description.slice(0,15);
+}
+function formateDate(date){
+	return date.getFullYear()+'/'+(date.getMonth()+1)+'/'+date.getDate()+' '+date.getHours()+':'+date.getMinutes();
+}
