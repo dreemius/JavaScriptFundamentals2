@@ -12,14 +12,15 @@ var j=0;
 	while (j>finalPos){
 		data.pop();
 		j--;
+		maxItem=maxItem-1;
 	}
 }
 
 function ArrCorrection (data) {
 	for (var i = 0; i < data.length; i++) {
-		data[i].name = data[i].name[1].toUpperCase()+data[i].name.toLowerCase();;
+		data[i].name = data[i].name[0].toUpperCase()+data[i].name.slice(1).toLowerCase();
 		data[i].description = data[i].description.slice(0,15);
-		data[i].date=new Date(data[i].date).toUTCString();
+		data[i].date=new Date(data[i].date).getFullYear()+"/"+new Date(data[i].date).getMonth()+"/"+new Date(data[i].date).getDate()+" "+new Date(data[i].date).getHours()+":"+new Date(data[i].date).getMinutes();
 	}
 }
 
