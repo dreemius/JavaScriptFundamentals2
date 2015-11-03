@@ -1,12 +1,12 @@
-/**
+	/**
  * Created by Phenom on 06.10.2015.
  */
 var a = "10";
 console.log(a);
-console.log(Number(a));
-console.log(Boolean(a))
-console.log(a + "123yeap");
-console.log(parseInt(a="123yeap"));
+a = Number(a); console.log(a);
+a = String(a);  console.log(a);
+a = parseInt(a+"test");console.log(a);
+a = Boolean(a);console.log(a);
 
 
 
