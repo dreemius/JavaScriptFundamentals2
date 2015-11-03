@@ -1,10 +1,9 @@
 
-var FIRST = 1, //id first img;
+var FIRST = 5, //id first img;
 	LAST  = data.length,//id last img;
 	NUMBER_OF_IMAGES = data.length,
 	resultContainer = document.querySelector("#result"),
 	countShow = $('#count-image'),
-	resultHTML = "",
 	newGallery,
 	showImage;
 
@@ -28,8 +27,7 @@ showImage = function(item) {
 };
 
 inBetween(FIRST, LAST).forEach(showImage);
-resultContainer.html(resultHTML);
-countShow.html(NUMBER_OF_IMAGES);
+countShow.html(inBetween(FIRST,LAST).length);
 
 function doTemplate (url, name, id, description, date) {
 	for (var i = 0; i < showImage.length; i++ ) {
