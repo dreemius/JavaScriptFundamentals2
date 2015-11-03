@@ -49,7 +49,7 @@ function newDiv() {
 
 		var idName = document.createElement('div');
 		idName.className = 'text-muted';
-		idName.innerHTML = data.id + ':' + cutName(data[i].name);
+		idName.innerHTML = data[i].id + ':' + cutName(data[i].name);
 
 		var descrption = document.createElement('div');
 		descrption.className = 'text-muted';
