@@ -36,26 +36,26 @@ function newDiv() {
 
 	for (var i = 0; i < transformData(); i++ ) {
 
-		var innerContainer = createNewElement('div')
+		var innerContainer = createElement('div')
 			innerContainer.className = "col-sm-3 col-xs-6";
 
-		var img = createNewElement('img');
+		var img = createElement('img');
 		img.src = data[i].url;
 		img.alt = cutName(data[i].name);
 		img.className = "img-thumbnail";
 
-		var infoWrapper = createNewElement('div');
+		var infoWrapper = createElement('div');
 		infoWrapper.className ='info-wrapper' ;
 
-		var idName = createNewElement('div');
+		var idName = createElement('div');
 		idName.className = 'text-muted';
 		idName.innerHTML = data.id + ':' + cutName(data[i].name);
 
-		var descrption = createNewElement('div');
+		var descrption = createElement('div');
 		descrption.className = 'text-muted';
 		descrption.innerHTML = cutDescription(data[i].description)
 
-		var date = createNewElement('div');
+		var date = createElement('div');
 		date.className = 'text-muted';
 		date.innerHTML = ' Дата: ' + dateFormat(data[i].date);
 

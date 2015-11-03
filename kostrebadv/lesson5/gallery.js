@@ -8,10 +8,7 @@ var sliceFrom = --START;
 
 var resultHTML = '';
 
-var element = document.createElement('div');
-element.id = 'result1';
-var container = document.getElementsByClassName('wrapperContainer');
-container.insertBefore (element, container);
+
 
 
 
