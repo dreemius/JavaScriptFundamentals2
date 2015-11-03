@@ -1,7 +1,6 @@
 var total = 0;
-var i = 0;
 var outInner = document.getElementById("result");
-    for(i = 0; i < 15; i++){
+    for(var i = 0; i < 15; i++){
 		var first = Math.floor((Math.random() * 6) + 1); 
         var second = Math.floor((Math.random() * 6) + 1);
 		outInner.innerHTML += "Первая кость:" + first + "Вторая кость:" + second + "<br>";   
