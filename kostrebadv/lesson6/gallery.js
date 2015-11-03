@@ -34,7 +34,7 @@ function transformData  (){
 
 function newDiv() {
 
-	for (var i = 0; i < transformData(); i++ ) {
+	for (var i = 0; i < transformData().length; i++ ) {
 
 		var innerContainer = document.createElement('div')
 			innerContainer.className = "col-sm-3 col-xs-6";
