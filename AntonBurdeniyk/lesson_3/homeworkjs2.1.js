@@ -1,20 +1,19 @@
 var total = 0;
-// var i
+var i = 0;
+var outInner = document.getElementById("result");
     for(i = 0; i < 15; i++){
 		var first = Math.floor((Math.random() * 6) + 1); 
         var second = Math.floor((Math.random() * 6) + 1);
-		document.getElementById("result").innerHTML += "Первая кость:" + first + "Вторая кость:" + second + "<br>";   
+		outInner.innerHTML += "Первая кость:" + first + "Вторая кость:" + second + "<br>";   
 
-		// fix if expression
 		if(first == second){
-			document.getElementById("result").innerHTML += "Выпал дубль." + first + "<br>";
-		} if (first == 1 && second == 1){
-			document.getElementById("result").innerHTML += "Две единицы" + "<br>";
-		} if(first == 6 && second == 6){
-			document.getElementById("result").innerHTML += "Две шестерки" + "<br>";
-		}
-           total += first + second;	
-           document.getElementById("result").innerHTML += total > 100 ? document.getElementById("result").innerHTML = "Победа, вы набрали " + total + "очков" + "<br>" : document.getElementById("result").innerHTML = "Вы проиграли, у вас" + total + "очков" + "<br>";	
-	   
+			outInner.innerHTML += "Выпал дубль." + first + "<br>";
+			if(first == 1 || first == 6){
+				outInner.innerHTML +="Две "+(first == 1 ? "единицы" : "шестерки");
+				outInner.innerHTML +="<br>";
+			}
+		} 
+			total += first + second;	
+			
 	};	
-	    
+	    outInner.innerHTML += total > 100 ? outInner.innerHTML = "Победа, вы набрали " + total + "очков" + "<br>" : outInner.innerHTML = "Вы проиграли, у вас" + total + "очков" + "<br>";
