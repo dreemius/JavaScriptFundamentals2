@@ -14,7 +14,7 @@ function run(){
 		END_P			  = data.length,
 		buffForDivRow	  = 0;
 	(MAX_DISPLAY < (END_P-START_P)) ? END_P = START_P + MAX_DISPLAY : NaN;
-	data.slice(START_P,END_P).forEach(function (item, index){
+	data.slice(START_P,END_P).forEach(function (item){
 		resultHTML += replaceItemTemplate(itemTemplate, item);
 		buffForDivRow++;
 		if (buffForDivRow == 4){
