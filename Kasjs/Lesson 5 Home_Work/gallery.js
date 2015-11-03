@@ -27,13 +27,13 @@ function outputData() {
 	var resultContainer = $('#result');
 	var resultHTML = "";
 	var itemTemplate = '<div class="col-sm-3 col-xs-6">\
-						<img src="$url" alt="$name" class="img-thumbnail">\
-					 <div class="info-wrapper">\
-						<div class="text-muted">$number: $name</div>\
-						<div class="text-muted">$description</div>\
-						<div class="text-muted">$date</div>\
-					</div>\
-					</div>';
+					      <img src="$url" alt="$name" class="img-thumbnail">\
+						  <div class="info-wrapper">\
+						    <div class="text-muted">$number: $name</div>\
+							<div class="text-muted">$description</div>\
+							<div class="text-muted">$date</div>\
+						  </div>\
+						</div>';
 
 
 	for (var i = 0; i < data.length; i++) {

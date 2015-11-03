@@ -4,3 +4,4 @@
 var text1 = 'внешний ';
 var text2 = 'скрипт';
 alert(text1+text2);
+
