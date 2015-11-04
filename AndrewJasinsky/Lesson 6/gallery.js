@@ -33,50 +33,63 @@ function convertGallery() {
 }
 
 // code 6 lesson
-function createNewElement() {
-	return arguments[0].appendChild(document.createElement(arguments[1]));
-}
-function createNewElementNew(params) {
+function createNewElement(params) {
 	var element = params.el.appendChild(document.createElement(params.type));
 	params.className && (element.className = params.className);
+	params.src && (element.src = params.src);
+	params.alt && (element.alt = params.alt);
+	params.innerHTML && (element.innerHTML = params.innerHTML);
 	return element;
 }
 
 function createDOM() {
 		for(var i = 0; i <convertGallery().length; i++ ) {
-
-
-			var containerDOM = createNewElementNew({
+			//create container DOM
+			var containerDOM = createNewElement({
 				el: resultContainer,
 				type: "div",
 				className: "col-sm-3 col-xs-6"
 			});
 
 			//create image DOM
-			var imageDOM = createNewElement(containerDOM,"img")
-				imageDOM.src = convertGallery()[i].url;
-				imageDOM.alt = convertGallery()[i].name;
-				imageDOM.className = "img-thumbnail";
+			var imageDOM = createNewElement({
+				el: containerDOM,
+				type: "img",
+				className: "img-thumbnail",
+				src: convertGallery()[i].url,
+				alt: convertGallery()[i].name
+			});
 
 			//create inner div for text content
-			var innerDOM = createNewElement(containerDOM,"div");
-			innerDOM.className = "info-wrapper";
+			var innerDOM = createNewElement({
+				el: containerDOM,
+				type: "div",
+				className: "info-wrapper",
+			});
 
 			//create id and name DOM (text content)
-			var nameDOM = createNewElement(innerDOM,"div");
-			nameDOM.className = "text-muted";
-			nameDOM.innerHTML = convertGallery()[i].id + ": " + convertGallery()[i].name;
+			var nameDOM = createNewElement({
+				el: innerDOM,
+				type: "div",
+				className: "text-muted",
+				innerHTML: convertGallery()[i].id + ": " + convertGallery()[i].name
+			});
 
 			//create description DOM (text content)
-			var descriptionDOM = createNewElement(innerDOM,"div");
-			descriptionDOM.className = "text-muted";
-			descriptionDOM.innerHTML = convertGallery()[i].description;
+			var descriptionDOM = createNewElement({
+				el: innerDOM,
+				type: "div",
+				className: "text-muted",
+				innerHTML: convertGallery()[i].description
+			});
 
 			//create date DOM (text content)
-			var dateDOM = createNewElement(innerDOM,"div");
-			dateDOM.className = "text-muted";
-			dateDOM.innerHTML = convertGallery()[i].date;
-
+			var dateDOM = createNewElement({
+				el: innerDOM,
+				type: "div",
+				className: "text-muted",
+				innerHTML: convertGallery()[i].date
+			});
 		}
 	}
 
