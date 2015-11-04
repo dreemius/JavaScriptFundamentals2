@@ -34,7 +34,7 @@ function getFiltredData(arr, param) {
 	if (arr && param) {
 		var maxItemIndex = param.itemsShowCount + param.firstItemIndex - 1;
 		return arr.filter(function(item, i) {
-			return  ( i >= param.firstItemIndex && i <= param.lastItemIndex && i <= maxItemIndex) ? true : false;
+			return  i >= param.firstItemIndex && i <= param.lastItemIndex && i <= maxItemIndex;
 		});
 	};
 }

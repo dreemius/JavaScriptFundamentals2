@@ -4,13 +4,13 @@
               return Math.floor((Math.random() * 6) + 1);
             }
 	 function printText(first,second){
-	          return print.innerHTML+= "Первая кость: " + first + " Вторая кость: " + second + "<br>";
-	        }
-     function specialResult(first,second){
+	          return  first==second ? print.innerHTML+= "Первая кость: " + first + " Вторая кость: " + second + "<br>"+"Выпал дубль =)" + "<br>":print.innerHTML+="Первая кость: " + first + " Вторая кость: " + second + "<br>";			  
+			}
+     function printSpecialResult(first,second){
         if (first == second && (first == 1 || second == 6) ) 
-              return print.innerHTML+= "Выпал дубль. Число: " + first + "<br>";
+              return print.innerHTML+= "Число: " + first + "<br>";
             }
-     function totalSum (first,second){
+     function calcTotalSum (total){
 			  return (total > 100) ? print.innerHTML+= "Победа, вы набрали " + total + " очков."
                                     :print.innerHTML+= "Вы проиграли, у вас " + total + " очков."; 
             }			
@@ -19,9 +19,9 @@
              var first = getRndNumber(),
                  second = getRndNumber();
 	         printText(first,second);
-		     specialResult(first,second);
+		     printSpecialResult(first,second);
 		     total += first + second;
         }
-		     totalSum (first,second);    	
+		     calcTotalSum (total);    	
         }
   run();

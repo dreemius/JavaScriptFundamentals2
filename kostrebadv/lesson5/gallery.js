@@ -1,8 +1,3 @@
-var START = 2;
-var END = 9;
-
-
-var sliceFrom = --START;
 
 var resultHTML = '';
 
@@ -30,14 +25,11 @@ var cutName = function (name) {
 
 };
 
-
 var cutDescription = function (str){
 	return str.slice(0,15)
 }
 
-
-data.slice(sliceFrom, END).forEach(function(item, index){
-
+data.forEach(function(item, index){
          resultHTML += innertHtml
              .replace('$url', item.url)
              .replace('$id',item.id)
