@@ -1,48 +1,55 @@
 run();
 function run(){
-	var classOf4Div		  = "row"; 
-	var resultHTML 	 	  = createNewDiv(classOf4Div, "");
 	var MAX_DISPLAY		  = data.length,
 		START_P			  = 0,
-		END_P			  = data.length,
-		buffForDivRow	  = 0;
-	(MAX_DISPLAY < (END_P-START_P)) ? END_P = START_P + MAX_DISPLAY : NaN;
-	data.slice(START_P,END_P).forEach(function (item, index){
-		resultHTML.appendChild(createNewDiv("col-sm-3 col-xs-6", ""));
-		resultHTML.lastChild.appendChild(createNewImage("img-thumbnail", item));
-		resultHTML.lastChild.appendChild(createNewInfoDiv("info-wrapper","text-muted", item));
-		buffForDivRow++;
-		if (buffForDivRow == 4){
-			resultHTML.id = "id_"+index;
-			buffForDivRow = 0;
-			loadInHTML(resultHTML);
-			resultHTML	  = createNewDiv(classOf4Div,"");
-		}
-	});
-	if(buffForDivRow != 0){loadInHTML(resultHTML);}
+		END_P			  = 9,
+		COUNT_IN_LINE	  = 4;
+	var resultContainer	  = document.getElementById('container');
+	var classes  = ["row", "col-sm-3 col-xs-6", "img-thumbnail", "info-wrapper", "text-muted"]; 
+	var resultHTML 	 	  = createNewElement("div", {class : classes[0]});
+	var dataNew			  = cutData(data, START_P, END_P, MAX_DISPLAY);
+	if (dataNew.length){
+		dataNew.forEach(function (item, index){
+			resultHTML.appendChild(createNewElement("div",{class: classes[1]}));
+			resultHTML.lastChild.appendChild(createNewElement("img",{
+					class : classes[2],
+					src	  : item.url,
+					alt	  : correctName(item.name)
+				}));
+			resultHTML.lastChild.appendChild(createNewInfoDiv(classes, item));
+			if (!doMod(index, COUNT_IN_LINE)){
+				loadInHTML(resultContainer, resultHTML);
+				resultHTML	  = createNewElement("div", {class : classes[0]});
+			}
+		});
+		if(doMod(dataNew.length, COUNT_IN_LINE)){loadInHTML(resultContainer, resultHTML);}
+	}else{
+		alert("ERROR 1 : Dont have images to print")
+	}
+	
 }
-function loadInHTML(newChild){
-	var resultContainer = document.getElementById('container');
+function loadInHTML(resultContainer, newChild){
 	resultContainer.appendChild(newChild);
 }
-function createNewDiv(nameOfClass, toTheHTML){
-	var itemTemp 	   = document.createElement('div');
-	itemTemp.className = nameOfClass;
-	itemTemp.innerHTML = toTheHTML;
+function doMod(number, COUNT_IN_LINE){
+	return ((++number) % COUNT_IN_LINE);
+}
+function cutData(data, start, end, MAX_DISPLAY){
+	return data.slice(start,++end).slice(0,MAX_DISPLAY);
+}
+function createNewElement(classElement,attribut, toTheHTML){
+	var itemTemp 	   = document.createElement(classElement);
+	for(var atr in attribut){
+		itemTemp.setAttribute(atr, attribut[atr]);
+	}
+	toTheHTML && (itemTemp.innerHTML = toTheHTML);
 	return itemTemp;
 }
-function createNewImage(nameOfClass, item){
-	var itemTemp 	   = document.createElement('img');
-	itemTemp.src 	   = item.url;
-	itemTemp.className = nameOfClass;
-	itemTemp.alt 	   = item.name;
-	return itemTemp;
-}
-function createNewInfoDiv(classParent, classChild, item){
-	var itemTemp = createNewDiv(classParent, "");
-	itemTemp.appendChild(createNewDiv(classChild, (item.id+": "+item.name))); 
-	itemTemp.appendChild(createNewDiv(classChild, cutDescription(item.description)));
-	itemTemp.appendChild(createNewDiv(classChild, formateDate(new Date(item.date))));
+function createNewInfoDiv(classes, item){
+	var itemTemp = createNewElement("div", {class : classes[3]}, "");
+	itemTemp.appendChild(createNewElement("div",{class : classes[4]}, (item.id+": "+correctName(item.name)))); 
+	itemTemp.appendChild(createNewElement("div",{class : classes[4]}, cutDescription(item.description)));
+	itemTemp.appendChild(createNewElement("div",{class : classes[4]}, formateDate(new Date(item.date))));
 	return itemTemp;
 }
 function correctName(name){
