@@ -7,12 +7,12 @@ function run(){
 		resultHTML.appendChild(creatPicture(item));
 		countImgInDiv++;
 		if(countImgInDiv == 4){
-			printAll(resultHTML);
+			printResult(resultHTML);
 			countImgInDiv = 0;
 			resultHTML = creatDiv('row','');
 		}
 	});
-	if (countImgInDiv != 0) {printAll(resultHTML);}
+	if (countImgInDiv != 0) {printResult(resultHTML);}
 }
 function creatPicture(item){
 	var majorDiv = creatDiv('col-sm-3 col-xs-6','');
@@ -36,7 +36,7 @@ function creatImg(urlImg, name, nameClass){
 	newImg.className = nameClass;
 	return newImg;
 }
-function printAll(resultHTML){
+function printResult(resultHTML){
 	var resultContainer = document.getElementById('container');
 	resultContainer.appendChild(resultHTML);
 }
