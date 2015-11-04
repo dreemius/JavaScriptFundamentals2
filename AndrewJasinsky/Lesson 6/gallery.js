@@ -36,13 +36,21 @@ function convertGallery() {
 function createNewElement() {
 	return arguments[0].appendChild(document.createElement(arguments[1]));
 }
+function createNewElementNew(params) {
+	var element = params.el.appendChild(document.createElement(params.type));
+	params.className && (element.className = params.className);
+	return element;
+}
 
 function createDOM() {
 		for(var i = 0; i <convertGallery().length; i++ ) {
 
-			//create container DOM
-			var containerDOM = createNewElement(resultContainer,"div");
-			containerDOM.className = "col-sm-3 col-xs-6";
+
+			var containerDOM = createNewElementNew({
+				el: resultContainer,
+				type: "div",
+				className: "col-sm-3 col-xs-6"
+			});
 
 			//create image DOM
 			var imageDOM = createNewElement(containerDOM,"img")

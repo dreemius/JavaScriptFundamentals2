@@ -1,17 +1,5 @@
-var START = 4;
-var END = 9;
-
-var TOTAL_ELEM = 3;
-
-
-var sliceFrom = --START;
 
 var resultHTML = '';
-
-
-
-
-
 
 var innertHtml = '<div class="col-sm-3 col-xs-6">\
 			<img src="$url" alt="$name" class="img-thumbnail">\
@@ -37,33 +25,23 @@ var cutName = function (name) {
 
 };
 
-
 var cutDescription = function (str){
 	return str.slice(0,15)
 }
 
-var transformData = function (){
-	return data.slice(sliceFrom, END).slice(0,TOTAL_ELEM);
+data.forEach(function(item, index){
+         resultHTML += innertHtml
+             .replace('$url', item.url)
+             .replace('$id',item.id)
+             .replace(/\$name/gi, cutName(item.name))
+             .replace('$description', cutDescription(item.description))
+             .replace('$date', dateFormat(item.date))
+
+
 }
-
-
-transformData().forEach(function(item) {
-
-
-
-			resultHTML += innertHtml
-				.replace('$url', item.url)
-				.replace('$id', item.id)
-				.replace(/\$name/gi, cutName(item.name))
-				.replace('$description', cutDescription(item.description))
-				.replace('$date', dateFormat(item.date))
-
-
-	}
 );
 
 document.getElementById("result").innerHTML += resultHTML;
-
 
 
 

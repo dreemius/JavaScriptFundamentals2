@@ -7,11 +7,11 @@
 <body>
 <script>
   var variable = "11";
-    console.log(typeof variable);
-      variable = +"11";
-    console.log(typeof variable);
-      variable = !!variable;
-    console.log(typeof variable);
+  console.log(variable);
+  variable = Number(variable);
+  console.log(variable);
+  variable = Boolean(variable);
+  console.log(variable);
 
 
 
