@@ -34,7 +34,6 @@ function formatObject () {
 		formatDate(newData,i);
 	}
 	return newData;
-
 }
 
 function create(element) {
@@ -49,9 +48,6 @@ function createImage (elem,obj,index){
 function fillDiv(elem,value) {
 	elem.className = value;
 	return elem;
-}
-function idOutput (){
-
 }
 
 function outputData() {
