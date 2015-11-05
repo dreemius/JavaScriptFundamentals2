@@ -1,3 +1,5 @@
+"use strict";
+
 var START_P = 0,
 	END_P = 8,
 	TOTAL_EL = 10;
@@ -7,11 +9,11 @@ showGallery();
 //_____________________________________________________________________________________________________________________________________________________________
 
 function newName(oldName){
-   return oldName[0].toLocaleUpperCase()+oldName.slice(1).toLocaleLowerCase();
+	return oldName[0].toLocaleUpperCase()+oldName.slice(1).toLocaleLowerCase();
 };
 
 function newDescr(descr){
-    return descr.slice(0,15);
+	return descr.slice(0,15);
 };
 
 function newDate(date){
@@ -23,9 +25,9 @@ function newDate(date){
            tmpDate.getMinutes();
 };
 
-function filterData() {
+function transformData() {
 	var filterGallery = data.slice(START_P, END_P);
-	return filterGallery.slice(0, TOTAL_EL).filter(function(item) {
+	return filterGallery.slice(0, TOTAL_EL).map(function(item) {
 		item.name = newName(item.name);
 		item.description = newDescr(item.description);
 		item.date = newDate(item.date);
@@ -43,47 +45,47 @@ function createNewElement(paramSet) {
 }
 
 function showGallery() {
-		for(var i = 0; i < filterData().length; i++ ) {
+		for(var i = 0; i < transformData().length; i++ ) {
 			var resultContainer = document.querySelector("#result");
 			var containerCreate = createNewElement({
-				el: resultContainer,
-				type: "div",
-				className: "col-sm-3 col-xs-6"
+					el: resultContainer,
+					type: "div",
+					className: "col-sm-3 col-xs-6"
 			});
 			
 			var imageShow = createNewElement({
-				el: containerCreate,
-				type: "img",
-				className: "img-thumbnail",
-				src: filterData()[i].url,
-				alt: filterData()[i].name
+					el: containerCreate,
+					type: "img",
+					className: "img-thumbnail",
+					src: transformData()[i].url,
+					alt: transformData()[i].name
 			});
 
 			var innerPrint = createNewElement({
-				el: containerCreate,
-				type: "div",
-				className: "info-wrapper"
+					el: containerCreate,
+					type: "div",
+					className: "info-wrapper"
 			});
 
 			var namePrint = createNewElement({
-				el: innerPrint,
-				type: "div",
-				className: "text-muted",
-				innerHTML: filterData()[i].id + ": " + filterData()[i].name
+					el: innerPrint,
+					type: "div",
+					className: "text-muted",
+					innerHTML: transformData()[i].id + ": " + transformData()[i].name
 			});
 
 			var descriptionPrint = createNewElement({
-				el: innerPrint,
-				type: "div",
-				className: "text-muted",
-				innerHTML: filterData()[i].description
+					el: innerPrint,
+					type: "div",
+					className: "text-muted",
+					innerHTML: transformData()[i].description
 			});
 			
 			var datePrint = createNewElement({
-				el: innerPrint,
-				type: "div",
-				className: "text-muted",
-				innerHTML: filterData()[i].date 
+					el: innerPrint,
+					type: "div",
+					className: "text-muted",
+					innerHTML: transformData()[i].date 
 			});
 		}
 }
