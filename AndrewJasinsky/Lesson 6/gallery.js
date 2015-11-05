@@ -1,6 +1,5 @@
 //global variables
-var filteredGallery,
-	resultContainer = document.querySelector("#result"); // new variable for 6 lesson
+var resultContainer = document.querySelector("#result"); // new variable for 6 lesson
 
 //constants
 var DISPLAYED_IMAGES=+prompt("Enter the number of displayed images:", "Any number in the range from 1 to 10"),
@@ -23,8 +22,8 @@ function convertDate(date){
 
 //filter initial array
 function convertGallery() {
-	filteredGallery = data.slice(START_POSITION,STOP_POSITION);
-	return filteredGallery.slice(0,DISPLAYED_IMAGES).filter(function(item) {
+	var filteredGallery = data.slice(START_POSITION,STOP_POSITION).slice(0,DISPLAYED_IMAGES);
+	return filteredGallery.map(function(item) {
 		item.name = convertName(item.name);
 		item.description = convertDescription(item.description);
 		item.date = convertDate(item.date);
