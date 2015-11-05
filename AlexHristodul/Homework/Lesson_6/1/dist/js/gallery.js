@@ -1,12 +1,20 @@
-var newName = function(oldName){
+var START_P = 0,
+	END_P = 8,
+	TOTAL_EL = 10;
+	
+showGallery();
+
+//_____________________________________________________________________________________________________________________________________________________________
+
+function newName(oldName){
    return oldName[0].toLocaleUpperCase()+oldName.slice(1).toLocaleLowerCase();
 };
 
-var newDescr = function(descr){
+function newDescr(descr){
     return descr.slice(0,15);
 };
 
-var newDate = function(date){
+function newDate(date){
     var tmpDate = new Date(date);
     return tmpDate.getFullYear() + "/" +
            tmpDate.getMonth() + 1 + "/" +
@@ -15,32 +23,67 @@ var newDate = function(date){
            tmpDate.getMinutes();
 };
 
-var mainDiv = document.getElementById('result');
+function filterData() {
+	var filterGallery = data.slice(START_P, END_P);
+	return filterGallery.slice(0, TOTAL_EL).filter(function(item) {
+		item.name = newName(item.name);
+		item.description = newDescr(item.description);
+		item.date = newDate(item.date);
+		return item;
+	})
+}
 
-var secondDiv = document.createElement('div');
-    secondDiv.className = "col-sm-3 col-xs-6";
-    mainDiv.appendChild(secondDiv);
-	
-var imgURL = document.createElement('img');
-	imgURL.src = data[0].url;
-	imgURL.className = 'img-thumbnail';
-	secondDiv.appendChild(imgURL);
-		
-var thirdDiv = document.createElement('div');
-	thirdDiv.className = "info-wrapper";
-	secondDiv.appendChild(thirdDiv);
- 
-var lastDiv1 = document.createElement('div');
-	lastDiv1.className = "text-muted";
-	lastDiv1.innerHTML = data[0].id + ' ' + newName(data[0].name);
-	thirdDiv.appendChild(lastDiv1);
-	
-var lastDiv2 = document.createElement('div');
-	lastDiv2.className = "text-muted";
-	lastDiv2.innerHTML = newDescr(data[0].description);
-	thirdDiv.appendChild(lastDiv2);
-	
-var lastDiv3 = document.createElement('div');
-	lastDiv3.className = "text-muted";
-	lastDiv3.innerHTML = newDate(data[0].date);
-	thirdDiv.appendChild(lastDiv3);
+function createNewElement(paramSet) {
+	var element = paramSet.el.appendChild(document.createElement(paramSet.type));
+	paramSet.className && (element.className = paramSet.className);
+	paramSet.src && (element.src = paramSet.src);
+	paramSet.alt && (element.alt = paramSet.alt);
+	paramSet.innerHTML && (element.innerHTML = paramSet.innerHTML);
+	return element;
+}
+
+function showGallery() {
+		for(var i = 0; i < filterData().length; i++ ) {
+			var resultContainer = document.querySelector("#result");
+			var containerCreate = createNewElement({
+				el: resultContainer,
+				type: "div",
+				className: "col-sm-3 col-xs-6"
+			});
+			
+			var imageShow = createNewElement({
+				el: containerCreate,
+				type: "img",
+				className: "img-thumbnail",
+				src: filterData()[i].url,
+				alt: filterData()[i].name
+			});
+
+			var innerPrint = createNewElement({
+				el: containerCreate,
+				type: "div",
+				className: "info-wrapper"
+			});
+
+			var namePrint = createNewElement({
+				el: innerPrint,
+				type: "div",
+				className: "text-muted",
+				innerHTML: filterData()[i].id + ": " + filterData()[i].name
+			});
+
+			var descriptionPrint = createNewElement({
+				el: innerPrint,
+				type: "div",
+				className: "text-muted",
+				innerHTML: filterData()[i].description
+			});
+			
+			var datePrint = createNewElement({
+				el: innerPrint,
+				type: "div",
+				className: "text-muted",
+				innerHTML: filterData()[i].date 
+			});
+		}
+}
