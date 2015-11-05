@@ -1,58 +1,82 @@
 
-// это тестовый объект чтоб показать как вставлять в HTML
-// вам надо пользоваться верхним 
-
-var FROM = 1, TO = 5,NUMBER_OF_ELEMENTS = 10;
+var FROM = 1, TO = 10,NUMBER_OF_ELEMENTS = 10;
+var newData = [];
 //Simplest filter of the object
 function filterObject() {
-	data.length = NUMBER_OF_ELEMENTS;
-	data = data.slice(FROM - 1, TO);
+
+	newData = data.splice(NUMBER_OF_ELEMENTS) ;
+	newData = data.slice(FROM - 1, TO);
 }
-filterObject();
+
+function formatDate(obj,index){
+	var formDate = new Date(obj[index].date);
+	var year = formDate.getFullYear();
+	var month = formDate.getMonth() + 1;
+	var day = formDate.getDate();
+	var hour = formDate.getHours() + 1;
+	var minutes = formDate.getMinutes() + 1;
+	obj[index].date = year + "/" + month + "/" + day + " " + (hour < 10 ? "0" + hour : hour) + ":" + (minutes < 10 ? "0" + minutes : minutes);
+
+	return obj;
+}
+
+function preparingObj(obj,index){
+	obj[index].name = obj[index].name.toLowerCase();
+	obj[index].name = obj[index].name.replace(/[^abc]/,obj[index].name.charAt(0).toUpperCase());
+	obj[index].description = obj[index].description.slice(0, 15);
+
+	return obj;
+}
 // format object to required layout
 function formatObject () {
-	for (var i = 0; i < data.length; i++) {
-		data[i].name = data[i].name.toLowerCase();
-		data[i].name = data[i].name.replace(/[^abc]/,data[i].name.charAt(0).toUpperCase());
-		data[i].description = data[i].description.slice(0, 15);
-		data[i].date = new Date(data[i].date).toISOString();
-		data[i].date = data[i].date.replace(/-/g, "/").replace(/t/i, " ").replace(/.637z/i, "");
-		data[i].date = data[i].date.slice(0, 16);
+	for (var i = 0; i < newData.length; i++) {
+		preparingObj(newData,i);
+		formatDate(newData,i);
 	}
-	return data;
+	return newData;
 }
-formatObject();
+
+function create(element) {
+	return document.createElement(element);
+}
+function createImage (elem,obj,index){
+	elem.src = obj[index].url;
+	elem.alt = obj[index].alt;
+	elem.className = 'img-thumbnail';
+	return elem;
+}
+function fillDiv(elem,value) {
+	elem.className = value;
+	return elem;
+}
 
 function outputData() {
-	function create(element){
-		return document.createElement(element);
-	}
-	for(var i = 0;i < data.length;i++) {
+
+	formatObject();
+	for (var i = 0; i < newData.length; i++) {
 		// create the element
 		var divContainer = create('div');
 		divContainer.className = 'col-sm-3 col-xs-6';
 
 		var image = create('img');
-		image.src = data[i].url;
-		image.alt = data[i].name;
-		image.className = 'img-thumbnail';
-
+		createImage(image,newData,i);
 
 		var divInner = create('div');
-		divInner.className = 'info-wrapper';
+		fillDiv(divInner,'info-wrapper');
 
 		var divNumber = create('div');
-		divNumber.className = 'text-muted';
-		divNumber.innerHTML = data[i].id + ": "  + data[i].name;
+		fillDiv(divNumber,'text-muted');
+		divNumber.innerHTML = newData[i].id + ": " + newData[i].name;
 
 		var divDescription = create('div');
-		divDescription.className = 'text-muted';
-		divDescription.innerHTML = data[i].description;
+		fillDiv(divDescription,'text-muted');
+		divDescription.innerHTML = newData[i].description;
 
 		var divDate = create('div');
-		divDate.className = 'text-muted';
-		divDate.innerHTML = data[i].date;
-        // insert the element
+		fillDiv(divDate,'text-muted');
+		divDate.innerHTML = newData[i].date;
+		// insert the element
+
 		var divResult = document.getElementById('result');
 		divResult.appendChild(divContainer);
 		divContainer.appendChild(image);
@@ -62,6 +86,7 @@ function outputData() {
 		divInner.appendChild(divDate);
 	}
 }
+filterObject();
 outputData();
 
 
