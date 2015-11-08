@@ -21,7 +21,7 @@ var elementShow = 4,
            tmpDate.getHours() + ":" +
            tmpDate.getMinutes();
 }
- 	function changeArray(newArray){
+ 	function changeArray(){
 		for(var i = 0; i<newArray.length;i++){
 			newArray[i].name = nameObj(newArray[i].name);
 			newArray[i].description = descriptionObj(newArray[i].description);
@@ -39,7 +39,7 @@ var elementShow = 4,
 					<div class="text-muted">$date</div>\
 				</div>\
 			</div>';
-	function printPhotos(newArray){
+	function printPhotos(){
 		for (var j=0; j<newArray.length;j++){
 	resultHTML += itemTemplate
 	.replace("$number", newArray[j].id)
@@ -51,10 +51,10 @@ var elementShow = 4,
 	return resultContainer.html(resultHTML);
 }
 
-function init(newArray){
-	changeArray(newArray);
-	printPhotos(newArray);
+function init(){
+	changeArray();
+	printPhotos();
 
 };
-init(newArray);
+init();
 
