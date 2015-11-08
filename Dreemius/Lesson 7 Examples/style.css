@@ -1,0 +1,22 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+.info-wrapper {
+	padding: 0 5px;
+}
+
+.red {
+	border:2px solid red; padding: 10px;
+}
+.green{
+	border:1px solid green; padding: 10px
+}
+.blue{
+	border:1px solid blue; padding: 10px
+}
