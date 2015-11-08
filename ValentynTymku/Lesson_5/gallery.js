@@ -1,5 +1,5 @@
 var ROW_ITEMS_COUNT = 4;
-var ITEMS_SHOW_COUNT = 100;
+var ITEMS_SHOW_COUNT = 1;
 var FIRST_ITEM_INDEX = 0; //Indexes starts with 0
 var LAST_ITEM_INDEX = 55;
 

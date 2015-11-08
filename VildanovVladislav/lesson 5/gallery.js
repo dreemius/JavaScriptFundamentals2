@@ -16,8 +16,9 @@ function changeName(correctName){
 function cutDescription(correctDescription){
 	return correctDescription.slice(0,15);
 }
-function newDate(datef){
-	return datef.getFullYear()+'/'+datef.getMonth()+'/'+datef.getDate()+' '+datef.getHours()+':'+datef.getMinutes();
+function newDate(date){
+	return date.getFullYear()+'/'+(date.getMonth()+1)+'/'+date.getDate()+' '+date.getHours()+':'+date.getMinutes();
+}
 
 data.forEach(function(item, index){
 if(index<elements){
@@ -26,7 +27,9 @@ if(index<elements){
 	.replace(/\$name/gi, changeName(item.name))
 	.replace("$url", item.url)
 	.replace("$description", cutDescription(item.description))
-	.replace("$date", newDate(item.date));
+	.replace("$date", newDate(new Date(item.date)));
 }
 });
 resultContainer.html(resultHTML);
+
+
