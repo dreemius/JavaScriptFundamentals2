@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Template for homework5</title>
+    <title>Template for homework7</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -46,13 +46,47 @@
 
     <div class="container">
 
-		<div class="starter-template">
-			<h1>JS Fundamentals first demo page</h1>
-			<p class="lead">Simple galley builder</p>
+		<p class="lead">Задание 1</p>
+		<div class="row">
+			<div class="col-xs-6">
+				  <div class="form-group">
+					<label for="exampleInputName2">Текст</label>
+					<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+				  </div>
+				  <button id="buttonClear"  type="submit" class="btn btn-default">Стереть</button>
+			</div>
+			<div class="col-xs-6">
+				<textarea id="textareaTask1" class="form-control" rows="3"></textarea>
+			</div>
 		</div>
+	
+		<br>
+		<br>
+		<br>
+		<p class="lead">Задание 2</p>
+		<br>
+		<button id="buttonLoad"  type="submit" class="btn btn-default">Load</button>
+		<input type="text" class="form-group" placeholder="Start">
+		<input type="text" class="form-group" placeholder="End">
+		<input type="text" class="form-group" placeholder="Count">
+		<br>
+		<div class="row">
+			<div class="col-xs-12">
+				<button id="buttonAdd" type="button" class="btn btn-sm btn-success">+ Добавить новый элемент</button>
+			</div>
+		</div>
+		<br>
+		<div id="test" class="row"></div>
+		<br>
+		<div class="row">
+			<div class="col-xs-12">
+				<span class="text-success">Общее колличество:</span><span id="count">0</span>
+			</div>
+		</div>
+		<br>
+		<hr>
+		<br>
 
-		
-		<div id="result" class="row"></div>
 
     </div><!-- /.container -->
 
@@ -64,5 +98,6 @@
     <script src="dist/js/bootstrap.min.js"></script>
 	<script src="data.js"></script>
     <script src="gallery.js"></script>
+	<script src="task1.js"></script>
   </body>
 </html>

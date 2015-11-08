@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Template for homework5</title>
+    <title>Homework_7</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -46,13 +46,46 @@
 
     <div class="container">
 
-		<div class="starter-template">
-			<h1>JS Fundamentals first demo page</h1>
-			<p class="lead">Simple galley builder</p>
+		<p class="lead">Задание 1</p>
+		<div class="row">
+			<div class="col-xs-6">
+				  <div class="form-group">
+					<label for="exampleInputName2">Текст</label>
+					<input type="text" class="form-control" id="exampleInputName2" placeholder="Write right here">
+				  </div>
+				  <button type="submit" class="btn btn-default" id="btn">Стереть</button>
+			</div>
+			<div class="col-xs-6">
+				<textarea class="form-control" rows="3" placeholder="See right here"></textarea>
+			</div>
 		</div>
-
+	
+		<br>
+		<br>
+		<br>
+		<p class="lead">Задание 2</p>
 		
-		<div id="result" class="row"></div>
+		
+		<div class="row">
+			<div class="col-xs-12">
+				<button type="button" class="btn btn-sm btn-success" id="addNewPicture">+ Добавить новый элемент</button>
+			</div>
+		</div>
+		<br>
+		
+		<div id="result" class="row">
+		</div>
+		
+		<br>
+		<div class="row">
+			<div class="col-xs-12">
+				<span class="text-success">Общее колличество:</span><span id="count">0</span>
+			</div>
+		</div>
+		<br>
+		<hr>
+		<br>
+
 
     </div><!-- /.container -->
 
@@ -63,6 +96,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
 	<script src="data.js"></script>
-    <script src="gallery.js"></script>
+	<script src="exercise_1.js"></script>
+	<script src="exercise_2.js"></script>
+
   </body>
 </html>
