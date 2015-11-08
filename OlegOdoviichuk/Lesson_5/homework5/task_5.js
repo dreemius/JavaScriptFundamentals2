@@ -24,13 +24,15 @@ function createDateObject(date){
 	tmpDate.getHours() + ":" +
 	tmpDate.getMinutes();
 };
+function changeOptions() {
 for(var i = 0; i < newArr.length;i++) {
 	
 	newArr[i].name = changeName(newArr[i].name);
 	newArr[i].description = sliceDescription(newArr[i].description);
 	newArr[i].date = createDateObject(newArr[i].date);
 	
-}
+    }
+};
 var resultContainer = $('#result');
 var resultHTML = "";
 var itemTemplate = '<div class="col-sm-3 col-xs-6">\
@@ -53,5 +55,9 @@ function printResult(arrObj){
 	}
 	return resultContainer.html(resultHTML);
 }
+function start(){
+	changeOptions();
+	printResult(newArr);
 
-printResult(newArr);
+};
+start();

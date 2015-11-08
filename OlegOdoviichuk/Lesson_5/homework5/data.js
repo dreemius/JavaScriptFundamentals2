@@ -31,7 +31,7 @@ var data = [{
 	date : 1402153200637
 },{
 	url: "http://desktopwallpapers.org.ua/mini/201507/40064.jpg",
-	name: "МЕРСЕДЕС",
+	name: "AUDI",
 	id : 6,
 	description : "om the content itself (the visible text of the button)",
 	date : 1442153200637
