@@ -1,8 +1,6 @@
 var START = 1;
 var END = 7;
 var SHOW_IMAGES = 6;
-
-var resultContainer = $('#result');
 var result = document.getElementById('result');
 var newGallery;
 
@@ -34,23 +32,38 @@ function convertGallery() {
 	})
 }	
 
-
-
-function createWrapContent(){
-		var column = document.createElement('div');
-		column.className = 'col-sm-3 col-xs-6';
-		result.appendChild(column);
-		return column;
+function getContent(param1, param2, param3) {
+	var el = document.createElement(param1);
+		el.className = param2;
+		el.innerHTML = param3;
+		return el;
 }
 
-function content() {
-	createWrapContent();	
+
+function setContent() {
+	var txtClass = 'text-muted';
+			
 	convertGallery().forEach(function(i){
-		var el = document.createElement('div');
-		el.className = 'text-muted';
-		el.innerHTML = i.id + ": " + i.name;
-		column = document.getElementsByClassName("col-sm-3 col-xs-6");
-		column.appendChild(el);
+		var container = getContent('div','col-sm-3 col-xs-6','');
+		result.appendChild(container);		
+		
+		var img = getContent('img',"img-thumbnail",'');
+		img.src = i.url;
+		img.alt = i.name;
+		container.appendChild(img);
+		
+		var wrapper = getContent('div','info-wrapper','');
+		container.appendChild(wrapper);
+		
+		var number = getContent('div', txtClass , i.id + ': ' + i.name);
+		wrapper.appendChild(number);
+		
+		var desc = getContent('div', txtClass , i.description);
+		wrapper.appendChild(desc);
+		
+		var date = getContent('div', txtClass , i.date);
+		wrapper.appendChild(date);
+
 	});
 	
 }
@@ -58,5 +71,5 @@ function content() {
 
 
 
-content();
+setContent();
 			
