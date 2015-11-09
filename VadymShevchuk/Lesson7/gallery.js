@@ -74,11 +74,19 @@ btn3.addEventListener("click",customOutput);
 
 function customOutput(event){
 	event.preventDefault();
-	startPos=document.getElementById('from');
-	finalPos=document.getElementById('to');
-	filter(data);
-	for (var i=startPos; i < data.length; i++)
-	addItem(i);
+	startPos=document.getElementById('from').value;
+	finalPos=document.getElementById('to').value;
+	if (finalPos>maxItem){
+		alert("Превышен максимум");
+	}
+	else {
+		k = finalPos;
+		filter(data);
+		for (var i = 0; i < data.length; i++) {
+			addItem(i);
+		}
+		document.getElementById("count").innerHTML ="Количество элементов: " + k;
+	}
 }
 
 function output(event) {
@@ -91,7 +99,8 @@ function output(event) {
 	}
 	if (event.target.id == "btn2") {
 		var del = document.getElementsByName('container');
-		del.parentNode.parentNode.removeChild(del.parentNode);
+		del.removeChild(del.parentNode);
 
 	}
+	document.getElementById("count").innerHTML ="Количество элементов: " + k;
 }
