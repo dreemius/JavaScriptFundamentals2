@@ -25,30 +25,30 @@ var data = [{
 	date : 1428153200637
 },{
 	url: "http://desktopwallpapers.org.ua/mini/201507/40066.jpg",
-	name: "ИМЯ МАШИНЫ",
+	name: "MINI COOPER",
 	id : 5,
 	description : "color to add meaning to a button only provides",
 	date : 1402153200637
 },{
 	url: "http://desktopwallpapers.org.ua/mini/201507/40064.jpg",
-	name: "МЕРСЕДЕС",
+	name: "AUDI",
 	id : 6,
 	description : "om the content itself (the visible text of the button)",
 	date : 1442153200637
 },{
-	url: "http://desktopwallpapers.org.ua/mini/201507/40063.jpg",
+	url: "http://desktopwallpapers.org.ua/mini/201507/40059.jpg",
 	name: "БМВ",
 	id : 7,
 	description : "r is either obvious from the content itself",
 	date : 1482153200637
 },{
 	url: "http://desktopwallpapers.org.ua/mini/201507/40062.jpg",
-	name: "ЛАДА КАЛИНА",
+	name: "MAD MAX",
 	id : 8,
 	description : "included through alternative means, such as additional text hidden with the",
 	date : 1442153200637
 },{
-	url: "http://desktopwallpapers.org.ua/mini/201507/40059.jpg",
+	url: "http://desktopwallpapers.org.ua/mini/201507/40063.jpg",
 	name: "ДЖИП",
 	id : 9,
 	description : " meaning to a button only provides a visual",

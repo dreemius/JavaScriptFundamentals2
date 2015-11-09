@@ -12,15 +12,15 @@ function run(){
 			</div>';
 	data.splice(0,MAX_PICTURE).forEach(function(item){
 		resultHTML += itemTemplate
+			.replace("$url", item.url)
 			.replace("$number", item.id)
 			.replace(/\$name/gi, changeName(item.name))
-			.replace("$url", item.url)
 			.replace("$description", changeDescription(item.description))
 			.replace("$date", changeDate(item.date));
 	});
-	printAll(resultHTML);
+	printResult(resultHTML);
 }
-function printAll(resultHTML){
+function printResult(resultHTML){
 	var resultContainer = $('#result');
 	resultContainer.html(resultHTML);
 }
