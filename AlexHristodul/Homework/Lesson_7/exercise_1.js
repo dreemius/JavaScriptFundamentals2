@@ -15,5 +15,5 @@ function handleEvent(){
 
 function cleanData(){
 	input.value = "";
-	handleEvent();
+	textArea.value = "";
 }
