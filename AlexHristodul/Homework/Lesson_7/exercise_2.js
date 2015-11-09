@@ -5,8 +5,7 @@ var resultContainer = document.querySelector('#result'),
 	addNewPicture = document.querySelector('#addNewPicture'),
 	countPictures = document.querySelector('#count');
 	
-var dataLength = (data.length-1),
-	currentCount = 0,
+var currentCount = 0,
 	count = 0;
 	
 addNewPicture.addEventListener("click", run);
@@ -40,19 +39,17 @@ function createNewElement(paramSet) {
 }
 
 function updateCounts() {
-	currentCount == dataLength ? currentCount=0 : currentCount++;
+	currentCount == data.length - 1 ? currentCount=0 : currentCount++;
 	count++;
 	countPictures.innerHTML=count;	
 }
 
 function deleteElement(event) {
-    if(event.target.className == 'remove') {
 		event.preventDefault();
         resultContainer.removeChild(event.target.closest('.col-sm-3'));
 		count--;
 		count--;
 		updateCounts();
-	}
 };
 
 function run() {
