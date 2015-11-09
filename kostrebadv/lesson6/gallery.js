@@ -1,7 +1,7 @@
 var START = 4;
 var END = 9;
 
-var TOTAL_ELEM = 3;
+var TOTAL_ELEM = 4;
 
 
 var sliceFrom = --START;
@@ -34,28 +34,28 @@ function transformData  (){
 
 function newDiv() {
 
-	for (var i = 0; i < transformData(); i++ ) {
+	for (var i = 0; i < transformData().length; i++ ) {
 
-		var innerContainer = createNewElement('div')
+		var innerContainer = document.createElement('div')
 			innerContainer.className = "col-sm-3 col-xs-6";
 
-		var img = createNewElement('img');
+		var img = document.createElement('img');
 		img.src = data[i].url;
 		img.alt = cutName(data[i].name);
 		img.className = "img-thumbnail";
 
-		var infoWrapper = createNewElement('div');
+		var infoWrapper = document.createElement('div');
 		infoWrapper.className ='info-wrapper' ;
 
-		var idName = createNewElement('div');
+		var idName = document.createElement('div');
 		idName.className = 'text-muted';
-		idName.innerHTML = data.id + ':' + cutName(data[i].name);
+		idName.innerHTML = data[i].id + ':' + cutName(data[i].name);
 
-		var descrption = createNewElement('div');
+		var descrption = document.createElement('div');
 		descrption.className = 'text-muted';
 		descrption.innerHTML = cutDescription(data[i].description)
 
-		var date = createNewElement('div');
+		var date = document.createElement('div');
 		date.className = 'text-muted';
 		date.innerHTML = ' Дата: ' + dateFormat(data[i].date);
 

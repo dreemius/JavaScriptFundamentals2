@@ -4,11 +4,10 @@
    for (var i = 1; i <= 15; i++){
  var first = Math.floor((Math.random() * 6) + 1),
      second = Math.floor((Math.random() * 6) + 1);
-
-    print.innerHTML+= "Первая кость: " + first + " Вторая кость: " + second + "<br>";
+    first== second ? print.innerHTML+= "Первая кость: " + first + " Вторая кость: " + second+ "<br>"+"Выпал дубль =)" + "<br>":print.innerHTML+= "Первая кость: " + first + " Вторая кость: " + second+ "<br>";
 
     if (first == second && (first == 1 || second == 6) ) {
-        print.innerHTML+= "Выпал дубль. Число: " + first + "<br>";
+        print.innerHTML+= " Число: " + first + "<br>";
     }
 
     total += first + second;

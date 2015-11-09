@@ -7,11 +7,11 @@ for (var i = 0; i < 15; i++) {
 	document.getElementById("result").innerHTML += "Первая кость:" + first + " Вторая кость:" + second;
 	document.getElementById("result").innerHTML += first == second ? " Выпал дубль. Число "+ first : "<br>";
 
-	if ((first == second) && (first == 1 || first == 6)) {
-		document.getElementById("result").innerHTML += " Две " + (first == 6 ? " шестерки<br>" : " единицы<br>");
-	} else if (first == second) {
-		document.getElementById("result").innerHTML += "<br>";
-	}
+	if ((first == second) {
+    if (first == 1 || first == 6)) {
+        document.getElementById("result").innerHTML += " Две " + (first == 6 ? " шестерки<br>" : " единицы<br>");
+    }
+    document.getElementById("result").innerHTML += "<br>";
 
 	total += first + second;
 
