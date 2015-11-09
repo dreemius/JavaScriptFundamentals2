@@ -3,7 +3,7 @@ var resultContainer = document.querySelector("#result"); // new variable for 6 l
 
 //constants
 var DISPLAYED_IMAGES=+prompt("Enter the number of displayed images:", "Any number in the range from 1 to 10"),
-	START_POSITION = 1,
+	START_POSITION = 0,
 	STOP_POSITION = 10;
 
 //functions for convert initial array
