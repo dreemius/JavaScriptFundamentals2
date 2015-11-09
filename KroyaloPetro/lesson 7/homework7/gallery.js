@@ -13,7 +13,7 @@ buttonLoad.addEventListener("click",function(event){
 	if (event.target.id == buttonLoad.id){
 		var j = Number(event.target.nextSibling.nextSibling.value);
 		while ( (j <Number(event.target.nextSibling.nextSibling.nextSibling.nextSibling.value)) && (j < (Number(event.target.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.value)+Number(event.target.nextSibling.nextSibling.value)))){
-			addPicture(j);
+			if (addPicture(j)) {break};
 			j++;
 		}
 	}
@@ -24,6 +24,7 @@ function addPicture(i){
 		count.innerHTML = String(Number(count.textContent)+1);
 	}else{
 		alert("ERROR 1 : Dont have images to print");
+		return true;
 	}
 }
 function createNewElement(classElement,attribut, toTheHTML){
