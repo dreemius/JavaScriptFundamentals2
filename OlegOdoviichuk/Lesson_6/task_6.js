@@ -1,10 +1,11 @@
 var ELEMENTS_NUMBER = 4;
-var ELEMENTS_START = 5;
-var ELEMENTS_FINISH = 10;
+var START_INDEX = 5;
+var FINISH_INDEX = 10;
 var newArr = [];
+var container = document.getElementById("result");
 
 newArr = data.filter(function(item) {
-	return (item.id >= ELEMENTS_START && item.id <= ELEMENTS_FINISH);
+	return (item.id >= START_INDEX && item.id <= FINISH_INDEX);
 	
 });
 
@@ -24,29 +25,27 @@ function createDateObject(date){
 	tmpDate.getHours() + ":" +
 	tmpDate.getMinutes();
 };
-function changeOptions() {
+function changeOptions(arrObj) {
 for(var i = 0; i < newArr.length;i++) {
 	
-	newArr[i].name = changeName(newArr[i].name);
-	newArr[i].description = sliceDescription(newArr[i].description);
-	newArr[i].date = createDateObject(newArr[i].date);
+	newArr[i].name = changeName(arrObj[i].name);
+	newArr[i].description = sliceDescription(arrObj[i].description);
+	newArr[i].date = createDateObject(arrObj[i].date);
 	
     }
 };
 
-function createEl() { 
-	var container = document.getElementById("result");
-	     
-	        for (var j=0; j<ELEMENTS_NUMBER;j++){
+function createEl(item) { 
 			
+		
 	      var newElement = document.createElement('div');
 		         newElement.className = "col-sm-3 col-xs-6";
 		            
 					container.appendChild(newElement);
 					
 		  var imageEl = document.createElement('img');
-				 imageEl.src = newArr[j].url;
-				 imageEl.alt = newArr[j].name;
+				 imageEl.src = item.url;
+				 imageEl.alt = item.name;
 				 imageEl.className = "img-thumbnail";
 				 
 				     newElement.appendChild(imageEl);
@@ -58,25 +57,30 @@ function createEl() {
 					 
 		  var idName = document.createElement('div');
 			     idName.className = "text-muted";
-				 idName.innerHTML = newArr[j].id + ":" +  newArr[j].name;
+				 idName.innerHTML = item.id + ":" +  item.name;
 				 
 		  var descript = document.createElement('div');
 			     descript.className = "text-muted";
-				 descript.innerHTML = newArr[j].description;
+				 descript.innerHTML = item.description;
 				 
 		  var theDate = document.createElement('div');
 			     theDate.className = "text-muted";
-				 theDate.innerHTML = newArr[j].date;
+				 theDate.innerHTML = item.date;
 				 
 				     infoWrapper.appendChild(idName);
 				     infoWrapper.appendChild(descript);
 				     infoWrapper.appendChild(theDate);
-	
-    }
+			
 };
 
-function start(){
-	changeOptions();
-	createEl();
+function printResult(arrObj){
+	 changeOptions(arrObj);
+	for (var j=0; j<ELEMENTS_NUMBER;j++){
+	 createEl(arrObj[j]);
+	};
 };
-start();
+
+	
+    printResult(newArr); 
+
+
