@@ -1,0 +1,55 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+.info-wrapper {
+	padding: 0 5px;
+}
+
+#result{
+  margin-top: 15px;
+}
+
+#inputBlock{
+margin: 0 auto;
+  width: 1000px;
+}
+
+
+
+input[type="text"]:focus {
+  outline: none; }
+
+
+input {
+  margin: 0 0 0 10px;
+  display: inline-block;
+  width: 300px;
+  font-size: 13px;
+  padding: 6px 0 4px 100px;
+  border: 2px solid #cecece;
+  background: #F6F6f6;
+  border-radius: 8px;
+}
+#addBtnBlock{
+  width: 100px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+button{
+  display: block;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+button:focus {
+  outline: none; }
