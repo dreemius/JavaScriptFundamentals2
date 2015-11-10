@@ -14,13 +14,7 @@ var btnChernivtsi = $('#btnChernivtsi');
 var btnMyHobbi = $('#btnMyHobbi');
 //css bg
 var main = $('#main');
-var backgraund = '';
-var galGirls = 'transparent url("gallary/bg/DSC_8520.jpg") no-repeat center center fixed';
-var galCars = 'transparent url("gallary/bg/car.jpg") no-repeat center center fixed';
-var gal18 = 'transparent url("gallary/bg/JTxhG61xZHk.jpg") no-repeat center center fixed';
-var galMountains = 'transparent url("gallary/bg/everest.jpg") no-repeat center center fixed';
-var galMyHobbi = 'transparent url("gallary/bg/alp.jpg") no-repeat center center fixed';
-var galChernivtsi = 'transparent url("gallary/bg/DBC_0937.jpg") no-repeat center center fixed';
+
 // Фукции по работе со стрингами
 function upperFirstEl(upper) {
     var upper = upper[0].toLocaleUpperCase() + upper.slice(1).toLocaleLowerCase();
@@ -35,29 +29,35 @@ function getDate(clock) {
     var clock = moment(clock).format('YYYY/DD/MM, HH:mm');//2015/07/02 14:15
     return clock;
 }
-//Функции по работе с галереей
+//css
 function hideInput() {
-    divSlider.css({
-        'display': 'none'
-    });
+    divSlider.addClass("hide");
 }
 function visibleInput() {
-    divSlider.css({
-        'display': 'inline-block'
-    });
+    divSlider.removeClass("hide").addClass("visible-inline-block");
 }
-function bgLoad() {
-    main.css({
-        'background': backgraund,
-        'width': '105%',
-        'height': '105%',
-        '-moz-background-size': 'cover',
-        '-o-background-size': '102% auto',
-        '-webkit-background-size': '102% auto',
-        '-khtml-background-size': 'cover',
-        'background-size': 'cover'
-    });
+function bgLoadGalGirls() {
+
+    $('body').removeClass().addClass("galGirls");
 }
+function bgLoadGalCars() {
+    $('body').removeClass().addClass("galCars");
+}
+function bgLoadGalMountains() {
+    $('body').removeClass().addClass("galMountains");
+}
+function bgLoadGalMyHobbi() {
+    $('body').removeClass().addClass("galMyHobbi");
+}
+function bgLoadGalChernivtsi() {
+    $('body').removeClass().addClass("galChernivtsi");
+
+}
+function bgLoadGal18() {
+    $('body').removeClass().addClass("gal18");
+
+}
+//slider
 function gallarySliders() {
     dataSlider.slider({
         formatter: function (value) {
@@ -79,11 +79,12 @@ function sliderMemory() {
     memoryVal_1 = listArr[1];
     return [memoryVal_0, memoryVal_1];
 }
-
+//loader gallary
 function loadGallary() {
     sliderMemory();
     var htmlConteiner = '<div class="row">';
     for (var i = memoryVal_0; i <= memoryVal_1; i++) {
+        //проверка на ошибку чтоб не крешился цыкл
         if (data[i] == undefined) {
             break;
         }
@@ -96,7 +97,7 @@ function loadGallary() {
             date: getDate(data[i].date)
         });
         htmlConteiner += html;
-
+        //обертка по 4 штуки
         if (i == 3 || i == 7 || i == 11 || i == 15 || i == 19 || i == 23 || i == 27) {
             htmlConteiner += '</div>' + '<div class="row">';
         }
@@ -106,7 +107,6 @@ function loadGallary() {
     resultContainer.html(htmlConteiner);
 }
 function globalLoadGallary() {
-    bgLoad();
     visibleInput();
     gallarySliders();
     changeSliderMax();
@@ -116,32 +116,31 @@ $(document).ready(function () {
     hideInput();
 
     btn18.click(function () {
-        backgraund = gal18;
-        data = data18;
+        bgLoadGal18();
         globalLoadGallary();
     });
     btnGirls.click(function () {
-        backgraund = galGirls;
+        bgLoadGalGirls();
         data = dataGirls;
         globalLoadGallary();
     });
     btnCar.click(function () {
-        backgraund = galCars;
+        bgLoadGalCars();
         data = dataCars;
         globalLoadGallary();
     });
     btnMountains.click(function () {
-        backgraund = galMountains;
+        bgLoadGalMountains();
         data = dataMountains;
         globalLoadGallary();
     });
     btnChernivtsi.click(function () {
-        backgraund = galChernivtsi;
+        bgLoadGalChernivtsi();
         data = dataChernivtsi;
         globalLoadGallary();
     });
     btnMyHobbi.click(function () {
-        backgraund = galMyHobbi;
+        bgLoadGalMyHobbi();
         data = dataMyHobbi;
         globalLoadGallary();
     });
