@@ -1,9 +1,9 @@
-var elementShow = 4,
-    start = 5,
+var start = 5, 
     end = 10,
+    elementShow = 5,
 	newArray = [];
 	newArray = data.filter(function(item,index){
-		return (item.id >=start && item.id<end);
+		return (item.id >=start && item.id<=end);
 	});
 	
 
@@ -40,7 +40,7 @@ var elementShow = 4,
 				</div>\
 			</div>';
 	function printPhotos(){
-		for (var j=0; j<newArray.length;j++){
+		for (var j=0; j<elementShow;j++){
 	resultHTML += itemTemplate
 	.replace("$number", newArray[j].id)
 	.replace(/\$name/gi, newArray[j].name)
@@ -54,7 +54,6 @@ var elementShow = 4,
 function init(){
 	changeArray();
 	printPhotos();
-
 };
 init();
 
