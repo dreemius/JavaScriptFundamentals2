@@ -1,13 +1,13 @@
 	function run(){
-		var total   = 0,
-			xNum    = 6,
-			yNum    = 1,
+		var total			  = 0,
+			maxCountOfDice    = 6,
+			COUNT_DROPED_DICE = 1,
 			first,
 			second,
-			textOut ="";
+			textOut 		  ="";
 		for(var i = 0; i<15; i++){
-			first    = getRndNumber(xNum, yNum);
-			second   = getRndNumber(xNum, yNum);
+			first    = getRndNumber(maxCountOfDice, COUNT_DROPED_DICE);
+			second   = getRndNumber(maxCountOfDice, COUNT_DROPED_DICE);
 			textOut += ("Первая кость: " + first +" Вторая кость: "+second+"<br>");
 			total   += first + second;
 			textOut += lookWhatIHave(first,second);

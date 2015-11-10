@@ -45,7 +45,7 @@ var itemTemplate = '<div class="col-sm-3 col-xs-6">\
 </div>';
 
 function printResult(arrObj){
-	for (var j=0; j<arrObj.length;j++){
+	for (var j=0; j<ELEMENTS_NUMBER;j++){
 		resultHTML += itemTemplate
 		.replace("$number", arrObj[j].id)
 		.replace(/\$name/gi, arrObj[j].name)
