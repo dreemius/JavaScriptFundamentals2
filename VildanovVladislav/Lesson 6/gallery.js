@@ -1,17 +1,17 @@
 run();
 
 
-function createDiv(nameClass, inDiv){
+function createDiv(ClassName, inDiv){
 	var newElement=document.createElement('div');
-	newElement.className=nameClass;
+	newElement.className=ClassName;
 	newElement.innerHTML=inDiv;
 	return newElement;
 }
-function createImg(urlImage, name, nameClass){
+function createImg(urlImage, name, ClassName){
 	var newImg=document.createElement('img');
 	newImg.src=urlImage;
 	newImg.alt=name;
-	newImg.className=nameClass;
+	newImg.className=ClassName;
 	return newImg;
 }
 function changeName(correctName){

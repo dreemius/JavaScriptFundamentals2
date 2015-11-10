@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40eca9ed-554f-492a-bbac-5ffc6b2fdf31" name="Default" comment="">
-<<<<<<< HEAD
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kostrebadv/lesson5/gallery.js" afterPath="$PROJECT_DIR$/kostrebadv/lesson5/gallery.js" />
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/.idea/workspace.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/data.js" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/data.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/dist/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/dist/css/bootstrap.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/dist/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/dist/js/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/dist/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/dist/js/npm.js" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/dist/js/npm.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/gallery.js" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/gallery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/index.html" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/kostrebadv/lesson 7/style.css" afterPath="$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaScriptFundamentals2.iws" />
@@ -21,16 +37,8 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-<<<<<<< HEAD
-  <component name="DatabaseView">
-    <option name="FLATTEN" value="false" />
-    <option name="GROUP_BY_TYPE" value="true" />
-    <option name="SORT_CHILDREN" value="false" />
-    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
-=======
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -38,72 +46,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-<<<<<<< HEAD
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KroyaloPetro/lesson 5/homework5 origin/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-=======
-      <file leaf-file-name="gallery.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/gallery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5506993" vertical-offset="150" max-vertical-offset="915">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding>
-                <marker date="1446227256000" expanded="true" signature="126:372" placeholder="..." />
-                <marker date="1446227256000" expanded="true" signature="212:361" placeholder="..." />
-              </folding>
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.js" pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/KroyaloPetro/lesson 5/homework5 origin/data.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
-        <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/data.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
       <file leaf-file-name="gallery.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/KroyaloPetro/lesson 5/homework5 origin/gallery.js">
+        <entry file="file://$PROJECT_DIR$/kostrebadv/lesson 7.2 addButton/gallery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-              <folding>
-                <marker date="1446125604219" expanded="true" signature="73:174" placeholder="..." />
-                <marker date="1446125604219" expanded="true" signature="253:506" placeholder="..." />
-                <marker date="1446125604219" expanded="true" signature="341:495" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SashaOdoviichuk/work 4/index.html">
+      <file leaf-file-name="gallery.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/gallery.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33097345">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-=======
+            <state vertical-scroll-proportion="-2.0157342" vertical-offset="1153" max-vertical-offset="1995">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/index.html">
+        <entry file="file://$PROJECT_DIR$/kostrebadv/lesson 7.2 addButton/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.208333" vertical-offset="553" max-vertical-offset="1125">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
+            <state vertical-scroll-proportion="-15.625" vertical-offset="480" max-vertical-offset="1215">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,6 +115,9 @@
         <option value="$PROJECT_DIR$/kostrebadv/Lesson3/main.js" />
         <option value="$PROJECT_DIR$/kostrebadv/lesson4/main.js" />
         <option value="$PROJECT_DIR$/kostrebadv/lesson5/gallery.js" />
+        <option value="$PROJECT_DIR$/kostrebadv/Lesson 7.1 textArea/main.js" />
+        <option value="$PROJECT_DIR$/kostrebadv/lesson 7.2 addButton/index.html" />
+        <option value="$PROJECT_DIR$/kostrebadv/lesson 7.2 addButton/gallery.js" />
       </list>
     </option>
   </component>
@@ -160,14 +130,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-<<<<<<< HEAD
-    <option name="x" value="4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1032" />
-    <option name="height" value="746" />
-=======
-    <option name="x" value="99" />
-    <option name="y" value="58" />
+    <option name="x" value="174" />
+    <option name="y" value="23" />
     <option name="width" value="1098" />
     <option name="height" value="669" />
   </component>
@@ -192,7 +156,6 @@
         </selected-state>
       </profile-state>
     </entry>
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -217,13 +180,6 @@
       <sortByType />
     </navigator>
     <panes>
-<<<<<<< HEAD
-      <pane id="Scratches" />
-=======
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-      </pane>
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -252,11 +208,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="kostrebadv" />
+              <option name="myItemId" value="ValentynTymku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScriptFundamentals2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaScriptFundamentals2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lesson5" />
+              <option name="myItemId" value="ValentynTymku" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lesson_7" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -284,70 +254,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AndreyTymshuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScriptFundamentals2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScriptFundamentals2" />
+              <option name="myItemId" value="kostrebadv" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AndrewJasinsky" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScriptFundamentals2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScriptFundamentals2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SashaOdoviichuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="work 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScriptFundamentals2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaScriptFundamentals2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SashaOdoviichuk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="work 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="task 3" />
+              <option name="myItemId" value="lesson 7 inputArea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-<<<<<<< HEAD
-      <pane id="Scope" />
-=======
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,15 +276,422 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="73" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="75" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="78" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="842" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="73" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="75" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="78" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="842" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/kostrebadv/lesson 7.2 addButton" />
       <recent name="$PROJECT_DIR$/kostrebadv/lesson5" />
       <recent name="$PROJECT_DIR$/kostrebadv/lesson4" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/kostrebadv/Lesson3" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AlexHristodul/Homework/Lesson_7/exercise_1.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AlexHristodul/Homework/Lesson_7/exercise_2.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AlexHristodul/Homework/Lesson_7/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AndrewJasinsky/Lesson 6/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 5/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 4/close issue/DZ3_dice_function.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 4/new/DZ3_dice_function.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_3/lesson_3.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_5/homework5/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_5/homework5/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_5/homework5/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/data.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/css/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/js/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson2/2/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson2/6/scrypt.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VildanovVladislav/Lesson 6/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_6/gallery.js</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/AlexHristodul/Homework/Lesson_5/dist/img/Thumbs.db</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/data.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 6/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/data.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/KroyaloPetro/lesson 7/homework7/task1.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/data.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/MolodiyVolodymyr/lesson6/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/data.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/NastyaKorol/Lesson_6/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/task_5.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/data.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_6/task_6.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/data.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/RomanSabadash/Lesson 7/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/data.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5 simple/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/Task 5.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/data.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 5/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/Task 6.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/data.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SashaOdoviichuk/work 6/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/js/library/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/js/library/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/js/library/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/js/library/underscore-min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/js/plagins/Moment.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/js/plagins/bootstrap-slider.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson2/2/script.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/data.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson6/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/data.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/VadymShevchuk/Lesson7/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_1/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_1/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_1/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_1/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_1/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_1/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_1/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_1/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_1/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_1/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_1/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_1/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_1/main.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_1/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/data.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/data.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/dr/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/gallery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/style.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_7/Part_1/callback.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_7/Part_1/dist/css/bootstrap.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_7/Part_1/dist/css/bootstrap.css.map</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_7/Part_1/dist/css/bootstrap.min.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_7/Part_1/dist/fonts/glyphicons-halflings-regular.eot</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_7/Part_1/dist/fonts/glyphicons-halflings-regular.svg</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_7/Part_1/dist/fonts/glyphicons-halflings-regular.ttf</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_7/Part_1/dist/fonts/glyphicons-halflings-regular.woff</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_7/Part_1/dist/fonts/glyphicons-halflings-regular.woff2</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_7/Part_1/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_7/Part_1/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_7/Part_1/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_7/Part_1/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/Zhitell/Work_7/Part_1/style.css</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 5/.idea/.name</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 5/.idea/misc.xml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 5/.idea/modules.xml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 5/.idea/vcs.xml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 5/.idea/workspace.xml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/5.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/OlegOdoviichuk/Lesson_5/Task.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/dist/js/bootstrap.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/dist/js/bootstrap.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/dist/js/npm.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/js/Moment.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/js/bootstrap-slider.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/SergeyDerkach/work_5/js/underscore-min.js</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration default="false" name="svg.min.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="svg.min.js" working-dir="$PROJECT_DIR$/kostrebadv/Lesson3">
@@ -485,15 +811,6 @@
       <option name="project" value="LOCAL" />
       <updated>1445361965187</updated>
     </task>
-<<<<<<< HEAD
-    <task id="LOCAL-00006" summary="My  Hometasks!">
-      <created>1446125730750</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1446125730750</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
-=======
     <task id="LOCAL-00009" summary="lesson 4 kostrebadv">
       <created>1445519022174</created>
       <option name="number" value="00009" />
@@ -524,55 +841,56 @@
       <option name="project" value="LOCAL" />
       <updated>1446227162628</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
+    <task id="LOCAL-00014" summary="lesson 7 kostrebadv">
+      <created>1447098600575</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1447098600575</updated>
+    </task>
+    <task id="LOCAL-00015" summary="lesson 7 kostrebadv">
+      <created>1447098960440</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1447098960440</updated>
+    </task>
+    <task id="LOCAL-00016" summary="lesson 7 kostrebadv">
+      <created>1447165820076</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1447165820076</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="4" y="-4" width="1032" height="746" extended-state="0" />
-    <editor active="false" />
-    <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20366599" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.49592668" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5040733" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3299389" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.006441224" sideWeight="0.49185336" order="9" side_tool="false" content_ui="tabs" />
-=======
-    <frame x="99" y="58" width="1098" height="669" extended-state="0" />
+    <frame x="174" y="23" width="1098" height="669" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2859745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-<<<<<<< HEAD
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -609,7 +927,8 @@
     <MESSAGE value="lesson 3 kostrebadv" />
     <MESSAGE value="lesson 4 kostrebadv" />
     <MESSAGE value="lesson 5 kostrebadv" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 5 kostrebadv" />
+    <MESSAGE value="lesson 7 kostrebadv" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 7 kostrebadv" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -618,57 +937,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 4/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="58" max-vertical-offset="630">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VadymShevchuk/Lesson4/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="870">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VildanovVladislav/Lesson 4/Lesson4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SashaOdoviichuk/work 4/Functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1538461" vertical-offset="0" max-vertical-offset="855">
-          <caret line="44" column="1" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RomanSabadash/Lesson 4/bones.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work1/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49270073" vertical-offset="0" max-vertical-offset="548">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson2/Work5/main.js">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-=======
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
           <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,7 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-26.458334" vertical-offset="730" max-vertical-offset="1845">
           <caret line="91" column="38" selection-start-line="91" selection-start-column="38" selection-end-line="91" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,7 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
         </state>
       </provider>
     </entry>
@@ -709,7 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="15.625" vertical-offset="375" max-vertical-offset="1110">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,19 +986,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1650">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zhartole/HW_Lesson_5/style.css">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-=======
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
         </state>
       </provider>
     </entry>
@@ -744,7 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,7 +1028,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,7 +1035,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.47142857" vertical-offset="0" max-vertical-offset="1665">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,7 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34285715" vertical-offset="0" max-vertical-offset="1245">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -804,7 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3857143" vertical-offset="0" max-vertical-offset="1065">
           <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -819,7 +1077,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6016043" vertical-offset="0" max-vertical-offset="900">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -834,7 +1091,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.958333" vertical-offset="985" max-vertical-offset="1830">
           <caret line="80" column="18" selection-start-line="73" selection-start-column="12" selection-end-line="80" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,10 +1112,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="570">
           <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <marker date="1446049271000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1446049271000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -867,10 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3444056" vertical-offset="13" max-vertical-offset="585">
           <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <marker date="1446224933000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1446224933000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -878,10 +1126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
           <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <marker date="1446049271000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1446049271000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -889,7 +1133,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -897,7 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -905,7 +1147,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3146853" vertical-offset="0" max-vertical-offset="572">
           <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,7 +1154,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,7 +1161,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,7 +1168,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -937,7 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13686131" vertical-offset="0" max-vertical-offset="548">
           <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -945,7 +1182,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="630">
           <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,7 +1189,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="300">
           <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -961,7 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="358" max-vertical-offset="930">
           <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -969,182 +1203,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.31118882" vertical-offset="178" max-vertical-offset="750">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/SergeyDerkach/Lesson_0.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2688928">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SashaOdoviichuk/work 3/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08629441">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-=======
     <entry file="file://$PROJECT_DIR$/AndrewJasinsky/Lesson 5/gallery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.13111888" vertical-offset="105" max-vertical-offset="960">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <marker date="1446049271000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1446049271000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndrewJasinsky/Lesson 5/index.html">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="0.30088496">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SashaOdoviichuk/work 4/Functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-=======
         <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="1095">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
-          <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/SashaOdoviichuk/work 2/task 5/Index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SashaOdoviichuk/work 2/task 4/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SashaOdoviichuk/work 2/task 3/Index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 5/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.09306261">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndrewJasinsky/Lesson 5/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3911505">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 5/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.339823">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BogdanAkrybai/homeWork/Lesson 5/gallery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5752961">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndrewJasinsky/Lesson 5/gallery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4890017">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndrewJasinsky/Lesson 5/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.95600677">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/KroyaloPetro/lesson 5/homework5 origin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-=======
     <entry file="file://$PROJECT_DIR$/AndrewJasinsky/Lesson 5/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/KroyaloPetro/lesson 5/homework5 origin/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.208333" vertical-offset="553" max-vertical-offset="1125">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/KroyaloPetro/lesson 5/homework5 origin/gallery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <marker date="1446125604219" expanded="true" signature="73:174" placeholder="..." />
-            <marker date="1446125604219" expanded="true" signature="253:506" placeholder="..." />
-            <marker date="1446125604219" expanded="true" signature="341:495" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SashaOdoviichuk/work 4/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33097345">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-=======
-    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
->>>>>>> 89d0002da2a9676c198cf1f34deede49cc7dcfd9
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/gallery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5506993" vertical-offset="150" max-vertical-offset="915">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5769231" vertical-offset="0" max-vertical-offset="795">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
           <folding>
-            <marker date="1446227256000" expanded="true" signature="126:372" placeholder="..." />
-            <marker date="1446227256000" expanded="true" signature="212:361" placeholder="..." />
+            <marker date="1446569873000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1446569873000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.082167834" vertical-offset="448" max-vertical-offset="1020">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson5/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57846713" vertical-offset="553" max-vertical-offset="1125">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson 7.2 addButton/.idea/.name">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/Lesson 7.1 textArea/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson 7 inputArea/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.027372263" vertical-offset="45" max-vertical-offset="1275">
+          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson 7.2 addButton/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.625" vertical-offset="480" max-vertical-offset="1215">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kostrebadv/lesson 7.2 addButton/gallery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ValentynTymku/Lesson_7/part_2/gallery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0157342" vertical-offset="1153" max-vertical-offset="1995">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
