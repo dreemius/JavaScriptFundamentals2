@@ -26,12 +26,12 @@ function modifyDate(date) {
 }
 
 function manipulateData() {
-	return data.slice(0, NUM_OF_ELEM).filter(function(item) {
+	return data.slice(0, NUM_OF_ELEM).map(function(item) {
 		item.name = toUpperLetter(item.name);
 		item.description = sliceDescription(item.description);
 		item.date = modifyDate(item.date);
 		return item;
-	});
+	})
 }
 
 function displayData() {
@@ -42,7 +42,7 @@ function displayData() {
 				.replace("$url", item.url)
 				.replace("$description", item.description)
 				.replace("$date", item.date);
-	});
+	})
 }
 displayData();
 resultContainer.html(resultHTML);
