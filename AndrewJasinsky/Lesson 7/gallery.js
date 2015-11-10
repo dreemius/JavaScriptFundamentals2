@@ -150,7 +150,7 @@ function createDOM(index) {
 			innerHTML:"Delete"
 		});
 
-		//event for remove element from gallery by click "Delete".
+		//event for remove element from gallery by button "Delete".
 		removeElement.addEventListener("click",function(event){
 		event.preventDefault();
 		event.target.parentNode.parentNode.remove();
