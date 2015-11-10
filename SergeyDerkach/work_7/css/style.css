@@ -1,0 +1,101 @@
+body html, body {
+
+}
+
+body {
+  padding-top: 50px;
+  background-color: #0a3c59;
+  font-size: 20px;
+  color: snow;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+
+}
+.text-muted{
+  color: snow;
+}
+
+.info-wrapper {
+
+  font-size: 20px;
+	padding: 0 5px;
+}
+#ex1Slider .slider-selection {
+  background-color: #e7e7e7 ;
+}
+.btn{
+  margin: 20px;
+}
+
+.galGirls{
+background: transparent url("../gallary/bg/DSC_8520.jpg") no-repeat center center fixed;
+width: 100%;
+height: 100%;
+-moz-background-size: cover;
+-o-background-size: 100% auto;
+-webkit-background-size: 100% auto;
+-khtml-background-size:cover;
+background-size: cover;
+
+}
+.galCars{
+background: transparent url("../gallary/bg/car.jpg") no-repeat center center fixed;
+width: 100%;
+height: 100%;
+-moz-background-size: cover;
+-o-background-size: 100% auto;
+-webkit-background-size: 100% auto;
+-khtml-background-size: cover;
+background-size: cover;
+
+}
+.gal18{
+  background: transparent url("../gallary/bg/JTxhG61xZHk.jpg") no-repeat center center fixed;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: cover;
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -khtml-background-size: cover;
+  background-size: cover;
+
+}
+.galMountains{
+  background: transparent url("../gallary/bg/everest.jpg") no-repeat center center fixed;
+  width: 105%;
+  height: 105%;
+  -moz-background-size: cover;
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -khtml-background-size: cover;
+  background-size: cover;
+}
+.galMyHobbi{
+  background: transparent url("../gallary/bg/alp.jpg") no-repeat center center fixed;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: cover;
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -khtml-background-size: cover;
+  background-size: cover;
+}
+.galChernivtsi{
+  background: transparent url("../gallary/bg/DBC_0937.jpg") no-repeat center center fixed;
+  width: 100%;
+  height: 100%;
+  -moz-background-size: cover;
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -khtml-background-size: cover;
+  background-size: cover;
+}
+.hide{
+display: none;
+}
+
+.visible-inline-block{
+display: inline-block;
+}
