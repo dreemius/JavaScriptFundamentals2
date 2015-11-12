@@ -48,8 +48,7 @@ function deleteElement(event) {
 		event.preventDefault();
         resultContainer.removeChild(event.target.closest('.col-sm-3'));
 		count--;
-		count--;
-		updateCounts();
+		countPictures.innerHTML=count;	
 };
 
 function run() {
