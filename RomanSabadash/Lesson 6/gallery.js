@@ -1,7 +1,5 @@
 var newData = [];
 var newItem = {};
-var FIRST_ITEM = 2;
-var LASRT_ITEM = 6;
 var resultContainer = $('#result');
 
 // Change name
@@ -24,7 +22,7 @@ function newDate(date) {
            tmpDate.getMinutes();
 }
 
-function newElement(url, name, id, description, date) {
+function newElement(item) {
 
 	var firstDiv, img, secondDiv, nameDiv, descriptionDiv, dateDiv;
 	
@@ -33,8 +31,8 @@ function newElement(url, name, id, description, date) {
 
 	img = document.createElement("img");
 	img.className = "img-thumbnail";
-	img.src = url;
-	img.alt = name;
+	img.src = item.url;
+	img.alt = item.name;
 
 	secondDiv = document.createElement("div");
 	secondDiv.className = "info-wrapper";
@@ -44,9 +42,9 @@ function newElement(url, name, id, description, date) {
 	descriptionDiv = nameDiv.cloneNode(true);
 	dateDiv = nameDiv.cloneNode(true);
 
-	nameDiv.innerHTML = id + ":" + name;
-	descriptionDiv.innerHTML = description;
-	dateDiv.innerHTML = date;
+	nameDiv.innerHTML = item.id + ":" + item.name;
+	descriptionDiv.innerHTML = item.description;
+	dateDiv.innerHTML = item.date;
 
 	secondDiv.appendChild(dateDiv);
 	secondDiv.appendChild(descriptionDiv);
@@ -59,7 +57,7 @@ function newElement(url, name, id, description, date) {
 // Iteration
 function run() {
 
-	for (var i = FIRST_ITEM; i < LASRT_ITEM; i++ ) {
+	for (var i = 0; i < data.length; i++ ) {
 		newItem = {
 			url : data[i].url,
 			name : newName(data[i].name),
@@ -69,7 +67,7 @@ function run() {
 		};
 
 	newData.push(newItem);
-	newElement(newItem.url, newItem.name, newItem.id, newItem.description, newItem.date);
+	newElement(newItem);
 	}
 
 }
