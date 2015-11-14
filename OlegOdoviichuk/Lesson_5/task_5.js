@@ -1,10 +1,10 @@
 var ELEMENTS_NUMBER = 4;
-var ELEMENTS_START = 5;
-var ELEMENTS_FINISH = 10;
+var START_INDEX = 5;
+var FINISH_INDEX = 10;
 var newArr = [];
 
 newArr = data.filter(function(item) {
-	return (item.id >= ELEMENTS_START && item.id <= ELEMENTS_FINISH);
+	return (item.id >= START_INDEX && item.id <= FINISH_INDEX);
 	
 });
 
@@ -24,12 +24,12 @@ function createDateObject(date){
 	tmpDate.getHours() + ":" +
 	tmpDate.getMinutes();
 };
-function changeOptions() {
+function changeOptions(arrObj) {
 for(var i = 0; i < newArr.length;i++) {
 	
-	newArr[i].name = changeName(newArr[i].name);
-	newArr[i].description = sliceDescription(newArr[i].description);
-	newArr[i].date = createDateObject(newArr[i].date);
+	newArr[i].name = changeName(arrObj[i].name);
+	newArr[i].description = sliceDescription(arrObj[i].description);
+	newArr[i].date = createDateObject(arrObj[i].date);
 	
     }
 };
@@ -56,7 +56,7 @@ function printResult(arrObj){
 	return resultContainer.html(resultHTML);
 }
 function start(){
-	changeOptions();
+	changeOptions(newArr);
 	printResult(newArr);
 
 };

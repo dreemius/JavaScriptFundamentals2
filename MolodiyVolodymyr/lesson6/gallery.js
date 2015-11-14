@@ -14,15 +14,12 @@ var newDate = function(date){
 };
 
 function cutDescription(descript){
-	 var cutRes;
-	 cutRes=descript.substr(0,15);
-	 return cutRes;
+	 return descript.substr(0,15);
 	 }  
 	
 function firstLetterUpper(str){
-capitalizRes=str.charAt(0).toUpperCase()+str.slice(1).toLowerCase();
-return capitalizRes;
-}
+return str.charAt(0).toUpperCase()+str.slice(1).toLowerCase();
+   }
 
 function changeData(obj){
  for(var i=0; i<obj.length; i++){
@@ -31,13 +28,12 @@ function changeData(obj){
 	 obj[i].date=newDate(obj[i].date);
 	 }
 	 return obj;
-}
+   }
 
 var resultContainer = $('#result');
 var resultHTML = "";
 
-				
-function createTemp(tagName,clName,inHtml){
+function createTemplate(tagName,clName,inHtml){
     var template=document.createElement(tagName);
     clName && (template.className=clName);
     inHtml && (template.innerHTML=inHtml);
@@ -53,28 +49,26 @@ function createImg(clName,source){
 function printResult(arrObj){
   var result=document.getElementById('result');
   for (var j=0; j<arrObj.length;j++){
-    var col=createTemp('div','col-sm-3 col-xs-6');
-    var wrappper=createTemp('div','info-wrapper');
-    var carId= createTemp('div','text-muted',arrObj[j].id);
-    var carName= createTemp('div','text-muted',arrObj[j].name);
+    var col=createTemplate('div','col-sm-3 col-xs-6');
+    var wrappper=createTemplate('div','info-wrapper');
+    var carIdName= createTemplate('div','text-muted',arrObj[j].id+':'+arrObj[j].name);
     var carImg= createImg('img-thumbnail',arrObj[j].url);
-    var carDescription= createTemp('div','text-muted',arrObj[j].description);	
-    var carDate= createTemp('div','text-muted',arrObj[j].date);
+    var carDescription= createTemplate('div','text-muted',arrObj[j].description);	
+    var carDate= createTemplate('div','text-muted',arrObj[j].date);
         var res=+  result.appendChild(col);
             col.appendChild(carImg);
             col.appendChild(wrappper);
-		    wrappper.appendChild(carId);
-            wrappper.appendChild(carName);
+		    wrappper.appendChild(carIdName);
             wrappper.appendChild(carDescription);
 			wrappper.appendChild(carDate);
-   }
+     }
   return res;
-}
+  }
 
 function initMainFun(arOb){
 changeData(arOb);
 printResult(arOb);
 return arOb;	
-} 
+ } 
 
 initMainFun(newData);
