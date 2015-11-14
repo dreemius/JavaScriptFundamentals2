@@ -27,7 +27,7 @@ function newDate(date){
 function run(){
 	var resultHTML 		= createDiv('row', '');
 	var elements = 7;
-	var countImages=0;
+	var countImages=4;
 	data.forEach(function(item, index){
 		if(index<elements){
 			resultHTML.appendChild(createPicture(item));
