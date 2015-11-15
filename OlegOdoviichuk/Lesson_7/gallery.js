@@ -5,7 +5,7 @@ var input = document.querySelector("#exampleInputName2"),
     deleteall = document.querySelector("#del");
 		  
 		input.addEventListener("keyup", inputTextarea);
-		del.addEventListener("click", delArea);   // почему с "keyup" тоже работает? при нажатии на кнопку всеравно работает!
+		del.addEventListener("click", delArea);   
 		
 		
 function inputTextarea() {
@@ -49,13 +49,12 @@ function createDateObject(date){
 	tmpDate.getMinutes();
 };
 function changeOptions(arrObj) {
-for(var i = 0; i < newArr.length;i++) {
 	
-	newArr[i].name = changeName(arrObj.name);
-	newArr[i].description = sliceDescription(arrObj.description);
-	newArr[i].date = createDateObject(arrObj.date);
+	arrObj.name = changeName(arrObj.name);
+	arrObj.description = sliceDescription(arrObj.description);
+	arrObj.date = createDateObject(arrObj.date);
 	
-    }
+    
 };
 
 function createEl(item) { 
@@ -124,8 +123,6 @@ var delelement = document.querySelector("#delelm");
 	
 function totalCount(pics) {
 	totalcount.innerHTML = pics;
-	console.log(pics);
-	
-	      
+	     
 }
 
