@@ -21,7 +21,7 @@
     <![endif]-->
   </head>
 
-<body>
+  <body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -31,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-			</button>
+          </button>
           <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
@@ -45,56 +45,43 @@
     </nav>
 
     <div class="container">
+      <div class="starter-template">
+			<h1>Home Work 7</h1>
+			<p class="lead">Simple galley builder</p>
+      </div>
 
-		<p class="lead">Задание 1</p>
-		<div class="row">
-			<div class="col-xs-6">
-				  <div class="form-group">
-					<label for="exampleInputName2">Текст</label>
-					<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-				  </div>
-				  <button type="submit" id = "del" class="btn btn-default">Стереть</button>
-			</div>
-			<div class="col-xs-6">
-				<textarea id="txtar" class="form-control" rows="3"></textarea>
-			</div>
-		</div>
-	
-		<br>
-		<br>
-		<br>
-		<p class="lead">Задание 2</p>
-		
-		
-		<div class="row">
-			<div class="col-xs-12">
-				<button type="button" id = "addelm" class="btn btn-sm btn-success">+ Добавить новый элемент</button>
-			</div>
-			<br><br>
-			<div class="col-xs-12">
-				<button type="button" id = "delelm" class="btn btn-sm btn-success">- Удалить элемент</button>
-			</div>
-		</div>
-		<br>
-		<div id="test" class="row">
+      <p class="lead">Task 1</p>
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="exampleInputName2">Text</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="enter text">
+          </div>
+          <button type="submit" class="btn btn-danger" id="del">Delete</button>
+        </div>
+        <div class="col-xs-6">
+          <textarea class="form-control"  id="text" rows="3"></textarea>
+        </div>
+      </div>
+      <br>
+      <br>
 
-			<div class="col-sm-3 col-xs-6">
-				
-			</div>
-
-		</div>
-		<div id="result" class="row"></div>
-		<br>
-		<div class="row">
-			<div class="col-xs-12">
-				<span class="text-success">Общее колличество:</span><span id="count">0</span>
-			</div>
-		</div>
-		<br>
-		<hr>
-		<br>
-
-
+      <p class="lead">Task 2</p>
+      <div class="row">
+        <div class="col-xs-12">
+          <button type="button"  class="btn btn-sm btn-success" id="addB">+ Add new element</button>
+        </div>
+      </div>
+      <div id="result" class="row"></div>
+      <br>
+      <div class="row">
+        <div class="col-xs-12">
+          <span class="text-success">total:</span><span id="count"> 0</span>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <br>
     </div><!-- /.container -->
 
 

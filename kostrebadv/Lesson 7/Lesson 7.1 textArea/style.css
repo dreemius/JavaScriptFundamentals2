@@ -1,0 +1,43 @@
+#wrapper {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+input {
+
+    width: 300px;
+    font-size: 13px;
+    padding: 6px 0 4px 10px;
+    border: 2px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px;
+}
+
+input[type="text"]:focus {
+    outline: none; }
+
+textarea[type="text"]:focus {
+    outline: none; }
+
+textarea{
+    margin-top: 10px;
+    width: 300px;
+    font-size: 13px;
+    padding: 6px 0 4px 10px;
+    border: 2px solid #cecece;
+    border-radius: 8px;
+    resize: none;
+}
+
+button{
+    margin-top: 10px;
+    display: block;
+    height: 25px;
+    background: #c0c0c0;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+button:focus {
+    outline: none; }

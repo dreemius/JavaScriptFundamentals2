@@ -4,13 +4,14 @@ var data = [{
 	name: "МАШИНКА",
 	id : 1,
 	description : " be conveyed to users of assistive technologies – such as",
-	date : 1422153200637
+	date : 1422153200637,
+
 },{
 	url: "http://desktopwallpapers.org.ua/mini/201507/40068.jpg",
 	name: "ДРУГАЯ МАШИНКА",
 	id : 2,
 	description : "sing color to add meaning to a button",
-	date : 1426153200637
+	date : 1421153200637
 },{
 	url: "http://desktopwallpapers.org.ua/mini/201507/40067.jpg",
 	name: "НАЗВАНИЕ",
