@@ -31,8 +31,8 @@ var two = document.querySelector('#two');
 var three = document.querySelector('#three');
 
 one.addEventListener ("click", msg);
-two.addEventListener ("click", msg);
-//two.addEventListener ("mousedown", msg);
+//two.addEventListener ("click", msg);
+two.addEventListener ("mousedown", msg);
 three.addEventListener ("click", msg);
 
 function msg (event) {

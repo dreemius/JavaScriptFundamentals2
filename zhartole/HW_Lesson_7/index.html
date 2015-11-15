@@ -44,43 +44,55 @@
       </div>
     </nav>
 
+
     <div class="container">
 
-		<p class="lead">Задание 2</p>
-		
+      <div class="row">
+        <div class="col-xs-6">
+          <p class="lead"><b>Remember !</b> </p>
+          <div class="form-group">
+            <label for="exampleInputName2">Enter Text</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Write ">
+          </div>
+          <button type="submit" class="btn btn-default" id="cleanText">Clear</button>
+        </div>
+        <div class="col-xs-6">
+          <p class="lead" align="center">Big <img src="image/big-brother.png" alt="альтернативный текст">  Brother is watching you</p>
+          <textarea class="form-control" rows="3" placeholder="See "></textarea>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <br>
+		<p class="lead" align="center">View photo</p>
+      <div id="inputGroup">
+        <input type="text" class="start" placeholder = 'Display by'>
+        <input type="text" class="end" placeholder = 'Display up'>
+        <input type="text" class="total" placeholder = 'Total display'>
+      </div>
 		
 		<div class="row">
 			<div class="col-xs-12">
-				<button type="button" class="btn btn-sm btn-success" id="addNewPicture">+ Добавить новый элемент</button>
+				<button type="button" class="btn btn-sm btn-success" id="addNewPicture">+ Show one more image</button>
+                <button type="button" class="btn btn-sm btn-danger" id="delAllPicture">Delete all images</button>
+                <button type="button" class="btn btn-sm btn-success" id="addAllPicture"><b>+ Show all images</b></button>
+
 			</div>
 		</div>
 		<br>
-		
+		<div id="error"></div>
 		<div id="result" class="row">
 		</div>
 		
 		<br>
 		<div class="row">
 			<div class="col-xs-12">
-				<span class="text-success">Общее колличество:</span><span id="count">0</span>
+				<span class="text-success">Общее колличество:</span><span id="count-image">0</span>
 			</div>
 		</div>
 		<br>
 		<hr>
-      <div class="row">
-        <div class="col-xs-6">
-          <p class="lead">Задание 1</p>
-          <div class="form-group">
-            <label for="exampleInputName2">Текст</label>
-            <input type="text" class="form-control" id="exampleInputName2" placeholder="Write ">
-          </div>
-          <button type="submit" class="btn btn-default" id="btn">Стереть</button>
-        </div>
-        <div class="col-xs-6">
-          <p class="lead">Remember!! <br> Big Brother is watching you</p>
-          <textarea class="form-control" rows="3" placeholder="See "></textarea>
-        </div>
-      </div>
+
 
 
     </div><!-- /.container -->
