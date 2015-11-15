@@ -120,5 +120,5 @@ var delelement = document.querySelector("#delelm");
 	}
 	
 function totalCount () {
-	totalcount.innerHTML = j;
+	totalcount.innerHTML = j; 
 }
