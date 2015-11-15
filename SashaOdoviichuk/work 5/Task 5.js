@@ -1,4 +1,4 @@
-var elementShow = 4,
+var elementShow = 5,
     start = 5,
     end = 10,
 	newArray = [];
@@ -30,6 +30,8 @@ var elementShow = 4,
 	};	
 
 	var resultContainer = $('#result');
+	
+	
         var resultHTML = "";
         var itemTemplate = '<div class="col-sm-3 col-xs-6">\
 				<img src="$url" alt="$name" class="img-thumbnail">\
