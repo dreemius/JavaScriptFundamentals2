@@ -1,14 +1,13 @@
 
 var FIRST = 5, //id first img;
 	LAST  = data.length,//id last img;
-	NUMBER_OF_IMAGES = data.length,
+	NUMBER_OF_IMAGES = data.length,//number of img;
 	resultContainer = document.querySelector("#result"),
-	newGallery,
 	showImage,
 	countShow = $('#count-image');
 
 function inBetween(START, FINISH) {
-	return newGallery = data.slice(START - 1, FINISH).slice(0,NUMBER_OF_IMAGES);
+	return data.slice(START - 1, FINISH).slice(0,NUMBER_OF_IMAGES);
 }
 
 showImage = function(item) {

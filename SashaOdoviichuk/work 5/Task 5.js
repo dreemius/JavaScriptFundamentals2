@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+var elementShow = 5,
+    start = 5,
+=======
 var start = 5, 
+>>>>>>> fdc576a168abdb47bce6f9ac4531e15d2e34040e
     end = 10,
     elementShow = 5,
 	newArray = [];
@@ -30,6 +35,8 @@ var start = 5,
 	};	
 
 	var resultContainer = $('#result');
+	
+	
         var resultHTML = "";
         var itemTemplate = '<div class="col-sm-3 col-xs-6">\
 				<img src="$url" alt="$name" class="img-thumbnail">\

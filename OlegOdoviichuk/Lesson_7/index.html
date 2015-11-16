@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Homework_7</title>
+    <title>Template for homework7</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
     <![endif]-->
   </head>
 
-  <body>
+<body>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -31,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
+			</button>
           <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
@@ -44,55 +44,55 @@
       </div>
     </nav>
 
-
     <div class="container">
 
-      <div class="row">
-        <div class="col-xs-6">
-          <p class="lead"><b>Remember !</b> </p>
-          <div class="form-group">
-            <label for="exampleInputName2">Enter Text</label>
-            <input type="text" class="form-control" id="exampleInputName2" placeholder="Write ">
-          </div>
-          <button type="submit" class="btn btn-default" id="cleanText">Clear</button>
-        </div>
-        <div class="col-xs-6">
-          <p class="lead" align="center">Big <img src="image/big-brother.png" alt="альтернативный текст">  Brother is watching you</p>
-          <textarea class="form-control" rows="3" placeholder="See "></textarea>
-        </div>
-      </div>
-      <br>
-      <hr>
-      <br>
-		<p class="lead" align="center">View photo</p>
-      <div id="inputGroup">
-        <input type="text" class="start" placeholder = 'Display by'>
-        <input type="text" class="end" placeholder = 'Display up'>
-        <input type="text" class="total" placeholder = 'Total display'>
-      </div>
+		<p class="lead">Задание 1</p>
+		<div class="row">
+			<div class="col-xs-6">
+				  <div class="form-group">
+					<label for="exampleInputName2">Текст</label>
+					<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+				  </div>
+				  <button type="submit" id = "del" class="btn btn-default">Стереть</button>
+			</div>
+			<div class="col-xs-6">
+				<textarea id="txtar" class="form-control" rows="3"></textarea>
+			</div>
+		</div>
+	
+		<br>
+		<br>
+		<br>
+		<p class="lead">Задание 2</p>
+		
 		
 		<div class="row">
 			<div class="col-xs-12">
-				<button type="button" class="btn btn-sm btn-success" id="addNewPicture">+ Show one more image</button>
-                <button type="button" class="btn btn-sm btn-danger" id="delAllPicture">Delete all images</button>
-                <button type="button" class="btn btn-sm btn-success" id="addAllPicture"><b>+ Show all images</b></button>
-
+				<button type="button" id = "addelm" class="btn btn-sm btn-success">+ Добавить новый элемент</button>
+			</div>
+			<br><br>
+			<div class="col-xs-12">
+				<button type="button" id = "delelm" class="btn btn-sm btn-success">- Удалить элемент</button>
 			</div>
 		</div>
 		<br>
-		<div id="error"></div>
-		<div id="result" class="row">
+		<div id="test" class="row">
+
+			<div class="col-sm-3 col-xs-6">
+				
+			</div>
+
 		</div>
-		
+		<div id="result" class="row"></div>
 		<br>
 		<div class="row">
 			<div class="col-xs-12">
-				<span class="text-success">Общее колличество:</span><span id="count-image">0</span>
+				<span class="text-success">Общее колличество:</span><span id="count">0</span>
 			</div>
 		</div>
 		<br>
 		<hr>
-
+		<br>
 
 
     </div><!-- /.container -->
@@ -104,7 +104,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
 	<script src="data.js"></script>
-	 <script src="gallery.js"></script>
-
+    <script src="gallery.js"></script>
   </body>
 </html>
