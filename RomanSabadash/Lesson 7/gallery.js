@@ -1,12 +1,11 @@
 var newData = [];
 var newItem = {};
-var FIRST_ITEM = 2;
-var LASRT_ITEM = 6;
 var resultContainer = $('#result');
-var getText = document.getElementById("gettext");
-var setText = document.getElementById("settext");
+var inputValue = document.getElementById('gettext');
+var textareaValue = document.getElementById('settext');
+var countId = document.getElementById('count');
 var count = 0;
-var qty = 0;
+var quantity = 0;
 
 // Change name
 function newName(name) {
@@ -21,41 +20,42 @@ function newDescription(descrp) {
 // Change date
 function newDate(date) {
 	var tmpDate = new Date(date);
-    return tmpDate.getFullYear() + "/" +
-           tmpDate.getMonth() + "/" +
-           tmpDate.getDate() + " " +
-           tmpDate.getHours() + ":" +
+    return tmpDate.getFullYear() + '/' +
+           tmpDate.getMonth() + '/' +
+           tmpDate.getDate() + ' ' +
+           tmpDate.getHours() + ':' +
            tmpDate.getMinutes();
 }
 
-function newElement(url, name, id, description, date) {
+function newElement(item) {
 
 	var firstDiv, img, secondDiv, nameDiv, descriptionDiv, dateDiv, button;
 	
-	firstDiv = document.createElement("div");
-	firstDiv.className = "col-sm-3 col-xs-6 ";
+	firstDiv = document.createElement('div');
+	firstDiv.className = 'col-sm-3 col-xs-6';
 
-	img = document.createElement("img");
-	img.className = "img-thumbnail";
-	img.src = url;
-	img.alt = name;
+	img = document.createElement('img');
+	img.className = 'img-thumbnail';
+	img.src = item.url;
+	img.alt = item.name;
 
-	button = document.createElement("button");
-	button.appendChild(document.createTextNode("Remove"));
-	button.className = "remove";
-	button.setAttribute('onclick','removeElement(event)');
+	secondDiv = document.createElement('div');
+	secondDiv.className = 'info-wrapper';
 
-	secondDiv = document.createElement("div");
-	secondDiv.className = "info-wrapper";
-
-	nameDiv = document.createElement("div");
-	nameDiv.className = "text-muted";
+	nameDiv = document.createElement('div');
+	nameDiv.className = 'text-muted';
 	descriptionDiv = nameDiv.cloneNode(true);
 	dateDiv = nameDiv.cloneNode(true);
 
-	nameDiv.innerHTML = id + ":" + name;
-	descriptionDiv.innerHTML = description;
-	dateDiv.innerHTML = date;
+	nameDiv.innerHTML = item.id + ':' + item.name;
+	descriptionDiv.innerHTML = item.description;
+	dateDiv.innerHTML = item.date;
+
+	// Add button
+	button = document.createElement('button');
+	button.appendChild(document.createTextNode('Remove'));
+	button.className = 'remove';
+	button.setAttribute('onclick', 'removeElement(event)');
 
 	secondDiv.appendChild(nameDiv);
 	secondDiv.appendChild(descriptionDiv);
@@ -66,32 +66,42 @@ function newElement(url, name, id, description, date) {
 	result.appendChild(firstDiv);
 }
 
-// Add elements
-document.getElementById('add').addEventListener('click',run);
-
-// Clear fields
-document.getElementById("reset").addEventListener("click", function(){
-  getText.value = " ";
-  setText.value = getText.value;
-});
-
-// Input and textarea
-getText.addEventListener("keyup", function(event){
-  var tx = event.target.value;
-  setText.value = tx;
-});
-
+// Remove element
 function removeElement(event) {
 	event.target.parentNode.remove();
-	qty--;
-	document.getElementById('count').innerHTML = qty;
+	quantity--;
+	countId.innerHTML = quantity;
 }
+
+// Input and textarea
+inputValue.addEventListener('keyup', function(event){
+  var tx = event.target.value;
+  textareaValue.value = tx;
+});
+
+// Clear fields
+document.getElementById('reset').addEventListener('click', function(){
+  inputValue.value = '';
+  textareaValue.value = '';
+});
+
+// Add event for run
+document.getElementById('add').addEventListener('click', run);
 
 function run() {
 	if (count < data.length) {
-		newElement(data[count].url, newName(data[count].name), data[count].id, newDescription(data[count].description), newDate(data[count].date));
+		newItem = {
+			url : data[count].url,
+			name : newName(data[count].name),
+			id : data[count].id,
+			description : newDescription(data[count].description),
+			date : newDate(data[count].date)
+		};
+		newElement(newItem);
 		count++;
-		qty++;
-		document.getElementById('count').innerHTML = qty;
-	} 
+		quantity++;
+		countId.innerHTML = quantity;
+	} else {
+		alert('Sorry, no more elements.');
+	}
 }
