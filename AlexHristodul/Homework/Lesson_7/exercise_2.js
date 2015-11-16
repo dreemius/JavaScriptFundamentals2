@@ -30,11 +30,11 @@ function newDate(date){
 };
 
 function createNewElement(paramSet) {
-	var element = paramSet.el.appendChild(document.createElement(paramSet.type));
+	var element = paramSet.el.appendChild(document.createElement(paramSet.types));
 	paramSet.className && (element.className = paramSet.className);
 	paramSet.src && (element.src = paramSet.src);
 	paramSet.innerHTML && (element.innerHTML = paramSet.innerHTML);
-	paramSet.href && (element.href = paramSet.href);
+	paramSet.type && (element.type = paramSet.type);
 	return element;
 }
 
@@ -54,55 +54,55 @@ function deleteElement(event) {
 function run() {
 			var containerCreate = createNewElement({
 				el: resultContainer,
-				type: "div",
+				types: "div",
 				className: "col-sm-3 col-xs-6"
 			});
 			
 			var imageShow = createNewElement({
 				el: containerCreate,
-				type: "img",
+				types: "img",
 				className: "img-thumbnail",
 				src: data[currentCount].url
 			});
 
 			var innerPrint = createNewElement({
 				el: containerCreate,
-				type: "div",
+				types: "div",
 				className: "info-wrapper"
 			});
 
 			var namePrint = createNewElement({
 				el: innerPrint,
-				type: "div",
+				types: "div",
 				className: "text-muted",
 				innerHTML: data[currentCount].id + ' ' + newName(data[currentCount].name)
 			});
 
 			var descriptionPrint = createNewElement({
 				el: innerPrint,
-				type: "div",
+				types: "div",
 				className: "text-muted",
 				innerHTML: newDescr(data[currentCount].description)
 			});
 			
 			var datePrint = createNewElement({
 				el: innerPrint,
-				type: "div",
+				types: "div",
 				className: "text-muted",
 				innerHTML: newDate(data[currentCount].date)
 			});
 			
 			var delDiv = createNewElement ({
 				el: datePrint,
-				type: "div",
+				types: "div",
 				className: "text-muted"
 			});
 
 			var delLink = createNewElement ({
 				el: delDiv,
-				type: "a",
-				href: "#",
-				className: "remove",
+				types: "button",
+				type: "button",
+				className: "btn btn-link",
 				innerHTML: "Удалить",
 			});
 			
