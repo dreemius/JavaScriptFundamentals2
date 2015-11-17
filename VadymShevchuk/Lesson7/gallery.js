@@ -1,10 +1,10 @@
 var	maxItem=10,
 	startPos=3,
 	finalPos=8;
-	k=0;
-	
+k=0;
+
 function filter(data){
-var j=0;
+	var j=0;
 	while (j<startPos-1){
 		data.shift();
 		j++
@@ -49,6 +49,10 @@ function addItem(k) {
 	date.className = 'text-muted';
 	date.innerHTML = data[k].date;
 
+	var url = document.createElement('div');
+	url.className = 'link';
+	url.innerHTML = '<a href="#">delete</a>';
+
 	var out = document.getElementById('result');
 
 	out.appendChild(container);
@@ -58,6 +62,7 @@ function addItem(k) {
 	infTable.appendChild(name);
 	infTable.appendChild(description);
 	infTable.appendChild(date);
+	container.appendChild(url);
 }
 
 
@@ -72,12 +77,27 @@ btn2.addEventListener("click",output);
 var btn3 = document.getElementById('btn3');
 btn3.addEventListener("click",customOutput);
 
+var edit1 = document.getElementById('exampleInputName2');
+edit1.addEventListener("keyup", copyText);
+
+var btn4 = document.getElementById('del');
+btn4.addEventListener('click', textDel);
+
+function copyText(event){
+	document.getElementById('text').value = edit1.value;
+}
+
+function textDel(event){
+	edit1.value = "";
+	document.getElementById('text').value = "";
+}
+
 function customOutput(event){
 	event.preventDefault();
 	startPos=document.getElementById('from').value;
 	finalPos=document.getElementById('to').value;
 	if (finalPos>maxItem){
-		alert("Превышен максимум");
+		alert("Out of quantity");
 	}
 	else {
 		k = finalPos;
@@ -85,7 +105,7 @@ function customOutput(event){
 		for (var i = 0; i < data.length; i++) {
 			addItem(i);
 		}
-		document.getElementById("count").innerHTML ="Количество элементов: " + k;
+		document.getElementById("count").innerHTML ="Quantity: " + k;
 	}
 }
 
@@ -102,5 +122,15 @@ function output(event) {
 		del.removeChild(del.parentNode);
 
 	}
-	document.getElementById("count").innerHTML ="Количество элементов: " + k;
+	document.getElementById("count").innerHTML = "Quantity " + k;
+}
+function removeElement() {
+	container.addEventListener('click', function (event) {
+		if (event.target.tagName == 'a') {
+			event.preventDefault();
+			event.currentTarget.removeChild(event.target.parentNode);
+			k--;
+		}
+		total.innerHTML = k;
+	});
 }
