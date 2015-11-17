@@ -1,13 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Template for homework5</title>
+    <title>Template for homework7</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -48,42 +46,47 @@
 
     <div class="container">
 
-		<div class="starter-template">
-			<h1>JS Fundamentals first demo page</h1>
-			<p class="lead">Simple galley builder</p>
+		<p class="lead">Задание 1</p>
+		<div class="row">
+			<div class="col-xs-6">
+				  <div class="form-group">
+					<label for="exampleInputName2">Текст</label>
+					<input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+				  </div>
+				  <button type="submit" id="clean" class="btn btn-default">Стереть</button>
+			</div>
+			<div class="col-xs-6">
+				<textarea class="form-control" id="textarea1" rows="3"></textarea>
+			</div>
 		</div>
-      <div class="row">
-        <div class="col-xs-6">
-          <div class="form-group">
-            <label for="exampleInputName2">Text</label>
-            <input type="text" class="form-control" id="exampleInputName2" placeholder="enter text">
-          </div>
-          <button type="submit" id="del">Delete</button>
-        </div>
-        <div class="col-xs-6">
-          <textarea class="form-control"  id="text" rows="3"></textarea>
-        </div>
-      </div>
-	  <br>
-      <br>
-      <form>
-        <button id="btn1">Добавить элемент</button>
-        <button id="btn2">Удалить элемент</button>
-      </form>
-      <br>
-      <form>
-        От: <input type="text" id="from"/>
-        До: <input type="text" id="to"/>
-        <button id="btn3">Вывести элементы</button>
-        <form>
-      <br><br>
-          <div id="result" class="row"></div>
-          <br><br>
-          <form>
-            <div id = "count">
-            </div>
-          </form>
+	
+		<br>
+		<br>
+		<br>
+		<p class="lead">Задание 2</p>
+		
+		
+		<div class="row">
+			<div class="col-xs-12">
+				<button type="button" id="element" class="btn btn-sm btn-success">+ Добавить новый элемент</button>
+			</div>
+		</div>
+		<br>
+		<div id="test" class="row"></div>
+		<br>
+		<div class="row">
+			<div class="col-xs-12">
+				<span class="text-success">Общее колличество:</span><span id="count">0</span>
+			</div>
+		</div>
+		<br>
+		<hr>
+		<br>
+
+
     </div><!-- /.container -->
+
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -91,5 +94,6 @@
     <script src="dist/js/bootstrap.min.js"></script>
 	<script src="data.js"></script>
     <script src="gallery.js"></script>
+    <script src="Exercise 1.js"></script>
   </body>
 </html>

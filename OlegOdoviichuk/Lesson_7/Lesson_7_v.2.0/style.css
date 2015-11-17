@@ -11,7 +11,15 @@ body {
 	padding: 0 5px;
 }
 
-.img-thumbnail{
-	width: 260px;
-	height: 160px;
-}
+
+
+#delelm {
+
+    background: red;
+} 
+
+
+#addelm {
+
+    background: green;
+} 
