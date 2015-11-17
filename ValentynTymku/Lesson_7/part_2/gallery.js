@@ -85,6 +85,7 @@ function createRow(itemsArray) {
 function print(arr, rowItemsCount) {
 	if (arr && rowItemsCount) {
 		var add = false;
+		var count = document.getElementById('count');
 		var elements = document.querySelectorAll('div .row');
 		if (elements.length > 0) {
 			for (var i = 0; i < elements.length; i++) {
@@ -113,12 +114,10 @@ btnSubmit.addEventListener ("click", function(event) {
 })
 
 function incItemsCount() {
-	var count = document.getElementById('count');
 	count.innerHTML = ++currentCount;
 }
 
 function decItemsCount() {
-	var count = document.getElementById('count');
 	count.innerHTML = --currentCount;
 }
 
