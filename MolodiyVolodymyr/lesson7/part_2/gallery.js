@@ -1,6 +1,5 @@
-var output=document.getElementById('output');
 var count=0;
-output.value=count;
+var buttonAddCar=document.getElementById('addCar');
 
 var newDate = function(date){
     var tmpDate = new Date(date);
@@ -40,15 +39,15 @@ function createImg(clName,source){
 	source && (tempImg.src=source);
 	return tempImg;
 	};
-
-function printResult(arrObj,ind){
+	
+function printResult(ind){
    var result=document.getElementById('result');
    var col=createTemplate('div','col-sm-3 col-xs-6');
    var wrappper=createTemplate('div','info-wrapper');
-   var carIdName= createTemplate('div','text-muted',arrObj[ind].id+':'+arrObj[ind].name);
-   var carImg= createImg('img-thumbnail',arrObj[ind].url);
-   var carDescription= createTemplate('div','text-muted',arrObj[ind].description);	
-   var carDate= createTemplate('div','text-muted',arrObj[ind].date);
+   var carIdName= createTemplate('div','text-muted',data[ind].id+':'+data[ind].name);
+   var carImg= createImg('img-thumbnail',data[ind].url);
+   var carDescription= createTemplate('div','text-muted',data[ind].description);	
+   var carDate= createTemplate('div','text-muted',data[ind].date);
    var delButton=createTemplate('a','delbutt','delete');
   
    var res=+result.appendChild(col);
@@ -62,15 +61,14 @@ function printResult(arrObj,ind){
 			delButton.style.cursor="pointer";  
 			delButton.addEventListener("click",function(event){
 			col.style.display="none";
-			output.value=(count--)-1;
+            (count--)-1;
 			 })
 			 };
-
-var buttonAddCar=document.getElementById('addCar');
-buttonAddCar.addEventListener("click",function(event){
 changeData(data);
-printResult(data,count);
-output.value=(count++)+1;
+
+buttonAddCar.addEventListener("click",function(event){
+printResult(count);
+(count++)+1;
 });
 
 
