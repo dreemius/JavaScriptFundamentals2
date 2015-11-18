@@ -7,31 +7,29 @@ function filterObject() {
 	newData = data.splice(NUMBER_OF_ELEMENTS) ;
 	newData = data.slice(FROM - 1, TO);
 }
-
-function formatDate(index){
-	var formDate = new Date(newData[index].date);
+function formatDate(oldDate){
+	var formDate = new Date(oldDate);
 	var year = formDate.getFullYear();
-    var month = formDate.getMonth() + 1;
-    var day = formDate.getDate();
+	var month = formDate.getMonth() + 1;
+	var day = formDate.getDate();
 	var hour = formDate.getHours();
 	var minutes = formDate.getMinutes();
-	newData[index].date = year + "/" + month + "/" + day + " " + hour + ":" + (minutes < 10 ? "0" + minutes : minutes);
-
+	return year + "/" + month + "/" + day + " " + (hour < 10 ? "0" + hour : hour) + ":" + (minutes < 10 ? "0" + minutes : minutes);
+}
+function preparingObj(oldObj){
+	oldObj = oldObj.toLowerCase();
+	oldObj = oldObj.replace(/[^abc]/,oldObj.charAt(0).toUpperCase());
+	oldObj = oldObj.slice(0, 15);
+	return oldObj;
 }
 
-function preparingObj(index){
-	newData[index].name = newData[index].name.toLowerCase();
-	newData[index].name = newData[index].name.replace(/[^abc]/,newData[index].name.charAt(0).toUpperCase());
-	newData[index].description = newData[index].description.slice(0, 15);
-}
 // format object to required layout
 function formatObject () {
 	for (var i = 0; i < newData.length; i++) {
-		preparingObj(i);
-		formatDate(i);
+		newData[i].name = preparingObj(newData[i].name);
+		newData[i].description = preparingObj(newData[i].description);
+		newData[i].date = formatDate(newData[i].date);
 	}
-	return newData;
-
 }
 
 function outputData() {

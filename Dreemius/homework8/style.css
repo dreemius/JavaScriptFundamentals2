@@ -11,15 +11,6 @@ body {
 	padding: 0 5px;
 }
 
-
-
-#delelm {
-
-    background: red;
-} 
-
-
-#addelm {
-
-    background: green;
-} 
+.validation-msg {
+	padding: 15px;
+}

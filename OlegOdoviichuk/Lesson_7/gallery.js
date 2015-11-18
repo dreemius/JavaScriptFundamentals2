@@ -5,7 +5,7 @@ var input = document.querySelector("#exampleInputName2"),
     deleteall = document.querySelector("#del");
 		  
 		input.addEventListener("keyup", inputTextarea);
-		del.addEventListener("click", delArea);   // почему с "keyup" тоже работает?
+		del.addEventListener("click", delArea);   
 		
 		
 function inputTextarea() {
@@ -49,13 +49,12 @@ function createDateObject(date){
 	tmpDate.getMinutes();
 };
 function changeOptions(arrObj) {
-for(var i = 0; i < newArr.length;i++) {
 	
-	newArr[i].name = changeName(arrObj[i].name);
-	newArr[i].description = sliceDescription(arrObj[i].description);
-	newArr[i].date = createDateObject(arrObj[i].date);
+	arrObj.name = changeName(arrObj.name);
+	arrObj.description = sliceDescription(arrObj.description);
+	arrObj.date = createDateObject(arrObj.date);
 	
-    }
+    
 };
 
 function createEl(item) { 
@@ -103,11 +102,14 @@ var totalcount = document.querySelector("#count");
     
 	var j = 0;
 	function addOneElement () {
-	     	
-			changeOptions(newArr);
+	     	if (newArr[j]) {
+			changeOptions(newArr[j]);
 	        createEl(newArr[j]);
 			j++;
-			totalCount ();
+			totalCount(j);
+			}else{
+		  alert("Нечего добавлять")
+	 }  
 	}
 	
 var delelement = document.querySelector("#delelm");
@@ -116,9 +118,11 @@ var delelement = document.querySelector("#delelm");
 	function delOneElement() {
 	      container.removeChild(container.lastChild);
 		  j--;
-		  totalCount ();
+		  totalCount(j);
 	}
 	
-function totalCount () {
-	totalcount.innerHTML = j; 
+function totalCount(pics) {
+	totalcount.innerHTML = pics;
+	     
 }
+
