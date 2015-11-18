@@ -1,4 +1,4 @@
-var elementShow = 6,
+var elementShow = 3,
     start = 5,
     end = 10,
 	newArray = [];
@@ -7,7 +7,7 @@ var elementShow = 6,
 	});
 
 	function nameObj(name){
-		return name[0].toUpperCase() + name.slice(1, name.length).toLowerCase();
+		return name[0].toUpperCase() + name.slice(1).toLowerCase();
 	};
 	function descriptionObj(description){
 		return description.slice(0, 15);
@@ -21,7 +21,7 @@ var elementShow = 6,
            tmpDate.getMinutes();
 }
  	function changeArray(){
-		for(var i = 0; i<newArray.length;i++){
+		for(var i = 0; i<elementShow;i++){
 			newArray[i].name = nameObj(newArray[i].name);
 			newArray[i].description = descriptionObj(newArray[i].description);
 			newArray[i].date = dateObj(newArray[i].date);
