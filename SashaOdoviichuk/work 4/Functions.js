@@ -6,14 +6,14 @@ function printMsg(id, str) {
     document.getElementById(id).innerHTML = str;
 }
 function handleSpecialResult(diceFirst) {
-    var markUp;
+    var markUp = ": two"
     switch (diceFirst) {
         case 1:
-            markUp = ": two units";
+            markUp += " units";
 
             break;
         case 6:
-            markUp = ": two sixes";
+            markUp += " sixes";
 
             break;
         default:

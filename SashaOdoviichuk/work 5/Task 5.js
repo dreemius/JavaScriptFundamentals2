@@ -1,16 +1,10 @@
-<<<<<<< HEAD
-var elementShow = 5,
+var elementShow = 6,
     start = 5,
-=======
-var start = 5, 
->>>>>>> fdc576a168abdb47bce6f9ac4531e15d2e34040e
     end = 10,
-    elementShow = 5,
 	newArray = [];
 	newArray = data.filter(function(item,index){
 		return (item.id >=start && item.id<=end);
 	});
-	
 
 	function nameObj(name){
 		return name[0].toUpperCase() + name.slice(1, name.length).toLowerCase();
