@@ -1,18 +1,13 @@
-run();
+var resultContainer = document.getElementById('test');
+var addBtn = document.querySelector("#addBtn");
+var count = document.querySelector('#count');
+addBtn.addEventListener('click', run);
 function run(){
-	var MAX_PICTURE = data.length;
-	var resultHTML = createNewElement('div',{className : 'row'});
-	var countImgInDiv = 0;
-	data.splice(0,MAX_PICTURE).forEach(function(item){
-		resultHTML.appendChild(createPicture(item));
-		countImgInDiv++;
-		if(countImgInDiv == 4){
-			printResult(resultHTML);
-			countImgInDiv = 0;
-			resultHTML = createNewElement('div',{className : 'row'});
-		}
-	});
-	if (countImgInDiv != 0) {printResult(resultHTML);}
+	var index = Number(count.innerHTML);
+	if(data[index]){
+		printResult(createPicture(data[index]));
+		count.innerHTML = (index+1);
+	}
 }
 function createPicture(item){
 	var majorDiv = createNewElement('div',{className : 'col-sm-3 col-xs-6'});
@@ -21,6 +16,15 @@ function createPicture(item){
 	majorDiv.lastChild.appendChild(createNewElement('div',{className : "text-muted"}, (item.id +': '+ changeName(item.name))));
 	majorDiv.lastChild.appendChild(createNewElement('div',{className : "text-muted"}, changeDescription(item.description)));
 	majorDiv.lastChild.appendChild(createNewElement('div',{className : "text-muted"}, changeDate(item.date)));
+	majorDiv.lastChild.appendChild(createNewElement('div',{className : "text-muted"}));
+	majorDiv.lastChild.lastChild.appendChild(createNewElement('a', {href : "#"},'Удалить'));
+	majorDiv.addEventListener('click', function(event){
+		event.preventDefault();
+		if(event.target.tagName == 'A'){
+			resultContainer.removeChild(event.currentTarget);
+			count.innerHTML = (Number(count.innerHTML)-1);
+		}
+	});
 	return majorDiv;
 }
 function createNewElement(nameElement,atribute, inHTML){
@@ -32,7 +36,6 @@ function createNewElement(nameElement,atribute, inHTML){
 	return item;
 }
 function printResult(resultHTML){
-	var resultContainer = document.getElementById('container');
 	resultContainer.appendChild(resultHTML);
 }
 function changeName(name){
