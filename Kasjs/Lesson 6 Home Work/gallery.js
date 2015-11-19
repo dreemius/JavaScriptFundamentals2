@@ -8,86 +8,100 @@ function filterObject() {
 	newData = data.slice(FROM - 1, TO);
 }
 
-function formatDate(obj,index){
-	var formDate = new Date(obj[index].date);
+function formatDate(oldDate){
+	var formDate = new Date(oldDate);
 	var year = formDate.getFullYear();
 	var month = formDate.getMonth() + 1;
 	var day = formDate.getDate();
-	var hour = formDate.getHours() + 1;
-	var minutes = formDate.getMinutes() + 1;
-	obj[index].date = year + "/" + month + "/" + day + " " + (hour < 10 ? "0" + hour : hour) + ":" + (minutes < 10 ? "0" + minutes : minutes);
-
-	return obj;
+	var hour = formDate.getHours();
+	var minutes = formDate.getMinutes();
+	 return year + "/" + month + "/" + day + " " + (hour < 10 ? "0" + hour : hour) + ":" + (minutes < 10 ? "0" + minutes : minutes);
 }
 
-function preparingObj(obj,index){
-	obj[index].name = obj[index].name.toLowerCase();
-	obj[index].name = obj[index].name.replace(/[^abc]/,obj[index].name.charAt(0).toUpperCase());
-	obj[index].description = obj[index].description.slice(0, 15);
-
-	return obj;
+function preparingObj(oldObj){
+	oldObj = oldObj.toLowerCase();
+	oldObj = oldObj.replace(/[^abc]/,oldObj.charAt(0).toUpperCase());
+	oldObj = oldObj.slice(0, 15);
+	return oldObj;
 }
+
 // format object to required layout
 function formatObject () {
 	for (var i = 0; i < newData.length; i++) {
-		preparingObj(newData,i);
-		formatDate(newData,i);
+		newData[i].name = preparingObj(newData[i].name);
+		newData[i].description = preparingObj(newData[i].description);
+		newData[i].date = formatDate(newData[i].date);
 	}
-	return newData;
+
 }
 
-function create(element) {
-	return document.createElement(element);
+function create(el){
+	return document.createElement(el);
 }
-function createImage (elem,obj,index){
-	elem.src = obj[index].url;
-	elem.alt = obj[index].alt;
-	elem.className = 'img-thumbnail';
+function selector(tag){
+	return document.querySelector(tag);
+}
+function formatDiv(objProperty,elem){
+
+	(objProperty.className) && (elem.className = objProperty.className);
+	(objProperty.src)&&(elem.src = objProperty.src);
+	(objProperty.alt)&&(elem.alt = objProperty.alt);
+	(objProperty.innerHTML)&&(elem.innerHTML = objProperty.innerHTML);
 	return elem;
 }
-function fillDiv(elem,value) {
-	elem.className = value;
-	return elem;
-}
 
-function outputData() {
+function fillDiv(){
 
-	formatObject();
-	for (var i = 0; i < newData.length; i++) {
-		// create the element
-		var divContainer = create('div');
-		divContainer.className = 'col-sm-3 col-xs-6';
+	for(var i = 0;i < newData.length;i++){
 
-		var image = create('img');
-		createImage(image,newData,i);
+		var container = selector('#result');
+		var outerContainer = create("div");
+		container.appendChild(outerContainer);
+		outerContainer = formatDiv({
+			className: 'col-sm-3 col-xs-6'
+		},outerContainer);
 
-		var divInner = create('div');
-		fillDiv(divInner,'info-wrapper');
+		var imageNew = create('img');
+		outerContainer.appendChild(imageNew);
+		imageNew = formatDiv({
+			className: 'img-thumbnail',
+			src: newData[i].url,
+			alt: newData[i].name
+		},imageNew);
 
-		var divNumber = create('div');
-		fillDiv(divNumber,'text-muted');
-		divNumber.innerHTML = newData[i].id + ": " + newData[i].name;
+		var innerContainer = create('div');
+		outerContainer.appendChild(innerContainer);
+		innerContainer = formatDiv({
+			className: 'info-wrapper'
+		},innerContainer);
 
-		var divDescription = create('div');
-		fillDiv(divDescription,'text-muted');
-		divDescription.innerHTML = newData[i].description;
+		var numberAndName = create('div');
+		innerContainer.appendChild(numberAndName);
+		numberAndName = formatDiv({
+			className: "text-muted",
+			innerHTML: newData[i].id + ". " + newData[i].name
+		},numberAndName);
 
-		var divDate = create('div');
-		fillDiv(divDate,'text-muted');
-		divDate.innerHTML = newData[i].date;
-		// insert the element
+		var description = create('div');
+		innerContainer.appendChild(description);
+		description = formatDiv({
+			className: 'text-muted',
+			innerHTML: newData[i].description
+		},description);
 
-		var divResult = document.getElementById('result');
-		divResult.appendChild(divContainer);
-		divContainer.appendChild(image);
-		divContainer.appendChild(divInner);
-		divInner.appendChild(divNumber);
-		divInner.appendChild(divDescription);
-		divInner.appendChild(divDate);
+		var dateLine = create('div');
+		innerContainer.appendChild(dateLine);
+		dateLine = formatDiv({
+			className: 'text-muted',
+			innerHTML: newData[i].date
+		},dateLine);
 	}
 }
 filterObject();
-outputData();
+formatObject();
+fillDiv();
+
+
 
 
 

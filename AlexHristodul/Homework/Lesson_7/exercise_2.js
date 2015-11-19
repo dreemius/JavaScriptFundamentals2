@@ -5,8 +5,7 @@ var resultContainer = document.querySelector('#result'),
 	addNewPicture = document.querySelector('#addNewPicture'),
 	countPictures = document.querySelector('#count');
 	
-var dataLength = (data.length-1),
-	currentCount = 0,
+var currentCount = 0,
 	count = 0;
 	
 addNewPicture.addEventListener("click", run);
@@ -31,82 +30,79 @@ function newDate(date){
 };
 
 function createNewElement(paramSet) {
-	var element = paramSet.el.appendChild(document.createElement(paramSet.type));
+	var element = paramSet.el.appendChild(document.createElement(paramSet.types));
 	paramSet.className && (element.className = paramSet.className);
 	paramSet.src && (element.src = paramSet.src);
 	paramSet.innerHTML && (element.innerHTML = paramSet.innerHTML);
-	paramSet.href && (element.href = paramSet.href);
+	paramSet.type && (element.type = paramSet.type);
 	return element;
 }
 
 function updateCounts() {
-	currentCount == dataLength ? currentCount=0 : currentCount++;
+	currentCount == data.length - 1 ? currentCount=0 : currentCount++;
 	count++;
 	countPictures.innerHTML=count;	
 }
 
 function deleteElement(event) {
-    if(event.target.className == 'remove') {
 		event.preventDefault();
         resultContainer.removeChild(event.target.closest('.col-sm-3'));
 		count--;
-		count--;
-		updateCounts();
-	}
+		countPictures.innerHTML=count;	
 };
 
 function run() {
 			var containerCreate = createNewElement({
 				el: resultContainer,
-				type: "div",
+				types: "div",
 				className: "col-sm-3 col-xs-6"
 			});
 			
 			var imageShow = createNewElement({
 				el: containerCreate,
-				type: "img",
+				types: "img",
 				className: "img-thumbnail",
 				src: data[currentCount].url
 			});
 
 			var innerPrint = createNewElement({
 				el: containerCreate,
-				type: "div",
+				types: "div",
 				className: "info-wrapper"
 			});
 
 			var namePrint = createNewElement({
 				el: innerPrint,
-				type: "div",
+				types: "div",
 				className: "text-muted",
 				innerHTML: data[currentCount].id + ' ' + newName(data[currentCount].name)
 			});
 
 			var descriptionPrint = createNewElement({
 				el: innerPrint,
-				type: "div",
+				types: "div",
 				className: "text-muted",
 				innerHTML: newDescr(data[currentCount].description)
 			});
 			
 			var datePrint = createNewElement({
 				el: innerPrint,
-				type: "div",
+				types: "div",
 				className: "text-muted",
 				innerHTML: newDate(data[currentCount].date)
 			});
 			
 			var delDiv = createNewElement ({
 				el: datePrint,
-				type: "div",
+				types: "div",
 				className: "text-muted"
 			});
 
 			var delLink = createNewElement ({
 				el: delDiv,
-				type: "a",
-				href: "#",
-				className: "remove",
+				types: "button",
+				type: "button",
+				className: "btn btn-link",
 				innerHTML: "Удалить",
 			});
 			
