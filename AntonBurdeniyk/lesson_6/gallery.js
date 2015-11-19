@@ -1,12 +1,13 @@
 run();
 function run(){
 	var MAX_PICTURE = data.length;
+	var COUNT_IMG	= 4;
 	var resultHTML = createNewElement('div',{className : 'row'});
 	var countImgInDiv = 0;
 	data.splice(0,MAX_PICTURE).forEach(function(item){
 		resultHTML.appendChild(createPicture(item));
 		countImgInDiv++;
-		if(countImgInDiv == 4){
+		if(countImgInDiv == COUNT_IMG){
 			printResult(resultHTML);
 			countImgInDiv = 0;
 			resultHTML = createNewElement('div',{className : 'row'});
