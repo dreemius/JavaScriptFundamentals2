@@ -14,6 +14,7 @@ var formValidator = (function(){
 		if(input.name.value
 		   && input.email.value
 		   && input.pasword.value) {
+			$('.form-group').hide();
 			showDiv('#success-msg');
 			$('#tableOfResult').show();
 		} else {
