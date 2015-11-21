@@ -15,7 +15,7 @@ var formValidator = (function(){
 	function createTable(paramSet) {
 		var element = paramSet.el.appendChild(document.createElement(paramSet.type));
 		paramSet.innerHTML && (element.innerHTML = paramSet.innerHTML);
-		paramSet.id && (element.id = paramSet.id);
+		paramSet.className && (element.className = paramSet.className);
 		return element;
 	}
 	
@@ -43,18 +43,28 @@ var formValidator = (function(){
 		var thirdCell = createTable({
 				el       : rowCreate,
 				type     : 'td',
-				id       : 'fuck',
+				className: 'thirdCell',
 				innerHTML: input.password.value.replace(/[\s\S]/g, '*')
 		});
 		var buttonCell = createTable({
 				el: thirdCell,
 				type     : 'button',
-				id       : 'show-pass',
+				className: 'show-pass',
 				innerHTML: '***'
+		});
+		$('.show-pass').click(function() {
+			$('.thirdCell').text(input.password.value);
 		});
 	}
 	
 	function checkForm() {
+		
+		function showHidden() {
+			$('.form-horizontal').hide();
+			$('#tableOfResult').show();
+			$('#reset').show();
+			$('p.lead').show();
+		}
 		
 		function isValidEmail(myEmail) { 
 			var reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/;
@@ -64,14 +74,17 @@ var formValidator = (function(){
 		if(input.name.value
 		   && isValidEmail(input.email.value)
 		   && input.password.value) {
-			$('.form-horizontal').hide();
+			showHidden();
 			showBanner('#success-msg');
-			$('#tableOfResult').show();
 			addRow();
 			count++;
 		} else {
 			showBanner('#error-msg');
 		}
+	}
+	
+	function sda() {
+
 	}
 	
 	function validateForm() {
@@ -80,9 +93,6 @@ var formValidator = (function(){
 		});
 		$('#reset').click(function() {
 			$('.form-horizontal').show();
-		});
-		$('#show-pass').click(function() {
-			$('#fuck').text(input.password.value);
 		});
 	}
 	

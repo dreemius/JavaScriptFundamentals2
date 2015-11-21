@@ -13,17 +13,17 @@ body {
 .validation-msg {
 	padding: 15px;
 }
-#tableOfResult  {
+
+#tableOfResult, p.lead, #reset {
 	display: none;
 }
+
 #success-msg, #error-msg {
 	display: none;
 	border-radius: 25px;
 	text-align: center;
 }
-#btn-show-hide-pass {
-	display: block;
-}
-#show-pass {
+
+.show-pass {
 	float: right;
 }
