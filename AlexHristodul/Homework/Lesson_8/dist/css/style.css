@@ -1,9 +1,9 @@
 body {
-  padding-top: 50px;
+	padding-top: 50px;
 }
 .starter-template {
-  padding: 40px 15px;
-  text-align: center;
+	padding: 40px 15px;
+	text-align: center;
 }
 
 .info-wrapper {
@@ -20,4 +20,10 @@ body {
 	display: none;
 	border-radius: 25px;
 	text-align: center;
+}
+#btn-show-hide-pass {
+	display: block;
+}
+#show-pass {
+	float: right;
 }
