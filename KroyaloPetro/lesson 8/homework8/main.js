@@ -1,9 +1,8 @@
-
-
 var formValidator = (function(){
 	
 	var DOMElements = null;
 	var arrUsers = [];
+
 	function showErrorMsg(){DOMElements.errorMsg.className = "bg-danger validation-msg";}
 	function hideErrorMsg(){DOMElements.errorMsg.className = "hide";}
 	function showSuccessMsg(){DOMElements.successMsg.className = "bg-success validation-msg";}
@@ -18,7 +17,6 @@ var formValidator = (function(){
 		for(var atr in attribut){
 			itemTemp[atr] = attribut[atr];
 		}
-		//toTheHTML && (itemTemp.innerHTML = toTheHTML);
 		return itemTemp;
 	}
 	function clearForm(){
@@ -87,7 +85,8 @@ var formValidator = (function(){
 			return false;
 		}
 	}
-	function validate(){
+	function validate(event){
+		event.preventDefault();
 		if(checkForm()){
 			addUser();
 			hideErrorMsg();
@@ -98,7 +97,6 @@ var formValidator = (function(){
 			showErrorMsg();
 		}
 	}
-	//reset : function(){}
 	
 	return {
 		setForm : function(form){	
@@ -109,9 +107,7 @@ var formValidator = (function(){
 			DOMElements.resetBtn.addEventListener("click",returnToForm);
 		}
 	}
-	
-	
-}())
+}());
 
 formValidator.setForm({
 	name 		 : document.querySelector("#inputName"),
@@ -124,5 +120,5 @@ formValidator.setForm({
 	successMsg	 : document.querySelector("#true"),
 	checkTrue	 : document.querySelector("#checkTrue"),
 	validateForm : document.querySelector("#form")
-})
+});
 formValidator.initValidator();
