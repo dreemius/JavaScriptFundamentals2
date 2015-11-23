@@ -1,19 +1,13 @@
-<<<<<<< HEAD
-var elementShow = 5,
+var elementShow = 3,
     start = 5,
-=======
-var start = 5, 
->>>>>>> fdc576a168abdb47bce6f9ac4531e15d2e34040e
     end = 10,
-    elementShow = 5,
 	newArray = [];
 	newArray = data.filter(function(item,index){
 		return (item.id >=start && item.id<=end);
 	});
-	
 
 	function nameObj(name){
-		return name[0].toUpperCase() + name.slice(1, name.length).toLowerCase();
+		return name[0].toUpperCase() + name.slice(1).toLowerCase();
 	};
 	function descriptionObj(description){
 		return description.slice(0, 15);
@@ -27,7 +21,7 @@ var start = 5,
            tmpDate.getMinutes();
 }
  	function changeArray(){
-		for(var i = 0; i<newArray.length;i++){
+		for(var i = 0; i<elementShow;i++){
 			newArray[i].name = nameObj(newArray[i].name);
 			newArray[i].description = descriptionObj(newArray[i].description);
 			newArray[i].date = dateObj(newArray[i].date);

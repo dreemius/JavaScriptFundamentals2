@@ -1,0 +1,33 @@
+body {
+	padding-top: 50px;
+	background-image: url(../img/zolotoe-pole.jpg);
+	background-attachment: fixed;
+	background-size: 100% 150%;
+}
+
+.starter-template {
+	padding: 40px 15px;
+	text-align: center;
+}
+
+.info-wrapper {
+	padding: 0 5px;
+}
+
+.validation-msg {
+	padding: 15px;
+}
+
+#tableOfResult, p.lead, #reset {
+	display: none;
+}
+
+#success-msg, #error-msg {
+	display: none;
+	border-radius: 25px;
+	text-align: center;
+}
+
+.show-pass {
+	float: right;
+}
