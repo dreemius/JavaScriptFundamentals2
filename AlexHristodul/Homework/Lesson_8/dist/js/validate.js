@@ -52,7 +52,7 @@ var formValidator = (function(){
 		var buttonCell = createTable({
 				el: thirdCell,
 				type     : 'button',
-				className: 'show-pass',
+				className: 'btn btn-link',
 				innerHTML: 'show'
 		});
 		
@@ -94,16 +94,18 @@ var formValidator = (function(){
 			showBanner('#error-msg');
 		}
 	}
-
+	
+	function resetForm() {
+		input.name.val('');
+		input.email.val('');
+		input.password.val('');
+		$('.form-horizontal').show();
+		$('#tableOfResult').hide();
+		$('#reset').hide();
+		$('p.lead').hide();
+	}
+		
 	function validateForm() {	
-	
-		function resetForm() {
-			$('.form-horizontal').show();
-			$('#tableOfResult').hide();
-			$('#reset').hide();
-			$('p.lead').hide();
-		}
-	
 		$('#btn-valid').click(function() {
 			checkForm();
 		});
