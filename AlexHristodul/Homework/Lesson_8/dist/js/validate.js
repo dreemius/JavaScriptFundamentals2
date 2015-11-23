@@ -4,7 +4,7 @@
 
 var formValidator = (function(){
 	var input = null;
-	var count = 2;
+	var count = 1;
 
 	function showBanner(selector) {
 		$(selector).show(2000, function() {
@@ -33,27 +33,39 @@ var formValidator = (function(){
 		var firstCell = createTable({
 				el       : rowCreate,
 				type     : 'td',
-				innerHTML: input.name.value
+				innerHTML: input.name.val()
 		});
 		var secondCell = createTable({
 				el       : rowCreate,
 				type     : 'td',
-				innerHTML: input.email.value
+				innerHTML: input.email.val()
 		});
 		var thirdCell = createTable({
 				el       : rowCreate,
 				type     : 'td',
-				className: 'thirdCell',
-				innerHTML: input.password.value.replace(/[\s\S]/g, '*')
+		});
+		var passSpan = createTable({
+				el       : thirdCell,
+				type     : 'span',
+				innerHTML: input.password.val().replace(/[\s\S]/g, '*')
 		});
 		var buttonCell = createTable({
 				el: thirdCell,
 				type     : 'button',
 				className: 'show-pass',
-				innerHTML: '***'
+				innerHTML: 'show'
 		});
-		$('.show-pass').click(function() {
-			$('.thirdCell').text(input.password.value);
+		
+		rowCreate.lastChild.addEventListener('click', function(event) {
+			if(event.target.tagName == 'BUTTON'){
+				if(event.target.innerHTML == 'show'){
+					event.currentTarget.firstChild.innerHTML = input.password.val();
+					event.target.innerHTML = 'hide';
+				}else{
+					event.currentTarget.firstChild.innerHTML = input.password.val().replace(/[\s\S]/g, '*');
+					event.target.innerHTML = 'show';
+				}
+			}
 		});
 	}
 	
@@ -71,9 +83,9 @@ var formValidator = (function(){
 			return reg.test(myEmail); 
 		} 
 		
-		if(input.name.value
-		   && isValidEmail(input.email.value)
-		   && input.password.value) {
+		if(input.name.val()
+		   && isValidEmail(input.email.val())
+		   && input.password.val()) {
 			showHidden();
 			showBanner('#success-msg');
 			addRow();
@@ -82,17 +94,21 @@ var formValidator = (function(){
 			showBanner('#error-msg');
 		}
 	}
-	
-	function sda() {
 
-	}
+	function validateForm() {	
 	
-	function validateForm() {
+		function resetForm() {
+			$('.form-horizontal').show();
+			$('#tableOfResult').hide();
+			$('#reset').hide();
+			$('p.lead').hide();
+		}
+	
 		$('#btn-valid').click(function() {
 			checkForm();
 		});
 		$('#reset').click(function() {
-			$('.form-horizontal').show();
+			resetForm();
 		});
 	}
 	
@@ -109,9 +125,9 @@ var formValidator = (function(){
 //*********************************************************
 
 formValidator.setForm({
-	name 	     : document.querySelector('#inputName'),
-	email 	     : document.querySelector('#inputEmail'),
-	password     : document.querySelector('#inputPassword')
+	name 	     : $('#inputName'),
+	email 	     : $('#inputEmail'),
+	password     : $('#inputPassword')
 })
 
 formValidator.initValidator();
