@@ -18,3 +18,16 @@ body {
 .bg-success, .bg-danger, .table-container {
 	display: none;
 }
+
+.show-pass {
+	background: url(dist/images/eyeclose.png) no-repeat;
+	float: right;
+	width: 24px;
+	height: 24px;
+	border: none;
+	outline: none;
+}
+
+.active {
+	background: url(dist/images/eye.png) no-repeat;
+}

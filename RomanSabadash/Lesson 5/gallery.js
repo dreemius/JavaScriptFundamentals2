@@ -13,12 +13,12 @@ var itemTemplate = '<div class="col-sm-3 col-xs-6">\
 
 // Change name
 function newName(name) {
-	return editName = name[0].toUpperCase() + name.slice(1).toLowerCase();
+	return name[0].toUpperCase() + name.slice(1).toLowerCase();
 }
 
 // Change description
 function newDescription(descrp) {
-	return editDescrp = descrp.slice(0,15);
+	return descrp.slice(0,15);
 }
 
 // Change date
@@ -42,7 +42,7 @@ function run() {
 			description : newDescription(data[i].description),
 			date : newDate(data[i].date)
 		};
-		
+
 		resultHTML += itemTemplate
 		.replace("$number", newItem.id)
 		.replace(/\$name/gi, newItem.name)
