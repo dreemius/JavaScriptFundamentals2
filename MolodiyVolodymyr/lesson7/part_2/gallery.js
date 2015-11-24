@@ -40,14 +40,14 @@ function createImg(clName,source){
 	return tempImg;
 	};
 	
-function printResult(ind){
+function printResult(myItem){
    var result=document.getElementById('result');
    var col=createTemplate('div','col-sm-3 col-xs-6');
    var wrappper=createTemplate('div','info-wrapper');
-   var carIdName= createTemplate('div','text-muted',data[ind].id+':'+data[ind].name);
-   var carImg= createImg('img-thumbnail',data[ind].url);
-   var carDescription= createTemplate('div','text-muted',data[ind].description);	
-   var carDate= createTemplate('div','text-muted',data[ind].date);
+   var carIdName= createTemplate('div','text-muted',myItem[count].id+':'+myItem[count].name);
+   var carImg= createImg('img-thumbnail',myItem[count].url);
+   var carDescription= createTemplate('div','text-muted',myItem[count].description);	
+   var carDate= createTemplate('div','text-muted',myItem[count].date);
    var delButton=createTemplate('a','delbutt','delete');
   
    var res=+result.appendChild(col);
@@ -61,14 +61,14 @@ function printResult(ind){
 			delButton.style.cursor="pointer";  
 			delButton.addEventListener("click",function(event){
 			col.style.display="none";
-            (count--)-1;
+            count--;
 			 })
 			 };
 changeData(data);
 
 buttonAddCar.addEventListener("click",function(event){
-printResult(count);
-(count++)+1;
+printResult(data);
+count++;
 });
 
 

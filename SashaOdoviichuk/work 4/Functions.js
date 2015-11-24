@@ -6,20 +6,20 @@ function printMsg(id, str) {
     document.getElementById(id).innerHTML = str;
 }
 function handleSpecialResult(diceFirst) {
-    var markUp;
+    var markUp = ": two"
     switch (diceFirst) {
         case 1:
-            markUp = " - Fell down - two units";
+            markUp += " units";
 
             break;
         case 6:
-            markUp = " - Fell down - two sixes";
+            markUp += " sixes";
 
             break;
         default:
-            markUp = " - Fell double";
+            markUp = "";
 
-            break;
+           break;
     }
     return markUp;
 }
@@ -34,7 +34,7 @@ function composeMsg() {
         totalSum += diceFirst + diceSecond;
         markUp += "<strong>First bone:</strong> = <i>" + diceFirst + "</i><strong> Second bone:</strong> = <i>" + diceSecond + "</i>";
         if (diceFirst == diceSecond) {
-            markUp += handleSpecialResult(diceFirst);
+            markUp += " - Fell double" + handleSpecialResult(diceFirst);
         }
         markUp += "<br>";
     }

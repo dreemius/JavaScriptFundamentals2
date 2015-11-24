@@ -1,40 +1,36 @@
 run();
 function run(){
 	var MAX_PICTURE = data.length;
-	var resultHTML = creatDiv('row','');
+	var COUNT_IMG	= 4;
+	var resultHTML = createNewElement('div',{className : 'row'});
 	var countImgInDiv = 0;
 	data.splice(0,MAX_PICTURE).forEach(function(item){
-		resultHTML.appendChild(creatPicture(item));
+		resultHTML.appendChild(createPicture(item));
 		countImgInDiv++;
-		if(countImgInDiv == 4){
+		if(countImgInDiv == COUNT_IMG){
 			printResult(resultHTML);
 			countImgInDiv = 0;
-			resultHTML = creatDiv('row','');
+			resultHTML = createNewElement('div',{className : 'row'});
 		}
 	});
 	if (countImgInDiv != 0) {printResult(resultHTML);}
 }
-function creatPicture(item){
-	var majorDiv = creatDiv('col-sm-3 col-xs-6','');
-	majorDiv.appendChild(creatImg(item.url, changeName(item.name), "img-thumbnail"));
-	majorDiv.appendChild(creatDiv("info-wrapper",''));
-	majorDiv.lastChild.appendChild(creatDiv("text-muted", (item.id +': '+ changeName(item.name))));
-	majorDiv.lastChild.appendChild(creatDiv("text-muted", changeDescription(item.description)));
-	majorDiv.lastChild.appendChild(creatDiv("text-muted", changeDate(item.date)));
+function createPicture(item){
+	var majorDiv = createNewElement('div',{className : 'col-sm-3 col-xs-6'});
+	majorDiv.appendChild(createNewElement('img',{src : item.url,alt : changeName(item.name), className : "img-thumbnail"}));
+	majorDiv.appendChild(createNewElement('div',{className : "info-wrapper"}));
+	majorDiv.lastChild.appendChild(createNewElement('div',{className : "text-muted"}, (item.id +': '+ changeName(item.name))));
+	majorDiv.lastChild.appendChild(createNewElement('div',{className : "text-muted"}, changeDescription(item.description)));
+	majorDiv.lastChild.appendChild(createNewElement('div',{className : "text-muted"}, changeDate(item.date)));
 	return majorDiv;
 }
-function creatDiv(nameClass, inDiv){
-	var newDiv = document.createElement('div');
-	newDiv.className = nameClass;
-	newDiv.innerHTML = inDiv;
-	return newDiv;
-}
-function creatImg(urlImg, name, nameClass){
-	var newImg = document.createElement('img');
-	newImg.src = urlImg;
-	newImg.alt = name;
-	newImg.className = nameClass;
-	return newImg;
+function createNewElement(nameElement,atribute, inHTML){
+	var item = document.createElement(nameElement);
+	for (key in atribute){
+		item[key] = atribute[key];
+	}
+	if (inHTML){ item.innerHTML = inHTML};
+	return item;
 }
 function printResult(resultHTML){
 	var resultContainer = document.getElementById('container');
