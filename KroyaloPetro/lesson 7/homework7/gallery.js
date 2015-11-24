@@ -14,6 +14,7 @@ buttonLoad.addEventListener("click",function(event){
 	var START 	  = Number(inputs.children[0].value)-1,
 		END		  = Number(inputs.children[1].value),
 		MAX_VALUE = Number(inputs.children[2].value);
+	buttonDelete.click();
 	data.slice(START,END).slice(0,MAX_VALUE).forEach(addPicture);
 });
 buttonDelete.addEventListener("click",function(){
