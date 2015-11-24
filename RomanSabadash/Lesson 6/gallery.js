@@ -4,12 +4,12 @@ var resultContainer = $('#result');
 
 // Change name
 function newName(name) {
-	return editName = name[0].toUpperCase() + name.slice(1).toLowerCase();
+	return name[0].toUpperCase() + name.slice(1).toLowerCase();
 }
 
 // Change description
 function newDescription(descrp) {
-	return editDescrp = descrp.slice(0,15);
+	return descrp.slice(0,15);
 }
 
 // Change date

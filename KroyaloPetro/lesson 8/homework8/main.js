@@ -5,8 +5,6 @@ var formValidator = (function(){
 
 	function showErrorMsg(){DOMElements.errorMsg.className = "bg-danger validation-msg";}
 	function hideErrorMsg(){DOMElements.errorMsg.className = "hide";}
-	function showSuccessMsg(){DOMElements.successMsg.className = "bg-success validation-msg";}
-	function hideSuccessMsg(){DOMElements.successMsg.className = "hide";}
 	function showTable(){DOMElements.checkTrue.className = "row";}
 	function hideTable(){DOMElements.checkTrue.className = "hide";}
 	function showForm(){DOMElements.validateForm.className = "form-horizontal";}
@@ -72,7 +70,6 @@ var formValidator = (function(){
 	function returnToForm(){
 		hideTable();
 		hideErrorMsg();
-		hideSuccessMsg();
 		clearForm();
 		showForm();
 	}
@@ -91,7 +88,6 @@ var formValidator = (function(){
 			addUser();
 			hideErrorMsg();
 			hideForm();
-			showSuccessMsg();
 			showTable();
 		}else {
 			showErrorMsg();
