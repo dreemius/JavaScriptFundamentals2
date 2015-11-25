@@ -5,17 +5,15 @@ var formValidator = (function(){
 
 	function showErrorMsg(){DOMElements.errorMsg.className = "bg-danger validation-msg";}
 	function hideErrorMsg(){DOMElements.errorMsg.className = "hide";}
-	function showSuccessMsg(){DOMElements.successMsg.className = "bg-success validation-msg";}
-	function hideSuccessMsg(){DOMElements.successMsg.className = "hide";}
 	function showTable(){DOMElements.checkTrue.className = "row";}
 	function hideTable(){DOMElements.checkTrue.className = "hide";}
 	function showForm(){DOMElements.validateForm.className = "form-horizontal";}
 	function hideForm(){DOMElements.validateForm.className = "hide";}
 	
-	function createNewElement(tagName,attribut){
+	function createNewElement(tagName,attributes){
 		var itemTemp = document.createElement(tagName);
-		for(var atr in attribut){
-			itemTemp[atr] = attribut[atr];
+		for(var atr in attributes){
+			itemTemp[atr] = attributes[atr];
 		}
 		return itemTemp;
 	}
@@ -53,37 +51,15 @@ var formValidator = (function(){
 												innerHTML : passworHide(item.password)
 											  }));
 		row.lastChild.appendChild(createNewElement("button",{
-																className : "show_hide_btn",
+																className : "btn btn-default show_hide_btn",
 																innerHTML : "show"
 															}));
-		row.lastChild.addEventListener("click",function(event){
-			if(event.target.tagName == "BUTTON"){
-				if(event.target.innerHTML == "show"){
-					event.currentTarget.firstChild.innerHTML = item.password;
-					event.target.innerHTML = "hide";
-				}else{
-					row.lastChild.firstChild.innerHTML = passworHide(item.password);
-					event.target.innerHTML = "show";
-				}
-			}
-		})
 		DOMElements.tableContent.appendChild(row);
 	}
-	function returnToForm(){
-		hideTable();
-		hideErrorMsg();
-		hideSuccessMsg();
-		clearForm();
-		showForm();
-	}
 	function checkForm () {
-		if(DOMElements.name.value 
+		return (DOMElements.name.value 
 			&& /.+@.+\..+/i.test(DOMElements.email.value) 
-			&& DOMElements.password.value) {			
-			return true;
-		} else {
-			return false;
-		}
+			&& DOMElements.password.value) 
 	}
 	function validate(event){
 		event.preventDefault();
@@ -91,13 +67,29 @@ var formValidator = (function(){
 			addUser();
 			hideErrorMsg();
 			hideForm();
-			showSuccessMsg();
 			showTable();
 		}else {
 			showErrorMsg();
 		}
 	}
-	
+	function returnToForm(){
+		hideTable();
+		hideErrorMsg();
+		clearForm();
+		showForm();
+	}
+	function passBtn (event){
+		if(event.target.tagName == "BUTTON"){
+			var pass = arrUsers[+(event.target.parentElement.parentElement.firstChild.innerHTML)-1].password;
+			if(event.target.innerHTML == "show"){
+				event.target.previousSibling.innerHTML = pass;
+				event.target.innerHTML = "hide";
+			}else{
+				event.target.previousSibling.innerHTML = passworHide(pass);
+				event.target.innerHTML = "show";
+			}
+		}
+	}
 	return {
 		setForm : function(form){	
 			DOMElements = form;
@@ -105,6 +97,7 @@ var formValidator = (function(){
 		initValidator: function(form){
 			DOMElements.submitBtn.addEventListener("click",validate);
 			DOMElements.resetBtn.addEventListener("click",returnToForm);
+			DOMElements.tableContent.addEventListener("click",passBtn);
 		}
 	}
 }());

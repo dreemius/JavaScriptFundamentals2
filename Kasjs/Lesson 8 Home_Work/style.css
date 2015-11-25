@@ -1,0 +1,34 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.info-wrapper {
+	padding: 0 5px;
+}
+.validation-msg {
+	padding: 15px;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+table th,td{
+    text-align: center;
+    width: 195px;
+    color: black;
+    background-color: whitesmoke;
+}
+#tableParagraph,#reset{
+    display: none;
+}
+table td button {
+    margin-left: 10px ;
+}
+p.bg-success, p.bg-danger{
+    font: 25px Helvetica bold;
+}

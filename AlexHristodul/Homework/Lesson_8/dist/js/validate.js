@@ -52,17 +52,16 @@ var formValidator = (function(){
 		var buttonCell = createTable({
 				el: thirdCell,
 				type     : 'button',
-				className: 'show-pass',
-				innerHTML: 'show'
+				className: 'btn btn-link',
+				innerHTML: 'show',
 		});
-		
 		rowCreate.lastChild.addEventListener('click', function(event) {
 			if(event.target.tagName == 'BUTTON'){
 				if(event.target.innerHTML == 'show'){
 					event.currentTarget.firstChild.innerHTML = input.password.val();
 					event.target.innerHTML = 'hide';
 				}else{
-					event.currentTarget.firstChild.innerHTML = input.password.val().replace(/[\s\S]/g, '*');
+					rowCreate.lastChild.firstChild.innerHTML = input.password.val().replace(/[\s\S]/g, '*');
 					event.target.innerHTML = 'show';
 				}
 			}
@@ -73,9 +72,7 @@ var formValidator = (function(){
 		
 		function showHidden() {
 			$('.form-horizontal').hide();
-			$('#tableOfResult').show();
-			$('#reset').show();
-			$('p.lead').show();
+			$('#tableOfResult, #reset, p.lead').show();
 		}
 		
 		function isValidEmail(myEmail) { 
@@ -94,16 +91,16 @@ var formValidator = (function(){
 			showBanner('#error-msg');
 		}
 	}
-
+	
+	function resetForm() {
+		input.name.val('');
+		input.email.val('');
+		input.password.val('');
+		$('.form-horizontal').show();
+		$('#tableOfResult, #reset, p.lead').hide();
+	}
+		
 	function validateForm() {	
-	
-		function resetForm() {
-			$('.form-horizontal').show();
-			$('#tableOfResult').hide();
-			$('#reset').hide();
-			$('p.lead').hide();
-		}
-	
 		$('#btn-valid').click(function() {
 			checkForm();
 		});
