@@ -1,40 +1,26 @@
 var formValidator = (function(){
     var count = 1;
     var DomElements = {};
-    function showSuccessMsg(){
-        DomElements.Success.className = 'bg-success validation-msg show';
-    }
-    function showErrorMsg (){
-       DomElements.Error.className = 'bg-danger validation-msg show';
-    }
-    function hideErrorMsg(){
-        DomElements.Error.className = 'bg-danger validation-msg hide';
-    }
-    function hideSuccessMsg (){
-        DomElements.Success.className = 'bg-success validation-msg hide';
-    }
-    function hideForm(){
-        DomElements.tagForm.className = 'form-horizontal hide';
-    }
-    function showForm(){
-        DomElements.tagForm.className = 'form-horizontal show';
-    }
-    function showTable(){
-        DomElements.table.className = 'table table-bordered show';
-    }
-    function hideTable(){
-        DomElements.table.className = 'table table-bordered hide';
-    }
-    function showTableParagraph(){
-        DomElements.paragraphTable.style.display = 'block';
-    }
-    function hideTableParagraph(){
-        DomElements.paragraphTable.style.display = 'none';
-    }
-
+    function showSuccessMsg(){DomElements.Success.className = 'bg-success validation-msg show';}
+    function showErrorMsg (){DomElements.Error.className = 'bg-danger validation-msg show';}
+    function hideErrorMsg(){DomElements.Error.className = 'bg-danger validation-msg hide';}
+    function hideSuccessMsg (){DomElements.Success.className = 'bg-success validation-msg hide';}
+    function hideForm(){DomElements.tagForm.className = 'form-horizontal hide';}
+    function showForm(){DomElements.tagForm.className = 'form-horizontal show';}
+    function showTable(){DomElements.table.className = 'table table-bordered show';}
+    function hideTable(){DomElements.table.className = 'table table-bordered hide';}
+    function showTableParagraph(){DomElements.paragraphTable.style.display = 'block';}
+    function hideTableParagraph(){DomElements.paragraphTable.style.display = 'none';}
+    function showFormParagraph(){DomElements.paragraphForm.style.display = 'block';}
+    function hideFormParagraph(){DomElements.paragraphForm.style.display = 'none';}
+    function showResetButton(){DomElements.resetButton.style.display = 'block';}
+    function hideResetButton(){DomElements.resetButton.style.display = 'none';}
+    function emptyForm(){DomElements.name.value = '';DomElements.email.value = '';DomElements.password.value = '';}
     function addTableLine(){
 
-        var tableBody = DomElements.tableBody;
+    }
+
+       /* var tableBody = DomElements.tableBody;
         var tableRow = document.createElement('tr');
         var tableHead = document.createElement('th');
         var tableButton = document.createElement('button');
@@ -63,25 +49,23 @@ var formValidator = (function(){
         }
         tableBody.appendChild(tableRow);
     }
-
+*/
     function showTablePart(){
         addTableLine();
         showTable();
         showTableParagraph();
-        DomElements.paragraphForm.style.display = 'none';
-        DomElements.resetButton.style.display = 'block';
+        hideFormParagraph();
+        showResetButton();
     }
 
     function showFormPart(){
         hideTable();
         hideTableParagraph();
         showForm();
-        DomElements.paragraphForm.style.display = 'block';
-        DomElements.resetButton.style.display = 'none';
+        showFormParagraph();
+        hideResetButton();
         hideSuccessMsg ();
-        DomElements.name.value = '';
-        DomElements.email.value = '';
-        DomElements.password.value = '';
+        emptyForm();
     }
     //-------------------------------------------------------------------------
     function checkForm(event){
@@ -129,18 +113,18 @@ var formValidator = (function(){
 }());
 
 formValidator.setForm({
-    name: document.querySelector("#inputName"),
-    email: document.querySelector("#inputEmail"),
-    password: document.querySelector("#inputPassword"),
-    Success: document.querySelector('.bg-success'),
-    Error: document.querySelector('.bg-danger'),
-    tableBody: document.querySelector('#table-content'),
-    table: document.querySelector('table'),
-    check: document.querySelector('#submit'),
-    tagForm: document.querySelector('form'),
-    paragraphTable: document.querySelector('#tableParagraph'),
-    paragraphForm: document.querySelector('#formParagraph'),
-    resetButton: document.querySelector('#reset')
+    name           : document.querySelector("#inputName"),
+    email          : document.querySelector("#inputEmail"),
+    password       : document.querySelector("#inputPassword"),
+    Success        : document.querySelector('.bg-success'),
+    Error          : document.querySelector('.bg-danger'),
+    tableBody      : document.querySelector('#table-content'),
+    table          : document.querySelector('table'),
+    check          : document.querySelector('#submit'),
+    tagForm        : document.querySelector('form'),
+    paragraphTable : document.querySelector('#tableParagraph'),
+    paragraphForm  : document.querySelector('#formParagraph'),
+    resetButton    : document.querySelector('#reset')
 
 });
 formValidator.initValidator();

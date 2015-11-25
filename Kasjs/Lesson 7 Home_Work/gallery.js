@@ -17,11 +17,10 @@ function formatDate(oldDate){
 
 function preparingObj(oldObj){
     oldObj = oldObj.toLowerCase();
-    oldObj = oldObj.replace(/[^abc]/,oldObj.charAt(0).toUpperCase());
+    oldObj = oldObj.replace(/[^w]/,oldObj.charAt(0).toUpperCase());
     oldObj = oldObj.slice(0, 15);
     return oldObj;
 }
-
 // format object to required layout
 function formatObject () {
     for (var i = 0; i < newData.length; i++) {
@@ -29,7 +28,6 @@ function formatObject () {
         newData[i].description = preparingObj(newData[i].description);
         newData[i].date = formatDate(newData[i].date);
     }
-
 }
 function create(el) {
     return document.createElement(el);
@@ -45,7 +43,7 @@ function formatDiv(objProperty, elem) {
     (objProperty.href) && (elem.href = objProperty.href);
     return elem;
 }
-function fillDiv(i) {
+function fillDiv(newObj) {
 
     var outerContainer = create("div");
     container.appendChild(outerContainer);
@@ -57,8 +55,8 @@ function fillDiv(i) {
     outerContainer.appendChild(imageNew);
     imageNew = formatDiv({
         className: 'img-thumbnail',
-        src: newData[i].url,
-        alt: newData[i].name
+        src: newObj.url,
+        alt: newObj.name
     }, imageNew);
 
     var innerContainer = create('div');
@@ -79,21 +77,21 @@ function fillDiv(i) {
     innerContainer.appendChild(numberAndName);
     numberAndName = formatDiv({
         className: "text-muted",
-        innerHTML: newData[i].id + ". " + newData[i].name
+        innerHTML: newObj.id + ". " + newObj.name
     }, numberAndName);
 
     var description = create('div');
     innerContainer.appendChild(description);
     description = formatDiv({
         className: 'text-muted',
-        innerHTML: newData[i].description
+        innerHTML: newObj.description
     }, description);
 
     var dateLine = create('div');
     innerContainer.appendChild(dateLine);
     dateLine = formatDiv({
         className: 'text-muted',
-        innerHTML: newData[i].date
+        innerHTML: newObj.date
     }, dateLine);
 }
 formatObject();
@@ -111,30 +109,34 @@ function displayAndClear() {
     });
 }
 function addElement() {
-    var adBat = selector('#addB');
-    var disableButton = function () {
-        adBat.className = 'btn btn-sm btn-danger disabled';
-    }
+    var addBut = selector('#addBut');
+    var disableButton = function () {addBut.className = 'btn btn-sm btn-danger disabled';}
     function createElHandler() {
         if (count < 10) {
-            fillDiv(count);
+            fillDiv(newData[count]);
             total.innerHTML = count + 1;
             count++;
         } else {
             disableButton();
         }
     }
-    adBat.addEventListener('click', createElHandler)
+    addBut.addEventListener('click', createElHandler)
 }
 
 function removeElement() {
+    var addBut = selector('#addBut');
+    var activeButton = function(){addBut.className = 'btn btn-sm btn-success';}
     container.addEventListener('click', function (event) {
         if (event.target.tagName == 'A') {
             event.preventDefault();
             event.currentTarget.removeChild(event.target.parentNode);
             count--;
+            total.innerHTML = count;
         }
-        total.innerHTML = count;
+        if(total.innerHTML == 0){
+            activeButton();
+        }
+
     });
 }
 //--------------------------------------------------------------------------
@@ -148,32 +150,32 @@ function inputAndDisplay() {
     end.addEventListener('input', function (event) {
         TO = event.target.value;
     });
-    /* don`t work
     sum.addEventListener('input', function (event) {
         NUM_OF_ELEMENT = event.target.value;
     });
-    */
+
 }
 function addCollElement() {
     inputAndDisplay();
-    var addElem = selector('#addE');
+    var addElem = selector('#addElem');
     addElem.addEventListener('click', function () {
         newData = newData.slice(FROM - 1, TO);
-        //newData = newData.splice(NUM_OF_ELEMENT);
+        newData.splice(NUM_OF_ELEMENT);
         total.innerHTML = newData.length;
-        console.log(newData);
         for (var i = 0; i < newData.length; i++) {
-            fillDiv(i);
+            fillDiv(newData[i]);
         }
     });
 }
 function delColElement() {
-    var delElem = selector('#delE');
+    var delElem = selector('#delElem');
     delElem.addEventListener('click', function (event) {
-        console.log(newData);
         var childDiv = document.getElementsByClassName('col-sm-3 col-xs-6');
         container.removeChild(childDiv[0]);
-        total.innerHTML = container.childNodes.length;
+        total.innerHTML = container.children.length;
+        if(container.children.length == 0){
+            newData = data;
+        }
     });
 }
 displayAndClear();
