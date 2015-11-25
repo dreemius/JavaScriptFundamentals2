@@ -1,0 +1,20 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+.info-wrapper {
+	padding: 0 5px;
+}
+
+.validation-msg {
+	padding: 15px;
+}
+
+.hide {
+	display: none;
+}
