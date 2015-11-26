@@ -34,7 +34,7 @@ var formValidator = (function(){
 		}
 	}
 	
-	DOMElements.submitBtn.addEventListener(checkForm);
+	DOMElements.submitBtn.addEventListener("click", checkForm);
 	
 	
 	validateForm : function(){},
