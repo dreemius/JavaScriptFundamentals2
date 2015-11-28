@@ -30,4 +30,6 @@ body {
 
 .btn-link {
 	float: right;
+	height: 15px;
+	padding: 0;
 }

@@ -15,17 +15,20 @@ function formatDate(oldDate){
     return year + "/" + month + "/" + day + " " + (hour < 10 ? "0" + hour : hour) + ":" + (minutes < 10 ? "0" + minutes : minutes);
 }
 
-function preparingObj(oldObj){
-    oldObj = oldObj.toLowerCase();
-    oldObj = oldObj.replace(/[^w]/,oldObj.charAt(0).toUpperCase());
-    oldObj = oldObj.slice(0, 15);
-    return oldObj;
+function capitalizeLetter(oldName){
+    oldName = oldName.toLowerCase();
+    oldName = oldName.replace(/[^w]/,oldName.charAt(0).toUpperCase());
+    return oldName;
+}
+function cuttingLetter(oldDescription){
+    oldDescription = oldDescription.slice(0, 15);
+    return oldDescription;
 }
 // format object to required layout
 function formatObject () {
     for (var i = 0; i < newData.length; i++) {
-        newData[i].name = preparingObj(newData[i].name);
-        newData[i].description = preparingObj(newData[i].description);
+        newData[i].name = capitalizeLetter(newData[i].name);
+        newData[i].description = cuttingLetter(newData[i].description);
         newData[i].date = formatDate(newData[i].date);
     }
 }

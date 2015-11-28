@@ -7,8 +7,8 @@ var formValidator = (function(){
 	var count = 1;
 
 	function showBanner(selector) {
-		$(selector).show(2000, function() {
-			$(this).hide(4000);
+		$(selector).fadeIn(2500, function() {
+			$(this).fadeOut(2500);
 		});
 	}
 	
@@ -23,7 +23,7 @@ var formValidator = (function(){
 		var firstRow = document.querySelector('#table-content');
 		var rowCreate = createTable({
 				el       : firstRow,
-				type     : 'tr',
+				type     : 'tr'
 		});		
 		var zeroCell = createTable({
 				el       : rowCreate,
@@ -42,7 +42,7 @@ var formValidator = (function(){
 		});
 		var thirdCell = createTable({
 				el       : rowCreate,
-				type     : 'td',
+				type     : 'td'
 		});
 		var passSpan = createTable({
 				el       : thirdCell,
@@ -53,7 +53,7 @@ var formValidator = (function(){
 				el: thirdCell,
 				type     : 'button',
 				className: 'btn btn-link',
-				innerHTML: 'show',
+				innerHTML: 'show'
 		});
 		rowCreate.lastChild.addEventListener('click', function(event) {
 			if(event.target.tagName == 'BUTTON'){
@@ -101,10 +101,10 @@ var formValidator = (function(){
 	}
 		
 	function validateForm() {	
-		$('#btn-valid').click(function() {
+		input.validBtn.click(function() {
 			checkForm();
 		});
-		$('#reset').click(function() {
+		input.resetBtn.click(function() {
 			resetForm();
 		});
 	}
@@ -113,7 +113,7 @@ var formValidator = (function(){
 		setForm : function(form){
 			input = form;
 		},
-		initValidator: function(form){
+		initValidator: function(){
 			validateForm();
 		}
 	}
@@ -124,7 +124,10 @@ var formValidator = (function(){
 formValidator.setForm({
 	name 	     : $('#inputName'),
 	email 	     : $('#inputEmail'),
-	password     : $('#inputPassword')
+	password     : $('#inputPassword'),
+	validBtn     : $('#btn-valid'),
+	resetBtn     : $('#reset'),
+	tableOfResult: $('#table-content')
 })
 
 formValidator.initValidator();
