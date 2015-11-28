@@ -4,7 +4,8 @@ var FIRST = 5, //id first img;
 	NUMBER_OF_IMAGES = data.length,//number of img;
 	resultContainer = document.querySelector("#result"),
 	showImage,
-	countShow = $('#count-image');
+	countImg = 0,
+	countShow = document.querySelector('#count-image');
 
 function inBetween(START, FINISH) {
 	return data.slice(START - 1, FINISH).slice(0,NUMBER_OF_IMAGES);
@@ -76,13 +77,16 @@ showImage = function(item) {
 			className: "text-muted",
 			innerHTML: doFormattedDate()
 		});
+
+		countImg++;
+		countShow.innerHTML = countImg;
 	}
 
 	doTemplate();
 };
 
 inBetween(FIRST, LAST).forEach(showImage);
-countShow.html(inBetween(FIRST,LAST).length);
+
 
 
 
