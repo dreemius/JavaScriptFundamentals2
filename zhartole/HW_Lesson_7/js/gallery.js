@@ -100,7 +100,8 @@ function createNewElement(argument) {
 function doRow (item, showImageOnRow) {
 	if (item > 0) {
 		var row = item / showImageOnRow;
-		(row ^ 0) === row ? resultContainer.innerHTML += "<div class = row><br></div>" : "";
+			if ((row ^ 0) === row) {
+				var imgRow = createNewElement({ el: resultContainer, type: "div", className: "row" }) };
 	}
 };
 
