@@ -44,7 +44,7 @@ function printResult(myItem){
    var result=document.getElementById('result');
    var col=createTemplate('div','col-sm-3 col-xs-6');
    var wrappper=createTemplate('div','info-wrapper');
-   var carIdName= createTemplate('div','text-muted',myItem[count].id+':'+myItem[count].name);
+   var carIdName= createTemplate('div','text-muted', count+' '+myItem[count].name);
    var carImg= createImg('img-thumbnail',myItem[count].url);
    var carDescription= createTemplate('div','text-muted',myItem[count].description);	
    var carDate= createTemplate('div','text-muted',myItem[count].date);

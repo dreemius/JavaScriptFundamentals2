@@ -86,22 +86,22 @@ var formValidator = (function(){
 // Check Form
 
 	function checkValue() {
-		function showHidden() {
+		function showResult() {
 			$('#tableOfResult').show();
 			$('#reset').show();
 			$('p.lead').show();
 		}
 		
-		function isValidEmail(myEmail) { 
+		function isEmailcorrect(myEmail) {
 			var reg = /.+@.+\..+/i;
 			return reg.test(myEmail); 
 		} 
 		
 		if(input.name.val()
-		   && isValidEmail(input.email.val())
+		   && isEmailcorrect(input.email.val())
 		   && input.password.val()) {
 			$('.form-horizontal').hide();
-			showHidden();
+			showResult();
 			showMessage('#success');
 			addUser();
 			count++;
@@ -147,7 +147,7 @@ var formValidator = (function(){
 		setForm : function(form){
 			input = form;
 		},
-		initValidator: function(form){
+		initValidator: function(){
 			doValidate();
 		}
 	}
