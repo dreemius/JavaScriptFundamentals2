@@ -1,8 +1,8 @@
-var	maxItem=10,
+var	maxItem=data.length,
 	startPos=3,
 	finalPos=8;
 	
-function filter(data){
+function filter(){
 var j=0;
 	while (j<startPos-1){
 		data.shift();
@@ -16,7 +16,7 @@ var j=0;
 	}
 }
 
-function ArrCorrection (data) {
+function ArrCorrection () {
 	for (var i = 0; i < data.length; i++) {
 		data[i].name = data[i].name[0].toUpperCase()+data[i].name.slice(1).toLowerCase();
 		data[i].description = data[i].description.slice(0,15);
@@ -65,6 +65,6 @@ function output()
 	}
 }
 
-filter(data);
-ArrCorrection(data);
+filter();
+ArrCorrection();
 output();
