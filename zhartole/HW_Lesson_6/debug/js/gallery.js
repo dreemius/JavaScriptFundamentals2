@@ -82,7 +82,7 @@ showImage = function(item) {
 		countShow.innerHTML = countImg;
 	}
 
-	doTemplate();
+	doTemplate()
 };
 
 inBetween(FIRST, LAST).forEach(showImage);
