@@ -10,3 +10,11 @@ body {
 .info-wrapper {
 	padding: 0 5px;
 }
+
+.hide-content {
+  display: none;
+}
+
+.show-content {
+  display: block;
+}
