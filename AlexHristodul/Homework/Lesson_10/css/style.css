@@ -1,0 +1,96 @@
+.collapsed {
+    background-image: url(../img/bluesky.jpeg);
+    background-size: cover;
+    float: left;
+    width: 50%;
+    height: 550px;
+    border-radius: 25px;
+}
+.plinth {
+    background-image: url(../img/decor_1.jpg);
+    background-size: auto;
+    margin-left: 85px;
+    width: 70%;
+    height: 20px;
+}
+.floor {
+    background-image: url(../img/decor_2.jpg);
+    background-size: cover;
+    width: 65%;
+    height: 80px;
+    margin-left: 100px;
+}
+.windows_1 {
+    background-color: black;
+    border-style: double;
+    border-color: #f7ecb5;
+    width: 13%;
+    height: 45px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+.windows_2 {
+    background-color: black;
+    border-style: double;
+    border-color: #f7ecb5;
+    width: 13%;
+    height: 45px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+.windows_3 {
+    background-color: black;
+    border-style: double;
+    border-color: #f7ecb5;
+    width: 13%;
+    height: 45px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+.windows_4 {
+    background-color: black;
+    border-style: double;
+    border-color: #f7ecb5;
+    width: 13%;
+    height: 45px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+.windows_5 {
+    background-color: gold;
+    border-style: double;
+    border-color: #f7ecb5;
+    width: 13%;
+    height: 45px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+.roof {
+    background-image: url(../img/decor_3.jpg);
+    background-size: contain;
+    width: 70%;
+    height: 75px;
+    margin-left: 85px;
+}
+#roof_1 {
+    margin-top: 170px;
+}
+#roof_2 {
+    margin-top: 90px;
+}
+#roof_3 {
+    margin-top: 75px;
+}
+#roof_4 {
+    margin-top: 25px;
+}
