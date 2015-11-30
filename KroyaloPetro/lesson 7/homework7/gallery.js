@@ -19,7 +19,7 @@ buttonLoad.addEventListener("click",function(event){
 });
 buttonDelete.addEventListener("click",function(){
 	resultContainer.innerHTML = "";
-	count.innerHTML			  = 0;
+	chengeCount();
 })
 buttonClear3.addEventListener("click",function(){
 	inputs.children[0].value = "";
@@ -30,7 +30,7 @@ resultContainer.addEventListener("click",function(event){
 	event.preventDefault();
 	if (event.target.tagName == "A"){
 		event.currentTarget.removeChild(event.target.parentNode.parentNode.parentNode);
-		count.innerHTML = (Number(count.textContent)-1);
+		chengeCount();
 	}
 });
 inputs.addEventListener("keyup",isNAN);
@@ -38,10 +38,13 @@ inputs.addEventListener("change",isNAN);
 function isNAN(event){
 	event.target.value = event.target.value.replace(/[^\d,]/g, '');
 }
+function chengeCount(){
+	count.innerHTML = resultContainer.children.length;
+}
 function addPicture(item){
 	if (item){
 		resultContainer.appendChild(createNewPictureDiv(item));
-		count.innerHTML = (Number(count.textContent)+1);
+		chengeCount();
 	}else{
 		alert("ERROR 1 : Dont have images to print");
 	}

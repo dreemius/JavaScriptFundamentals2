@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Form - validator</title>
+    <title>Template for homework7</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -32,11 +32,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">iPhoenix project</a>
+          <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Registration</a></li>
+            <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -52,13 +52,16 @@
 				
 				<div class="row">
 						<p class="lead">Заполните форму</p>
-						<p class="bg-success validation-msg" id="success-msg">Форма заполнена правильно</p>
-						<p class="bg-danger validation-msg" id="error-msg">Ошибка заполнения формы</p>
+						<div id="msg">
+							<p class="bg-success validation-msg" id="successMsg" style="display: none">Форма заполнена правильно</p>
+							<p class="bg-danger validation-msg" id="errorMsg" style="display: none">Ошибка заполнения формы</p>
+						</div>
+						
 						<form class="form-horizontal">
 						<div class="form-group">
 							<label for="inputName" class="col-sm-2 control-label">Имя</label>
 							<div class="col-sm-10">
-							  <input type="name" class="form-control" id="inputName" placeholder="Name">
+							  <input type="text" class="form-control" id="inputName" placeholder="Name">
 							</div>
 						  </div>
 						  <div class="form-group">
@@ -75,7 +78,7 @@
 						  </div>
 						  <div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
-							  <button type="button" id="btn-valid" class="btn btn-default">Проверить</button>
+							  <button type="submit" id="submitBtn" class="btn btn-default">Проверить</button>
 							</div>
 						  </div>
 						</form>	
@@ -83,10 +86,11 @@
 				<br>
 				<br>
 				
-				<div class="row">
+				<div class="row" id="result" style="display: none">
 				
 				<p class="lead">Результаты заполнения формы</p>
-				<table class="table table-bordered" id="tableOfResult">
+				<table class="table table-bordered" id="table">
+				  
 				  <thead>
 					<tr>
 					  <th>#</th>
@@ -98,23 +102,29 @@
 				  <tbody id="table-content">
 				  </tbody>
 				</table>
-				<button type="button" id="reset" class="btn btn-default">Сбросить</button>
+				<button type="submit" id="resetBtn" class="btn btn-default">Сбросить</button>
 				</div>
 			
 			</div>
 		</div>
+
+
+		
+		
+		
 		<br>
 		<br>
 		<br>
+
+
     </div><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-	<script src="dist/js/jquery-2.1.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
-	<script src="dist/js/bootstrap.min.js"></script>
-    <script src="js/validate.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

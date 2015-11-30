@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Homework_7</title>
+    <title>Template for homework7</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="style/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -44,50 +44,64 @@
       </div>
     </nav>
 
-
     <div class="container">
-
-      <div class="row">
-        <div class="col-xs-6">
-          <p class="lead"><b>Remember !</b> </p>
-          <div class="form-group">
-            <label for="exampleInputName2">Enter Text</label>
-            <input type="text" class="form-control" id="exampleInputName2" placeholder="Write ">
-          </div>
-          <button type="submit" class="btn btn-default" id="cleanText">Clear</button>
-        </div>
-        <div class="col-xs-6">
-          <p class="lead" align="center">Big <img src="image/big-brother.png" alt="альтернативный текст">  Brother is watching you</p>
-          <textarea class="form-control" rows="3" placeholder="See "></textarea>
-        </div>
-      </div>
-      <br>
-      <hr>
-      <br>
-		<p class="lead" align="center">View photo</p>
-      <div id="inputGroup">
-        <input type="text" class="start" placeholder = 'Display by'>
-        <input type="text" class="end" placeholder = 'Display up'>
-        <input type="text" class="total" placeholder = 'Total display'>
-      </div>
-		
 		<div class="row">
-			<div class="col-xs-12">
-				<button type="button" class="btn btn-sm btn-success" id="addNewPicture">+ Show one more image</button>
-                <button type="button" class="btn btn-sm btn-danger" id="delAllPicture">Delete all images</button>
-                <button type="button" class="btn btn-sm btn-success" id="addAllPicture"><b>+ Show all images</b></button>
-                <span id="count-image">0</span> <span class="text-success" id="total">Total pictures:</span>
+			<div class=" col-sm-offset-1 col-sm-8">
+				<br>
+				<br>
+
+				<div class="row">
+						<p class="lead">Заполните форму</p>
+
+
+						<form class="form-horizontal">
+						<div class="form-group">
+							<label for="inputName" class="col-sm-2 control-label">Имя</label>
+							<div class="col-sm-10">
+							  <input type="text" class="form-control" id="inputName" placeholder="Name">
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="inputEmail" class="col-sm-2 control-label">Email</label>
+							<div class="col-sm-10">
+							  <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="inputPassword" class="col-sm-2 control-label">Пароль</label>
+							<div class="col-sm-10">
+							  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+							</div>
+						  </div>
+						  <div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+							  <button type="submit" id="submit" class="btn btn-default">Добавить</button>
+							</div>
+						  </div>
+						</form>
+				</div>
+				<br>
+				<br>
+
+
+              <div id="tableWrapper">
+
+
+
+
+              </div>
+
 
 			</div>
 		</div>
-		<br>
-		<div id="error"></div>
-		<div id="result" class="row"></div>
-		<br>
-		<div class="row"></div>
-		<br>
-		<hr>
 
+
+		
+		
+		
+		<br>
+		<br>
+		<br>
 
 
     </div><!-- /.container -->
@@ -98,8 +112,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
-	<script src="js/data.js"></script>
-	 <script src="js/gallery.js"></script>
-
+    <script src="main.js"></script>
   </body>
 </html>
