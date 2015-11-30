@@ -14,7 +14,7 @@ body {
 .error {
   margin: 0.2em 0.0em 0.2em 0.2em;
   padding: 0.7em 0.7em 0.7em 5em;
-  background: #f7e9c3 url('image/error.png') no-repeat scroll 27% 50%;
+  background: #f7e9c3 url('../image/error.png') no-repeat scroll 27% 50%;
   color: #3f3826;
   font-size: 2em;
   text-align: center
@@ -37,4 +37,27 @@ input {
   border: 2px solid #cecece;
   background: #F6F6f6;
   border-radius: 8px;
+}
+#total {
+  float: right;
+}
+
+#count-image {
+  float: right;
+}
+
+.btn-for-delete-img {
+  /*display: inline-block;*/
+  padding: 0.2em 0.5em;
+  margin: 0.5em 0.5em;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  /*white-space: nowrap;
+  vertical-align: middle;*/
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  float : right;
 }

@@ -1,0 +1,95 @@
+
+
+var formValidator = (function(){
+
+	var DOMElements = null;
+	var container = document.querySelector('container');
+	var tableWrapper = document.querySelector('tableWrapper');
+	var tableData  = [];
+
+
+
+
+	function nodeCreator(param){
+
+		var newNode = document.createElement(param.type);
+		param.className && (newNode.className =  param.className);
+		param.src && (newNode.src = param.src);
+		param.alt && (newNode.alt = param.alt);
+		param.innerHTML && (newNode.innerHTML = param.innerHTML);
+
+		return newNode;
+
+	};
+
+
+
+	function ErrorMsg() {
+		var ErrorMsg = nodeCreator({type: 'p',className: 'errorMsg', innerHTML: 'Ошибка зполнения формы'});
+		container.appendChild(ErrorMsg);
+	}
+
+	function SuccessMsg() {
+		var SuccessMsg = nodeCreator({type: 'p',className: 'errorMsg', innerHTML: 'Форма заполнена правильно'});
+		container.appendChild(SuccessMsg);
+	}
+
+	function addNewUser() {
+		tableData.push({
+			name: DOMElements.name.value,
+			email: DOMElements.email.value,
+			password: DOMElements.password.value,
+
+		});
+	}
+
+	function createTableLine (item){
+		var table = nodeCreator({type: 'table'})
+		var tr = nodeCreator({type: 'tr'});
+
+			tr.appendChild(nodeCreator({type: 'th', innerHTML: item.tableData.length+1}));
+			tr.appendChild(nodeCreator({type: 'th', innerHTML: item.name}));
+			tr.appendChild(nodeCreator({type: 'th', innerHTML: item.email}));
+			tr.appendChild(nodeCreator({type: 'th', innerHTML: item.password}));
+			tr.appendChild(nodeCreator({type: 'button', innerHTML: 'show'}));
+
+			table.appendChild(tr);
+			tableWrapper.appendChild(table);
+	}
+
+	function validate (){
+		addNewUser();
+		createTableLine();
+		SuccessMsg();
+
+	}
+
+
+
+	return {
+		setForm : function(form){
+			DOMElements = form;
+		},
+		initValidator: function(){
+			DOMElements.submitBtn.addEventListener("click",validate);
+			//DOMElements.resetBtn.addEventListener("click",returnToForm);
+		}
+	}
+
+
+
+
+
+}());
+
+formValidator.setForm({
+	name 			: document.querySelector("#inputName"),
+	email 			: document.querySelector("#inputEmail"),
+	password 		: document.querySelector("#inputPassword"),
+	submitBtn		: document.querySelector("#submit"),
+
+
+
+});
+
+formValidator.initValidator();
