@@ -1,0 +1,31 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.table-bordered{
+	display:none;
+	}
+
+.info-wrapper {
+	padding: 0 5px;
+}
+
+.validation-msg {
+	padding: 15px;
+}
+.bg-danger{
+	display:none;
+	}
+.bg-success{
+	display:none;
+	}
+p:last-of-type{
+	display:none;
+	}
+
+#reset{
+	display:none;
+	}
