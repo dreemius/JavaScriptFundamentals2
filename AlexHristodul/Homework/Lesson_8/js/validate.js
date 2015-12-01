@@ -50,7 +50,7 @@ var formValidator = (function(){
 				innerHTML: input.password.val().replace(/[\s\S]/g, '*')
 		});
 		var buttonCell = createTable({
-				el: thirdCell,
+				el       : thirdCell,
 				type     : 'button',
 				className: 'btn btn-link',
 				innerHTML: 'show'
@@ -60,19 +60,19 @@ var formValidator = (function(){
 				if(event.target.innerHTML == 'show'){
 					event.currentTarget.firstChild.innerHTML = input.password.val();
 					event.target.innerHTML = 'hide';
-				}else{
+				}else {
 					rowCreate.lastChild.firstChild.innerHTML = input.password.val().replace(/[\s\S]/g, '*');
 					event.target.innerHTML = 'show';
-				}
-			}
+				};
+			};
 		});
-	}
+	};
 	
 	function checkForm() {
 		
 		function showHidden() {
-			$('.form-horizontal').hide();
-			$('#tableOfResult, #reset, p.lead').show();
+			$('.form-horizontal, #lead_1').hide();
+			$('#tableOfResult, #reset, #lead_2').show();
 		}
 		
 		function isValidEmail(myEmail) { 
@@ -83,8 +83,8 @@ var formValidator = (function(){
 		if(input.name.val()
 		   && isValidEmail(input.email.val())
 		   && input.password.val()) {
-			showHidden();
 			showBanner('#success-msg');
+			showHidden();
 			addRow();
 			count++;
 		} else {
@@ -93,11 +93,9 @@ var formValidator = (function(){
 	}
 	
 	function resetForm() {
-		input.name.val('');
-		input.email.val('');
-		input.password.val('');
-		$('.form-horizontal').show();
-		$('#tableOfResult, #reset, p.lead').hide();
+		$('.form-horizontal')[0].reset();
+		$('.form-horizontal, #lead_1').show();
+		$('#tableOfResult, #reset, #lead_2').hide();
 	}
 		
 	function validateForm() {	

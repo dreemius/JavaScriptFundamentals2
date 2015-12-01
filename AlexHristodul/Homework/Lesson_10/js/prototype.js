@@ -10,6 +10,7 @@ var windowsHandler = (function() {
         onLight: function(selector) {
             selector.click(function() {
                 $(this).toggleClass('windows_5');
+				$('.collapsed').addClass('collapsed_1');
             });
         }
     };
@@ -20,16 +21,16 @@ var windowsHandler = (function() {
     };
 
     House.prototype = firstHouse;
-    var secondHouse = new House("House_2", 3);
-    var thirdHouse = new House("House_3",4);
-    var fourHouse = new House("House_4", 5);
+    var secondHouse = new House("House №2", 3);
+    var thirdHouse = new House("House №3",4);
+    var fourHouse = new House("House №4", 5);
 
     function eventListener() {
         firstHouse.onLight(win.windows_1);
         secondHouse.onLight(win.windows_2);
         thirdHouse.onLight(win.windows_3);
         fourHouse.onLight(win.windows_4);
-        console.log(secondHouse);
+        console.dir(fourHouse);
     }
     return {
         setWindow    : function(window) {
