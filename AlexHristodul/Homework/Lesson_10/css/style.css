@@ -6,6 +6,14 @@
     height: 550px;
     border-radius: 25px;
 }
+.collapsed_1 {
+    background-image: url(../img/Lunnyy_den.jpg);
+    background-size: cover;
+    float: left;
+    width: 50%;
+    height: 550px;
+    border-radius: 25px;
+}
 .plinth {
     background-image: url(../img/decor_1.jpg);
     background-size: auto;
