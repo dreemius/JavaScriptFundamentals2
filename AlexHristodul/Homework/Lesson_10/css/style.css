@@ -1,0 +1,26 @@
+body {
+    background-image: url(../img/poverhnost.jpg);
+}
+header, footer {
+    text-align: center;
+}
+footer {
+    margin-top: 15px;
+}
+.container {
+    background-image: url(../img/elitefon.jpg);
+    background-size: contain;
+    border-radius: 25px;
+    width: 850px;
+    height: 690px;
+    margin: 0 auto;
+}
+.btn-success {
+    margin: 25px 85px;
+}
+.wrap {
+    margin: 200px 300px;
+}
+#inputName {
+    width: 250px;
+}
