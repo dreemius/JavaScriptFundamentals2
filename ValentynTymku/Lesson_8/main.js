@@ -41,11 +41,6 @@ var formValidator = (function(){
 		}
 	}
 
-	function resetMessages() {
-		elementDisplay(DOMElements.errorMsg, "none");
-		elementDisplay(DOMElements.successMsg, "none");
-	}
-
 	function showTable(){
 		DOMElements.tableContent.innerHTML = "";
 		usersArray.forEach(function(item, i) {
