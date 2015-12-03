@@ -5,6 +5,10 @@ body {
 	background-size: 100% 150%;
 }
 
+.msg-container {
+	width: 850px;
+	height: 75px;
+}
 .starter-template {
 	padding: 40px 15px;
 	text-align: center;
@@ -18,7 +22,7 @@ body {
 	padding: 15px;
 }
 
-#tableOfResult, p.lead, #reset {
+#tableOfResult, #lead_2, #reset {
 	display: none;
 }
 
@@ -30,4 +34,10 @@ body {
 
 .btn-link {
 	float: right;
+	height: 15px;
+	padding: 0;
+}
+
+#lead_1, #lead_2{
+	text-align: center;
 }

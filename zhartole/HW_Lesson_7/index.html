@@ -11,7 +11,7 @@
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -76,20 +76,15 @@
 				<button type="button" class="btn btn-sm btn-success" id="addNewPicture">+ Show one more image</button>
                 <button type="button" class="btn btn-sm btn-danger" id="delAllPicture">Delete all images</button>
                 <button type="button" class="btn btn-sm btn-success" id="addAllPicture"><b>+ Show all images</b></button>
+                <span id="count-image">0</span> <span class="text-success" id="total">Total pictures:</span>
 
 			</div>
 		</div>
 		<br>
 		<div id="error"></div>
-		<div id="result" class="row">
-		</div>
-		
+		<div id="result" class="row"></div>
 		<br>
-		<div class="row">
-			<div class="col-xs-12">
-				<span class="text-success">Общее колличество:</span><span id="count-image">0</span>
-			</div>
-		</div>
+		<div class="row"></div>
 		<br>
 		<hr>
 
@@ -103,8 +98,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
-	<script src="data.js"></script>
-	 <script src="gallery.js"></script>
+	<script src="js/data.js"></script>
+	 <script src="js/gallery.js"></script>
 
   </body>
 </html>

@@ -24,21 +24,30 @@ clearText.addEventListener("click", clearContent);
 
 //***************************************************************
 //Task 2
-//global variables
-
 //capture dom element
-var importValues = captureDomElement("#generate"),
-	viewFullGallery = captureDomElement("#viewFullGallery"),
-	clearGallery = captureDomElement("#clearGallery"),
- 	startPosition = captureDomElement("#start"),
-	finishPosition = captureDomElement("#finish"),
-	totalElements = captureDomElement("#count"),
-	addNewElement = captureDomElement("#addNewElement"),
-	resultContainer = captureDomElement("#test"),
-	START_POSITION,
-	STOP_POSITION,
-	DISPLAYED_IMAGES,
+var importValues 		= captureDomElement("#generate"),
+	viewFullGallery		= captureDomElement("#viewFullGallery"),
+	clearGallery 		= captureDomElement("#clearGallery"),
+ 	startPosition 		= captureDomElement("#start"),
+	finishPosition 		= captureDomElement("#finish"),
+	totalElements 		= captureDomElement("#count"),
+	addNewElement 		= captureDomElement("#addNewElement"),
+	resultContainer 	= captureDomElement("#test"),
+	inputValues 		= captureDomElement("#inputValues"),
+	errorMessage 		= captureDomElement("#errorMessage"),
 	count = 0;
+
+
+//message error
+
+function showErrorMessage() {
+		errorMessage.classList.remove("hide-content");
+	}
+
+
+function hideErrorMessage() {
+		errorMessage.classList.add("hide-content");
+}
 
 //create new element
 function createNewElement(params) {
@@ -54,7 +63,7 @@ function createNewElement(params) {
 //add new element
 function addElement() {
 	var createElHandler = function (event) {
-		if (count <convertGallery().length) {
+		if (count <filteredGallery.length) {
 			createDOM(count);
 			count++;
 			totalElements.innerHTML=count;
@@ -72,7 +81,7 @@ function addElement() {
 }
 
 //create DOM
-function createDOM(index) {
+function createDOM(item) {
 		//create container DOM
 		var containerDOM = createNewElement({
 			el: resultContainer,
@@ -84,8 +93,8 @@ function createDOM(index) {
 			el: containerDOM,
 			type: "img",
 			className: "img-thumbnail",
-			src: convertGallery()[index].url,
-			alt: convertGallery()[index].name
+			src: filteredGallery[item].url,
+			alt: filteredGallery[item].name
 		});
 		//create inner div for text content
 		var innerDOM = createNewElement({
@@ -98,21 +107,21 @@ function createDOM(index) {
 			el: innerDOM,
 			type: "div",
 			className: "text-muted",
-			innerHTML: convertGallery()[index].id + ": " + convertGallery()[index].name
+			innerHTML: filteredGallery[item].id + ": " + filteredGallery[item].name
 		});
 		//create description DOM (text content)
 		var descriptionDOM = createNewElement({
 			el: innerDOM,
 			type: "div",
 			className: "text-muted",
-			innerHTML: convertGallery()[index].description
+			innerHTML: filteredGallery[item].description
 		});
 		//create date DOM (text content)
 		var dateDOM = createNewElement({
 			el: innerDOM,
 			type: "div",
 			className: "text-muted",
-			innerHTML: convertGallery()[index	].date
+			innerHTML: filteredGallery[item].date
 		});
 		//create button(link) fot delete element from gallery
 		var removeElement = createNewElement({
@@ -129,51 +138,67 @@ function createDOM(index) {
 			event.target.parentNode.parentNode.remove();
 			count--;
 			totalElements.innerHTML--;
-			if(count<=convertGallery().length) addNewElement.className = "btn btn-sm btn-success";
+			if(count<=filteredGallery.length) addNewElement.className = "btn btn-sm btn-success";
 	});
 }
 
 //generate full gallery
 function generateGallery() {
-	for(var index = 0; index <convertGallery().length; index++ ) {
+	convertGallery(START_POSITION,STOP_POSITION,DISPLAYED_IMAGES);
+	for(var index = 0; index <filteredGallery.length; index++ ) {
 		createDOM(index);
 	}
-	totalElements.innerHTML = count = convertGallery().length;
+	totalElements.innerHTML = count = filteredGallery.length;
 }
+
+function resetInputValues () {
+	START_POSITION = 0;
+	STOP_POSITION = 10;
+	DISPLAYED_IMAGES = 10;
+}
+
 //clear container
 function clearContainer() {
+	hideErrorMessage();
+	resetInputValues();
+	generateGallery();
 	startPosition.innerHTML = "";
 	finishPosition.innerHTML = "";
 	totalElements.innerHTML = "";
 	count = 0;
 	addNewElement.className = "btn btn-sm btn-success";
-	START_POSITION = 0;
-	STOP_POSITION = 10;
-	DISPLAYED_IMAGES = 10;
 	return resultContainer.innerHTML = "";
 }
 
 //show full gallery
 function showFullGallery() {
 	clearContainer();
+	generateGallery();
 	startPosition.innerHTML = "full gallery";
 	finishPosition.innerHTML = "full gallery";
-	generateGallery();
+}
+
+function generateInputValues() {
+	START_POSITION = (captureDomElement("#inputStartPosition").value-1);
+	STOP_POSITION = captureDomElement("#inputStopPosition").value;
+	DISPLAYED_IMAGES = captureDomElement("#inputDisplayedImages").value;
+	if((START_POSITION == -1)||(STOP_POSITION=="")||(DISPLAYED_IMAGES==""))  {
+		showErrorMessage();
+	}
+	else {
+		hideErrorMessage();
+		generateGallery();
+	}
 }
 
 //generate gallery on input values
 function generateGalleryOnInputValues(event) {
-	var inputValues = captureDomElement("#inputValues");
 	clearContainer();
-	START_POSITION = (captureDomElement("#inputStartPosition").value-1);
-	STOP_POSITION = captureDomElement("#inputStopPosition").value;
-	DISPLAYED_IMAGES = captureDomElement("#inputDisplayedImages").value;
+	generateInputValues();
 	START_POSITION <= 10 ? startPosition.innerHTML = (START_POSITION+1) : startPosition.innerHTML = "Maximum value - 10.Enter number from 0 to 10";
 	STOP_POSITION <= 10 ? finishPosition.innerHTML = STOP_POSITION : finishPosition.innerHTML = "Maximum value - 10";
 	event.preventDefault();
-	generateGallery();
 	inputValues.reset();
-
 }
 
 //events

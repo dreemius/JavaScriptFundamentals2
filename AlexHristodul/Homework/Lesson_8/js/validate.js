@@ -7,8 +7,8 @@ var formValidator = (function(){
 	var count = 1;
 
 	function showBanner(selector) {
-		$(selector).show(2000, function() {
-			$(this).hide(4000);
+		$(selector).fadeIn(2500, function() {
+			$(this).fadeOut(2500);
 		});
 	}
 	
@@ -23,7 +23,7 @@ var formValidator = (function(){
 		var firstRow = document.querySelector('#table-content');
 		var rowCreate = createTable({
 				el       : firstRow,
-				type     : 'tr',
+				type     : 'tr'
 		});		
 		var zeroCell = createTable({
 				el       : rowCreate,
@@ -42,7 +42,7 @@ var formValidator = (function(){
 		});
 		var thirdCell = createTable({
 				el       : rowCreate,
-				type     : 'td',
+				type     : 'td'
 		});
 		var passSpan = createTable({
 				el       : thirdCell,
@@ -50,29 +50,29 @@ var formValidator = (function(){
 				innerHTML: input.password.val().replace(/[\s\S]/g, '*')
 		});
 		var buttonCell = createTable({
-				el: thirdCell,
+				el       : thirdCell,
 				type     : 'button',
 				className: 'btn btn-link',
-				innerHTML: 'show',
+				innerHTML: 'show'
 		});
 		rowCreate.lastChild.addEventListener('click', function(event) {
 			if(event.target.tagName == 'BUTTON'){
 				if(event.target.innerHTML == 'show'){
 					event.currentTarget.firstChild.innerHTML = input.password.val();
 					event.target.innerHTML = 'hide';
-				}else{
+				}else {
 					rowCreate.lastChild.firstChild.innerHTML = input.password.val().replace(/[\s\S]/g, '*');
 					event.target.innerHTML = 'show';
-				}
-			}
+				};
+			};
 		});
-	}
+	};
 	
 	function checkForm() {
 		
 		function showHidden() {
-			$('.form-horizontal').hide();
-			$('#tableOfResult, #reset, p.lead').show();
+			$('.form-horizontal, #lead_1').hide();
+			$('#tableOfResult, #reset, #lead_2').show();
 		}
 		
 		function isValidEmail(myEmail) { 
@@ -83,8 +83,8 @@ var formValidator = (function(){
 		if(input.name.val()
 		   && isValidEmail(input.email.val())
 		   && input.password.val()) {
-			showHidden();
 			showBanner('#success-msg');
+			showHidden();
 			addRow();
 			count++;
 		} else {
@@ -93,18 +93,16 @@ var formValidator = (function(){
 	}
 	
 	function resetForm() {
-		input.name.val('');
-		input.email.val('');
-		input.password.val('');
-		$('.form-horizontal').show();
-		$('#tableOfResult, #reset, p.lead').hide();
+		$('.form-horizontal')[0].reset();
+		$('.form-horizontal, #lead_1').show();
+		$('#tableOfResult, #reset, #lead_2').hide();
 	}
 		
 	function validateForm() {	
-		$('#btn-valid').click(function() {
+		input.validBtn.click(function() {
 			checkForm();
 		});
-		$('#reset').click(function() {
+		input.resetBtn.click(function() {
 			resetForm();
 		});
 	}
@@ -113,7 +111,7 @@ var formValidator = (function(){
 		setForm : function(form){
 			input = form;
 		},
-		initValidator: function(form){
+		initValidator: function(){
 			validateForm();
 		}
 	}
@@ -124,7 +122,10 @@ var formValidator = (function(){
 formValidator.setForm({
 	name 	     : $('#inputName'),
 	email 	     : $('#inputEmail'),
-	password     : $('#inputPassword')
+	password     : $('#inputPassword'),
+	validBtn     : $('#btn-valid'),
+	resetBtn     : $('#reset'),
+	tableOfResult: $('#table-content')
 })
 
 formValidator.initValidator();

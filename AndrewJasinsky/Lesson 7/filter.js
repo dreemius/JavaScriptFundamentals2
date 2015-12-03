@@ -1,5 +1,9 @@
 /*Created by Andrew on 18.11.2015.
  */
+var filteredGallery ={},
+    START_POSITION,
+    STOP_POSITION,
+    DISPLAYED_IMAGES ;
 
 //functions for convert initial gallery
 function convertName(value) {
@@ -17,10 +21,9 @@ function convertDate(date){
     return newDate.getFullYear() + "/" + (newDate.getMonth()+1) + "/" + newDate.getDate() + " " + newDate.getHours() + ":" + newDate.getMinutes();
 }
 
-
 //filter initial gallery
-function convertGallery() {
-    var filteredGallery = data.slice(START_POSITION,STOP_POSITION).slice(0,DISPLAYED_IMAGES);
+function convertGallery(START_POSITION,STOP_POSITION,DISPLAYED_IMAGES) {
+    filteredGallery = data.slice(START_POSITION, STOP_POSITION).slice(0, DISPLAYED_IMAGES);
     return filteredGallery.map(function(item) {
         item.name = convertName(item.name);
         item.description = convertDescription(item.description);
@@ -28,3 +31,4 @@ function convertGallery() {
         return item;
     })
 }
+convertGallery(START_POSITION,STOP_POSITION,DISPLAYED_IMAGES);

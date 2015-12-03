@@ -44,10 +44,10 @@ function printResult(myItem){
    var result=document.getElementById('result');
    var col=createTemplate('div','col-sm-3 col-xs-6');
    var wrappper=createTemplate('div','info-wrapper');
-   var carIdName= createTemplate('div','text-muted',myItem[count].id+':'+myItem[count].name);
-   var carImg= createImg('img-thumbnail',myItem[count].url);
-   var carDescription= createTemplate('div','text-muted',myItem[count].description);	
-   var carDate= createTemplate('div','text-muted',myItem[count].date);
+   var carIdName= createTemplate('div','text-muted', myItem.id+' '+myItem.name);
+   var carImg= createImg('img-thumbnail',myItem.url);
+   var carDescription= createTemplate('div','text-muted',myItem.description);
+   var carDate= createTemplate('div','text-muted',myItem.date);
    var delButton=createTemplate('a','delbutt','delete');
   
    var res=+result.appendChild(col);
@@ -67,7 +67,7 @@ function printResult(myItem){
 changeData(data);
 
 buttonAddCar.addEventListener("click",function(event){
-printResult(data);
+printResult(data[count]);
 count++;
 });
 
