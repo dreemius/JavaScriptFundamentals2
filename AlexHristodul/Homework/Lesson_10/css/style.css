@@ -1,5 +1,6 @@
 body {
     background-image: url(../img/poverhnost.jpg);
+    font-family: 'Comic Sans MS', serif;
 }
 header, footer {
     text-align: center;
@@ -18,9 +19,36 @@ footer {
 .btn-success {
     margin: 25px 85px;
 }
-.wrap {
-    margin: 200px 300px;
+.wrap_1 {
+    margin: 40px 150px;
+    width: 600px;
+    height: 130px;
 }
+.kettle-banner {
+    border-radius: 20px;
+    width: 550px;
+    height: 60px;
+    text-align: center;
+    display: none;
+}
+#kettle-on {
+    background-color: lightblue;
+}
+#kettle-off {
+    background-color: lightpink;
+}
+#kettle-stat {
+    background-color: springgreen;
+}
+#name-of-kattle {
+    background-color: darkseagreen;
+    font-size: 24px;
+}
+.wrap_2 {
+    margin: 5px 300px;
+    /*display: none;*/
+}
+
 #inputName {
     width: 250px;
 }

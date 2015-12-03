@@ -11,15 +11,21 @@
       <h1>Работа с чайником</h1>
     </header>
     <div class="container">
-        <div class="wrap">
+        <div class="wrap_1">
+          <div class="kettle-banner" id="kettle-on"></div>
+          <div class="kettle-banner" id="kettle-off"></div>
+          <div class="kettle-banner" id="kettle-stat"></div>
+          <div class="kettle-banner" id="name-of-kettle" ></div>
+        </div>
+        <div class="wrap_2">
           <form class="form-horizontal">
             <div class="form-group">
               <label for="inputName" class="control-label">Введите пожалуйста имя чайника:</label>
               <input type="text" class="form-control" id="inputName" placeholder="Имя чайника"/>
             </div>
             <div class="form-group">
-              <label for="checkKettler" class="control-label">Выберите вид чайника:</label>
-              <select class="form-control" id="checkKettler">
+              <label for="checkKettle" class="control-label">Выберите вид чайника:</label>
+              <select class="form-control" id="checkKettle">
                 <option value="classic">Класический</option>
                 <option value="electro">Електрический</option>
                 <option value="sun">На солнечной батарее</option>
