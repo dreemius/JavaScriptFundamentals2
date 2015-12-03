@@ -10,6 +10,8 @@
  var password = $('#inputPassword');
  var resetBtn = $('#reset');*/
 $(document).ready(function () {
+
+    
     var formValidator = (function () {
 
         var formObj = {};
@@ -56,21 +58,19 @@ $(document).ready(function () {
                 });
                 block += html;
                 formObj.TableContent.append(block);
-                formObj.TableContent.click(deleteString);
-                formObj.TableContent.click(visible_hidePassword);
+                formObj.TableContent.click(clickHandler);
             }
 
-            function deleteString(event) {
-                var btnDel = $(event.target.id);
-                $(event.target.id.button+":last").closest('tr').remove();
-            }
 
-            function visible_hidePassword(event) {
-                var target = $(event.target);
+            function clickHandler(event) {
+                var btn = $(event.target);
                 console.log(event);
-                if (target.type == 'password') {
-                   // target.text("Hide");
-                    //.attr('type','text');
+                if(btn.data("type")=="delete"){
+                    btn.closest("tr").remove();
+                }
+                if (btn.data("type")=="pass") {
+                    var line = btn.closest("tr");
+                    alert(line.find("input").val());
                 }
 
                 console.log(this);

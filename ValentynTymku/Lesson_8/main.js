@@ -8,10 +8,15 @@ var formValidator = (function(){
 	
 	function elementDisplay(elem, none) { elem.style.display = none }
 
+	function resetMessages() {
+		elementDisplay(DOMElements.errorMsg, "none");
+		elementDisplay(DOMElements.successMsg, "none");
+	}
+
 	function showTable(){
 		DOMElements.tableContent.innerHTML = "";
 		usersArray.forEach(function(item, i) {
-  			DOMElements.tableContent.innerHTML += "<tr><td>" + ++i + "</td><td>" + item.name + "</td><td>" + item.email + "</td><td>" + item.password.replace(/[\s\S]/g, '*') + "</td></tr>";
+  			DOMElements.tableContent.innerHTML += "<tr><td>" + (++i) + "</td><td>" + item.name + "</td><td>" + item.email + "</td><td>" + item.password.replace(/[\s\S]/g, '*') + "</td></tr>";
 		});
 		elementDisplay(DOMElements.result, "");
 	}
@@ -26,18 +31,15 @@ var formValidator = (function(){
 				showTable();
 				elementDisplay(DOMElements.successMsg, "");
 		} else {
-			resetMessages();
+			//resetMessages();
 			elementDisplay(DOMElements.errorMsg, "");
 		}
 	}
 
-	function resetMessages() {
-		elementDisplay(DOMElements.errorMsg, "none");
-		elementDisplay(DOMElements.successMsg, "none");
-	}
+
 
 	function resetForm() {
-		DOMElements.result.style.display = "none";
+		DOMElements.result.style.display = "none"; // use function
 		usersArray = [];
 		resetMessages();
 	};
@@ -46,7 +48,7 @@ var formValidator = (function(){
 		setForm : function(form){	
 			DOMElements = form;
 		},
-		initValidator: function(form){
+		initValidator: function(){
 			DOMElements.submitBtn.addEventListener( "click", checkForm );
 			DOMElements.resetBtn.addEventListener( "click", resetForm );
 		}

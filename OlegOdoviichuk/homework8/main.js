@@ -42,8 +42,12 @@ var formValidator = (function(){
 	
 	function addNewTableLine() {
 		var row = document.createElement("tr");
-		row.appendChild(document.createElement("th",{scope: "row", innerHTML : 1}));
-		row.appendChild(document.createElement("td",{innerHTML : DOMElements.name.value})); 
+		var fragment = document.createElement("th");
+			fragment.innerHTML = 1;
+		row.appendChild(fragment);
+		fragment = document.createElement("td");
+		fragment.innerHTML = DOMElements.name.value;
+		row.appendChild(fragment);
 		row.appendChild(document.createElement("td",{innerHTML : DOMElements.email.value}));
 		row.appendChild(document.createElement("td",{innerHTML : DOMElements.password.value}));
 		DOMElements.tableContent.appendChild(row);
@@ -52,7 +56,8 @@ var formValidator = (function(){
 		//row[2] = DOMElements.password.value
 		//DOMElements.tableContent.innerHTML += row
 		
-	function checkForm () {
+	function checkForm (event) {
+		event.preventDefault();
 		if(DOMElements.name.value 
 			&& DOMElements.email.value 
 			&& DOMElements.password.value) {
