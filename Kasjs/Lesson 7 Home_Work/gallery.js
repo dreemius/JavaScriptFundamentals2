@@ -1,6 +1,5 @@
 var newData = [],
     count = 0,
-    mainContainer = selector('.container'),
     container = selector('#result'),
     total = selector('#count'),
     newData = data,
@@ -145,7 +144,6 @@ function removeElement() {
         if(total.innerHTML == 0){
             activeButton();
         }
-
     });
 }
 //--------------------------------------------------------------------------
@@ -163,7 +161,6 @@ function inputAndDisplay() {
         NUM_OF_ELEMENT = event.target.value;
 
     });
-
 }
 function addCollElement() {
     inputAndDisplay();
