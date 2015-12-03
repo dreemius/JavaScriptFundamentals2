@@ -1,4 +1,5 @@
-var NUM_OF_ELEM = 5;
+var BEG_POSITION = 0;
+	TOTAL_NUM_OF_ELEM = 5;
 
 function toUpperLetter(value) {
 	return value[0].toLocaleUpperCase() + value.slice(1).toLocaleLowerCase();
@@ -15,7 +16,7 @@ function modifyDate(date) {
 }
 
 function manipulateData() {
-	return data.slice(0, NUM_OF_ELEM).map(function(item) {
+	return data.slice(BEG_POSITION, TOTAL_NUM_OF_ELEM).map(function(item) {
 		item.name = toUpperLetter(item.name);
 		item.description = sliceDescription(item.description);
 		item.date = modifyDate(item.date);
@@ -23,40 +24,59 @@ function manipulateData() {
 	})
 }
 
+function createNewElement(parameters) {
+	var element = parameters.el.appendChild(document.createElement(parameters.type));
+	parameters.className && (element.className = parameters.className);
+	parameters.src && (element.src = parameters.src);
+	parameters.alt && (element.alt = parameters.alt);
+	parameters.innerHTML && (element.innerHTML = parameters.innerHTML);
+	return element;
+}
+
 function displayData() {
-	for (var i = 0; i < manipulateData().length; i++ ) {
+	for (var i = 0; i < manipulateData().length; i++) {
 
-		var innerContainer = document.createElement('div');
-		innerContainer.className = "col-sm-3 col-xs-6";
+		var resContainer = document.querySelector("#result");
+		var containerHTML = createNewElement({
+			el: resContainer,
+			type: "div",
+			className: "col-sm-3 col-xs-6"
+		});
 
-		var img = document.createElement('img');
-		img.src = data[i].url;
-		img.alt = toUpperLetter(data[i].name);
-		img.className = "img-thumbnail";
+		var imageHTML = createNewElement({
+			el: containerHTML,
+			type: "img",
+			className: "img-thumbnail",
+			src: manipulateData()[i].url,
+			alt: manipulateData()[i].name
+		});
 
-		var infoWrapper = document.createElement('div');
-		infoWrapper.className ='info-wrapper' ;
+		var innerHTML = createNewElement({
+			el: containerHTML,
+			type: "div",
+			className: "info-wrapper"
+		});
 
-		var idName = document.createElement('div');
-		idName.className = 'text-muted';
-		idName.innerHTML = data[i].id + ':' + toUpperLetter(data[i].name);
+		var nameHTML = createNewElement({
+			el: innerHTML,
+			type: "div",
+			className: "text-muted",
+			innerHTML: manipulateData()[i].id + ": " + manipulateData()[i].name
+		});
 
-		var descrption = document.createElement('div');
-		descrption.className = 'text-muted';
-		descrption.innerHTML = sliceDescription(data[i].description);
+		var descriptionHTML = createNewElement({
+			el: innerHTML,
+			type: "div",
+			className: "text-muted",
+			innerHTML: manipulateData()[i].description
+		});
 
-		var date = document.createElement('div');
-		date.className = 'text-muted';
-		date.innerHTML = modifyDate(data[i].date);
-
-		var resultContainer = document.querySelector('#result');
-
-		resultContainer.appendChild(innerContainer);
-		innerContainer.appendChild(img);
-		innerContainer.appendChild(infoWrapper);
-		infoWrapper.appendChild(idName);
-		infoWrapper.appendChild(descrption);
-		infoWrapper.appendChild(date);
+		var dateHTML = createNewElement({
+			el: innerHTML,
+			type: "div",
+			className: "text-muted",
+			innerHTML: manipulateData()[i].date
+		});
 	}
 }
 
