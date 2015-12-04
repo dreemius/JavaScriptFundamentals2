@@ -5,7 +5,6 @@
     <title>Прототипное ориентирование</title>
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style2.css">
   </head>
   <body>
     <header>
@@ -13,22 +12,25 @@
     </header>
     <div class="container">
         <div class="wrap_1">
+          <div class="kettle-banner" id="name-of-kettle" ></div>
           <div class="kettle-banner" id="kettle-on"></div>
           <div class="kettle-banner" id="kettle-off"></div>
           <div class="kettle-banner" id="kettle-stat"></div>
-          <div class="kettle-banner" id="name-of-kettle" ></div>
         </div>
-      <div class="wrap_2">
-        <img src="img/Classic_Kettle.fw.png" class="kettle-image" id="classic-kettle"/>
-        <img src="img/Electro_Kettle.fw.png" class="kettle-image" id="electro-kettle"/>
-        <img src="img/Sun_Kettle.fw.png" class="kettle-image" id="sun-kettle"/>
-      </div>
-      <section class="main">
-        <div class="switch demo3">
-          <input type="checkbox">
-          <label><i></i></label>
+        <div class="wrap_2">
+          <img src="img/Classic_Kettle.fw.png" class="kettle-image" id="classic-kettle"/>
+          <img src="img/Electro_Kettle.fw.png" class="kettle-image" id="electro-kettle"/>
+          <img src="img/Sun_Kettle.fw.png" class="kettle-image" id="sun-kettle"/>
+          <div class="wrap-button" id="btn-on">
+            <button type="button" class="btn btn-success">ВКЛ</button>
+          </div>
+          <div class="wrap-button" id="btn-off">
+            <button type="button" class="btn btn-danger">ВЫКЛ</button>
+          </div>
+          <div class="wrap-button" id="btn-reset">
+            <button type="button" class="btn btn-primary">Выбрать другой чайник</button>
+          </div>
         </div>
-      </section>
         <div class="wrap_3">
           <form class="form-horizontal">
             <div class="form-group">
@@ -44,7 +46,7 @@
               </select>
             </div>
             <div class="form-group">
-              <button type="button" class="btn btn-success">Создать</button>
+              <button type="button" class="btn btn-success" id="add-kettlers">Создать</button>
             </div>
           </form>
         </div>
