@@ -35,7 +35,6 @@ var formValidator = (function(){
 		}
     var n = 0;
 	function addNewTableLine() {
-	
 		var row = document.createElement("tr"),
 		    fragmentTH = document.createElement("th"),
 			fragmentTD1 = document.createElement("td"),
@@ -50,9 +49,14 @@ var formValidator = (function(){
 		row.appendChild(fragmentTD2);
 		fragmentTD2.innerHTML = DOMElements.email.value;
 		row.appendChild(fragmentTD3);
-		fragmentTD3.innerHTML = DOMElements.password.value;
+		fragmentTD3.innerHTML = changePassword(DOMElements.password.value);
 		
 	}
+	
+	function changePassword (text) {
+		
+		return text.replace(/./g, "*");
+		}
 		
 	function checkForm (event) {
 		event.preventDefault();
