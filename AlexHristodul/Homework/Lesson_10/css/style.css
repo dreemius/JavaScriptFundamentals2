@@ -24,11 +24,28 @@ footer {
     width: 600px;
     height: 130px;
 }
+.wrap_2 {
+    width: 310px;
+    height: 270px;
+}
+.wrap_3 {
+    margin: -300px 300px;
+}
 .kettle-banner {
     border-radius: 20px;
     width: 550px;
     height: 60px;
     text-align: center;
+    display: none;
+}
+.kettle-image {
+    margin: 60px 240px;
+    width: 310px;
+    height: 270px;
+    display: none;
+}
+section.main {
+    margin-top: 70px;
     display: none;
 }
 #kettle-on {
@@ -38,17 +55,22 @@ footer {
     background-color: lightpink;
 }
 #kettle-stat {
-    background-color: springgreen;
-}
-#name-of-kattle {
     background-color: darkseagreen;
-    font-size: 24px;
 }
-.wrap_2 {
-    margin: 5px 300px;
-    /*display: none;*/
+#name-of-kettle {
+    background-color: springgreen;
+    font-size: 20px;
 }
-
 #inputName {
     width: 250px;
+}
+#electro-kettle {
+    margin: 85px 275px;
+    width: 310px;
+    height: 250px;
+}
+#sun-kettle {
+    margin-top: 85px;
+    width: 310px;
+    height: 230px;
 }

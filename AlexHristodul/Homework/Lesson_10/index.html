@@ -5,6 +5,7 @@
     <title>Прототипное ориентирование</title>
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
   </head>
   <body>
     <header>
@@ -17,7 +18,18 @@
           <div class="kettle-banner" id="kettle-stat"></div>
           <div class="kettle-banner" id="name-of-kettle" ></div>
         </div>
-        <div class="wrap_2">
+      <div class="wrap_2">
+        <img src="img/Classic_Kettle.fw.png" class="kettle-image" id="classic-kettle"/>
+        <img src="img/Electro_Kettle.fw.png" class="kettle-image" id="electro-kettle"/>
+        <img src="img/Sun_Kettle.fw.png" class="kettle-image" id="sun-kettle"/>
+      </div>
+      <section class="main">
+        <div class="switch demo3">
+          <input type="checkbox">
+          <label><i></i></label>
+        </div>
+      </section>
+        <div class="wrap_3">
           <form class="form-horizontal">
             <div class="form-group">
               <label for="inputName" class="control-label">Введите пожалуйста имя чайника:</label>
@@ -26,9 +38,9 @@
             <div class="form-group">
               <label for="checkKettle" class="control-label">Выберите вид чайника:</label>
               <select class="form-control" id="checkKettle">
-                <option value="classic">Класический</option>
-                <option value="electro">Електрический</option>
-                <option value="sun">На солнечной батарее</option>
+                <option>Классический</option>
+                <option>Електрический</option>
+                <option>На солнечной батарее</option>
               </select>
             </div>
             <div class="form-group">

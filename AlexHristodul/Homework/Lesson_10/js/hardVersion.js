@@ -55,27 +55,42 @@ var kettlerHandler = (function() {
         });
     }
 
+    /* function kettleOnOff(kettler) {
+        input.btnOnOff.prop("checked") ? kettler.turnOn(): kettler.turnOff();
+    } */
+
     function addKettleName() {
-        input.nameOfKettle.html('"' + input.inputName.val() + '"');
+        input.formGroup.hide();
+        input.btnOnOff.show();
+        input.nameOfKettle.fadeIn(3250);
+        input.nameOfKettle.html('Поздравляем !!! Вы выбрали чайник: ' + input.checkKettle.val()
+            + ' по имени: ' + '"' + input.inputName.val() + '"');
     }
 
     function addKettle() {
-        var sunKettle = new SunKettle(input.inputName.val());
-        input.formGroup.hide();
+        if(input.checkKettle.val() == "Классический") {
+            var classicKettle = new TeaPot(input.inputName.val());
+            input.classicImg.fadeIn(1500);
+        }else if(input.checkKettle.val() == "Електрический") {
+            var electroKettle = new ElectroKettle(input.inputName.val());
+            input.electroImg.fadeIn(1500);
+        }else {
+            var sunKettle = new SunKettle(input.inputName.val());
+            input.sunImg.fadeIn(1500);
+        }
         addKettleName();
-        sunKettle.turnOn();
-        sunKettle.turnOff();
     }
 
-    function printPot() {
+    function createKettle() {
         input.successButton.click(addKettle);
     }
+
     return {
         setKettler: function(teaPots) {
             input = teaPots;
         },
         init: function() {
-            printPot()
+            createKettle()
         }
     }
 }());
@@ -84,13 +99,17 @@ var kettlerHandler = (function() {
 
 kettlerHandler.setKettler({
     inputName    : $('#inputName'),
-    checkKettle  : $('#checkKettle'),
-    nameOfKettle : $('.name-of-kettle'),
-    successButton: $('.btn-success'),
-    formGroup    : $('.form-group'),
+    checkKettle  : $('select#checkKettle'),
     kettleOn     : $('#kettle-on'),
     kettleOff    : $('#kettle-off'),
-    kettleStat   : $('#kettle-stat')
+    kettleStat   : $('#kettle-stat'),
+    classicImg   : $('#classic-kettle'),
+    electroImg   : $('#electro-kettle'),
+    sunImg       : $('#sun-kettle'),
+    nameOfKettle : $('#name-of-kettle'),
+    successButton: $('.btn-success'),
+    formGroup    : $('.form-group'),
+    btnOnOff     : $('section.main')
 });
 
 kettlerHandler.init();
