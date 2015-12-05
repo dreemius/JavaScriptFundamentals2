@@ -1,83 +1,123 @@
-var formTrue = $('#formTrue');
-var formError = $('#formError');
-var tableContent = $('#table-content');
-var tableForm = $('#tableForm');
-var template_TableString = $('#item-template_TableString');
+/*var formTrue = $('#formTrue');
+ var formError = $('#formError');
+ var tableContent = $('#table-content');
+ var tableForm = $('#tableForm');
+ var template_TableString = $('#item-template_TableString');
 
-var submitBtn = $('#submit');
-var Name = $('#inputName');
-var Email = $('#inputEmail');
-var Password = $('#inputPassword');
-var resetBtn = $('#reset');
+ var submitBtn = $('#submit');
+ var name = $('#inputName');
+ var email = $('#inputEmail');
+ var password = $('#inputPassword');
+ var resetBtn = $('#reset');*/
 $(document).ready(function () {
+
+    
     var formValidator = (function () {
 
         var formObj = {};
-        var stringNumber =0;
+        var stringNumber = 0;
 
         function validateForm() {
             function showErrorMsg() {
-                formObj.formError.removeClass("hideBlock").addClass("showBlock");
+                formObj.FormError.removeClass("hideBlock").addClass("showBlock");
             }
 
             function hideErrorMsg() {
-                formObj.formError.removeClass("showBlock").addClass("hideBlock");
+                formObj.FormError.removeClass("showBlock").addClass("hideBlock");
             }
 
             function showSuccessMsg() {
-                formObj.formTrue.removeClass("hideBlock").addClass("showBlock");
+                formObj.FormTrue.removeClass("hideBlock").addClass("showBlock");
             }
 
             function hideSuccessMsg() {
-                formObj.formTrue.removeClass("showBlock").addClass("hideBlock");
+                formObj.FormTrue.removeClass("showBlock").addClass("hideBlock");
             }
 
             function showTable() {
-                formObj.tableForm.removeClass("hideBlock").addClass("showBlock");
+                formObj.TableForm.removeClass("hideBlock").addClass("showBlock");
             }
 
             function hideTable() {
-                formObj.tableForm.removeClass("showBlock").addClass("hideBlock");
+                formObj.TableForm.removeClass("showBlock").addClass("hideBlock");
             }
 
             function addNewTableLine() {
-
-                var compiled = _.template(formObj.template_TableString.html());
+                // console.log(formObj.Template_TableString.html());
+                var compiled = _.template(formObj.Template_TableString.html());
+                // console.log(formObj);
+                var date = new Date();
+                var block = "";
+                var trID = +date;
                 var html = compiled({
                     stringNumber: stringNumber,
-                    name: formObj.name.val(),
-                    email: formObj.email.val(),
-                    password: formObj.password.val()
+                    name: formObj.Name.val(),
+                    email: formObj.Email.val(),
+                    password: formObj.Password.val(),
+                    trID: trID
                 });
-                formObj.tableContent.append(html);
-                console.log(html);
+                block += html;
+                formObj.TableContent.append(block);
+                formObj.TableContent.click(clickHandler);
             }
 
+
+            function clickHandler(event) {
+                var btn = $(event.target);
+                console.log(event);
+                if(btn.data("type")=="delete"){
+                    btn.closest("tr").remove();
+                }
+                if (btn.data("type")=="pass") {
+                    var line = btn.closest("tr");
+                    alert(line.find("input").val());
+                }
+
+                console.log(this);
+
+                if (target.type == 'text') {
+                   // target.text("Show");
+                   //.attr('type','password');
+                }
+            }
+
+            function createID(){
+
+            }
+
+            function defaultForm (){
+                formObj.Name.val("Суслик");
+                formObj.Email.val("Syslick@mail.ru");
+                formObj.Password.val("1234");
+            }
             function checkForm() {
-                 if (formObj.name.val()
-                    && formObj.email.val()
-                    && formObj.password.val()) {
+                console.log(formObj.Name);
+                if (formObj.Name.val()
+                    && formObj.Email.val()
+                    && formObj.Password.val()) {
                     showTable();
                     showSuccessMsg();
                     hideErrorMsg();
                     addNewTableLine();
+
                 } else {
                     showErrorMsg();
+
                 }
             }
 
             function submit() {
-                formObj.submitBtn.click( function () {
+                formObj.SubmitBtn.click(function () {
                     stringNumber++;
                     checkForm();
+
                 });
 
 
             }
 
             function reset() {
-
-                formObj.resetBtn.click( function () {
+                formObj.ResetBtn.click(function () {
                     hideTable();
                     hideErrorMsg();
                     hideSuccessMsg();
@@ -86,6 +126,7 @@ $(document).ready(function () {
 
             submit();
             reset();
+            defaultForm ();
         }
 
 
@@ -93,7 +134,7 @@ $(document).ready(function () {
             setForm: function (form) {
                 formObj = form;
             },
-            initValidator: function (form) {
+            initValidator: function () {
                 validateForm();
             }
         }
@@ -101,17 +142,18 @@ $(document).ready(function () {
 
     }());
 
+
     formValidator.setForm({
-        name: Name,
-        email: Email,
-        password: Password,
-        formTrue: formTrue,
-        formError: formError,
-        tableForm: tableForm,
-        tableContent: tableContent,
-        template_TableString: template_TableString,
-        submitBtn: submitBtn,
-        resetBtn: resetBtn
+        Name: $('#inputName'),
+        Email: $('#inputEmail'),
+        Password: $('#inputPassword'),
+        FormTrue: $('#formTrue'),
+        FormError: $('#formError'),
+        TableForm: $('#tableForm'),
+        TableContent: $('#table-content'),
+        Template_TableString: $('#item-template_TableString'),
+        SubmitBtn: $('#submit'),
+        ResetBtn: $('#reset')
     });
     formValidator.initValidator();
 });
