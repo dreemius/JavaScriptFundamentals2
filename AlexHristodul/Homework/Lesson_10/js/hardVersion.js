@@ -56,13 +56,8 @@ var kettlerHandler = (function() {
         });
     }
 
-    function kettleOn(kettle) {
-        input.buttonOn.click(function() {kettle.turnOn()});
-    }
-
-    function kettleOff(kettle) {
-        input.buttonOff.click(function() {kettle.turnOff()});
-    }
+    function kettleOn(kettle) {input.buttonOn.click(function() {kettle.turnOn()});}
+    function kettleOff(kettle) {input.buttonOff.click(function() {kettle.turnOff()});}
 
     function checkKettles(newKettle, parent, image) {
         var newKettle = new parent(input.inputName.val());
@@ -83,13 +78,9 @@ var kettlerHandler = (function() {
     }
 
     function addKettle() {
-        if(input.checkKettle.val() == "Классический") {
-            checkKettles('classicKettle', TeaPot, input.classicImg);
-        }else if(input.checkKettle.val() == "Електрический") {
-            checkKettles('electroKettle', ElectroKettle, input.electroImg);
-        }else {
-            checkKettles('sunKettle', SunKettle, input.sunImg);
-        }
+        (input.checkKettle.val() === "Классический") ? checkKettles('classicKettle', TeaPot, input.classicImg) :
+        (input.checkKettle.val() === "Електрический")? checkKettles('electroKettle', ElectroKettle, input.electroImg) :
+                                                       checkKettles('sunKettle', SunKettle, input.sunImg);
     }
 
     function createKettle() {
