@@ -36,7 +36,7 @@ two.addEventListener ("click", msg);
 three.addEventListener ("click", msg);
 
 function msg (event) {
-	console.log("Type: "+event.type);
+	console.log("Type: "+ event.type);
 	console.log("Target: " + event.target.id);
 	console.log("Current target: " + event.currentTarget.id);
 	console.log("---------- ");
