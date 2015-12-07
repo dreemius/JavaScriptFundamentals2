@@ -59,7 +59,7 @@
 
                 <p id='formError' class="bg-danger validation-msg hideBlock">Ошибка заполнения формы</p>
 
-                <form class="form-horizontal">
+                <form class="form-horizontal" onsubmit="return false;">
                     <div class="form-group">
                         <label for="inputName" class="col-sm-2 control-label">Имя</label>
 
@@ -91,10 +91,10 @@
             <br>
             <br>
 
-            <div class="row hideBlock">
+            <div id="tableForm" class="row hideBlock">
 
                 <p class="lead">Результаты заполнения формы</p>
-                <table id="tableForm" class="table table-bordered">
+                <table  class="table table-bordered">
 
                     <thead>
                     <tr>
@@ -105,12 +105,7 @@
                     </tr>
                     </thead>
                     <tbody id="table-content">
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>test@test.com</td>
-                        <td>******</td>
-                    </tr>
+
 
                     </tbody>
                 </table>
@@ -139,15 +134,14 @@
 <script src="js/main.js"></script>
 <!-- Templates -->
 <script type="text/template" id="item-template_TableString">
-    <tr>
+    <tr id="<%=trID %>">
         <th scope="row"><%=stringNumber%></th>
         <td><%=name%></td>
         <td><%=email%></td>
-        <td><%=password%></td>
-        <td><a id="ShowPas" href='#' class="btn btn-small btn-primary">Show</a></td>
-        <td><a id="hidePas" href='#' class="btn btn-small btn-primary">Hide</a></td>
-    </tr>
-
+        <td><input type="password" class="form-control"  placeholder="Password" value=<%=password%> disabled ></td>
+        <td><button  type="button" data-type="pass" class="btn btn-small btn-primary">Show</button></td>
+        <td><button  type="button" data-type="delete" class="btn btn-sm  btn-danger">Delete</button></td>
+        </tr>
 </script>
 </body>
 </html>

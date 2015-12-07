@@ -2,99 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>House</title>
-    <link href="css/style.css" rel="stylesheet">
+    <title>Прототипное ориентирование</title>
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <div id="div-header">
-        <div class="collapsed" id="left-top">
-          <div class="roof" id="roof_1"></div>
-          <div class="floor">
-            <div class="windows_1"></div>
-            <div class="windows_1"></div>
-            <div class="windows_1"></div>
-          </div>
-          <div class="floor">
-            <div class="windows_1"></div>
-            <div class="windows_1"></div>
-            <div class="windows_1"></div>
-          </div>
-          <div class="plinth"></div>
+    <header>
+      <h1>Работа с чайником</h1>
+    </header>
+    <div class="container">
+        <div class="wrap_1">
+          <div class="kettle-banner" id="name-of-kettle" ></div>
+          <div class="kettle-banner" id="kettle-on"></div>
+          <div class="kettle-banner" id="kettle-off"></div>
+          <div class="kettle-banner" id="kettle-stat"></div>
         </div>
-        <div class="collapsed" id="right-top">
-          <div class="roof" id="roof_2"></div>
-          <div class="floor">
-            <div class="windows_2"></div>
-            <div class="windows_2"></div>
-            <div class="windows_2"></div>
+        <div class="wrap_2">
+          <img src="img/Classic_Kettle.fw.png" class="kettle-image" id="classic-kettle"/>
+          <img src="img/Electro_Kettle.fw.png" class="kettle-image" id="electro-kettle"/>
+          <img src="img/Sun_Kettle.fw.png" class="kettle-image" id="sun-kettle"/>
+          <div class="wrap-button" id="btn-on">
+            <button type="button" class="btn btn-success">ВКЛ</button>
           </div>
-          <div class="floor">
-            <div class="windows_2"></div>
-            <div class="windows_2"></div>
-            <div class="windows_2"></div>
+          <div class="wrap-button" id="btn-off">
+            <button type="button" class="btn btn-danger">ВЫКЛ</button>
           </div>
-          <div class="floor">
-            <div class="windows_2"></div>
-            <div class="windows_2"></div>
-            <div class="windows_2"></div>
+          <div class="wrap-button" id="btn-reset">
+            <button type="button" class="btn btn-primary">Выбрать другой чайник</button>
           </div>
-          <div class="plinth"></div>
         </div>
-        <div class="collapsed" id="left-bottom">
-          <div class="roof" id="roof_3"></div>
-          <div class="floor">
-            <div class="windows_3"></div>
-            <div class="windows_3"></div>
-            <div class="windows_3"></div>
-          </div>
-          <div class="floor">
-            <div class="windows_3"></div>
-            <div class="windows_3"></div>
-            <div class="windows_3"></div>
-          </div>
-          <div class="floor">
-            <div class="windows_3"></div>
-            <div class="windows_3"></div>
-            <div class="windows_3"></div>
-          </div>
-          <div class="floor">
-            <div class="windows_3"></div>
-            <div class="windows_3"></div>
-            <div class="windows_3"></div>
-          </div>
-          <div class="plinth"></div>
+        <div class="wrap_3">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputName" class="control-label">Введите пожалуйста имя чайника:</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Имя чайника"/>
+            </div>
+            <div class="form-group">
+              <label for="checkKettle" class="control-label">Выберите вид чайника:</label>
+              <select class="form-control" id="checkKettle">
+                <option>Классический</option>
+                <option>Електрический</option>
+                <option>На солнечной батарее</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button type="button" class="btn btn-success" id="add-kettlers">Создать</button>
+            </div>
+          </form>
         </div>
-        <div class="collapsed" id="right-bottom">
-          <div class="roof" id="roof_4"></div>
-          <div class="floor">
-            <div class="windows_4"></div>
-            <div class="windows_4"></div>
-            <div class="windows_4"></div>
-          </div>
-          <div class="floor">
-            <div class="windows_4"></div>
-            <div class="windows_4"></div>
-            <div class="windows_4"></div>
-          </div>
-          <div class="floor">
-            <div class="windows_4"></div>
-            <div class="windows_4"></div>
-            <div class="windows_4"></div>
-          </div>
-          <div class="floor">
-            <div class="windows_4"></div>
-            <div class="windows_4"></div>
-            <div class="windows_4"></div>
-          </div>
-          <div class="floor">
-            <div class="windows_4"></div>
-            <div class="windows_4"></div>
-            <div class="windows_4"></div>
-          </div>
-          <div class="plinth"></div>
-        </div>
-      </div>
+    </div>
+    <footer>
+      <h4>iPhoenix© development 2015</h4>
+    </footer>
 	<script src="dist/js/jquery-2.1.4.min.js"></script>
-    <script src="js/prototype.js"></script>
+    <script src="js/inheritense.js"></script>
+    <script src="js/easyVersion.js"></script>
+	<script src="js/hardVersion.js"></script>
   </body>
 </html>

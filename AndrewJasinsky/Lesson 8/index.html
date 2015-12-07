@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Template for homework7</title>
+    <title>Lesson 8</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -49,36 +49,46 @@
 			<div class=" col-sm-offset-1 col-sm-8">
 				<br>
 				<br>
-						<div id="msg">
-							<p class="bg-success validation-msg" id="successMsg" style="display: none">Форма заполнена правильно</p>
-							<p class="bg-danger validation-msg" id="errorMsg" style="display: none">Ошибка заполнения формы</p>
-						</div>				
-				<div class="row" id="form">
+				
+				<div class="row">
 						<p class="lead">Заполните форму</p>
 
-						
-						<form class="form-horizontal">
+						<p class="bg-success validation-msg hide-content" id="successMassage">Форма заполнена правильно</p>
+
+					<p class="bg-danger validation-msg hide-content" id="errorMessage">Ошибка заполнения формы</p>
+
+
+
+						<form class="form-horizontal" id="completedForm">
 						<div class="form-group">
 							<label for="inputName" class="col-sm-2 control-label">Имя</label>
 							<div class="col-sm-10">
-							  <input type="text" class="form-control" id="inputName" placeholder="Name">
+
+							   <input type="text" class="form-control" id="inputName" placeholder="Name">
 							</div>
 						  </div>
-						  <div class="form-group">
+
+							<div class="form-group">
 							<label for="inputEmail" class="col-sm-2 control-label">Email</label>
 							<div class="col-sm-10">
-							  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+
+							   <input type="email" class="form-control" id="inputEmail" placeholder="Email">
 							</div>
 						  </div>
-						  <div class="form-group">
-							<label for="inputPassword" class="col-sm-2 control-label">Пароль</label>
+
+						   <div class="form-group">
+
+							   <label for="inputPassword" class="col-sm-2 control-label">Пароль</label>
 							<div class="col-sm-10">
-							  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+
+								<input type="password" class="form-control" id="inputPassword" placeholder="Password">
 							</div>
 						  </div>
-						  <div class="form-group">
+
+						   <div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
-							  <button type="submit" id="submitBtn" class="btn btn-default">Проверить</button>
+
+							   <button type="submit" id="submit" class="btn btn-default">Проверить</button>
 							</div>
 						  </div>
 						</form>	
@@ -86,10 +96,10 @@
 				<br>
 				<br>
 				
-				<div class="row" id="result" style="display: none">
+				<div class="row hide-content" id="resultTable">
 				
 				<p class="lead">Результаты заполнения формы</p>
-				<table class="table table-bordered" id="table">
+				<table class="table table-bordered">
 				  
 				  <thead>
 					<tr>
@@ -97,21 +107,26 @@
 					  <th>Имя</th>
 					  <th>Email</th>
 					  <th>Пароль</th>
-					  <th>Действие</th>
 					</tr>
 				  </thead>
 				  <tbody id="table-content">
+					<!--<tr>
+					  <th scope="row">1</th>
+					  <td>Mark</td>
+					  <td>test@test.com</td>
+					  <td>******</td>
+					</tr>-->
+					
 				  </tbody>
 				</table>
-				<button type="submit" id="resetBtn" class="btn btn-default">Сбросить</button>
+
+					<button type="submit" id="reset" class="btn btn-default">Сбросить</button>
 				</div>
 			
 			</div>
 		</div>
 
 
-		
-		
 		
 		<br>
 		<br>
@@ -127,5 +142,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
-  </body>
+     </body>
 </html>
