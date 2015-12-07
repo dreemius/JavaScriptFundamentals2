@@ -22,6 +22,18 @@ function hideResOfInput(){
 	DOMElements.fiellRequestLast.style.display="none";
 	DOMElements.fiellRequestFirst.style.display="block";
 	}
+function showSuccessMsg(){
+	DOMElements.resetBtn.style.display="block";
+	DOMElements.successMsg.style.display="block";
+	}
+function hideSuccessMsg(){
+	DOMElements.resetBtn.style.display="none";
+	DOMElements.successMsg.style.display="none";
+	}
+function showErrorMsg(){
+	DOMElements.errorMsg.style.display="block";
+    }
+
 
 function createTableElement(tagName,inHTML){
 	var tableElement=document.createElement(tagName);
@@ -29,7 +41,6 @@ function createTableElement(tagName,inHTML){
 	inHTML && (tableElement.innerHTML=inHTML);
 	return tableElement;
 	}
-
 function validateEmail(userEmail) { 
 	var regulExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/;
 	return regulExp.test(userEmail); 
@@ -42,41 +53,30 @@ function addNewLine(){
 	var passwordTable = createTableElement('td',DOMElements.password.value.replace(/[\s\S]/g, '*'));
 	var displayCounter=createTableElement('th',counter); 
 	 
-	 DOMElements.names.value="";
-	 DOMElements.email.value="";
-	 DOMElements.password.value="";
+	DOMElements.names.value="";
+	DOMElements.email.value="";
+	DOMElements.password.value="";
 	 
 DOMElements.tableContent.appendChild(wrapTable);
-	           wrapTable.appendChild(displayCounter);
-	           wrapTable.appendChild(nameTable);
-	           wrapTable.appendChild(emailTable);
-	           wrapTable.appendChild(passwordTable);
-	    counter++;
- }
-function showSuccessMsg(){
-	DOMElements.resetBtn.style.display="block";
-	DOMElements.successMsg.style.display="block";
-	}
-function hideSuccessMsg(){
-	DOMElements.resetBtn.style.display="none";
-	DOMElements.successMsg.style.display="none";
-	}
+	 wrapTable.appendChild(displayCounter);
+	 wrapTable.appendChild(nameTable);
+	 wrapTable.appendChild(emailTable);
+	 wrapTable.appendChild(passwordTable);
+	 counter++;
+     }
 
-function showErrorMsg(){
-	DOMElements.errorMsg.style.display="block";
-}
 function checkForm(event){
-	event.preventDefault();
+   event.preventDefault();
 	if(DOMElements.names.value 
-			&& validateEmail(DOMElements.email.value)
-			&& DOMElements.password.value){
-				addNewLine();
-			    showSuccessMsg();
-				hideInputFields();
-				showResOfInput();
-				showTableContent()
-			}else{
-		showErrorMsg();
+	  && validateEmail(DOMElements.email.value)
+	  && DOMElements.password.value){
+		 addNewLine();
+		 showSuccessMsg();
+		 hideInputFields();
+		 showResOfInput();
+		 showTableContent()
+	}else{
+	      showErrorMsg();
 		}
 	}
 function returnToInput(){
@@ -84,16 +84,16 @@ function returnToInput(){
 	 showInputFields();
 	 hideSuccessMsg();
 	 hideResOfInput();
-	}
+    }
 return {
-		setForm : function(form){	
-			DOMElements = form;
-		},
-		initValidator: function(form){
-		  DOMElements.submitBtn.addEventListener("click",checkForm);
-          DOMElements.resetBtn.addEventListener("click",returnToInput);
-		}
+	 setForm : function(form){	
+	 DOMElements = form;
+	 },
+	 initValidator: function(form){
+	 DOMElements.submitBtn.addEventListener("click",checkForm);
+     DOMElements.resetBtn.addEventListener("click",returnToInput);
 	 }
+	}
 }())
 
 formValidator.setForm({
