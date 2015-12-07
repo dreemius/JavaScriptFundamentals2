@@ -1,0 +1,91 @@
+body {
+    background-image: url(../img/poverhnost.jpg);
+    font-family: 'Comic Sans MS', serif;
+}
+h1 {
+    margin-top: -5px;
+}
+header, footer {
+    text-align: center;
+}
+footer {
+    margin-top: 15px;
+}
+.container {
+    background-image: url(../img/elitefon.jpg);
+    background-size: contain;
+    border-radius: 25px;
+    width: 850px;
+    height: 690px;
+    margin: 0 auto;
+}
+.wrap_1 {
+    margin: 40px 150px;
+    width: 600px;
+    height: 130px;
+}
+.wrap_2 {
+    width: 310px;
+    height: 270px;
+}
+.wrap_3 {
+    margin: -250px 300px;
+}
+.kettle-banner {
+    border-radius: 20px;
+    width: 550px;
+    height: 60px;
+    text-align: center;
+    display: none;
+}
+.kettle-image {
+    margin: 60px 240px;
+    width: 310px;
+    height: 270px;
+    display: none;
+}
+section.main {
+    margin-top: 70px;
+    display: none;
+}
+#btn-on {
+    margin: -50px 330px;
+    display: none;
+}
+#btn-off {
+    margin: 16px 415px;
+    display: none;
+}
+#btn-reset {
+    margin: -5px 315px;
+    display: none;
+}
+#add-kettlers {
+    margin: 10px 85px;
+}
+#kettle-on {
+    background-color: springgreen;
+}
+#kettle-off {
+    background-color: lightpink;
+}
+#kettle-stat {
+    background-color: darkseagreen;
+}
+#name-of-kettle {
+    background-color: lightblue;
+    font-size: 20px;
+}
+#inputName {
+    width: 250px;
+}
+#electro-kettle {
+    margin: 70px 275px;
+    width: 310px;
+    height: 250px;
+}
+#sun-kettle {
+    margin-top: 85px;
+    width: 310px;
+    height: 230px;
+}

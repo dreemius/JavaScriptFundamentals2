@@ -15,7 +15,7 @@ var FIRST, //id first img;
 	resultContainer = document.querySelector("#result"),
 	errorContainer  = document.querySelector("#error"),
 	countShow		= document.querySelector("#count-image"),
-	count = 0;
+	count 			= countShow.value;
 
 /** Task - 1 for HW_Lesson_7 ; */
 
@@ -118,7 +118,9 @@ function doTemplate(item) {
 		if(event.target.className == 'btn-for-delete-img') {
 			resultContainer.removeChild(event.target.closest('.col-sm-3'));
 			count--;
-			countShow.innerHTML = count
+			countShow.innerHTML = count;
+			addNewPicture.className = "btn btn-sm btn-success";
+			errorContainer.innerHTML = "";
 		}
 	});
 	count++;

@@ -25,11 +25,14 @@ function cuttingLetter(oldDescription){
     return oldDescription;
 }
 // format object to required layout
+function transformObject(item){
+    item.name = capitalizeLetter(item.name);
+    item.description = cuttingLetter(item.description);
+    item.date = formatDate(item.date);
+}
 function formatObject () {
     for (var i = 0; i < newData.length; i++) {
-        newData[i].name = capitalizeLetter(newData[i].name);
-        newData[i].description = cuttingLetter(newData[i].description);
-        newData[i].date = formatDate(newData[i].date);
+        transformObject(newData[i]);
     }
 }
 function create(el) {
@@ -97,7 +100,7 @@ function fillDiv(newObj) {
         innerHTML: newObj.date
     }, dateLine);
 }
-formatObject();
+
 //-----------------------------------------------------------------------------
 function displayAndClear() {
     var inPut = selector('#exampleInputName2');
@@ -112,13 +115,15 @@ function displayAndClear() {
     });
 }
 function addElement() {
+    formatObject();
     var addBut = selector('#addBut');
     var disableButton = function () {addBut.className = 'btn btn-sm btn-danger disabled';}
     function createElHandler() {
         if (count < 10) {
+            newData = data
             fillDiv(newData[count]);
             total.innerHTML = count + 1;
-            count++;
+            count += 1 ;
         } else {
             disableButton();
         }
@@ -128,18 +133,17 @@ function addElement() {
 
 function removeElement() {
     var addBut = selector('#addBut');
-    var activeButton = function(){addBut.className = 'btn btn-sm btn-success';}
+    var activeButton = function(){addBut.className = 'btn btn-sm btn-success';};
     container.addEventListener('click', function (event) {
         if (event.target.tagName == 'A') {
             event.preventDefault();
             event.currentTarget.removeChild(event.target.parentNode);
-            count--;
-            total.innerHTML = count;
+            count -= 1;
+            total.innerHTML = count ;
         }
         if(total.innerHTML == 0){
             activeButton();
         }
-
     });
 }
 //--------------------------------------------------------------------------
@@ -155,8 +159,8 @@ function inputAndDisplay() {
     });
     sum.addEventListener('input', function (event) {
         NUM_OF_ELEMENT = event.target.value;
-    });
 
+    });
 }
 function addCollElement() {
     inputAndDisplay();
@@ -164,28 +168,21 @@ function addCollElement() {
     addElem.addEventListener('click', function () {
         newData = newData.slice(FROM - 1, TO);
         newData.splice(NUM_OF_ELEMENT);
-        total.innerHTML = newData.length;
+        total.innerHTML = newData.length + count;
         for (var i = 0; i < newData.length; i++) {
             fillDiv(newData[i]);
+            count = i + 1;
         }
+        addElem.style.display = 'none';
     });
-}
-function delColElement() {
-    var delElem = selector('#delElem');
-    delElem.addEventListener('click', function (event) {
-        var childDiv = document.getElementsByClassName('col-sm-3 col-xs-6');
-        container.removeChild(childDiv[0]);
-        total.innerHTML = container.children.length;
-        if(container.children.length == 0){
-            newData = data;
-        }
-    });
+
 }
 displayAndClear();
 addElement();
 removeElement();
 addCollElement();
-delColElement();
+
+
 
 
 
