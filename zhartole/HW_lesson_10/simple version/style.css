@@ -1,0 +1,22 @@
+.kitchen {
+    background: url(img/kitchen-1.png) no-repeat;
+    width: 100em;
+    height: 50em;
+    margin-left: 10em;
+}
+
+.kettle {
+    padding-top: 22em;
+}
+
+.classic-kettle {
+    margin-left: 28em;
+}
+
+.electric-kettle {
+    margin-left: 5em;
+}
+
+.cup {
+    margin-left: 6em;
+}

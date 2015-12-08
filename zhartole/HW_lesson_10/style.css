@@ -1,0 +1,64 @@
+#kitchen {
+    background: url(img/kitchen-1.png) no-repeat;
+    margin-left: 10em;
+}
+
+#kettle {
+    padding-top: 15em;
+    height: 23em;
+}
+
+#classic {
+    padding-left: 28em;
+}
+
+#electric {
+    padding-left: 6em;
+}
+
+#cup {
+    padding-left: 4em;
+}
+.cup-show {
+    display: block;
+}
+
+#cupInSink {
+    display: none;
+    padding-left: 18em;
+}
+.cupInSink-show {
+    display: block;
+}
+
+#message {
+    height: 5em;
+    font-size: 2em;
+    padding-left:12em;
+    color: darkred;
+}
+
+#messageMotivate {
+
+}
+.messageMotivate-show {
+    display: block;
+}
+
+#messageRun {
+    display: none;
+}
+.messageRun-show {
+    display: block;
+}
+
+#messageDone {
+    display: none;
+}
+.messageDone-show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
