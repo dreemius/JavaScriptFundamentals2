@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Template for homework7</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+	<style>
+   body {
+    background: #333; /* Цвет фона */
+    color: #fc0; /* Цвет текста */
+   }
+  </style>
+  </head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+			</button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+		    <li><select class="form-control" id="selector">
+             <option></option>
+			 <option>Kettle</option>
+             <option>Electronic Kettle</option>
+            </select></li>
+            <li><input type="text" class="form-control" id="exampleInputName" placeholder="Enter the brand"></li>
+			<li><button type="button" id = "addelm" class="btn btn-sm btn-success">+ Хочу чаю</button></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+		<br>
+		<br>
+		<br>
+		<p class="lead">| Выберите чайник |</p>
+		
+		<div><img src="pics/chainik.png" id="ket" class="hide" alt="Чайник"></div>
+		<div class="reltv">
+			<img src="pics/elchainik.png" id="elket" class="hide" alt="Электро чайник">
+			<img src="pics/100.png" id="ketl" class="hide" alt="тоже чайник">
+			</div>
+		<div><img src="pics/derzuvrukah.png" id="lis" class="hide" alt="Держи все под контролем"></div>
+		<div class="row">
+			<div class="col-xs-12">
+				<button type="button" id = "switch" class="hide"></button>
+			</div>
+			<br><br>
+		</div>
+		<br>
+		<div id="test" class="row">
+
+			<div class="col-sm-3 col-xs-6">
+			</div>
+		</div>
+		<br>
+		<hr>
+		<br>
+    </div><!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
