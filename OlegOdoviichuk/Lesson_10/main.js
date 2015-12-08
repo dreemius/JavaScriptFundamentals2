@@ -76,6 +76,9 @@ function switchCr8del () {  //DONE
 		 delPics(theend);
 		 delPics(ketscr);
    if(selector.value == "Kettle" || selector.value == "Electronic Kettle") {
+     if(inputName.value == ""){
+		 title.innerHTML = "Чайник, имя введи..."
+		 }else{
      if (cr8del.id == "addelm") {
 		 cr8del.id = "delelm";
 		 cr8del.innerHTML = "- Delete Kettle";
@@ -93,6 +96,7 @@ function switchCr8del () {  //DONE
 		 showInputName ();
 		 title.innerHTML = "| Выберите чайник |"
     }
+	 }
    }else{
 	title.innerHTML = "Чайник это Ошибка...ты ослеп, выбери чайник..."
    }
