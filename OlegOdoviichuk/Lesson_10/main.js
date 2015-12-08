@@ -77,20 +77,20 @@ function switchCr8del () {  //DONE
 		 delPics(ketscr);
    if(selector.value == "Kettle" || selector.value == "Electronic Kettle") {
      if(inputName.value == ""){
-		 title.innerHTML = "Чайник, имя введи..."
+		 title.innerHTML = "Чайник, название введи..."
 		 }else{
      if (cr8del.id == "addelm") {
 		 cr8del.id = "delelm";
-		 cr8del.innerHTML = "- Delete Kettle";
+		 cr8del.innerHTML = "- Спасибо, напился...";
 		 showSwitchBot();
 		 hideSelector ();
 		 hideInputName();
 		 cr8Kettle();
-		 title.innerHTML = "Готовы... ???"
+		 title.innerHTML = "Готов... ???"
 		 
 	   }else{ 
 		 cr8del.id = "addelm";
-		 cr8del.innerHTML = "+ Create Kettle";
+		 cr8del.innerHTML = "+ Хочу чаю";
 		 hideSwitchBot();
 		 showSelector ();
 		 showInputName ();
@@ -121,7 +121,7 @@ function showInputName () { //DONE
 function showSwitchBot() { //DONE
 		 swit4.className = "btn btn-sm btn-success";
 		 swit4.id = "switchon";
-		 swit4.innerHTML = "Swith ON";
+		 swit4.innerHTML = "Вскипятить";
 }	
 
 function hideSwitchBot() { //DONE
@@ -132,7 +132,7 @@ function hideSwitchBot() { //DONE
 function switchOnOff ()	{  //DONE
 	  if(swit4.id  == "switchoff") {
 		 swit4.id = "switchon";
-		 swit4.innerHTML = "Switch ON";
+		 swit4.innerHTML = "Вскипятить еще";
 		 if(selector.value == "Kettle") {
 			 kettle.turnOff();
 			 delPics(ketscr);
@@ -145,7 +145,7 @@ function switchOnOff ()	{  //DONE
 		 
 	   }else{ 
 		 swit4.id = "switchoff";
-		 swit4.innerHTML = "Switch OFF";
+		 swit4.innerHTML = "Хватит с меня";
 		 delPics(theend);
 		 if(selector.value == "Kettle") {
 			 kettle.turnOn();
