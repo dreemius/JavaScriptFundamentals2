@@ -98,7 +98,7 @@ function switchCr8del () {  //DONE
     }
 	 }
    }else{
-	title.innerHTML = "Чайник это Ошибка...ты ослеп, выбери чайник..."
+	title.innerHTML = "Чайник, это Ошибка...ты ослеп? выбери чайник..."
    }
 }
 
