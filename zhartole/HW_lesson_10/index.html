@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>JS - Lesson 10</title>
+    <link href="style.css" rel="stylesheet">
 </head>
+<body>
+<div id="message">
+    <div id="messageMotivate">Hi !  Do you wanna cup of coffee? <br> Please press on any kettle to do coffee</div>
+    <div id="messageRun">Kettle run! <br> Please waite a few second</div>
+    <div id="messageDone">Your coffee ready! <br> Try it :) <br> Please press on cup to put her in sink. <br> <a href="#">Do one more coffee</a> </div>
+</div>
 
-<form method="post" >
-    <input type="radio" name="classic" id="classic">Classic Kettle<br>
-    <input type="checkbox" name="electric" id="electric" >Electric Kettle<br>
-</form>
+<div id="kitchen">
+
+    <div id="kettle">
+    <span id="cupInSink"><img src="img/cup.png"></span>
+    <span id="classic"><img src="img/classic-kettle_converted.png"></span>
+    <span id="electric"><img src="img/electric-kettle_converted.png"></span>
+    <span id="cup"><img src="img/cup.png"></span>
+    </div>
+</div>
+
+
 
 <script src="kettles.js" async></script>
 </body>

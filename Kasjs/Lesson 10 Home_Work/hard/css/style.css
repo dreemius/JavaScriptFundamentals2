@@ -1,0 +1,31 @@
+ #on_off{
+    font: 16px Verdana bold;
+}
+ #create{
+     margin-top: 10px;
+ }
+#delete_ket{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+#result_container{
+    text-align: center;
+    margin-top: 30px;
+    font: 30px Verdana bold;
+    color: green;
+}
+#tumbler{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+#paragraph{
+    margin: 20px 0 0 25px;
+    font: 25px Verdana bold;
+    width: inherit;
+}

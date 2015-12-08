@@ -86,6 +86,7 @@
 						\
 						Взять одну переменную и поочередно преобразовать ее в каждый из типов.");
 				hideBtnRun();
+				hideBtnDel();
 				break;
 			default : alert("Error 0");
 		}
