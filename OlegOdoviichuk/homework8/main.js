@@ -41,7 +41,7 @@ var formValidator = (function(){
 		}
 	
 	function addNewTableLine() {
-		var row = document.createElement("tr");
+		var row = document.query("tr");
 		row.appendChild(document.createElement("th",{scope: "row", innerHTML : 1}));
 		row.appendChild(document.createElement("td",{innerHTML : DOMElements.name.value})); 
 		row.appendChild(document.createElement("td",{innerHTML : DOMElements.email.value}));
@@ -49,7 +49,12 @@ var formValidator = (function(){
 		DOMElements.tableContent.appendChild(row);
 		
 	}
-		//row[2] = DOMElements.password.value
+	/*
+	row[0].innerHTML = DOMElements.name.value;
+	row[1].innerHTML = DOMElements.email.value;
+	row[2].inn
+	*/
+		//row[2].innerHTML = DOMElements.password.value
 		//DOMElements.tableContent.innerHTML += row
 		
 	function checkForm () {
