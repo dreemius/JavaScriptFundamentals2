@@ -53,7 +53,8 @@ var cr8del = document.querySelector('li button'),
 	ketscr = document.querySelector('#ket'),
 	elketscr = document.querySelector('#elket'),
 	ketl = document.querySelector('#ketl'),
-	theend = document.querySelector('#lis');
+	theend = document.querySelector('#lis'),
+	muz = document.querySelector('#music');
 
 function cr8Kettle () {
 	if(selector.value == "Kettle") {
@@ -75,6 +76,8 @@ function switchCr8del () {  //DONE
 		 delPics(ketl);
 		 delPics(theend);
 		 delPics(ketscr);
+		 hideMzc();
+		 
    if(selector.value == "Kettle" || selector.value == "Electronic Kettle") {
      if(inputName.value == ""){
 		 title.innerHTML = "Чайник, название введи..."
@@ -86,7 +89,7 @@ function switchCr8del () {  //DONE
 		 hideSelector ();
 		 hideInputName();
 		 cr8Kettle();
-		 title.innerHTML = "Готов... ???"
+		 title.innerHTML = "Готов... ???";
 		 
 	   }else{ 
 		 cr8del.id = "addelm";
@@ -106,6 +109,12 @@ function hideSelector () {  //DONE
 	selector.className = "hide";
 }
 
+function showMzc () {  //DONE
+	muz.className = "muzc";
+}
+function hideMzc () {  //DONE
+	muz.className = "hide";	
+}
 function showSelector () {  //DONE
 	selector.className = "form-control";
 }
@@ -136,10 +145,12 @@ function switchOnOff ()	{  //DONE
 		 if(selector.value == "Kettle") {
 			 kettle.turnOff();
 			 delPics(ketscr);
+			 hideMzc();
 			 }else{
 			 electroKettle.turnOff();
 			 delPics(elketscr);
 			 delPics(ketl);
+			 hideMzc();
 		   }
 		   addPics(theend, "lisa");
 		 
@@ -150,10 +161,12 @@ function switchOnOff ()	{  //DONE
 		 if(selector.value == "Kettle") {
 			 kettle.turnOn();
 			 addPics(ketscr, "pics");
+			 showMzc();
 			 }else{
 			 electroKettle.turnOn();
 			 addPics(elketscr, "elpics");
 			 addPics(ketl, "ket");
+			 showMzc();
 		   }
     }
 }
