@@ -1,0 +1,93 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+.info-wrapper {
+	padding: 0 5px;
+}
+ /*body {
+    background: #c7b39b url(chainik.png); 
+    color: #fff;
+}
+*/
+#delelm {
+background: #A52A2A;
+    margin: 10px;
+float : left;
+margin-left : 150px;
+    position:absolute;
+	left: 450px;
+
+} 
+
+#addelm {
+position:absolute;
+	left: 50px;
+    background:  #2E8B57;
+    margin: 10px;
+float : left;
+margin-left : 150px;
+} 
+
+#exampleInputName {
+     margin: 5px;
+     float : left;
+margin-left : 30px;
+}
+
+#selector {
+     margin: 5px;
+
+}
+
+.hide {
+     display: none;
+}
+
+
+#switchon {
+    background: #2E8B57;
+}
+
+#switchoff {
+    background:  #A52A2A;
+}
+
+.imgon {
+  background-image: url(chainik.png);
+    color: #fc0;
+}
+
+.pics {
+      border: 3px solid #228B22;
+     
+}
+
+.ket {
+      height: 150px;
+      position:absolute;
+    top:35px;
+    left:180px;
+    z-index:15;
+      }
+.elpics {
+      height : 399px;
+      weight : 598px;
+      border: 3px solid #228B22;
+     
+}
+
+.reltv {
+      position: relative;
+}
+
+.lisa {
+      height : 399px;
+      weight : 598px;
+      border: 3px solid #228B22;
+}

@@ -45,74 +45,39 @@
     </nav>
 
     <div class="container">
+
+		<br>
+		<br>
+		<p class="lead">Задание 2</p>
+		
+		
 		<div class="row">
-			<div class=" col-sm-offset-1 col-sm-8">
-				<br>
-				<br>
-				
-				<div class="row">
-						<p class="lead">Заполните форму</p>
-						<p class="bg-success validation-msg">Форма заполнена правильно</p>
-						<p class="bg-danger validation-msg">Ошибка заполнения формы</p>
-						<form class="form-horizontal">
-						<div class="form-group">
-							<label for="inputName" class="col-sm-2 control-label">Имя</label>
-							<div class="col-sm-10">
-							  <input type="text" class="form-control" id="inputName" placeholder="Name">
-							</div>
-						  </div>
-						  <div class="form-group">
-							<label for="inputEmail" class="col-sm-2 control-label">Email</label>
-							<div class="col-sm-10">
-							  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-							</div>
-						  </div>
-						  <div class="form-group">
-							<label for="inputPassword" class="col-sm-2 control-label">Пароль</label>
-							<div class="col-sm-10">
-							  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-							</div>
-						  </div>
-						  <div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10">
-							  <button type="submit" id="submit" class="btn btn-default">Проверить</button>
-							</div>
-						  </div>
-						</form>	
-				</div>
-				<br>
-				<br>
-				
-				<div class="row">
-				
-				<p class="lead">Результаты заполнения формы</p>
-				<table class="table table-bordered">
-				  
-				  <thead>
-					<tr>
-					  <th>#</th>
-					  <th>Имя</th>
-					  <th>Email</th>
-					  <th>Пароль</th>
-					</tr>
-				  </thead>
-				  <tbody id="table-content">
-					
-					
-				  </tbody>
-				</table>
-				<button type="submit" id="reset" class="btn btn-default">Сбросить</button>
-				</div>
-			
+			<div class="col-xs-12">
+				<button id="add_button" type="button" class="btn btn-sm btn-success">+ Добавить новый элемент</button>
 			</div>
 		</div>
-
-
-		
-		
-		
 		<br>
+		<div id="result" class="row">
+
+			<div class="col-sm-3 col-xs-6">
+				<img src="http://desktopwallpapers.org.ua/mini/201507/40068.jpg" alt="testImage" class="img-thumbnail">
+				<div class="info-wrapper">
+					<div class="text-muted">01: Имя</div>
+					<div class="text-muted">Описане</div>
+					<div class="text-muted">Дата в формате (2014/05/25)</div>
+				</div>
+				<a class="delete" href="#">X</a>
+			</div>
+
+		</div>
 		<br>
+		<div class="row">
+			<div class="col-xs-12">
+				<span class="text-success">Общее колличество:</span><span id="count">1</span>
+			</div>
+		</div>
+		<br>
+		<hr>
 		<br>
 
 
@@ -124,6 +89,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
-    <script src="main2.js"></script>
+	<script src="data.js"></script>
+    <script src="gallery.js"></script>
   </body>
 </html>
