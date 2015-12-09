@@ -33,6 +33,9 @@ function hideSuccessMsg(){
 function showErrorMsg(){
 	DOMElements.errorMsg.style.display="block";
     }
+function hideErrorMsg(){
+	DOMElements.errorMsg.style.display="none";
+    }
 
 
 function createTableElement(tagName,inHTML){
@@ -74,7 +77,8 @@ function checkForm(event){
 		 showSuccessMsg();
 		 hideInputFields();
 		 showResOfInput();
-		 showTableContent()
+		 showTableContent();
+		 hideErrorMsg();
 	}else{
 	      showErrorMsg();
 		}
