@@ -1,11 +1,11 @@
-	var data = {
-			newKettle	: null,
-			classes 	: {
+	htmlCont = (function(){
+		var	classes 	= {
 				divInfo : "form-group",
 				btnRun	: "btn btn-default",
-				pLead	: "lead"	
+				pLead	: "lead",
+				hide	: "hide"
 			},
-			DOMElements : {
+			DOMElements = {
 				divInfo 	 : document.querySelector("#divInfo"),
 				btnRun		 : document.querySelector("#btnRun"),
 				pLead		 : document.querySelector("#lead"),
@@ -13,5 +13,12 @@
 				kettleSelect : document.querySelector("select"),
 				inputName	 : document.querySelector("#inputName"),
 				btnDel		 : document.querySelector("#btnDel")
+			};
+		function getData(){
+			return {
+				classes		: classes,
+				DOMElements : DOMElements
 			}
-	}
+		}
+		return {getData : getData};
+	})();
