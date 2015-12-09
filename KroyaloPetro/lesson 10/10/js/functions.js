@@ -13,10 +13,10 @@
 		var name = data.DOMElements.inputName.value;
 		switch (data.DOMElements.kettleSelect.selectedIndex){
 			case 0 :
-				data.newKettle = new kettle(name);
+				data.newKettle = new Kettle(name);
 				break;
 			case 1 :
-				data.newKettle = new electronikKettle(name);
+				data.newKettle = new ElectronikKettle(name);
 				break;
 			default :
 				showMessage("А нет у нас самовара!");

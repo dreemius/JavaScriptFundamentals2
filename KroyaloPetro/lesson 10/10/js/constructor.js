@@ -1,8 +1,8 @@
-function kettle(name){
+function Kettle(name){
 	this.isBoiling = false;
 	this.name	   = name;
 }
-kettle.prototype = {
+Kettle.prototype = {
 	mess	: function (message) {data.DOMElements.pCons.textContent += message;},
 	turnOn  : function(){
 		this.isBoiling = true;
@@ -16,11 +16,11 @@ kettle.prototype = {
 
 //---------------------------------------------------------
 
-function electronikKettle(name){
-	kettle.call(this, name);
+function ElectronikKettle(name){
+	Kettle.call(this, name);
 }
-electronikKettle.prototype 		  = Object.create(kettle.prototype);
-electronikKettle.prototype.turnOn = function (){
-	kettle.prototype.mess("Кнопка нажата. ");
-	kettle.prototype.turnOn.call(this);
+ElectronikKettle.prototype 		  = Object.create(Kettle.prototype);
+ElectronikKettle.prototype.turnOn = function (){
+	Kettle.prototype.mess("Кнопка нажата. ");
+	Kettle.prototype.turnOn.call(this);
 }
