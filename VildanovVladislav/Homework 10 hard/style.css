@@ -1,0 +1,13 @@
+.lead{
+	font-style: italic;
+	font-size: 24px;
+	font-weight: bold;
+}
+.simple{
+	font-style: italic;
+	font-size: 16px;
+	font-weight: bolder;
+	text-indent: 20px;
+}
+
+	

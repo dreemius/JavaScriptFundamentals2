@@ -49,7 +49,9 @@ function content() {
 		.replace(/\$name/gi,i.name)
 		.replace("$url", i.url)
 		.replace("$description", i.description)
-		.replace("$date", i.date)	
+		.replace("$date", i.date)
+		
+		
 	});
 }
 
