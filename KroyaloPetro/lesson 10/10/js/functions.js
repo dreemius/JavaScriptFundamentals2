@@ -58,18 +58,21 @@
 					}
 				};
 		
-		function clearConsole()			{data.DOMElements.pCons.textContent	= "";}
-		function showInfoDiv() 			{data.DOMElements.divInfo.className = data.classes.divInfo;}
-		function hideInfoDiv()			{data.DOMElements.divInfo.className = data.classes.hide;}
-		function setPLead(inner)		{data.DOMElements.pLead.textContent = inner;}
-		function hideBtnRun()			{data.DOMElements.btnRun.className  = data.classes.hide;}
-		function showBtnRun()			{data.DOMElements.btnRun.className  = data.classes.btnRun;}
-		function showBtnDel()			{data.DOMElements.btnDel.className  = data.classes.btnRun;}
-		function hideBtnDel()			{data.DOMElements.btnDel.className  = data.classes.hide;}
-		function destroyNewKettle() 	{newKettle							= null;}
-		function setData(temp) 			{data 								= temp;}
-		function setConstructors(cons) 	{Kettle = cons.Kettle; ElectronikKettle = cons.ElectronikKettle;}
+		function showInfoDiv() 		{data.DOMElements.divInfo.className = data.classes.divInfo;}
+		function hideInfoDiv()		{data.DOMElements.divInfo.className = data.classes.hide;}
+		function showBtnRun()		{data.DOMElements.btnRun.className  = data.classes.btnRun;}
+		function hideBtnRun()		{data.DOMElements.btnRun.className  = data.classes.hide;}
+		function showBtnDel()		{data.DOMElements.btnDel.className  = data.classes.btnRun;}
+		function hideBtnDel()		{data.DOMElements.btnDel.className  = data.classes.hide;}
+		function clearConsole()		{data.DOMElements.pCons.textContent	= "";}
+		function destroyNewKettle() {newKettle							= null;}
+		function setData(temp) 		{data 								= temp;}
+		function setPLead(inner)	{data.DOMElements.pLead.textContent = inner;}
 		
+		function setConstructors(cons){
+			Kettle = cons.Kettle; 
+			ElectronikKettle = cons.ElectronikKettle;
+		}
 		function setBtnInner(inner, dataiInner) {
 			data.DOMElements.btnRun.innerHTML  	   = inner;
 			data.DOMElements.btnRun.dataset.ident = dataiInner;
