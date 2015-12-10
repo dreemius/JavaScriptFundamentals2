@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 function selector (el)    {return document.querySelector(el);}
 function creator(tag)     {return document.createElement(tag);}
 function hideFormPart()   {selector('#form_part').className = 'row hide';}
@@ -11,26 +11,6 @@ function hideOnMsg()      {selector('.bg-success').className = 'bg-success valid
 function showOffMsg()     {selector('.bg-danger').className = 'bg-danger validation-msg show';}
 function hideOffMsg()     {selector('.bg-danger').className = 'bg-danger validation-msg hide';}
 //-----------------------------------------------------------------------------------------------
-=======
-//use prototype instead of usual function
-// one run function
-// collect all elements into one object
-
-
-function selector (el){
-    return document.querySelector(el);
-}function creator(tag){
-    return document.createElement(tag);
-}
-var descName = selector('#name');
-var kettle = selector('#select_kettle');
-var createButton = selector('#create');
-var result_container = selector('#result_container');
-var tumbler = selector('#on_off');
-var msgOn = selector('.bg-success');
-var msgOff = selector('.bg-danger');
-
->>>>>>> 78ab2b581f4073188393b8ac97225ad666b27eca
 function Kettle (){
     this.container               = creator('div');
     this.img                     = creator('img');
@@ -66,7 +46,6 @@ Electronic_Kettle.prototype = {
         this.img.alt             = 'Electronic_Kettle';
         this.img.src             = 'images/kettle_elect.jpg';
     }
-
 };
 var createEventKettle = function(){
     var createButton = selector('#create');
@@ -114,10 +93,10 @@ function deleteKettle(){
     hideOnMsg();
     hideOffMsg();
 }
-function init(){
+function run(){
     createEventKettle();
     pressTumblerButton();
     pressDeleteButton();
 }
-init();
+run();
 
