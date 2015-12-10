@@ -1,7 +1,7 @@
 function Kettle(name){
     this.name = name;
     this.isBoiling = false;
-    this.turnOff = function(){
+    this.turnOff = function(){ //please move this function to prototype
         this.isBoiling = false;
         console.log(this.name + ' is Off');
     };

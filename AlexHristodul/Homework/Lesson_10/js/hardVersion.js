@@ -50,47 +50,50 @@ var kettlerHandler = (function() {
     inheritense(TeaPot, ElectroKettle);
     inheritense(ElectroKettle, SunKettle);
 
-    function showBanner(selector) {
+    function showBanner(selector) { // move this method to prototype
         selector.fadeIn(3250, function () {
             $(this).fadeOut(3250);
         });
     }
 
-    function kettleOn(kettle) {input.buttonOn.click(function() {kettle.turnOn()});}
-    function kettleOff(kettle) {input.buttonOff.click(function() {kettle.turnOff()});}
+    function kettleHandlers(kettle) {
+        input.buttonOn.click(function() {kettle.turnOn()});
+        input.buttonOff.click(function() {kettle.turnOff()});
+    }
+    //function kettleOff(kettle) {}
 
-    function checkKettles(newKettle, parent, image) {
+    function checkKettles(parent, image) { //rename -> createKattleInstance
         var newKettle = new parent(input.inputName.val());
-        addKettleName();
-        kettleOn(newKettle);
-        kettleOff(newKettle);
-        image.fadeIn(1500);
+        addKettleName(image);
+        kettleHandlers(newKettle);
+        //kettleOff(newKettle);
     }
 
-    function addKettleName() {
+    function addKettleName(image) { //showKattle
         input.formGroup.hide();
         input.buttonOn.show();
         input.buttonOff.show();
         input.buttonReset.show();
+        image.fadeIn(1500);
         input.nameOfKettle.fadeIn(3250);
         input.nameOfKettle.html('Поздравляем !!! Вы выбрали чайник: ' + input.checkKettle.val()
             + ' по имени: ' + '"' + input.inputName.val() + '"');
     }
 
     function addKettle() {
-        (input.checkKettle.val() === "Классический") ? checkKettles('classicKettle', TeaPot, input.classicImg) :
-        (input.checkKettle.val() === "Електрический")? checkKettles('electroKettle', ElectroKettle, input.electroImg) :
-                                                       checkKettles('sunKettle', SunKettle, input.sunImg);
+        (input.checkKettle.val() === "Классический") ? checkKettles(TeaPot, input.classicImg) :
+        (input.checkKettle.val() === "Електрический")? checkKettles(ElectroKettle, input.electroImg) :
+                                                       checkKettles(SunKettle, input.sunImg);
     }
 
-    function createKettle() {
+    function createKettle() { //change method name
         input.addKettlers.click(addKettle);
         input.buttonReset.click(function() {location.reload()});
     }
 
     return {
         setKettler: function(teaPots) {
-            input = teaPots;
+            input = teaPots; //may be rename input to something else
         },
         init: function() {
             createKettle();

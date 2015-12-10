@@ -1,3 +1,8 @@
+//use prototype instead of usual function
+// one run function
+// collect all elements into one object
+
+
 function selector (el){
     return document.querySelector(el);
 }function creator(tag){
