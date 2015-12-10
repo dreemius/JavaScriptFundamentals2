@@ -8,18 +8,23 @@ var kettlerHandler = (function() {
     function TeaPot(name) {
         this.isBoiling = false;
         this.name = name;
+        this.showBanner = function(selector) {
+            selector.fadeIn(3250, function () {
+                $(this).fadeOut(3250);
+            })
+        }
     }
 
     TeaPot.prototype = {
         turnOn : function() {
             this.isBoiling = true;
+            this.showBanner(input.kettleOn);
             input.kettleOn.html('<br/>' + 'Чайник по имени: "' + this.name + '" - включен.');
-            showBanner(input.kettleOn);
         },
         turnOff : function() {
             this.isBoiling = false;
+            this.showBanner(input.kettleOff);
             input.kettleOff.html('<br/>' + 'Чайник по имени: "' + this.name + '" - выключен.');
-            showBanner(input.kettleOff);
         }
     };
 
@@ -29,9 +34,9 @@ var kettlerHandler = (function() {
 
     ElectroKettle.prototype = {
         turnOn : function() {
+            this.showBanner(input.kettleStat);
             input.kettleStat.html('<br/>' + 'Кнопка нажата');
             TeaPot.prototype.turnOn.apply(this, arguments);
-            showBanner(input.kettleStat);
         }
     };
 
@@ -43,31 +48,26 @@ var kettlerHandler = (function() {
         turnOn : function() {
             TeaPot.prototype.turnOn.apply(this, arguments);
             input.kettleStat.html('<br/>' + 'Пошла зарядка');
-            showBanner(input.kettleStat);
+            this.showBanner(input.kettleStat);
         }
     };
 
     inheritense(TeaPot, ElectroKettle);
     inheritense(ElectroKettle, SunKettle);
 
-    function showBanner(selector) {
-        selector.fadeIn(3250, function () {
-            $(this).fadeOut(3250);
-        });
+    function kettleHandller(kettle) {
+        input.buttonOn.click(function() {kettle.turnOn()});
+        input.buttonOff.click(function() {kettle.turnOff()});
     }
 
-    function kettleOn(kettle) {input.buttonOn.click(function() {kettle.turnOn()});}
-    function kettleOff(kettle) {input.buttonOff.click(function() {kettle.turnOff()});}
-
-    function checkKettles(newKettle, parent, image) {
+    function createNewKettle(parent, image) {
         var newKettle = new parent(input.inputName.val());
-        addKettleName();
-        kettleOn(newKettle);
-        kettleOff(newKettle);
-        image.fadeIn(1500);
+        kettleHandller(newKettle);
+        showKettleName(image);
     }
 
-    function addKettleName() {
+    function showKettleName(image) {
+        image.fadeIn(1500);
         input.formGroup.hide();
         input.buttonOn.show();
         input.buttonOff.show();
@@ -78,29 +78,29 @@ var kettlerHandler = (function() {
     }
 
     function addKettle() {
-        (input.checkKettle.val() === "Классический") ? checkKettles('classicKettle', TeaPot, input.classicImg) :
-        (input.checkKettle.val() === "Електрический")? checkKettles('electroKettle', ElectroKettle, input.electroImg) :
-                                                       checkKettles('sunKettle', SunKettle, input.sunImg);
+        (input.checkKettle.val() === "Классический") ? createNewKettle(TeaPot, input.classicImg) :
+        (input.checkKettle.val() === "Електрический")? createNewKettle(ElectroKettle, input.electroImg) :
+        (input.checkKettle.val() === "На солнечной батарее") ? createNewKettle(SunKettle, input.sunImg): "";
     }
 
-    function createKettle() {
+    function showKettle() {
         input.addKettlers.click(addKettle);
         input.buttonReset.click(function() {location.reload()});
     }
 
     return {
-        setKettler: function(teaPots) {
+        setKettles: function(teaPots) {
             input = teaPots;
         },
         init: function() {
-            createKettle();
+            showKettle();
         }
     }
 }());
 
 //********************************************
 
-kettlerHandler.setKettler({
+kettlerHandler.setKettles({
     inputName    : $('#inputName'),
     checkKettle  : $('#checkKettle'),
     kettleOn     : $('#kettle-on'),
