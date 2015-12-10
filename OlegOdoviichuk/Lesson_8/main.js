@@ -2,22 +2,6 @@ var formValidator = (function(){
 	
 	var DOMElements = null;
         
-	function showErrorMsg(){
-	         DOMElements.errorMsg.style.display = ""; //DONE
-	}
-	
-	function hideErrorMsg(){
-	         DOMElements.errorMsg.style.display = "none"; //DONE
-	}
-	
-	function showSuccessMsg(){
-	         DOMElements.succsesMsg.style.display = "";  //DONE
-	}
-	
-	function hideSuccessMsg(){
-	         DOMElements.succsesMsg.style.display = "none";  //DONE
-	}
-	
 	function showTable(){
 	         DOMElements.borderedTable.parentNode.style.display = ""; //DONE
 	}
@@ -25,14 +9,7 @@ var formValidator = (function(){
 	function hideTable(){
 	         DOMElements.borderedTable.parentNode.style.display = "none";  //DONE
 	}
-	
-	function hideForm(){ 
-		DOMElements.form.style.display = "none"; 
-		}
-	
-	function showForm(){
-		DOMElements.form.style.display = ""
-		}
+
     var n = 0;
 	function addNewTableLine() {
 		var row = document.createElement("tr"),
@@ -64,35 +41,37 @@ var formValidator = (function(){
 			&& DOMElements.email.value 
 			&& DOMElements.password.value) {
 			    addNewTableLine();
-				showSuccessMsg();
+				formValidator.hideNshow("succsesMsg", "");
+				formValidator.hideNshow("form", "none");
+				formValidator.hideNshow("errorMsg", "none");
 				showTable();
-				hideForm();
-				hideErrorMsg();
-				
 				
 		} else {
-			showErrorMsg();
+			formValidator.hideNshow("errorMsg", "");
 		}
 	}
 	
 	function validateForm(){
-		  hideSuccessMsg();
-	      hideErrorMsg();
+		  formValidator.hideNshow("succsesMsg", "none");
+	      formValidator.hideNshow("errorMsg", "none");
 	      hideTable();
 	  }
 	
 	function resetForm(){
 	     hideTable();
-	     showForm();
-	     hideSuccessMsg();
-		 hideErrorMsg();
+	     formValidator.hideNshow("form", "");
+	     formValidator.hideNshow("succsesMsg", "none");
+		 formValidator.hideNshow("errorMsg", "none");
 		DOMElements.name.value="";
 		DOMElements.email.value="";
-		DOMElements.password.value="";
-		
-}
-			
+		DOMElements.password.value="";		
+}	
+
 	return {
+	
+	    hideNshow : function(elm, cls) {
+		   DOMElements[elm].style.display = cls;
+		},
 		setForm : function(form){	
 			DOMElements = form;
 		},

@@ -1,6 +1,14 @@
 function Kettle(name) {
     this.name = name;
+<<<<<<< HEAD
 
+=======
+    this.isBoiling = false;
+    this.turnOff = function(){ //please move this function to prototype
+        this.isBoiling = false;
+        console.log(this.name + ' is Off');
+    };
+>>>>>>> 78ab2b581f4073188393b8ac97225ad666b27eca
 }
 
 Kettle.prototype = {
