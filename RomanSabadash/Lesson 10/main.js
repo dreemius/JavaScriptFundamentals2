@@ -4,13 +4,13 @@ function Kettle (name) {
 } 
 
 Kettle.prototype = {
-    turnOn : function (name) {
+    turnOn : function () {
     this.isBoiling = true;
-    console.log('Kettle ' + name + ' ON');
+    console.log('Kettle ' + this.name + ' ON');
 },
-    turnOff : function (name) {
+    turnOff : function () {
     this.isBoiling = false;
-    console.log('Kettle ' + name + ' OFF');
+    console.log('Kettle ' + this.name + ' OFF');
 }
 };
 
@@ -29,8 +29,8 @@ ElectronicKettle.prototype = {
 inheritense(Kettle, ElectronicKettle);
 
 var allKettle = new ElectronicKettle ('"Braun"');
-allKettle.turnOn('"Braun"');
-allKettle.turnOff('"Braun"');
+allKettle.turnOn();
+allKettle.turnOff();
 
 function inheritense (parent, child) {
     var tempChild = child.prototype;    
@@ -38,7 +38,7 @@ function inheritense (parent, child) {
     if (!Object.create) {
         child.prototype = Object.create(parent.prototype);
     } else {
-        F = function () {};
+        var F = function () {};
         F.prototype = parent.prototype;
         child.prototype = new F();
     }

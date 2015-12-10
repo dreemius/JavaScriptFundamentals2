@@ -23,15 +23,23 @@ function hideResOfInput(){
 	DOMElements.fiellRequestFirst.style.display="block";
 	}
 function showSuccessMsg(){
-	DOMElements.resetBtn.style.display="block";
 	DOMElements.successMsg.style.display="block";
 	}
 function hideSuccessMsg(){
-	DOMElements.resetBtn.style.display="none";
 	DOMElements.successMsg.style.display="none";
 	}
 function showErrorMsg(){
 	DOMElements.errorMsg.style.display="block";
+    }
+function hideErrorMsg(){
+	DOMElements.errorMsg.style.display="none";
+    }
+	
+function showResetBtn(){
+	DOMElements.resetBtn.style.display="block";
+	}
+function hideResetBtn(){
+	DOMElements.resetBtn.style.display="none";
     }
 
 
@@ -72,18 +80,24 @@ function checkForm(event){
 	  && DOMElements.password.value){
 		 addNewLine();
 		 showSuccessMsg();
+		 showResetBtn();
 		 hideInputFields();
 		 showResOfInput();
-		 showTableContent()
+		 showTableContent();
+		 hideErrorMsg();
 	}else{
 	      showErrorMsg();
+		  hideInputFields();
+		  showResetBtn();
 		}
 	}
 function returnToInput(){
 	 hideTableContent();
 	 showInputFields();
 	 hideSuccessMsg();
+	 hideErrorMsg();
 	 hideResOfInput();
+	 hideResetBtn();
     }
 return {
 	 setForm : function(form){	
