@@ -7,25 +7,15 @@ var filmLoader = (function () {
 
 //Value input
     valueInput.val(textSerch);
-    function buildOneItem() {
-        resultContainer.html(html);
-    }
-
 
     function getQueryString() {
         var textInp = valueInput.val();
         return textInp;
     }
 
-    function getInputValue() {
-        getQueryString();
-    }
-
 //loader gallary
     function loadGallery(data1) {
-       // search(getQueryString());
-        console.log(data1);
-        var htmlConteiner = '<div class="row">';
+      var htmlConteiner = '<div class="row">';
         _.each(data1.Search, function (data) {
         var compiled = _.template($("#item-template").html());
         var html = compiled({
@@ -36,31 +26,25 @@ var filmLoader = (function () {
             imdbID: data.imdbID
         });
         htmlConteiner += html;
-
         resultContainer.html(htmlConteiner);
         });
 
     }
 
-
 //don't change
     function search(searchString) {
-        console.log("sdsdf");
-        jQuery.getScript('http://www.omdbapi.com/?s=' + searchString + '&plot=short&r=json&callback=onDataLoaded');
+       jQuery.getScript('http://www.omdbapi.com/?s=' + searchString + '&plot=short&r=json&callback=onDataLoaded');
     }
 
 
     function buildTable(data) {
-        console.log("1" + data);
-        loadGallery(data);
+       loadGallery(data);
     }
 
     function initListeners() {
         btnSerch.click(function(){
-            console.log("sdddd");
+           search(getQueryString())});
 
-            search(getQueryString())});
-        //    valueInput.on("focusout", getInputValue)
     }
 
     function init() {
