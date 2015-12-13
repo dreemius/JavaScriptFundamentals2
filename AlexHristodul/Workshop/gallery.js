@@ -5,23 +5,21 @@ var filmLoader = (function(){
 				<img src="<%=url%>" alt="<%=name%>" class="img-thumbnail pull-left">\
 				<div class="info-wrapper pull-left">\
 					<div class="text-muted"><%=description%></div>\
+					<div class="text-muted"><%=years%></div>\
+					<div class="text-muted"><%=type%></div>\
 				</div>\
 			</div>');
 
 
-	function buildOneItem() {
-		var item = {
-			url: "http://desktopwallpapers.org.ua/mini/201507/40066.jpg",
-			name: "картинка 1",
-			description : "Using color to add meaning only"
-		};
+	function buildOneItem(value) {
+			var item = compiled({
+				url: value.Poster,
+				description: value.Title,
+				type: value.Type,
+				years: value.Year
+			});
 
-		var html = compiled({
-			url: item.url,
-			name: item.name,
-			description: item.description
-		});
-		resultContainer.html(html);
+			resultContainer.html(item);
 	}
 
 
@@ -36,12 +34,11 @@ var filmLoader = (function(){
 		jQuery.getScript('http://www.omdbapi.com/?s='+searchString+'&plot=short&r=json&callback=onDataLoaded');
 	}
 
-
 	function buildTable (data) {
-		console.log(data);
-		buildOneItem();
+		for(var i=0; i < data.Search.length; i++) {
+			buildOneItem(data.Search[i]);
+		}
 	}
-
 
 	function init (){
 		$('#btnSearch').on('click', function() {
@@ -55,6 +52,7 @@ var filmLoader = (function(){
 		//don't change
 		buildTable : function(data) {
 			buildTable(data);
+			console.log(data);
 		}
 	}
 
@@ -64,5 +62,3 @@ var filmLoader = (function(){
 window.onDataLoaded = function(list) {
 	filmLoader.buildTable(list);
 };
-
-
