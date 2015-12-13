@@ -17,6 +17,7 @@ var filmLoader = (function () {
     function loadGallery(data1) {
       var htmlConteiner = '<div class="row">';
         _.each(data1.Search, function (data) {
+            console.log(data);
         var compiled = _.template($("#item-template").html());
         var html = compiled({
             Poster: data.Poster,

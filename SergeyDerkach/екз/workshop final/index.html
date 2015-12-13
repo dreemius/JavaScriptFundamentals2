@@ -83,11 +83,11 @@
 <!-- Templates -->
 <script type="text/template" id="item-template">
     <div id="<%=imdbID%>">
-        <img src="<%=Poster%>" alt="<%=name%>" class="img-thumbnail pull-left">
+        <img src="<%=Poster%>" alt="<%= Title%>" class="img-thumbnail pull-left">
         <div class="info-wrapper pull-left">
-            <div>Title:<% Title%></div>
-            <div>Type:<% Title%></div>
-            <div>Year:<% Year%></div>
+            <div>Title:<%= Title%></div>
+            <div>Type:<%= Title%></div>
+            <div>Year:<%= Year%></div>
 
         </div>
     </div>
