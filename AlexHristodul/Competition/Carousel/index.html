@@ -59,7 +59,7 @@
       <h4>На этом замечательном сайте у Вас есть возможность <br/>
           познакомиться с крутым "Bootstrap" эфектом под названием:</h4>
       <hr/><h1>***<span>CAROUSEL</span>***</h1><hr/>
-      <p><span class="p-first-word">"Карусель"(slider)</span> - это автоматически-последовательное отображение изображений,
+      <p><span class="p-first-word">"Карусель"(carousel)</span> - это автоматически-последовательное отображение изображений,
         но также оно может отображать последние завершенные проекты,отзывы ваших клиентов, описание специальных предложений,
         ссылки на новости или последние статьи из блога. В этой статье мы рассмотрим,
         как создать слайдер с помощью компонента Carousel в Twitter Bootstrap 3.
@@ -68,7 +68,7 @@
         <a href="http://getbootstrap.com/">официальный сайт</a><br/>--> жмём на кнопку "Download Bootstrap"<br/>
         --> в открытом окне жмём на такую же кнопку<br/>--> разархивируйте файл в папку с вашим проектом!<br/>
         Чтобы узнать как подключить библиотеку прочитайте <a href="http://bootstrap-ru.com/300/getting-started/">это</a><br/>
-        или взгляните на пример в разделе <a href="#" class="code">"Готовый код"</a>
+        или взгляните на пример в разделе <a href="#" class="full-code">"Готовый код"</a>
       </p>
       <p>
         Чистосердечно желаю Вам удачи и научиться качественно использовать библиотеку Twitter Bootstrap 3.<br/>
@@ -141,11 +141,13 @@
         <span class="p-first-word">Управление</span> осуществляется стрелками влево и вправо, они используются для изменения слайдов вручную.
         <div class="code-view"><xmp>
           <!-- Элементы управления -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <a class="left carousel-control" href="#carousel-example-generic" 
+			role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <a class="right carousel-control" href="#carousel-example-generic" 
+			role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
@@ -184,10 +186,10 @@
         Настройки карусели могут быть установлены с помощью параметров. Например:
         <div class="code-view"><xmp>
           $('.carousel').carousel({
-            interval: 5000, // интервал показа слайдов 5 секунд;
-            pause: 'hover', // пауза при наведении;
-            wrap: true,     // возобновление цикла показа слайдов;
-            keyboard: true  // использование клавиатуры;
+            interval : 5000,    // интервал показа слайдов 5 секунд;
+            pause    : 'hover', // пауза при наведении;
+            wrap     : true,    // возобновление цикла показа слайдов;
+            keyboard : true     // использование клавиатуры;
           });
         </xmp></div>
         Вы также можете вызвать вручную события слайдера, используя следующий код:
