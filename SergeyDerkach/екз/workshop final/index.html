@@ -46,9 +46,7 @@
 </nav>
 
 <div class="container">
-<br/>
-<br/>
-<br/>
+
     <div class="starter-template">
         <h1>Find Movie Info</h1>
 
@@ -78,10 +76,10 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="dist/js/jquery-2.1.4.min.js"></script>
+<script src="dist/js/jquery-1.11.3.min.js"></script>
 <script src="dist/js/underscore-min.js"></script>
 <script src="dist/js/bootstrap.min.js"></script>
-<script src="js/gallery.js"></script>
+<script src="gallery.js"></script>
 <!-- Templates -->
 <script type="text/template" id="item-template">
     <div id="<%=imdbID%>">
@@ -90,8 +88,10 @@
             <div>Title:<%= Title%></div>
             <div>Type:<%= Title%></div>
             <div>Year:<%= Year%></div>
+
         </div>
-	</div>
+    </div>
+
 </script>
 </body>
 </html>

@@ -20,7 +20,7 @@ var films = (function(){
 
 }());
 
-films.search('house');
+films.search("star");
 
 
 /*
