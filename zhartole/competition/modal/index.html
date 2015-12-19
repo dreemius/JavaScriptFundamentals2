@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="dist/image/favicon.ico" type="image/x-icon">
+
+    <title>Modal window</title>
+
+    <!-- STYLE -->
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="dist/css/style.css" type="text/css" />
+    <!-- Code text style -->
+    <link rel="stylesheet" href="dist/js/google-code-prettify/styles/default.css" type="text/css"  />
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"	style="color:rgba(229, 170, 19, 0.82);">JS helper</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#about">Академия JS</a></li>
+			<li><a href="#contact">Советы</a></li>
+			<li class="active"><a href="#contact">Инструкции</a></li>
+            <li><a href="#contact">Документация</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	
+	<div class="container">
+		<div class="col-md-9" role="main">
+			<div id="title">
+			<h1>Всплывающее или Модальное окно</h1>
+			</div>
+			<div id="navigation">
+			  <span class="navigation">
+			<span id="nav-description"><a href="#title-description"><span		class="glyphicon glyphicon-bullhorn"></span> Описание</a></span>
+			<span id="nav-instruction"><a href="#instruction"><span         	class=" glyphicon glyphicon-tasks"></span> Инструкция</a></span>
+			<span id="nav-example"><a href="#examples"><span                	class="glyphicon glyphicon-play"></span> Примеры Реализации</a></span>
+			<span id="nav-test"><a href="#share"><span                      	class="glyphicon glyphicon-stats"></span> Пройти Тест</a></span>
+			<span id="nav-recomendation"><a href="#recomendation"><span     	class="glyphicon glyphicon-briefcase"></span> Рекомендации</a></span>
+			  </span>
+			</div>
+			<div id="description">	
+				<div id="image-title" class="image-in-article">
+					<img src="dist/image/pop-up-example.JPG" title="Пример" alt="Всплывающее или Модальное (pop-up) окно">
+				</div>
+				<div id="test-motivation">
+					<div class="alert alert-warning fade in">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+						<p>
+							Знаешь как работать с всплывающим (модальным) окном? Проверь свои навыки
+							<button type="button" id="pass-test" class="btn btn-success btn-xs">Пройти тест</button>
+						</p>
+					</div>
+				</div>
+				<div id="title-description" class="box-title">
+					<h3>
+						Описание <small>Что такое Всплывающее или Модальное (pop-up) окно</small>
+					</h3>
+				</div>
+				<div id="description-description">
+					<p>
+						<b>Всплывающее окно</b> (pop-up окно) — окно, которое открываеться на экране в результате исполнения какой-либо операции (действия). Сегодня модальные окна широко используються на множестве сайтов
+					</p>
+					<p>
+						Модальные окна на веб-странице применяются для решения множества задач.
+					</p>
+					<p>
+						Например, всплывающее окно может использоваться для отображения пользователю формы входа и регистрации, изображения, сообщения о каком-либо событии, и прочьей информации.
+					</p>
+					<p>
+						Также <b>плюсом модальных окон</b> являеться то, что браузеры не могут их блокировать, как всплывающие окна, поэтому они отлично подойдут для концентрации внимания пользователей.
+					</p>
+					<p>
+						Простые в использовании и легко настраевымые всплывающие (модальные или pop-up) окна для Вашего проекта обеспечит Компонент Modal фреймворка Bootstrap 3 и 4.			
+					<p>
+						<b>Bootstrap Modal</b> используеться для отображения на веб-странице контента с помощью всплывающего окна. В Bootstrap 3 и 4 всплывающее (модальное) окно представляет собой блок, который визуально отображается над прочим содержимым страницы.
+					</p>
+					<p>
+						Bootstrap Modal это один из самых полезных плагинов представленных фреймворком Bootstrap 3 и 4.
+					</p>
+					<div class="alert alert-success fade in">
+							<h4><span class="lists">Преимущества Всплывающего(pop-up) окна Bootstrap Modal</span></h4>
+							<p><span class="glyphicon glyphicon-ok lists"></span>	<span class="lists-text">Не нужно писать JavaScript код для использования pop-up окна на своем сайте</span></p>
+							<p><span class="glyphicon glyphicon-ok lists"></span> 	<span class="lists-text">Код а так же стили в Bootstrap Modal стандартные</span></p>
+							<p><span class="glyphicon glyphicon-ok lists"></span>	<span class="lists-text">Для работы Bootstrap Modal нужно только правильно использовать вызовы, разметку и атрибуты.</span></p>
+					</div>
+					<p>
+						Придерживаясь правил нашей инструкции Вы убедитесь что это легко настраиваемый и адаптивный <b>popup</b>.
+					</p>
+				</div>
+			</div><!-- /#description -->
+			<div id="instruction">		
+				<div id="title-instruction" class="box-title">
+				  <h3>Инструкция <small>Как установить Всплывающее или Модальное окно</small></h3>
+				</div>  
+				<div id="navigation-instruction" class="navigation">
+					<span>
+					  <a href="#description-instruction"><span class="glyphicon glyphicon-bullhorn"></span> Текстовая инструкция</a>
+					</span>
+					<span>
+					  <a href="#photo-instruction-modal" data-toggle="modal"><span class="glyphicon glyphicon-picture"></span> Фото инструкция</a>
+					</span>
+					<span>
+					  <a href="#video-instruction-modal" data-toggle="modal"><span class="glyphicon glyphicon-film"></span> Видео инструкция</a>
+					</span>
+					<div id="modals">
+						<div id="photo-instruction-modal" class="modal fade" style="text-align:justify;">
+							<div class="modal-dialog">
+								<div class="modal-content">
+								<!-- Заголовок модального окна -->
+									<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									<h4 class="modal-title">JS Helper - твой путеводитель в мире JavaScript</h4>
+									</div>
+									<!-- Содержимое модального окна -->
+									<div class="modal-body">
+									<p>Здесь будет инструкция в картинках</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="video-instruction-modal" class="modal fade" style="text-align:justify;">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<!-- Заголовок модального окна -->
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h4 class="modal-title">JS Helper - твой путеводитель в мире JavaScript</h4>
+									</div>
+									<!-- Содержимое модального окна -->
+									<div class="modal-body">
+										<p>Здесь будет video инструкция</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="description-instruction">
+					<ol>
+						<li>
+							<div id="connection-library" class="box-title">
+								<b>Подключаем библиотеки</b>
+							</div>
+							<div class="subtitle-description">
+								<div class="alert alert-warning fade in">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+								Вы уже подключили Bootstrap ? Тогда переходим <a href="#activate-modal">к следуещему пункту</a>
+							</div>
+							<p>Для начала Скачиваем необходимые библиотеки</p>
+
+							<div style="width:30em;">
+								<table class="table table-bordered table-striped">
+									<thead>
+										<tr>
+											<th>Название билиотеки</th>
+											<th>Ссылка на файл</th>
+										</tr>
+									</thead>
+								  <tbody>
+									  <tr>
+										<td>jQuery</td>
+										<td>
+											<a href="http://code.jquery.com/jquery-1.11.3.min.js"><button type="button" class="btn btn-success btn-xs">Скачать </button></a>
+										</td>
+									  </tr>
+									  <tr>
+										<td>Bootstrap</td>
+										<td>
+											<a href="https://github.com/twbs/bootstrap/releases/download/v3.3.6/bootstrap-3.3.6-dist.zip"><button type="button" class="btn btn-success btn-xs">Скачать </button></a>
+										</td>
+									  </tr>
+								  </tbody>
+								</table>
+							</div>
+
+							<p>Все Bootsrap плагины работают на jQuery. Поэтому нам в первую очередь, необходимо подключить фрэймворк jQuery.</p>
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<span class="label label-default">Cкачаный :</span>
+											</td>
+											<td class="small-code">
+													<xmp class="prettyprint linenums"><script src="dist/js/jquery.min.js" async></script></xmp>
+													<xmp class="prettyprint linenums"><!-- аттрибут async  загружает скрипт после загрузки документа  --></xmp>								
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="label label-default">Через CDN :</span>
+											</td>
+											<td class="small-code">
+												<xmp class="prettyprint linenums"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" async></script></xmp>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<hr>
+								<p><b>Затем подключаем Bootstrap.</b></p>
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<span class="label label-default">Cкачаный :</span>
+											</td>
+											<td class="small-code">
+												<xmp class="prettyprint linenums"><link href="dist/css/bootstrap.min.css" rel="stylesheet"></xmp>
+												<xmp class="prettyprint linenums"><!-- Cтили; Подключаються в <header> --></xmp>
+												<xmp class="prettyprint linenums"><script src="dist/js/bootstrap.min.js" async></script></xmp>
+												<xmp class="prettyprint linenums"><!-- аттрибут async  загружает скрипт после загрузки документа  --></xmp>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="label label-default">Через CDN :</span>
+											</td>
+											<td class="small-code">
+												<xmp class="prettyprint linenums"><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"></xmp>
+												<xmp class="prettyprint linenums"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"  async></script></xmp>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li>
+							<div id="activate-modal" class="box-title">
+								<b>Активируем модальное окно</b>
+							</div>
+							<div class="subtitle-description">
+								<p>Сначала активируем модальное окно без единой строчки JavaScript кода. Для этого Устанавливаем аттрибуты <code>data-toggle="modal"</code>, <code>data-target="#myModal"</code> или <code>href="#myModal"</code> на какой-либо html элемент, предположим на кнопку.</p>
+								<div style="margin-left:2.5em;">
+									<code>data-toggle="modal"</code> - атрибут, который содержит значение <code>modal</code> которое в свою очередь говорит, что содержимое, которое вызвает этот элемент, - модальное окно.<br>
+									<code>#myModal</code> -  селектор (идентификатор) елемента который будет "всплывать".
+								</div>
+								<p>Ниже приведён код работающего примера. Для просмотра работающего примера нажмите на кнопку  <img src="dist/image/code-example/play.png">   в правом верхнем углу.</p>
+							</div>
+							<!-- CODE EXAMPLE -->
+							<div class="code-example">
+								<div id="buttons">
+								  <span id="html" 		class="btn-html active">HTML</span>
+								  <span id="css"  		class="btn-css">CSS</span>
+								  <span id="js" 		class="btn-js">JavaScript</span>
+								  <span id="download" 	title="Скачать пример"><a href="example/modal/simple-modal.html" download><img src="dist/image/code-example/folder_download.png"></a></span>
+								  <span id="run"		title="Смотреть пример"><a href="example/modal/simple-modal.html" target="_blank"><img src="dist/image/code-example/play.png"></a></span>
+								  <span id="copy" 		title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+								</div>
+								<div id="code" class="code">
+								  <!-- HTML code -->
+									<div id="code-html" class="show">
+										<xmp class="prettyprint linenums">
+<!-- Кнопка, которая вызывает модальное окно -->
+<a href="#myModal" class="btn btn-primary" data-toggle="modal">Открыть модальное окно</a>
+<!-- Исходный HTML-код -->
+<div id="myModal" class="modal fade" style="text-align:justify;">
+<div class="modal-dialog">
+<div class="modal-content">
+<!-- Заголовок модального окна -->
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+<h4 class="modal-title">JS Helper - твой путеводитель в мире JavaScript</h4>
+</div>
+<!-- Содержимое модального окна -->
+<div class="modal-body">
+<p>Мы в JS Helper собрали для Вас лучшие решения неоднократно испытаны на практике.</p>
+<p>Многолетний опыт работы наших специалистов поможет Вам разобраться в концепциях JavaScript.</p>
+<p>С нами Вы обязательно сделаете свой первый шаг на пути к профессии JavaScript developer.</p>
+</div>
+<!-- Футер модального окна -->
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Упустить шанс</button>
+<button type="button" class="btn btn-primary">Стать JavaScript разработчиком</button>
+</div>
+</div>
+</div>
+</div>
+									</xmp>
+								</div>
+							</div><!-- /.code -->
+							<div id="documentation">
+								Документация:
+							  <span class="syntax">
+								  <a href="http://www.w3schools.com/tags/att_global_data.asp"> data-</a>
+								  <a href="http://www.w3schools.com/bootstrap/bootstrap_buttons.asp"> btn</a>
+								  <a href="http://www.w3schools.com/html/html_classes.asp"> class</a>
+								  <a href="http://www.w3schools.com/tags/att_global_id.asp"> id</a>
+							  </span>
+							  <span id="btn-more-documentation" title="Больше">
+								  <img src="dist/image/code-example/details.png">
+							  </span>
+							  <span id="btn-hide-more-documentation" class="hide" title="Меньше">
+								  <img src="dist/image/code-example/details.png">
+							  </span>
+							  <span id="more-documentation" class="hide">
+								  <br>
+							  </span>
+							</div>
+							</div><!-- / CODE EXAMPLE -->
+							<hr>
+							<div id="modal-params">
+								<p>
+									<h4>Параметры Модального окна</h4>
+								</p>
+								<p>
+									Параметры можна передать через атрибуты или JavaScript. Если передавать через атрибуты, тогда необходимо добавить приставку с названием параметра <code>data</code>, например: <code>data-backdrop=""</code>.
+								</p>
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+										<tr>
+											<th style="width: 100px;text-align: center;">Название</th>
+											<th style="width: 50px;text-align: center;">Тип</th>
+											<th style="width: 50px;text-align: center;">Значение по умолчанию</th>
+											<th style="text-align: center;">Описание</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>backdrop</td>
+											<td>логический или строковый <code>'static'</code></td>
+											<td>true</td>
+											<td>При установке значение элемента <code>backdrop</code> равным <code>true</code>, темный фон налаживаеться над всем содержимым веб-страницы,
+												поверх которого и отображается наше модальное окно. Этот эффект включен по умолчанию. Если хотите его снять, тогда установите значение
+												<code>backdrop</code> равное <code>false</code>.
+												У параметра <code>backdrop</code> есть ещё значение <code>'static'</code>, которое не дозволяет закрывать модальное окно при нажатии за его пределами.
+										</tr>
+										<tr>
+											<td>keyboard</td>
+											<td>логический</td>
+											<td>true</td>
+											<td>Закрывает всплывающее окно при клике по клавише <kbd>Esc</kbd>.</td>
+										</tr>
+										<tr>
+											<td>show</td>
+											<td>логический</td>
+											<td>true</td>
+											<td>Отображает всплывающее окно сразу же после его инициализации.</td>
+										</tr>
+										<tr>
+											<td>remote</td>
+											<td>путь</td>
+											<td>false</td>
+											<td>Если указан url, то  jQuery подгрузит его методом load и вставит ответ в элемент с классом .modal-body.
+												При использовании data api, Вы сможете указать url в теге href, например:
+												<div><pre class="prettyprint linenums"><code class="html"><span class="nt">&lt;a</span> <span class="na">data-toggle=</span><span class="s">"modal"</span><span class="na">href=</span><span class="s">"remote.html"</span> <span class="na">data-target=</span><span class="s">"#modal"</span><span class="nt">&gt;</span>Click me<span class="nt">&lt;/a&gt;</span></code></pre></div>
+											</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="modal-by-js" class="box-title">
+								<b>Открываем модальное окно с помощью JavaScript</b>
+							</div>
+							<div class="subtitle-description">
+								<p>
+									Для того чтоб открыть модальное окно посредством JavaScript вызываем метод <code>.modal()</code> и укажем идентификатор <code>(#id)</code> либо класс <code>(.class)</code>
+									элемента-контейнера, который содержит HTML-код модального окна.
+								</p>
+								<pre   class="prettyprint linenums"><code class="language-javascript">$(document).ready(function(){
+//при нажатии на любую кнопку, имеющую класс .btn
+$(".btn").click(function() {
+//открыть модальное окно с id="myModal"
+$("#myModal").modal('show');
+});
+});									</code></pre>
+								<p>
+									JavaScript Метод <code>modal()</code> используеться не только для активации но и для управления модальным окном
+								</p>
+								<p>
+									Осмотрим детальней метод <code>.modal()</code> который предназначен как для активации содержимого модального окна, так и для его управления.
+								</p>
+								<div id="modal-js-params" class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+										<tr>
+											<th style="width: 75px; text-align: center;">Имя</th>
+											<th style="text-align: center;">Описание</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>.modal(параметры)</td>
+											<td>Активирует контент, указанный через <code>#id</code> или <code>.class</code> как модальное окно.
+												В качестве параметров принимает значения: <code>backdrop</code>, <code>keyboard</code>, <code>show</code>.
+												Например:
+												<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myModal'</span><span class="pun">).</span><span class="pln">modal</span><span class="pun">({</span><span class="pln">
+backdrop</span><span class="pun">:</span><span class="pln"> </span><span class="str">'static'</span><span class="pun">,</span><span class="pln">
+keyboard</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pln">
+</span><span class="pun">});</span>				</pre>
+											</td>
+										</tr>
+										<tr>
+											<td>.modal('toggle')</td>
+											<td>Вручную переключает модальное окно. Это значит если всплывающее окно открыто, то скрывает его. А если он скрыто, то отображает его.
+												Например:
+												<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myModal'</span><span class="pun">).</span><span class="pln">modal</span><span class="pun">(</span><span class="str">'toggle'</span><span class="pun">);</span></pre>
+											</td>
+										</tr>
+										<tr>
+											<td>.modal('show')</td>
+											<td>Вручную открывает всплывающее окно.
+												Например:
+												<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myMmodal'</span><span class="pun">).</span><span class="pln">modal</span><span class="pun">(</span><span class="str">'show'</span><span class="pun">);</span></pre>
+											</td>
+										</tr>
+										<tr>
+											<td>.modal('hide')</td>
+											<td>Вручную скрывает всплывающее окно.
+												Например:
+												<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myMmodal'</span><span class="pun">).</span><span class="pln">modal</span><span class="pun">(</span><span class="str">'hide'</span><span class="pun">);</span></pre>
+											</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+								<p>
+									Для примера, активируем всплывающее окно для элемента c id <code>#launch-modal:</code>
+								</p>
+								<!-- CODE EXAMPLE -->
+								<div class="code-example">
+
+									<div id="buttons">
+										<span id="html" 	class="btn-html">HTML</span>
+										<span id="css"  	class="btn-css">CSS</span>
+										<span id="js" 		class="btn-js active">JavaScript</span>
+										<span id="black"	class="btn-black"></span>
+										<span id="white"	class="btn-white"></span>
+										<span id="download" title="Скачать пример"><img src="dist/image/code-example/folder_download.png"></span>
+										<span id="run"		title="Смотреть пример"><img src="dist/image/code-example/play.png"></span>
+										<span id="copy" 	title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+									</div>
+
+									<div id="code" class="code">
+
+										<!-- HTML code -->
+										<div id="code-html" class="hide">
+											<xmp class="prettyprint linenums">
+												<!-- HTML код кнопки -->
+												<input id="launch-modal" type="button" class="btn btn-primary" value="открыть модальное окно">
+
+												<!-- HTML-код модального окна-->
+												<div id="myModal" class="modal fade" style="text-align:justify;">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<!-- Заголовок модального окна -->
+															<div class="modal-header">
+																<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+																<h4 class="modal-title">JS Helper - твой путеводитель в мире JavaScript</h4>
+															</div>
+															<!-- Содержимое модального окна -->
+															<div class="modal-body">
+																<p>Мы в JS Helper собрали для Вас лучшие решения неоднократно испытаны на практике.</p>
+																<p>Многолетний опыт работы наших специалистов поможет Вам разобраться в концепциях JavaScript.</p>
+																<p>С нами Вы обязательно сделаете свой первый шаг на пути к профессии JavaScript developer.</p>
+															</div>
+															<!-- Футер модального окна -->
+															<div class="modal-footer">
+																<button type="button" class="btn btn-default" data-dismiss="modal">Упустить шанс</button>
+																<button type="button" class="btn btn-primary">Стать JavaScript разработчиком</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</xmp>
+										</div>
+										<!-- JS code -->
+										<div id="code-js" class="show">
+											<pre   class="prettyprint linenums">
+<code class="language-javascript">
+$(document).ready(function(){
+//подпишемся на событие click элемента c id="#launch-modal"
+	$('#launch-modal').click(function() {
+//активируем контент c id="myModal", как модальное окно
+		$('#myModal').modal({
+//установим всплывающему окну следующие параметры:
+			backdrop: 'static', /* Забыли что это значит?! Смотрим више!)  */
+			keyboard: true
+		});
+	});
+});
+</code>
+											</pre>
+										</div><!-- / .code-js -->
+									</div><!-- /.code -->
+									<div id="documentation">
+										Документация:
+										<span class="syntax">
+											<a href="https://api.jquery.com/category/selectors/">jquery selectors</a>
+											<a href="https://api.jquery.com/click/"> click</a>
+										</span>
+										<span id="btn-more-documentation" title="Больше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="btn-hide-more-documentation" class="hide" title="Меньше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="more-documentation" class="hide">
+											<br>
+										</span>
+									</div>
+								</div><!-- / CODE EXAMPLE -->
+								<hr>
+								<div id="modal-event">
+									<h4>События с модальным окном</h4>
+								</div>	
+								<p>
+									Чтобы изменить состояния всплывающего окна можно воспользоваться такими событиями:
+								</p>
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+										<tr>
+											<th style="width: 75px; text-align: center;">Имя</th>
+											<th style="text-align: center;">Описание</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>show.bs.modal</td>
+											<td>Событие происходит, когда вызывается метод <code>show()</code>, предназначенный для открытия модального окна. Если модальное окно вызывается с помощью клика (click), то элемент, который вызвал открытие модального окна, будет доступен как свойство <code>relatedTarget</code> события.<br>Например:
+			<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myModal'</span><span class="pun">).</span><span class="pln">on</span><span class="pun">(</span><span class="str">'show.bs.modal'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+			</span><span class="com">// Что-то сделать...</span><span class="pln">
+			</span><span class="pun">})</span></pre>
+											</td>
+										</tr>
+										<tr>
+											<td>shown.bs.modal</td>
+											<td>Событие происходит, когда модальное окно становится видимым для пользователя, т.е. когда оно будет полностью отрисовано с помощью стилей CSS. Если модальное окно вызывается с помощью клика (click), то элемент, который вызвал открытие модального окна будет доступен как свойство <code>relatedTarget</code> события.<br>Например:
+			<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myModal'</span><span class="pun">).</span><span class="pln">on</span><span class="pun">(</span><span class="str">'shown.bs.modal'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+			</span><span class="com">// Что-то сделать...</span><span class="pln">
+			</span><span class="pun">})</span></pre>
+											</td>
+										</tr>
+										<tr>
+											<td>hide.bs.modal</td>
+											<td>Событие происходит, когда вызывается метод hide(), который предназначен для скрытия модального окна.<br>Например:
+			<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myModal'</span><span class="pun">).</span><span class="pln">on</span><span class="pun">(</span><span class="str">'hide.bs.modal'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+			</span><span class="com">// Что-то сделать...</span><span class="pln">
+			</span><span class="pun">})</span></pre>
+											</td>
+										</tr>
+										<tr>
+											<td>hidden.bs.modal</td>
+											<td>Событие происходит, когда модальное окно становится полностью невидимым для пользователя, т.е. когда будут отработаны полностью все CSS-свойства, выполняющие этот процесс.<br>Например:
+			<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myModal'</span><span class="pun">).</span><span class="pln">on</span><span class="pun">(</span><span class="str">'hidden.bs.modal'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+			</span><span class="com">// Что-то сделать...</span><span class="pln">
+			</span><span class="pun">})</span></pre>
+											</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="theme-for-modal" class="box-title">
+								<b>Темизируем модальное окно</b>
+							</div>
+							<div class="subtitle-description">
+								<p>Как вы уже знаете создание и управление видом модального окна в Bootstrap 3 и 4 осуществляется через классы CSS, атрибуты <code>data-</code> и методы JavaScript.</p>
+								<p>Для того чтоб стилизировать модальное окно, необходимо разобраться в самой структуре всплывающего окна.</p>
+								<p><b>Модальное окно состоит из таких блоков:</b></p>
+								<ul>
+									<li>каркас - 3 блока <code>div</code>, имеющие классы <code>.modal</code>, <code>.modal-dialog</code> и <code>.modal-content</code>.</li>
+									<li>header (заголовок) - блок <code>div</code>, имеющий класс <code>.modal-header</code>.</li>
+									<li>body (основное содержимое) - блок <code>div</code> с классом <code>.modal-body</code>.</li>
+									<li>footer (футер) - блок <code>div</code> с классом <code>.modal-footer</code>.</li>
+								</ul>
+								<br>
+								<p>Ниже размещен <b>HTML код всплывающего окна</b>. Вам осталось только включить воображение и воплотить все свои идеи в жизнь с помощью знакомых CSS & HTML. Например что-то такое:</p>
+								<div class="image-in-article">
+									<img src="dist/image/popup-fine.png" title="Пример" alt="Модальное окно" style="width:50em;">
+								</div>
+								<p>HTML код модального окна, в самом простом его представлении, выглядит следующим образом:</p>
+								<!-- CODE EXAMPLE -->
+								<div class="code-example">
+									<div id="buttons">
+										<span id="html" 	class="btn-html active">HTML</span>
+										<span id="css"  	class="btn-css">CSS</span>
+										<span id="js" 		class="btn-js">JavaScript</span>
+										<span id="black"	class="btn-black"></span>
+										<span id="white"	class="btn-white"></span>
+										<span id="download" title="Скачать пример"><img src="dist/image/code-example/folder_download.png"></span>
+										<span id="run"		title="Смотреть пример"><img src="dist/image/code-example/play.png"></span>
+										<span id="copy" 	title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+									</div>
+
+									<div id="code" class="code">
+
+										<!-- HTML code -->
+										<div id="code-html" class="show">
+											<xmp class="prettyprint linenums">
+<div id="myModal" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<!-- Заголовок  -->
+<div class="modal-header">
+	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	<h4 class="modal-title">Заголовок модального окна</h4>
+</div>
+<!-- Содержимое -->
+<div class="modal-body">
+	Содержимое модального окна...
+</div>
+<!-- Футер -->
+<div class="modal-footer">
+	<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+	<button type="button" class="btn btn-primary">Сохранить изменения</button>
+</div>
+</div>
+</div>
+</div>
+											</xmp>
+										</div>
+									</div><!-- /.code -->
+
+									<div id="documentation">
+										Документация:
+										<span class="syntax">
+											<a href="http://www.w3schools.com/tags/att_global_data.asp"> data-</a>
+											<a href="http://www.w3schools.com/bootstrap/bootstrap_buttons.asp"> btn</a>
+											<a href="http://www.w3schools.com/html/html_classes.asp"> class</a>
+											<a href="http://www.w3schools.com/tags/att_global_id.asp"> id</a>
+										</span>
+										<span id="btn-more-documentation" title="Больше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="btn-hide-more-documentation" class="hide" title="Меньше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="more-documentation" class="hide">
+											<br>
+										</span>
+									</div>
+								</div><!-- / CODE EXAMPLE -->
+							</div>
+						</li>
+					</ol>
+				</div><!-- /#description-instruction -->
+			</div><!-- /#instruction -->
+			<hr>
+			<div id="examples">
+			<div id="title-examples" class="box-title">
+				<h3>
+					Примеры Реализации<small> Всплывающего или Модального (pop-up) окна</small>
+				</h3>
+			</div>
+			<div id="description-examples">
+				<!-- Collapse for Code examples -->
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+									Скрипт, который открывает всплывающее окно каждые 5 минут после загрузки страницы:
+								</a>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<!-- CODE EXAMPLE -->
+								<div class="code-example">
+									<div id="buttons">
+										<span id="html" 	class="btn-html">HTML</span>
+										<span id="css"  	class="btn-css">CSS</span>
+										<span id="js" 		class="btn-js active">JavaScript</span>
+										<span id="black"	class="btn-black"></span>
+										<span id="white"	class="btn-white"></span>
+										<span id="download" title="Скачать пример"><img src="dist/image/code-example/folder_download.png"></span>
+										<span id="run"		title="Смотреть пример"><img src="dist/image/code-example/play.png"></span>
+										<span id="copy" 	title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+									</div>
+
+									<div id="code" class="code">
+
+										<!-- HTML code -->
+										<div id="code-html" class="hide">
+											<xmp class="prettyprint linenums">
+<!-- Модальное окно -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">Заголовок модального окна</h4>
+			</div>
+			<div class="modal-body">
+				Содержимое модального окна...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+				<button type="button" class="btn btn-primary">Сохранить изменения</button>
+			</div>
+		</div>
+	</div>
+</div>
+											</xmp>
+										</div>
+										<!-- JS code -->
+										<div id="code-js" class="show">
+<pre   class="prettyprint linenums">
+<code class="language-javascript">
+$(window).load(function() {
+// вызываем метод setInterval, который будет вызывать модальное окно каждые 5 минут, если оно не открыто
+setInterval(function() {
+// Если окно не открыто (т.е. не имеет класс in)
+if (!$("#myModal").hasClass("in")) {
+// то открыть модальное окно
+$("#myModal").modal('show');
+}
+}, 300000);
+});
+</code>
+</pre>
+										</div>
+									</div><!-- /.code -->
+
+									<div id="documentation">
+										Документация:
+										<span class="syntax">
+											<a href="http://www.w3schools.com/jsref/met_win_setinterval.asp"> setInterval</a>
+											<a href="http://www.w3schools.com/js/js_if_else.asp"> if</a>
+											<a href="https://api.jquery.com/category/selectors/"> jquery selectors</a>
+											<a href="https://api.jquery.com/click/"> click</a>
+										</span>
+										<span id="btn-more-documentation" title="Больше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="btn-hide-more-documentation" class="hide" title="Меньше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="more-documentation" class="hide">
+											<br>
+										</span>
+									</div>
+								</div><!-- / CODE EXAMPLE -->
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+									Модальное окно, которое меняет содержимое в зависимости от нажатой кнопки :
+								</a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse">
+							<div class="panel-body">
+								<!-- CODE EXAMPLE -->
+								<div class="code-example">
+									<div id="buttons">
+										<span id="html" 	class="btn-html">HTML</span>
+										<span id="css"  	class="btn-css">CSS</span>
+										<span id="js" 		class="btn-js active">JavaScript</span>
+										<span id="black"	class="btn-black"></span>
+										<span id="white"	class="btn-white"></span>
+										<span id="download" title="Скачать пример"><img src="dist/image/code-example/folder_download.png"></span>
+										<span id="run"		title="Смотреть пример"><img src="dist/image/code-example/play.png"></span>
+										<span id="copy" 	title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+									</div>
+
+									<div id="code" class="code">
+
+										<!-- HTML code -->
+										<div id="code-html" class="hide">
+											<xmp class="prettyprint linenums">
+<!-- Кнопки, открывающие модальное окно myModal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-content="Содержимое 1...">Открыть модальное окно с содержимым 1</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-content="Содержимое 2...">Открыть модальное окно с содержимым 2</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-content="Содержимое 1...">Открыть модальное окно с содержимым 3</button>
+
+<!-- Модальное окно myModal -->
+<div class="modal fade" id="myModal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+				<h4 class="modal-title">Заголовок модального окна</h4>
+			</div>
+			<div class="modal-body">
+				<p id="content"></p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+											</xmp>
+										</div>
+										<!-- JS code -->
+										<div id="code-js" class="show">
+										<pre   class="prettyprint linenums">
+<code class="language-javascript">
+// при открытии модального окна
+$('#myModal').on('show.bs.modal', function (event) {
+// получить кнопку, которая его открыло
+var button = $(event.relatedTarget)
+// извлечь информацию из атрибута data-content
+var content = button.data('content')
+// вывести эту информацию в элемент, имеющий id="content"
+$(this).find('#content').text(content);
+})
+</code>
+										</pre>
+										</div>
+									</div><!-- /.code -->
+
+									<div id="documentation">
+										Документация:
+										<span class="syntax">
+											<a href="https://api.jquery.com/find/"> .find</a>
+											<a href="http://api.jquery.com/on/"> .on</a>
+											<a href="https://api.jquery.com/category/selectors/"> jquery selectors</a>
+											<a href="https://api.jquery.com/click/"> click</a>
+										</span>
+										<span id="btn-more-documentation" title="Больше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="btn-hide-more-documentation" class="hide" title="Меньше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="more-documentation" class="hide">
+											<br>
+										</span>
+									</div>
+								</div><!-- / CODE EXAMPLE -->
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+									Закрыть модальное окно и вывести сообщение пользователю об этом :
+								</a>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse">
+							<div class="panel-body">
+								<!-- CODE EXAMPLE -->
+								<div class="code-example">
+									<div id="buttons">
+										<span id="html" 	class="btn-html">HTML</span>
+										<span id="css"  	class="btn-css">CSS</span>
+										<span id="js" 		class="btn-js active">JavaScript</span>
+										<span id="black"	class="btn-black"></span>
+										<span id="white"	class="btn-white"></span>
+										<span id="download" title="Скачать пример"><img src="dist/image/code-example/folder_download.png"></span>
+										<span id="run"		title="Смотреть пример"><img src="dist/image/code-example/play.png"></span>
+										<span id="copy" 	title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+									</div>
+
+									<div id="code" class="code">
+
+										<!-- HTML code -->
+										<div id="code-html" class="hide">
+											<xmp class="prettyprint linenums">
+<!-- Кнопка, открывающая модальное окно -->
+<input type="button" class="btn btn-primary open-modal" value="Открыть модальное окно">
+
+<!-- HTML-код модального окна-->
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Заголовок модального окна</h4>
+			</div>
+			<div class="modal-body">
+				<p>Содержимое модального окна...</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+			</div>
+		</div>
+	</div>
+</div>
+											</xmp>
+										</div>
+										<!-- JS code -->
+										<div id="code-js" class="show">
+											<pre   class="prettyprint linenums">
+<code class="language-javascript">
+$(document).ready(function(){
+//при нажатию на элемент, имеющий класс .open-modal, открыть модальное окно
+$('.open-modal').click(function(){
+$('#myModal').modal('show');
+});
+//отобразить сообщение, когда модальное окно будет полностью скрыто от пользователя
+$("#myModal").on('hidden.bs.modal', function(){
+alert("Модальное окно было успешно закрыто.");
+});
+});
+</code>
+											</pre>
+										</div>
+									</div><!-- /.code -->
+
+									<div id="documentation">
+										Документация:
+										<span class="syntax">
+											<a href="https://api.jquery.com/ready/"> .ready</a>
+											<a href="http://api.jquery.com/on/"> .on</a>
+											<a href="https://api.jquery.com/category/selectors/"> jquery selectors</a>
+											<a href="https://api.jquery.com/click/"> click</a>
+										</span>
+										<span id="btn-more-documentation" title="Больше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="btn-hide-more-documentation" class="hide" title="Меньше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="more-documentation" class="hide">
+											<br>
+										</span>
+									</div>
+								</div><!-- / CODE EXAMPLE -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- / Collapse for Code examples -->
+			</div><!-- /#description-examples -->
+			</div><!-- /#examples -->
+			<div id="share">
+				<span id="nav-tags">
+					<span class="main-tag">Bootstrap <span class="glyphicon glyphicon-tag"></span></span> 
+					<span class="main-tag">pop-up <span class="glyphicon glyphicon-tag"></span></span>
+				</span>
+			</div><!-- /#share -->
+			<div id="recomendation">
+				<div id="title-recomendation">
+					<h4>Читайте также:</h4>
+				</div>
+				<div id="description-recomendation">
+					<span id="articles"	class="recomendation-article">
+												
+					</span>
+					<span id="libes"	class="recomendation-libes">
+
+					</span>
+				</div>
+			</div><!-- /#recommendation -->
+		</div><!-- /.col-md-9 -->
+		<div class="col-md-3">
+			<div class="right-sitebar affix">
+				<ul>
+					<li>
+						<a href="#title-description">Описание</a>
+					</li>
+					<li>
+						<a href="#instruction">Инструкция</a>
+						<ul class="sub-nav">
+							<li>
+								<a href="#connection-library">Подключаем библиотеки</a>
+							</li>
+							<li>
+								<a href="#activate-modal">Активируем модальное окно</a>
+							</li>
+							<li>
+								<a href="#modal-params">Параметры Модального окна</a>
+							</li>
+							<li>
+								<a href="#modal-by-js">Модальное окно с JavaScript</a>
+							</li>
+							<li>
+								<a href="#modal-js-params">Метод <code>modal()</code> </a>
+							</li>
+							<li>
+								<a href="#modal-event">События с модальным окном</a>
+							</li>
+							<li>
+								<a href="#theme-for-modal">Темизируем модальное окно</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#examples">Примеры Реализации </a>
+					</li>
+					<li>
+						<a href="#recomendation">Рекомендации</a>
+					</li>
+					<li>
+						<a href="#">Пройти Тест</a>
+					</li>
+				</ul>
+				<hr>
+				<ul>
+					<li>
+						<span class="glyphicon glyphicon-star"></span><a href="#">	Академия JS</a>
+					</li>
+					<li>
+						<span class="glyphicon glyphicon-flash"></span><a href="#">	Советы</a>
+					</li>
+					<li>
+						<span class="glyphicon glyphicon-tasks"></span><a href="#">	Инструкции</a>
+					</li>
+					<li>
+						<span class="glyphicon glyphicon-book"></span><a href="#">	Документация</a>
+					</li>
+				</ul>
+				<hr>
+				<ul>
+					<li>
+						<span class="glyphicon glyphicon-picture"></span><a href="../carousel/index.html" target="_blank"> Превосходный сладйер</a>
+					</li>
+				</ul>
+				<hr>
+				<ul>
+					<li>
+						<span class="glyphicon glyphicon-chevron-up"></span><a class="back-to-top" href="#top"> Вверх </a>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /.col-md-3 -->
+
+	</div><!-- /.container -->
+
+
+    <!-- SCRIPTS -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- Code Example -->
+    <script src="dist/js/codeExample.js" defer></script>
+    <!-- view Code -->
+    <script src="dist/js/google-code-prettify/src/run_prettify.js"></script>
+    <!-- copy Code -->
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>

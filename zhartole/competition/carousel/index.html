@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="dist/image/favicon.ico" type="image/x-icon">
+
+    <title>Slider - Carousel</title>
+
+    <!-- STYLE -->
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="dist/css/style.css" type="text/css" />
+    <!-- Code text style -->
+    <link rel="stylesheet" href="dist/js/google-code-prettify/styles/default.css" type="text/css"  />
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"	style="color:rgba(229, 170, 19, 0.82);">JS helper</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#about">Академия JS</a></li>
+			<li><a href="#contact">Советы</a></li>
+			<li class="active"><a href="#contact">Инструкции</a></li>
+            <li><a href="#contact">Документация</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	
+	<div class="container">
+		<div class="col-md-9" role="main">
+			<div id="title">
+			<h1>Слайдер от Bootstrap <small>carousel.js</small></h1>
+			</div>
+			<div id="navigation">
+			  <span class="navigation">
+			<span id="nav-description"><a href="#title-description"><span		class="glyphicon glyphicon-bullhorn"></span> Описание</a></span>
+			<span id="nav-instruction"><a href="#instruction"><span         	class=" glyphicon glyphicon-tasks"></span> Инструкция</a></span>
+			<span id="nav-example"><a href="#examples"><span                	class="glyphicon glyphicon-play"></span> Примеры Реализации</a></span>
+			<span id="nav-test"><a href="#share"><span                      	class="glyphicon glyphicon-stats"></span> Пройти Тест</a></span>
+			<span id="nav-recomendation"><a href="#recomendation"><span     	class="glyphicon glyphicon-briefcase"></span> Рекомендации</a></span>
+			  </span>
+			</div>
+			<div id="description">	
+				<div id="image-title" class="image-in-article">
+					<div id="titleCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#titleCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#titleCarousel" data-slide-to="1"></li>
+							<li data-target="#titleCarousel" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="active item">
+								<img src="dist/image/macro-1.jpg">
+								<div class="carousel-caption">
+									<p>Путешествие в тысячу миль начинается с первого шага!</p>
+								</div>
+							</div>
+							<div class="item">
+								<img src="dist/image/macro-2.jpg">
+								<div class="carousel-caption">
+								</div>
+							</div>
+							<div class="item">
+								<img src="dist/image/macro-3.jpg">
+								<div class="carousel-caption">
+									<p>Человек может сделать великим путь, которым идет, но путь не может сделать человека великим.</p>
+								</div>
+							</div>
+						</div>
+						<a class="carousel-control left" href="#titleCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="carousel-control right" href="#titleCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+				<div id="test-motivation">
+					<div class="alert alert-warning fade in">
+						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+						<p>
+							Знаешь как работать со Слайдером? Проверь свои навыки
+							<button type="button" id="pass-test" class="btn btn-success btn-xs">Пройти тест</button>
+						</p>
+					</div>
+				</div>
+				<div id="title-description" class="box-title">
+					<h3>
+						Описание <small>Что такое Слайдер</small>
+					</h3>
+				</div>
+				<div id="description-description">
+					<p>
+						<b>Слайдер</b> - это в основном автоматическое отображение изображений (слайд-шоу), он также может использоваться для отображения анонса последних новостей,
+						завершенных проектов, описаний услуг, ссылок на последние статьи из блога.
+					</p>
+					<p>
+						Слайдеры очень популярные компоненты, большенство разработчиков используют их в своей работе.
+					</p>
+					<p>
+						Сейчас мы рассмотрим, как создать слайдер при помощи компонента Carousel в Bootstrap 3 и 4.
+					</p>
+
+					<div class="alert alert-success fade in">
+							<h4><span class="lists">Преимущества Слайдера Bootstrap Carousel</span></h4>
+							<p><span class="glyphicon glyphicon-ok lists"></span>	<span class="lists-text">Нет необходимости писать JavaScript код для использования слайдера на своем сайте</span></p>
+							<p><span class="glyphicon glyphicon-ok lists"></span> 	<span class="lists-text">Код а так же стили в Bootstrap стандартные</span></p>
+							<p><span class="glyphicon glyphicon-ok lists"></span>	<span class="lists-text">Для работы с Bootstrap Carousel нужно только правильно использовать вызовы, разметку и атрибуты.</span></p>
+					</div>
+					<p>
+						Придерживаясь нашей инструкции Вы убедитесь что Carousel от Bootstrap это легко настраиваемый и адаптивный <b>слайдер</b>.
+					</p>
+				</div>
+			</div><!-- /#description -->
+			<div id="instruction">		
+				<div id="title-instruction" class="box-title">
+				  <h3>Инструкция <small>Как установить Слайдер (carousel)</small></h3>
+				</div>  
+				<div id="navigation-instruction" class="navigation">
+					<span>
+					  <a href="#description-instruction"><span class="glyphicon glyphicon-bullhorn"></span> Текстовая инструкция</a>
+					</span>
+					<span>
+					  <a href="#photo-instruction-modal" data-toggle="modal"><span class="glyphicon glyphicon-picture"></span> Фото инструкция</a>
+					</span>
+					<span>
+					  <a href="#video-instruction-modal" data-toggle="modal"><span class="glyphicon glyphicon-film"></span> Видео инструкция</a>
+					</span>
+					<div id="modals">
+						<div id="photo-instruction-modal" class="modal fade" style="text-align:justify;">
+							<div class="modal-dialog">
+								<div class="modal-content">
+								<!-- Заголовок модального окна -->
+									<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+									<h4 class="modal-title">JS Helper - твой путеводитель в мире JavaScript</h4>
+									</div>
+									<!-- Содержимое модального окна -->
+									<div class="modal-body">
+									<p>Здесь будет инструкция в картинках</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="video-instruction-modal" class="modal fade" style="text-align:justify;">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<!-- Заголовок модального окна -->
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h4 class="modal-title">JS Helper - твой путеводитель в мире JavaScript</h4>
+									</div>
+									<!-- Содержимое модального окна -->
+									<div class="modal-body">
+										<p>Здесь будет video инструкция</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="description-instruction">
+					<ol>
+						<li>
+							<div id="connection-library" class="box-title">
+								<b>Подключаем библиотеки</b>
+							</div>
+							<div class="subtitle-description">
+								<div class="alert alert-warning fade in">
+								<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+								Вы уже подключили Bootstrap ? Тогда переходим <a href="#activate-modal">к следуещему пункту</a>
+							</div>
+							<p>Для начала Скачиваем необходимые библиотеки</p>
+
+							<div style="width:30em;">
+								<table class="table table-bordered table-striped">
+									<thead>
+										<tr>
+											<th>Название билиотеки</th>
+											<th>Ссылка на файл</th>
+										</tr>
+									</thead>
+								  <tbody>
+									  <tr>
+										<td>jQuery</td>
+										<td>
+											<a href="http://code.jquery.com/jquery-1.11.3.min.js"><button type="button" class="btn btn-success btn-xs">Скачать </button></a>
+										</td>
+									  </tr>
+									  <tr>
+										<td>Bootstrap</td>
+										<td>
+											<a href="https://github.com/twbs/bootstrap/releases/download/v3.3.6/bootstrap-3.3.6-dist.zip"><button type="button" class="btn btn-success btn-xs">Скачать </button></a>
+										</td>
+									  </tr>
+								  </tbody>
+								</table>
+							</div>
+
+							<p>Все Bootsrap плагины работают на jQuery. Поэтому нам в первую очередь, необходимо подключить фрэймворк jQuery.</p>
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<span class="label label-default">Cкачаный :</span>
+											</td>
+											<td class="small-code">
+													<xmp class="prettyprint linenums"><script src="dist/js/jquery.min.js" async></script></xmp>
+													<xmp class="prettyprint linenums"><!-- аттрибут async  загружает скрипт после загрузки документа  --></xmp>								
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="label label-default">Через CDN :</span>
+											</td>
+											<td class="small-code">
+												<xmp class="prettyprint linenums"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" async></script></xmp>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<hr>
+								<p><b>Затем подключаем Bootstrap.</b></p>
+								<table>
+									<tbody>
+										<tr>
+											<td>
+												<span class="label label-default">Cкачаный :</span>
+											</td>
+											<td class="small-code">
+												<xmp class="prettyprint linenums"><link href="dist/css/bootstrap.min.css" rel="stylesheet"></xmp>
+												<xmp class="prettyprint linenums"><!-- Cтили; Подключаються в <header> --></xmp>
+												<xmp class="prettyprint linenums"><script src="dist/js/bootstrap.min.js" async></script></xmp>
+												<xmp class="prettyprint linenums"><!-- аттрибут async  загружает скрипт после загрузки документа  --></xmp>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="label label-default">Через CDN :</span>
+											</td>
+											<td class="small-code">
+												<xmp class="prettyprint linenums"><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"></xmp>
+												<xmp class="prettyprint linenums"><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"  async></script></xmp>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li>
+							<div id="activate-modal" class="box-title">
+								<b>Управляем каруселью при помощи data атрибутов</b>
+							</div>
+							<div class="subtitle-description">
+								<p>
+									Для начала давайте разберемся какие атрибуты за что отвечают.
+								</p>
+								<div style="margin-left:2.5em;">
+									<p>
+										<code>data-slide</code> имеет значения prev и next, которые соответственно изменяют позицию слайда относительно его текущего позложения.
+										<code>data-slide</code> обычно используеться для кнопки, при нажатии на которую, происходит переход на предыдущий или следующий слайд.<br>
+										<code>data-slide-to</code> атрибут который используеться для перехода к любому слайду карусели при помощи соответствующего индекса.
+										Например: <code>data-slide-to="1"</code> - переход к слайду с индексом 1.<br>
+										<code>data-ride="carousel"</code> этот атрибут нужен для того чтоб после загрузки страницы происходила автоматическая смена слайдов.
+									</p>
+								</div>
+								<p>
+									Так же при помощи класа <code>carousel-caption</code> внутри любых <code>.item</code> мы имеем возможность с легкостью добавлять подпись на наших слайдах.
+								</p>
+								<p>Ниже приведён код работающего примера. Для просмотра работающего примера нажмите на кнопку  <img src="dist/image/code-example/play.png">   в правом верхнем углу.</p>
+							</div>
+							<!-- CODE EXAMPLE -->
+							<div class="code-example">
+								<div id="buttons">
+								  <span id="html" 		class="btn-html active">HTML</span>
+								  <span id="css"  		class="btn-css">CSS</span>
+								  <span id="js" 		class="btn-js">JavaScript</span>
+								  <span id="download" 	title="Скачать пример"><a href="example/simple-carousel.html" download><img src="dist/image/code-example/folder_download.png"></a></span>
+								  <span id="run"		title="Смотреть пример"><a href="example/simple-carousel.html" target="_blank"><img src="dist/image/code-example/play.png"></a></span>
+								  <span id="copy" 		title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+								</div>
+								<div id="code" class="code">
+								  <!-- HTML code -->
+									<div id="code-html" class="show">
+										<xmp class="prettyprint linenums"><!-- Карусель -->
+<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+	<!-- Индикаторы для карусели -->
+	<ol class="carousel-indicators">
+		<!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+	<!-- Слайды карусели -->
+	<div class="carousel-inner">
+		<!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+		<div class="active item">
+			<h2>Слайд №1</h2>
+			<div class="carousel-caption">
+				<h3>Заголовок 1 слайда</h3>
+				<p>Текст (описание) 1 слайда...</p>
+			</div>
+		</div>
+		<!-- Слайд №2 -->
+		<div class="item">
+			<h2>Slide 2</h2>
+			<div class="carousel-caption">
+				<h3>Second slide label</h3>
+				<p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+			</div>
+		</div>
+		<!-- Слайд №3 -->
+		<div class="item">
+			<h2>Slide 3</h2>
+			<div class="carousel-caption">
+				<h3>Third slide label</h3>
+				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+			</div>
+		</div>
+	</div>
+	<!-- Навигация для карусели -->
+	<!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+	<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+	<a class="carousel-control right" href="#myCarousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
+									</xmp>
+								</div>
+							</div><!-- /.code -->
+							<div id="documentation">
+								Документация:
+							  <span class="syntax">
+								  <a href="http://www.w3schools.com/tags/att_global_data.asp"> data-</a>
+								  <a href="http://www.w3schools.com/html/html_classes.asp"> class</a>
+								  <a href="http://www.w3schools.com/tags/att_global_id.asp"> id</a>
+							  </span>
+							  <span id="btn-more-documentation" title="Больше">
+								  <img src="dist/image/code-example/details.png">
+							  </span>
+							  <span id="btn-hide-more-documentation" class="hide" title="Меньше">
+								  <img src="dist/image/code-example/details.png">
+							  </span>
+							  <span id="more-documentation" class="hide">
+								  <br>
+							  </span>
+							</div>
+							</div><!-- / CODE EXAMPLE -->
+							<hr>
+							<div id="modal-params">
+								<p>
+									<h4>Параметры Слайдера <small>Карусели</small></h4>
+								</p>
+								<p>
+									Параметры можна передать через атрибуты или JavaScript. Если передавать через атрибуты, тогда необходимо добавить приставку с названием параметра <code>data</code>, например: <code>data-interval="3000"</code>.
+								</p>
+								<div class="table-responsive">
+									<table class="table table-bordered table-striped">
+										<thead>
+										<tr>
+											<th style="width: 100px;text-align: center;">Название</th>
+											<th style="width: 50px;text-align: center;">Тип</th>
+											<th style="width: 50px;text-align: center;">Значение по умолчанию</th>
+											<th style="text-align: center;">Описание</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>interval</td>
+											<td>number</td>
+											<td>5000</td>
+											<td>
+												Время в миллисекундах между автоматической сменой слайдов карусели.
+											</td>
+										</tr>
+										<tr>
+											<td>pause</td>
+											<td>string</td>
+											<td>"hover"</td>
+											<td>
+												Делает паузу при нахождении курсора в пределах карусели. Возобновляет показ когда курсор за пределами слайда.
+											</td>
+										</tr>
+										<tr>
+											<td>wrap</td>
+											<td>boolean</td>
+											<td>true</td>
+											<td>Запрещает непрерывный переход на следующий слайд с последнего слайда (т.е. он должен быть первым) и на предыдущий слайд с первого слайда (т.е. он должен быть последним)</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="modal-by-js" class="box-title">
+								<b>Управляем каруселью при помощи JavaScript</b>
+							</div>
+							<div class="subtitle-description">
+								<p>
+									Есть возможность вызвать карусель вручную с помощью JavaScript кода: <code>$('.carousel').carousel()</code><br>
+									Этот код состоит из метода  <code>.carousel()</code> и id либо класса к которому собственно и нужно применить данный метод.
+								</p>
+								<p>
+									Метод <code>.carousel()</code> который предназначен для управления слайдером имеет свои стандартные методы.
+								</p>
+								<div id="modal-js-params" class="table-responsive">
+									<table class="table table-striped">
+										<thead>
+										<tr>
+											<th>Метод</th>
+											<th>Описание</th>
+											<th>Пример</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>.carousel(options)</td>
+											<td>Инициализирует карусель с дополнительными параметрами и запускает процесс смены слайдов</td>
+											<td><code>$('#id').carousel({interval: 4000})</code></td>
+										</tr>
+										<tr>
+											<td>.carousel('cycle')</td>
+											<td>Запускает процесс смены слайдов слева направо</td>
+											<td><code>$('#id').carousel('cycle')</code></td>
+										</tr>
+										<tr>
+											<td>.carousel('pause')</td>
+											<td>Останавливает процесс автоматической смены слайдов карусели</td>
+											<td><code>$('#id')..carousel('pause')</code></td>
+										</tr>
+										<tr>
+											<td>.carousel(number)</td>
+											<td>Осуществляет переход на определённый слайд карусели, который устанавливается с помощью числа number (отчёт ведётся с 0, по аналогии с массивом) </td>
+											<td><code>$('#id').carousel(1)</code></td>
+										</tr>
+										<tr>
+											<td>.carousel('prev')</td>
+											<td>Осуществляет переход на предыдущий слайд </td>
+											<td><code>$('#id').carousel('prev')</code></td>
+										</tr>
+										<tr>
+											<td>.carousel('next')</td>
+											<td>Осуществляет переход на следующий слайд </td>
+											<td><code>$('#id').carousel('next')</code></td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+								<p>
+									Для примера, продемонстрируем использование методов для управления каруселью.  Для просмотра работающего примера нажмите на кнопку  <img src="dist/image/code-example/play.png">
+									в правом верхнем углу.
+								</p>
+								<!-- CODE EXAMPLE -->
+								<div class="code-example">
+
+									<div id="buttons">
+										<span id="html" 	class="btn-html">HTML</span>
+										<span id="css"  	class="btn-css">CSS</span>
+										<span id="js" 		class="btn-js active">JavaScript</span>
+										<span id="black"	class="btn-black"></span>
+										<span id="white"	class="btn-white"></span>
+										<span id="download" title="Скачать пример"><img src="dist/image/code-example/folder_download.png"></span>
+										<span id="run"		title="Смотреть пример"><a href="example/run-carousel-by-js.html" target="_blank"><img src="dist/image/code-example/play.png"></a></span>
+										<span id="copy" 	title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+									</div>
+
+									<div id="code" class="code">
+
+										<!-- HTML code -->
+										<div id="code-html" class="hide">
+											<xmp class="prettyprint linenums">
+<!-- HTML код карусели -->
+<div class="examplecarusel">
+	<div id="myCarousel2" class="carousel slide" data-interval="3000" data-ride="carousel">
+		<!-- Слайды карусели -->
+		<div class="carousel-inner">
+			<!-- 1 слайд -->
+			<div class="active item">
+				<h2>Слайд №1</h2>
+				<div class="carousel-caption">
+					<h3>Заголовок 1 слайда</h3>
+					<p>Описание 1 слайда...</p>
+				</div>
+			</div>
+			<div class="item">
+				<h2>Слайд №2</h2>
+				<div class="carousel-caption">
+					<h3>Заголовок 2 слайда</h3>
+					<p>Описание 2 слайда...</p>
+				</div>
+			</div>
+			<div class="item">
+				<h2>Слайд №3</h2>
+				<div class="carousel-caption">
+					<h3>Заголовок 3 слайда</h3>
+					<p>Описание 3 слайда...</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Кнопки управления -->
+	<div style="margin-top: 20px; text-align:center;">
+		<input type="button" class="btn btn-info start-slide" value="Старт">
+		<input type="button" class="btn btn-info pause-slide" value="Пауза">
+		<input type="button" class="btn btn-info prev-slide" value="Предыдущий">
+		<input type="button" class="btn btn-info next-slide" value="Следующий">
+		<input type="button" class="btn btn-info slide-one" value="Слайд 1">
+		<input type="button" class="btn btn-info slide-two" value="Слайд 2">
+		<input type="button" class="btn btn-info slide-three" value="Слайд 3">
+	</div>
+											</xmp>
+										</div>
+										<!-- JS code -->
+										<div id="code-js" class="show">
+											<pre   class="prettyprint linenums">
+<code class="language-javascript">
+$(document).ready(function(){
+// Инициализирует карусель
+$(".start-slide").click(function(){
+$("#myCarousel2").carousel('cycle');
+});
+// Останавливает процесс автоматической смены слайдов карусели
+$(".pause-slide").click(function(){
+$("#myCarousel2").carousel('pause');
+});
+// Осуществляет переход на предыдущий слайд
+$(".prev-slide").click(function(){
+$("#myCarousel2").carousel('prev');
+});
+// Осуществляет переход на следующий слайд
+$(".next-slide").click(function(){
+$("#myCarousel2").carousel('next');
+});
+// Осуществляет переход на 0 слайд карусели
+$(".slide-one").click(function(){
+$("#myCarousel2").carousel(0);
+});
+// Осуществляет переход на 1 слайд карусели
+$(".slide-two").click(function(){
+$("#myCarousel2").carousel(1);
+});
+// Осуществляет переход на 2 слайд карусели
+$(".slide-three").click(function(){
+$("#myCarousel2").carousel(2);
+});
+});
+</code>
+											</pre>
+										</div><!-- / .code-js -->
+									</div><!-- /.code -->
+									<div id="documentation">
+										Документация:
+										<span class="syntax">
+											<a href="https://api.jquery.com/category/selectors/">jquery selectors</a>
+											<a href="https://api.jquery.com/click/"> click</a>
+											<a href="https://plugins.jquery.com/tag/carousel/">carousel</a>
+										</span>
+										<span id="btn-more-documentation" title="Больше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="btn-hide-more-documentation" class="hide" title="Меньше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="more-documentation" class="hide">
+											<br>
+										</span>
+									</div>
+								</div><!-- / CODE EXAMPLE -->
+								<hr>
+								<div id="modal-event">
+									<h4>События с каруселью</h4>
+								</div>	
+								<p>
+									Чтобы изменить состояния карусели можно воспользоваться такими событиями:
+								</p>
+								<div class="table-responsive">
+									<table class="table table-striped">
+										<thead>
+										<tr>
+											<th>Событие</th>
+											<th>Описание</th>
+											<th>Пример</th>
+										</tr>
+										</thead>
+										<tbody>
+										<tr>
+											<td>slide.bs.carouse</td>
+											<td>Событие срабатывает перед началом процесса смены слайда</td>
+											<td><pre class="prettyprint linenums">$('#id').on('slide.bs.carousel', function () {</pre>
+												<pre class="prettyprint linenums">// сделать что-нибудь... })</pre>
+											</td>
+										</tr>
+										<tr>
+											<td>slid.bs.carousel</td>
+											<td>Событие срабатывает после процесса смены слайда</td>
+											<td><pre class="prettyprint linenums">$('#id').on('slid.bs.carousel', function () {</pre>
+												<pre class="prettyprint linenums">// сделать что-нибудь...})</pre>
+											</td>
+										</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div id="theme-for-modal" class="box-title">
+								<b>Структура карусели </b>
+							</div>
+							<div class="subtitle-description">
+								<p>
+									Для того чтоб стилизировать слайдер, необходимо разобраться в самой его структуре<br>
+									Слайдер Bootstrap Carousel  делится на несколько частей:
+								</p>
+									<ul>
+										<li>Указатели</li>
+										<li>Содержание слайдера</li>
+										<li>Элементы управления</li>
+									</ul>
+								<p>
+									Как вы уже знаете создание и управление видом Слайдера Carousel в Bootstrap 3 и 4 осуществляется через классы CSS, атрибуты <code>data-</code> и методы JavaScript.
+								</p>
+
+								<p>Ниже размещен <b>HTML код cлайдера</b>. Вам осталось только включить воображение и воплотить все свои идеи в жизнь с помощью знакомых CSS & HTML.</p>
+
+								<p>HTML код Слайдера Carousel, в самом простом его представлении, выглядит следующим образом:</p>
+								<!-- CODE EXAMPLE -->
+								<div class="code-example">
+									<div id="buttons">
+										<span id="html" 	class="btn-html active">HTML</span>
+										<span id="css"  	class="btn-css">CSS</span>
+										<span id="js" 		class="btn-js">JavaScript</span>
+										<span id="black"	class="btn-black"></span>
+										<span id="white"	class="btn-white"></span>
+										<span id="download" title="Скачать пример"><img src="dist/image/code-example/folder_download.png"></span>
+										<span id="run"		title="Смотреть пример"><img src="dist/image/code-example/play.png"></span>
+										<span id="copy" 	title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+									</div>
+
+									<div id="code" class="code">
+
+										<!-- HTML code -->
+										<div id="code-html" class="show">
+											<xmp class="prettyprint linenums">
+<!-- Карусель -->
+<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+	<!-- Индикаторы для карусели -->
+	<ol class="carousel-indicators">
+		<!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+	<!-- Слайды карусели -->
+	<div class="carousel-inner">
+		<!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+		<div class="active item">
+			<h2>Слайд №1</h2>
+			<div class="carousel-caption">
+				<h3>Заголовок 1 слайда</h3>
+				<p>Текст (описание) 1 слайда...</p>
+			</div>
+		</div>
+		<!-- Слайд №2 -->
+		<div class="item">
+			<h2>Slide 2</h2>
+			<div class="carousel-caption">
+				<h3>Second slide label</h3>
+				<p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+			</div>
+		</div>
+		<!-- Слайд №3 -->
+		<div class="item">
+			<h2>Slide 3</h2>
+			<div class="carousel-caption">
+				<h3>Third slide label</h3>
+				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+			</div>
+		</div>
+	</div>
+	<!-- Навигация для карусели -->
+	<!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+	<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+	<a class="carousel-control right" href="#myCarousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
+											</xmp>
+										</div>
+										<div id="code-css" class="hide">
+											<pre>
+												<code>
+<!-- Таблица стилей CSS -->
+h2{
+	margin: 0;
+	color: #666;
+	padding-top: 90px;
+	font-size: 52px;
+	font-family: "trebuchet ms", sans-serif;
+}
+.item{
+	background: #333;
+	text-align: center;
+	height: 300px !important;
+}
+.carousel{
+	margin-top: 20px;
+}
+
+												</code>
+											</pre>
+										</div>
+									</div><!-- /.code -->
+
+									<div id="documentation">
+										Документация:
+										<span class="syntax">
+											<a href="http://www.w3schools.com/tags/att_global_data.asp"> data-</a>
+											<a href="http://www.w3schools.com/html/html_classes.asp"> class</a>
+											<a href="http://www.w3schools.com/tags/att_global_id.asp"> id</a>
+										</span>
+										<span id="btn-more-documentation" title="Больше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="btn-hide-more-documentation" class="hide" title="Меньше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="more-documentation" class="hide">
+											<br>
+										</span>
+									</div>
+								</div><!-- / CODE EXAMPLE -->
+							</div>
+						</li>
+					</ol>
+				</div><!-- /#description-instruction -->
+			</div><!-- /#instruction -->
+			<hr>
+			<div id="examples">
+			<div id="title-examples" class="box-title">
+				<h3>
+					Примеры Реализации<small> Слайдера Carousel</small>
+				</h3>
+			</div>
+			<div id="description-examples">
+				<!-- Collapse for Code examples -->
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+									Слайдер Carousel реализован через javaScript:
+								</a>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<!-- CODE EXAMPLE -->
+								<div class="code-example">
+
+									<div id="buttons">
+										<span id="html" 	class="btn-html">HTML</span>
+										<span id="css"  	class="btn-css">CSS</span>
+										<span id="js" 		class="btn-js active">JavaScript</span>
+										<span id="black"	class="btn-black"></span>
+										<span id="white"	class="btn-white"></span>
+										<span id="download" title="Скачать пример"><img src="dist/image/code-example/folder_download.png"></span>
+										<span id="run"		title="Смотреть пример"><a href="example/run-carousel-by-js.html" target="_blank"><img src="dist/image/code-example/play.png"></a></span>
+										<span id="copy" 	title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+									</div>
+
+									<div id="code" class="code">
+
+										<!-- HTML code -->
+										<div id="code-html" class="hide">
+											<xmp class="prettyprint linenums">
+												<!-- HTML код карусели -->
+												<div class="examplecarusel">
+													<div id="myCarousel2" class="carousel slide" data-interval="3000" data-ride="carousel">
+														<!-- Слайды карусели -->
+														<div class="carousel-inner">
+															<!-- 1 слайд -->
+															<div class="active item">
+																<h2>Слайд №1</h2>
+																<div class="carousel-caption">
+																	<h3>Заголовок 1 слайда</h3>
+																	<p>Описание 1 слайда...</p>
+																</div>
+															</div>
+															<div class="item">
+																<h2>Слайд №2</h2>
+																<div class="carousel-caption">
+																	<h3>Заголовок 2 слайда</h3>
+																	<p>Описание 2 слайда...</p>
+																</div>
+															</div>
+															<div class="item">
+																<h2>Слайд №3</h2>
+																<div class="carousel-caption">
+																	<h3>Заголовок 3 слайда</h3>
+																	<p>Описание 3 слайда...</p>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- Кнопки управления -->
+													<div style="margin-top: 20px; text-align:center;">
+														<input type="button" class="btn btn-info start-slide" value="Старт">
+														<input type="button" class="btn btn-info pause-slide" value="Пауза">
+														<input type="button" class="btn btn-info prev-slide" value="Предыдущий">
+														<input type="button" class="btn btn-info next-slide" value="Следующий">
+														<input type="button" class="btn btn-info slide-one" value="Слайд 1">
+														<input type="button" class="btn btn-info slide-two" value="Слайд 2">
+														<input type="button" class="btn btn-info slide-three" value="Слайд 3">
+													</div>
+											</xmp>
+										</div>
+										<!-- JS code -->
+										<div id="code-js" class="show">
+											<pre   class="prettyprint linenums">
+<code class="language-javascript">
+$(document).ready(function(){
+// Инициализирует карусель
+$(".start-slide").click(function(){
+$("#myCarousel2").carousel('cycle');
+});
+// Останавливает процесс автоматической смены слайдов карусели
+$(".pause-slide").click(function(){
+$("#myCarousel2").carousel('pause');
+});
+// Осуществляет переход на предыдущий слайд
+$(".prev-slide").click(function(){
+$("#myCarousel2").carousel('prev');
+});
+// Осуществляет переход на следующий слайд
+$(".next-slide").click(function(){
+$("#myCarousel2").carousel('next');
+});
+// Осуществляет переход на 0 слайд карусели
+$(".slide-one").click(function(){
+$("#myCarousel2").carousel(0);
+});
+// Осуществляет переход на 1 слайд карусели
+$(".slide-two").click(function(){
+$("#myCarousel2").carousel(1);
+});
+// Осуществляет переход на 2 слайд карусели
+$(".slide-three").click(function(){
+$("#myCarousel2").carousel(2);
+});
+});
+</code>
+											</pre>
+										</div><!-- / .code-js -->
+									</div><!-- /.code -->
+									<div id="documentation">
+										Документация:
+										<span class="syntax">
+											<a href="https://api.jquery.com/category/selectors/">jquery selectors</a>
+											<a href="https://api.jquery.com/click/"> click</a>
+											<a href="https://plugins.jquery.com/tag/carousel/">carousel</a>
+										</span>
+										<span id="btn-more-documentation" title="Больше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="btn-hide-more-documentation" class="hide" title="Меньше">
+											<img src="dist/image/code-example/details.png">
+										</span>
+										<span id="more-documentation" class="hide">
+											<br>
+										</span>
+									</div>
+								</div><!-- / CODE EXAMPLE -->
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+									Простой Слайдер Carousel :
+								</a>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse">
+							<div class="panel-body">
+								<!-- CODE EXAMPLE -->
+								<div class="code-example">
+									<div id="buttons">
+										<span id="html" 		class="btn-html active">HTML</span>
+										<span id="css"  		class="btn-css">CSS</span>
+										<span id="js" 		class="btn-js">JavaScript</span>
+										<span id="download" 	title="Скачать пример"><a href="example/simple-carousel.html" download><img src="dist/image/code-example/folder_download.png"></a></span>
+										<span id="run"		title="Смотреть пример"><a href="example/simple-carousel.html" target="_blank"><img src="dist/image/code-example/play.png"></a></span>
+										<span id="copy" 		title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+									</div>
+									<div id="code" class="code">
+										<!-- HTML code -->
+										<div id="code-html" class="show">
+											<xmp class="prettyprint linenums"><!-- Карусель -->
+<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+	<!-- Индикаторы для карусели -->
+	<ol class="carousel-indicators">
+		<!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>
+	<!-- Слайды карусели -->
+	<div class="carousel-inner">
+		<!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
+		<div class="active item">
+			<h2>Слайд №1</h2>
+			<div class="carousel-caption">
+				<h3>Заголовок 1 слайда</h3>
+				<p>Текст (описание) 1 слайда...</p>
+			</div>
+		</div>
+		<!-- Слайд №2 -->
+		<div class="item">
+			<h2>Slide 2</h2>
+			<div class="carousel-caption">
+				<h3>Second slide label</h3>
+				<p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
+			</div>
+		</div>
+		<!-- Слайд №3 -->
+		<div class="item">
+			<h2>Slide 3</h2>
+			<div class="carousel-caption">
+				<h3>Third slide label</h3>
+				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+			</div>
+		</div>
+	</div>
+	<!-- Навигация для карусели -->
+	<!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+	<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+	</a>
+	<!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+	<a class="carousel-control right" href="#myCarousel" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</a>
+</div>
+											</xmp>
+										</div>
+									</div><!-- /.code -->
+									<div id="documentation">
+										Документация:
+							  <span class="syntax">
+								  <a href="http://www.w3schools.com/tags/att_global_data.asp"> data-</a>
+								  <a href="http://www.w3schools.com/html/html_classes.asp"> class</a>
+								  <a href="http://www.w3schools.com/tags/att_global_id.asp"> id</a>
+							  </span>
+							  <span id="btn-more-documentation" title="Больше">
+								  <img src="dist/image/code-example/details.png">
+							  </span>
+							  <span id="btn-hide-more-documentation" class="hide" title="Меньше">
+								  <img src="dist/image/code-example/details.png">
+							  </span>
+							  <span id="more-documentation" class="hide">
+								  <br>
+							  </span>
+									</div>
+								</div><!-- / CODE EXAMPLE -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- / Collapse for Code examples -->
+			</div><!-- /#description-examples -->
+			</div><!-- /#examples -->
+			<div id="share">
+				<span id="nav-tags">
+					<span class="main-tag">Bootstrap <span class="glyphicon glyphicon-tag"></span></span> 
+					<span class="main-tag">pop-up <span class="glyphicon glyphicon-tag"></span></span>
+				</span>
+			</div><!-- /#share -->
+			<div id="recomendation">
+				<div id="title-recomendation">
+					<h4>Читайте также:</h4>
+				</div>
+				<div id="description-recomendation">
+					<span id="articles"	class="recomendation-article">
+												
+					</span>
+					<span id="libes"	class="recomendation-libes">
+
+					</span>
+				</div>
+			</div><!-- /#recommendation -->
+		</div><!-- /.col-md-9 -->
+		<div class="col-md-3">
+			<div class="right-sitebar affix">
+				<ul>
+					<li>
+						<a href="#description">Описание</a>
+					</li>
+					<li>
+						<a href="#instruction">Инструкция</a>
+						<ul class="sub-nav">
+							<li>
+								<a href="#connection-library">Подключаем библиотеки</a>
+							</li>
+							<li>
+								<a href="#activate-modal">Слайдер и data атрибуты</a>
+							</li>
+							<li>
+								<a href="#modal-params">Параметры Карусели</a>
+							</li>
+							<li>
+								<a href="#modal-by-js">Слайдер и JavaScript</a>
+							</li>
+							<li>
+								<a href="#modal-js-params">Метод <code>.carousel()</code> </a>
+							</li>
+							<li>
+								<a href="#modal-event">События с каруселью</a>
+							</li>
+							<li>
+								<a href="#theme-for-modal">Структура карусели</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#examples">Примеры Реализации </a>
+					</li>
+					<li>
+						<a href="#recomendation">Рекомендации</a>
+					</li>
+					<li>
+						<a href="#">Пройти Тест</a>
+					</li>
+				</ul>
+				<hr>
+				<ul>
+					<li>
+						<span class="glyphicon glyphicon-star"></span><a href="#">	Академия JS</a>
+					</li>
+					<li>
+						<span class="glyphicon glyphicon-flash"></span><a href="#">	Советы</a>
+					</li>
+					<li>
+						<span class="glyphicon glyphicon-tasks"></span><a href="#">	Инструкции</a>
+					</li>
+					<li>
+						<span class="glyphicon glyphicon-book"></span><a href="#">	Документация</a>
+					</li>
+				</ul>
+				<hr>
+				<ul>
+					<li>
+						<span class="glyphicon glyphicon-th-large"></span><a href="../modal/index.html"> Модальное окно</a>
+					</li>
+				</ul>
+				<hr>
+				<ul>
+					<li>
+						<span class="glyphicon glyphicon-chevron-up"></span><a class="back-to-top" href="#top"> Вверх </a>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /.col-md-3 -->
+
+	</div><!-- /.container -->
+		
+
+    <!-- SCRIPTS -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- Code Example -->
+    <script src="dist/js/codeExample.js" defer></script>
+    <!-- view Code -->
+    <script src="dist/js/google-code-prettify/src/run_prettify.js"></script>
+    <!-- copy Code -->
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
