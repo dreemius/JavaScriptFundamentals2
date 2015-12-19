@@ -18,11 +18,14 @@ var formValidator = (function(){
 		hideMessages();
 		elementDisplay(DOMElements.result, false);
 		elementDisplay(DOMElements.form, true);
+		DOMElements.name.value = '';
+		DOMElements.email.value = '';
+		DOMElements.password.value = '';
 	};
 
 	function getPasswdByUserId(id) {
 		var pass ='';
-		usersArray.forEach(function(item, i) {
+		usersArray.forEach(function(item) {
 			if (item.id == id) { pass = item.password };
 		});
 		return pass;

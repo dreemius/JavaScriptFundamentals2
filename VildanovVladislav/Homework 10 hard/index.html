@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Template for homework10</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      
+
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <br>
+    <br>
+
+    <div class="container">
+		  <div class="row">
+			   <div class=" col-sm-offset-1 col-sm-8">
+
+          <br>
+          <br>
+          <div id="prologue">
+            <p class="lead">Пролог:</p>
+          <p class="simple">Холодным декабрьским вечером тебе захотелось выпить кружку горячего чая. Для этого тебе понадобиться закипятить воду:</p>
+            <center>
+              <button type="button" id="start" class="btn btn-default">Начать!</button>
+            </center>
+            <br>
+          </div>
+          <div id="select" class="hide">
+          <p class="simple">Ты настолько крут что у тебя не один,а целых ДВА чайника!! Так что выбери один из них:</p>
+          <center>
+            <div class="col-sm-10" id="select">
+              <select id="kettleselect" name="Kettle Select">
+                <option value="1">Чайник</option>
+                <option value="2">Електрочайник</option>
+             </select>
+            <br>
+            <br>
+            <button type="button" id="choose" class="btn btn-default">Выбрать!</button>
+            </div>
+          </div>
+         </center>
+            <div id="namefield" class="hide">
+              <p class="simple">Ты настолько одинок что даже чайнику даёшь имя. Как ты его назовёшь?</p>
+              <label for="inputName" class="col-sm-2" id="name">Введите Имя</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputName" placeholder="Name">
+                <br>
+                 <center>
+                    <button type="button" id="setname" class="btn btn-default">Назвать!</button>
+                 </center>
+              </div>
+            </div>
+             <br>
+              <div id="KettleOn" class="hide">
+              <p class="simple" id="ready">Всё готово можно приступать!</p>
+              <br>
+              <center>
+                <button type="button" id="setOn" class="btn btn-default">Включить</button>
+              </center>
+            </div>
+            <br>
+            <center>
+              <button type="button" id="setOff" class="btn btn-default hide">Выключить</button>
+            </center>
+            <br>
+            <br>
+            <br>
+            <center>
+              <button type="button" id="clearAll" class="btn btn-default hide">Удалить</button>
+            </center>
+          </div>
+        </div>
+			</div>
+		</div>
+		
+		
+		
+		<br>
+		<br>
+		<br>
+
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="Homework 10 hard.js"></script>
+  </body>
+</html>
