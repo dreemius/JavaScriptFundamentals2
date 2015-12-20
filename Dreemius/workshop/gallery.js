@@ -1,49 +1,71 @@
 
 var filmLoader = (function(){
-	var resultContainer = $('#result');
-	var compiled = _.template('<div class="col-xs-6">\
+	var input = $('#search'),
+		searchBtn = $('#btnSearch'),
+		resultContainer = $('#result'),
+
+		row = _.template('<div class="row"><%=item1%><%=item2%></div>'),
+
+		compiled = _.template('<div class="col-xs-6">\
 				<img src="<%=url%>" alt="<%=name%>" class="img-thumbnail pull-left">\
 				<div class="info-wrapper pull-left">\
-					<div class="text-muted"><%=description%></div>\
+					<div class="text-muted"><%=name%></div>\
+					<div class="text-muted"><%=type%></div>\
+					<div class="text-muted"><%=year%></div>\
 				</div>\
 			</div>');
-
-
-	function buildOneItem() {
-		var item = {
-			url: "http://desktopwallpapers.org.ua/mini/201507/40066.jpg",
-			name: "картинка 1",
-			description : "Using color to add meaning only"
-		};
-
-		var html = compiled({
-			url: item.url,
-			name: item.name,
-			description: item.description
-		});
-		resultContainer.html(html);
-	}
-
-
-	function getQueryString () {
-		return "star";
-	}
 
 	//don't change
 	function search (searchString){
 		jQuery.getScript('http://www.omdbapi.com/?s='+searchString+'&plot=short&r=json&callback=onDataLoaded');
 	}
 
+	function buildTable (searchResult) {
+		var resultItems = [];
+		searchResult.Search.forEach(function(item){
+			var html = buildOneItem(item);
+			resultItems.push(html);
+		});
 
-	function buildTable (data) {
-		console.log(data);
-		buildOneItem();
+		var result = [];
+		for (var i=0; i<resultItems.length; i+=2) {
+			result.push(buildRow(resultItems, i));
+		}
+		printResult(result.join(''));
+	}
+
+	function buildOneItem(item) {
+		return compiled({
+			url: item.Poster,
+			name: item.Title,
+			type: item.Type,
+			year: item.Year
+		});
+	}
+
+	function buildRow (data, index) {
+		return row({
+			item1: data[index] ? data[index] : '' ,
+			item2: data[index+1] ? data[index+1] : ''
+		})
+	}
+
+	function printResult(html){
+		resultContainer.html(html);
 	}
 
 
-	function init (){
-		search (getQueryString());
+	function getQueryString () {
+		return input.val();
+	}
 
+	function searchHandler (event){
+		event.preventDefault();
+		search(getQueryString());
+	}
+
+	function init (){
+		searchBtn.click(searchHandler)
 	}
 	init();
 
