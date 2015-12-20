@@ -4,6 +4,7 @@ var filmLoader = (function(){
 	var compiled = _.template('<div class="col-xs-6">\
 				<img src="<%=url%>" alt="<%=name%>" class="img-thumbnail pull-left">\
 				<div class="info-wrapper pull-left">\
+					<div class="text-muted"><%=title%></div>\
 					<div class="text-muted"><%=description%></div>\
 				</div>\
 			</div>');
@@ -12,19 +13,15 @@ var filmLoader = (function(){
     buttonD = document.querySelector('.btn-default');  //находим кнопку по классу
 	buttonD.addEventListener("click", init);  // добавляем эвент click на кнопку buttonD которая запускает функ. init
 
-	function buildOneItem(n) {
-		for(var i = 0; i < n.Search.length; i++){
-			
-		var item = {
-			url: n.Search[i].Poster,
-			name: n.Search[i].Title,
-			description: n.Search[i].Type
-		};
+	function buildAllItem(films) {
+		var list = films.Search;
+		for(var i = 0; i < list.length; i++){
 		
 		var html = compiled({
-			url: item.url,
-			name: item.name,
-			description: item.description
+			url		: list[i].Poster,
+			name	: list[i].Title,
+			description: list[i].Type,
+			title	: list[i].Title
 		});
 		resultHTML += html;
 		};
@@ -44,13 +41,12 @@ var filmLoader = (function(){
 	}
 
 	function buildTable (data) {
-		console.log(data);     // зачем она тут ?
-		buildOneItem(data);
+		//console.log(data);     // зачем она тут ?
+		buildAllItem(data);
 	}
      
 	function init (){	
-	search(getQueryString());  //запускает функ init которая запускает search и подставляет в качестве аргумента результат функ getQueryString
-
+		search(getQueryString());  //запускает функ init которая запускает search и подставляет в качестве аргумента результат функ getQueryString
 	}
 	
 	return {
