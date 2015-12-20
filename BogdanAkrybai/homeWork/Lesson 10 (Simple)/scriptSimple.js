@@ -28,9 +28,10 @@ ElectronicKettle.prototype = {
 
 inheritance(Kettle, ElectronicKettle);
 
-var electronicKettle = new ElectronicKettle ("Phillips");
-electronicKettle.turnOn();
-electronicKettle.turnOff();
+var electronicKettle = new ElectronicKettle ("3432434324Phillips");
+electronicKettle.turnOn("hgfhfg");
+
+electronicKettle.turnOff("ghgfhfghgh");
 
 function inheritance (parent, child) {
     var tempChild = child.prototype;
