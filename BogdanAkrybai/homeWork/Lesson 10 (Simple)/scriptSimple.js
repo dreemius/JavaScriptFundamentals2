@@ -3,14 +3,14 @@ function Kettle (name) {
     this.name = name;
 }
 
-Kettle.prototype = {
+Kettle.prototype.whatever = { 
     turnOn : function () {
         this.isBoiling = true;
         console.log("Kettle " + this.name + " is turned on!");
     },
 
     turnOff : function () {
-        this.isBoiling = false;
+        this.isBoiling = whatever = false;
         console.log("Kettle " + this.name + " is turned off!");
     }
 };
