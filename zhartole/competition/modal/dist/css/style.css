@@ -86,14 +86,14 @@
 .code-example > #buttons > .btn-css.active 	{ border-bottom: 0.3em solid rgb(45, 139, 255); }
 .code-example > #buttons > .btn-js.active 	{ border-bottom: 0.3em solid rgb(239, 231, 2); 	}
 
-.code-example > #buttons > #run, #copy, #download   {
+.code-example > #buttons > .run, .copy, .download   {
     float:right;
 	padding: 0.5em 1em;
 }
 
-.code-example > #buttons > #run      {  padding-top: 0.4em;  }
+.code-example > #buttons > .run      {  padding-top: 0.4em;  }
 
-.code-example > #buttons > #download {  padding-top: 0.2em;  }
+.code-example > #buttons > .download {  padding-top: 0.2em;  }
 
 .btn-white, .btn-black {
     width: 1.2em;
@@ -117,7 +117,7 @@
 .code {  background: #f8f7f2; }
 
 /*-- Documentation row --*/
-.code-example >#documentation {
+.code-example >.documentation {
     position: absolute; bottom: 0;
     padding: 0.2em 0.5em;
     width:  100%;
@@ -125,14 +125,14 @@
 	color: rgba(165, 94, 19, 0.72);
 }
 
-.syntax a, #more-documentation  a {
+.syntax a, .more-documentation  a {
 	text-decoration: none;
 	cursor: help;
 }
 
-.syntax  a:hover, #more-documentation  a:hover  {	text-decoration: underline; }
+.syntax  a:hover, .more-documentation  a:hover  {	text-decoration: underline; }
 
-.code-example >#documentation > #btn-more-documentation, #btn-hide-more-documentation  {
+.code-example >.documentation > .btn-more-documentation, .btn-hide-more-documentation  {
 	float:right;
 }
 /*-- </STYLE FOR SHOW CODE EXAMPLE> --*/

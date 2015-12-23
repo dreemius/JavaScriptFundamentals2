@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="dist/image/favicon.ico" type="image/x-icon">
 
-    <title>Modal window</title>
+    <title>Modal window | Bootstrap</title>
 
     <!-- STYLE -->
 
@@ -258,69 +258,140 @@
 									<code>data-toggle="modal"</code> - атрибут, который содержит значение <code>modal</code> которое в свою очередь говорит, что содержимое, которое вызвает этот элемент, - модальное окно.<br>
 									<code>#myModal</code> -  селектор (идентификатор) елемента который будет "всплывать".
 								</div>
-								<p>Ниже приведён код работающего примера. Для просмотра работающего примера нажмите на кнопку  <img src="dist/image/code-example/play.png">   в правом верхнем углу.</p>
+								<p>Ниже приведён код работающего примера.</p>
 							</div>
 							<!-- CODE EXAMPLE -->
-							<div class="code-example">
-								<div id="buttons">
-								  <span id="html" 		class="btn-html active">HTML</span>
-								  <span id="css"  		class="btn-css">CSS</span>
-								  <span id="js" 		class="btn-js">JavaScript</span>
-								  <span id="download" 	title="Скачать пример"><a href="example/modal/simple-modal.html" download><img src="dist/image/code-example/folder_download.png"></a></span>
-								  <span id="run"		title="Смотреть пример"><a href="example/modal/simple-modal.html" target="_blank"><img src="dist/image/code-example/play.png"></a></span>
-								  <span id="copy" 		title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
-								</div>
-								<div id="code" class="code">
-								  <!-- HTML code -->
-									<div id="code-html" class="show">
-										<xmp class="prettyprint linenums">
-<!-- Кнопка, которая вызывает модальное окно -->
-<a href="#myModal" class="btn btn-primary" data-toggle="modal">Открыть модальное окно</a>
-<!-- Исходный HTML-код -->
-<div id="myModal" class="modal fade" style="text-align:justify;">
-<div class="modal-dialog">
-<div class="modal-content">
-<!-- Заголовок модального окна -->
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-<h4 class="modal-title">JS Helper - твой путеводитель в мире JavaScript</h4>
-</div>
-<!-- Содержимое модального окна -->
-<div class="modal-body">
-<p>Мы в JS Helper собрали для Вас лучшие решения неоднократно испытаны на практике.</p>
-<p>Многолетний опыт работы наших специалистов поможет Вам разобраться в концепциях JavaScript.</p>
-<p>С нами Вы обязательно сделаете свой первый шаг на пути к профессии JavaScript developer.</p>
-</div>
-<!-- Футер модального окна -->
-<div class="modal-footer">
-<button type="button" class="btn btn-default" data-dismiss="modal">Упустить шанс</button>
-<button type="button" class="btn btn-primary">Стать JavaScript разработчиком</button>
-</div>
-</div>
-</div>
-</div>
-									</xmp>
-								</div>
-							</div><!-- /.code -->
-							<div id="documentation">
-								Документация:
-							  <span class="syntax">
-								  <a href="http://www.w3schools.com/tags/att_global_data.asp"> data-</a>
-								  <a href="http://www.w3schools.com/bootstrap/bootstrap_buttons.asp"> btn</a>
-								  <a href="http://www.w3schools.com/html/html_classes.asp"> class</a>
-								  <a href="http://www.w3schools.com/tags/att_global_id.asp"> id</a>
-							  </span>
-							  <span id="btn-more-documentation" title="Больше">
-								  <img src="dist/image/code-example/details.png">
-							  </span>
-							  <span id="btn-hide-more-documentation" class="hide" title="Меньше">
-								  <img src="dist/image/code-example/details.png">
-							  </span>
-							  <span id="more-documentation" class="hide">
-								  <br>
-							  </span>
-							</div>
-							</div><!-- / CODE EXAMPLE -->
+									<div id="example-simple">
+										<div class="faq">
+										<button type="button" class="btn btn-default btn-xs faq-code-examlpe">Что значат кнопки? </button>
+										<div class="what-button-means hide">
+											<table class="table table-bordered table-striped">
+												<tbody>
+													<tr>
+														<td>
+															просмотреть работающий пример нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/play.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															cкачать работающий пример нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/folder_download.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															копировать код нажмите на кнопку 
+														</td>
+														<td>
+															<img src="dist/image/code-example/copy.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															переключить язык нажмите на кнопки
+														</td>
+														<td>
+															<img src="dist/image/code-example/css.png">
+														</td>
+														<td>
+															в левом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															получить больше документации нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/details.png">
+														</td>
+														<td>
+															в левом нижнем углу
+														</td>
+													</tr>										
+												</tbody>	
+											</table>
+										</div>
+										</div><!-- /.faq -->
+										<div class="code-example">
+											<div id="buttons">
+											  <span class="btn-html active">HTML</span>
+											  <span class="btn-css">CSS</span>
+											  <span class="btn-js">JavaScript</span>
+											  <span class="download" 			title="Скачать пример"><a href="example/simple-modal.html" download><img src="dist/image/code-example/folder_download.png"></a></span>
+											  <span class="run"					title="Смотреть пример"><a href="example/simple-modal.html" target="_blank"><img src="dist/image/code-example/play.png"></a></span>
+											  <span class="copy btn-clipboard" 	title="Копировать код" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+											</div>
+											<div id="code" class="code">
+											<!-- HTML code -->
+												<div  class="code-html show">																								 
+													<xmp class="prettyprint linenums"><!-- Кнопка, которая вызывает модальное окно --></xmp>
+													<xmp class="prettyprint linenums"><a href="#myModal" class="btn btn-primary" data-toggle="modal">Открыть модальное окно</a></xmp>
+													<xmp class="prettyprint linenums"><!-- Исходный HTML-код --></xmp>
+													<xmp class="prettyprint linenums"><div id="myModal" class="modal fade" style="text-align:justify;"></xmp>
+													<xmp class="prettyprint linenums">	<div class="modal-dialog"></xmp>
+													<xmp class="prettyprint linenums">		<div class="modal-content"></xmp>
+													<xmp class="prettyprint linenums">		<!-- Заголовок модального окна --></xmp>
+													<xmp class="prettyprint linenums">			<div class="modal-header"></xmp>
+													<xmp class="prettyprint linenums">			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button></xmp>
+													<xmp class="prettyprint linenums">			<h4 class="modal-title">JS Helper - твой путеводитель в мире JavaScript</h4></xmp>
+													<xmp class="prettyprint linenums">			</div></xmp>
+													<xmp class="prettyprint linenums">			<!-- Содержимое модального окна --></xmp>
+													<xmp class="prettyprint linenums">			<div class="modal-body"></xmp>
+													<xmp class="prettyprint linenums">			<p>Мы в JS Helper собрали для Вас лучшие решения неоднократно испытаны на практике.</p></xmp>
+													<xmp class="prettyprint linenums">			<p>Многолетний опыт работы наших специалистов поможет Вам разобраться в концепциях JavaScript.</p></xmp>
+													<xmp class="prettyprint linenums">			<p>С нами Вы обязательно сделаете свой первый шаг на пути к профессии JavaScript developer.</p></xmp>
+													<xmp class="prettyprint linenums">			</div></xmp>
+													<xmp class="prettyprint linenums">			<!-- Футер модального окна --></xmp>
+													<xmp class="prettyprint linenums">			<div class="modal-footer"></xmp>
+													<xmp class="prettyprint linenums">			<button type="button" class="btn btn-default" data-dismiss="modal">Упустить шанс</button></xmp>
+													<xmp class="prettyprint linenums">			<button type="button" class="btn btn-primary">Стать JavaScript разработчиком</button></xmp>
+													<xmp class="prettyprint linenums">			</div></xmp>
+													<xmp class="prettyprint linenums">		</div></xmp>
+													<xmp class="prettyprint linenums">	</div></xmp>
+													<xmp class="prettyprint linenums"></div></xmp>																			
+												</div><!-- /.code-html -->
+											<!-- CSS code -->
+												<div class="code-css hide">											
+												</div><!-- /.code-css -->
+											<!-- JS code -->	
+												<div class="code-js hide">																																										
+												</div><!-- / .code-js -->
+											</div><!-- /.code -->
+											<div class="documentation">
+												Документация:
+											  <span class="syntax">
+													  <a href="http://www.w3schools.com/tags/att_global_data.asp"		target="_blank"> data-</a>
+													  <a href="http://www.w3schools.com/bootstrap/bootstrap_buttons.asp"target="_blank"> btn</a>
+													  <a href="http://www.w3schools.com/html/html_classes.asp"			target="_blank"> class</a>
+													  <a href="http://www.w3schools.com/tags/att_global_id.asp"			target="_blank"> id</a>
+											  </span>
+											  <span class="btn-more-documentation" title="Больше">
+												  <img src="dist/image/code-example/details.png">
+											  </span>
+											  <span class="btn-hide-more-documentation hide" title="Меньше">
+												  <img src="dist/image/code-example/details.png">
+											  </span>
+											  <span class="more-documentation hide">
+												  <br>
+											  </span>
+											</div><!-- /.documentation -->
+										</div><!-- /.code-example -->
+									</div><!-- / #example-structure -->	
+							<!-- / CODE EXAMPLE -->		
 							<hr>
 							<div id="modal-params">
 								<p>
@@ -384,13 +455,13 @@
 									Для того чтоб открыть модальное окно посредством JavaScript вызываем метод <code>.modal()</code> и укажем идентификатор <code>(#id)</code> либо класс <code>(.class)</code>
 									элемента-контейнера, который содержит HTML-код модального окна.
 								</p>
-								<pre   class="prettyprint linenums"><code class="language-javascript">$(document).ready(function(){
-//при нажатии на любую кнопку, имеющую класс .btn
-$(".btn").click(function() {
-//открыть модальное окно с id="myModal"
-$("#myModal").modal('show');
-});
-});									</code></pre>
+								<pre   class="prettyprint">$(document).ready(function(){</pre>
+								<pre   class="prettyprint">//при нажатии на любую кнопку, имеющую класс .btn</pre>
+								<pre   class="prettyprint">	$(".btn").click(function() {</pre>
+								<pre   class="prettyprint">	//открыть модальное окно с id="myModal"</pre>
+								<pre   class="prettyprint">		$("#myModal").modal('show');</pre>
+								<pre   class="prettyprint">	});</pre>
+								<pre   class="prettyprint">});</pre>									
 								<p>
 									JavaScript Метод <code>modal()</code> используеться не только для активации но и для управления модальным окном
 								</p>
@@ -411,31 +482,31 @@ $("#myModal").modal('show');
 											<td>Активирует контент, указанный через <code>#id</code> или <code>.class</code> как модальное окно.
 												В качестве параметров принимает значения: <code>backdrop</code>, <code>keyboard</code>, <code>show</code>.
 												Например:
-												<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myModal'</span><span class="pun">).</span><span class="pln">modal</span><span class="pun">({</span><span class="pln">
-backdrop</span><span class="pun">:</span><span class="pln"> </span><span class="str">'static'</span><span class="pun">,</span><span class="pln">
-keyboard</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pln">
-</span><span class="pun">});</span>				</pre>
+												<pre class="prettyprint">$('#myModal').modal({</pre>
+												<pre class="prettyprint">	backdrop: 'static',</pre>
+												<pre class="prettyprint">	keyboard: false</pre>
+												<pre class="prettyprint">});	</pre>
 											</td>
 										</tr>
 										<tr>
 											<td>.modal('toggle')</td>
 											<td>Вручную переключает модальное окно. Это значит если всплывающее окно открыто, то скрывает его. А если он скрыто, то отображает его.
 												Например:
-												<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myModal'</span><span class="pun">).</span><span class="pln">modal</span><span class="pun">(</span><span class="str">'toggle'</span><span class="pun">);</span></pre>
+												<pre class="prettyprint">$('#myModal').modal('toggle');</pre>
 											</td>
 										</tr>
 										<tr>
 											<td>.modal('show')</td>
 											<td>Вручную открывает всплывающее окно.
 												Например:
-												<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myMmodal'</span><span class="pun">).</span><span class="pln">modal</span><span class="pun">(</span><span class="str">'show'</span><span class="pun">);</span></pre>
+												<pre class="prettyprint">$('#myMmodal').modal('show');</pre>
 											</td>
 										</tr>
 										<tr>
 											<td>.modal('hide')</td>
 											<td>Вручную скрывает всплывающее окно.
 												Например:
-												<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myMmodal'</span><span class="pun">).</span><span class="pln">modal</span><span class="pun">(</span><span class="str">'hide'</span><span class="pun">);</span></pre>
+												<pre class="prettyprint">$('#myMmodal').modal('hide');</pre>
 											</td>
 										</tr>
 										</tbody>
@@ -445,88 +516,146 @@ keyboard</span><span class="pun">:</span><span class="pln"> </span><span class="
 									Для примера, активируем всплывающее окно для элемента c id <code>#launch-modal:</code>
 								</p>
 								<!-- CODE EXAMPLE -->
-								<div class="code-example">
-
-									<div id="buttons">
-										<span id="html" 	class="btn-html">HTML</span>
-										<span id="css"  	class="btn-css">CSS</span>
-										<span id="js" 		class="btn-js active">JavaScript</span>
-										<span id="black"	class="btn-black"></span>
-										<span id="white"	class="btn-white"></span>
-										<span id="download" title="Скачать пример"><img src="dist/image/code-example/folder_download.png"></span>
-										<span id="run"		title="Смотреть пример"><img src="dist/image/code-example/play.png"></span>
-										<span id="copy" 	title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
-									</div>
-
-									<div id="code" class="code">
-
-										<!-- HTML code -->
-										<div id="code-html" class="hide">
-											<xmp class="prettyprint linenums">
-												<!-- HTML код кнопки -->
-												<input id="launch-modal" type="button" class="btn btn-primary" value="открыть модальное окно">
-
-												<!-- HTML-код модального окна-->
-												<div id="myModal" class="modal fade" style="text-align:justify;">
-													<div class="modal-dialog">
-														<div class="modal-content">
-															<!-- Заголовок модального окна -->
-															<div class="modal-header">
-																<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-																<h4 class="modal-title">JS Helper - твой путеводитель в мире JavaScript</h4>
-															</div>
-															<!-- Содержимое модального окна -->
-															<div class="modal-body">
-																<p>Мы в JS Helper собрали для Вас лучшие решения неоднократно испытаны на практике.</p>
-																<p>Многолетний опыт работы наших специалистов поможет Вам разобраться в концепциях JavaScript.</p>
-																<p>С нами Вы обязательно сделаете свой первый шаг на пути к профессии JavaScript developer.</p>
-															</div>
-															<!-- Футер модального окна -->
-															<div class="modal-footer">
-																<button type="button" class="btn btn-default" data-dismiss="modal">Упустить шанс</button>
-																<button type="button" class="btn btn-primary">Стать JavaScript разработчиком</button>
-															</div>
-														</div>
-													</div>
-												</div>
-											</xmp>
+									<div id="example-js">
+										<div class="faq">
+										<button type="button" class="btn btn-default btn-xs faq-code-examlpe">Что значат кнопки? </button>
+										<div class="what-button-means hide">
+											<table class="table table-bordered table-striped">
+												<tbody>
+													<tr>
+														<td>
+															просмотреть работающий пример нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/play.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															cкачать работающий пример нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/folder_download.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															копировать код нажмите на кнопку 
+														</td>
+														<td>
+															<img src="dist/image/code-example/copy.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															переключить язык нажмите на кнопки
+														</td>
+														<td>
+															<img src="dist/image/code-example/css.png">
+														</td>
+														<td>
+															в левом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															получить больше документации нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/details.png">
+														</td>
+														<td>
+															в левом нижнем углу
+														</td>
+													</tr>										
+												</tbody>	
+											</table>
 										</div>
-										<!-- JS code -->
-										<div id="code-js" class="show">
-											<pre   class="prettyprint linenums">
-<code class="language-javascript">
-$(document).ready(function(){
-//подпишемся на событие click элемента c id="#launch-modal"
-	$('#launch-modal').click(function() {
-//активируем контент c id="myModal", как модальное окно
-		$('#myModal').modal({
-//установим всплывающему окну следующие параметры:
-			backdrop: 'static', /* Забыли что это значит?! Смотрим више!)  */
-			keyboard: true
-		});
-	});
-});
-</code>
-											</pre>
-										</div><!-- / .code-js -->
-									</div><!-- /.code -->
-									<div id="documentation">
-										Документация:
-										<span class="syntax">
-											<a href="https://api.jquery.com/category/selectors/">jquery selectors</a>
-											<a href="https://api.jquery.com/click/"> click</a>
-										</span>
-										<span id="btn-more-documentation" title="Больше">
-											<img src="dist/image/code-example/details.png">
-										</span>
-										<span id="btn-hide-more-documentation" class="hide" title="Меньше">
-											<img src="dist/image/code-example/details.png">
-										</span>
-										<span id="more-documentation" class="hide">
-											<br>
-										</span>
-									</div>
-								</div><!-- / CODE EXAMPLE -->
+										</div><!-- /.faq -->
+										<div class="code-example">
+											<div id="buttons">
+											  <span class="btn-html">HTML</span>
+											  <span class="btn-css">CSS</span>
+											  <span class="btn-js active">JavaScript</span>
+											  <span class="download" 			title="Скачать пример"><a href="example/simple-modal-with-js/simple-modal.html" download><img src="dist/image/code-example/folder_download.png"></a></span>
+											  <span class="run"					title="Смотреть пример"><a href="example/simple-modal-with-js/simple-modal.html" target="_blank"><img src="dist/image/code-example/play.png"></a></span>
+											  <span class="copy btn-clipboard" 	title="Копировать код" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+											</div>
+											<div id="code" class="code">
+											<!-- HTML code -->
+												<div  class="code-html hide">																							
+													<xmp class="prettyprint linenums"><!-- HTML код кнопки --></xmp>
+													<xmp class="prettyprint linenums"><input id="launch-modal" type="button" class="btn btn-primary" value="открыть модальное окно"></xmp>
+													<xmp class="prettyprint linenums"><!-- HTML-код модального окна--></xmp>
+													<xmp class="prettyprint linenums"><div id="myModal" class="modal fade" style="text-align:justify;"></xmp>
+													<xmp class="prettyprint linenums">	<div class="modal-dialog"></xmp>
+													<xmp class="prettyprint linenums">		<div class="modal-content"></xmp>
+													<xmp class="prettyprint linenums">			<!-- Заголовок модального окна --></xmp>
+													<xmp class="prettyprint linenums">			<div class="modal-header"></xmp>
+													<xmp class="prettyprint linenums">				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button></xmp>
+													<xmp class="prettyprint linenums">				<h4 class="modal-title">JS Helper - твой путеводитель в мире JavaScript</h4></xmp>
+													<xmp class="prettyprint linenums">			</div></xmp>
+													<xmp class="prettyprint linenums">			<!-- Содержимое модального окна --></xmp>
+													<xmp class="prettyprint linenums">			<div class="modal-body"></xmp>
+													<xmp class="prettyprint linenums">				<p>Мы в JS Helper собрали для Вас лучшие решения неоднократно испытаны на практике.</p></xmp>
+													<xmp class="prettyprint linenums">				<p>Многолетний опыт работы наших специалистов поможет Вам разобраться в концепциях JavaScript.</p></xmp>
+													<xmp class="prettyprint linenums">				<p>С нами Вы обязательно сделаете свой первый шаг на пути к профессии JavaScript developer.</p></xmp>
+													<xmp class="prettyprint linenums">			</div></xmp>
+													<xmp class="prettyprint linenums">			<!-- Футер модального окна --></xmp>
+													<xmp class="prettyprint linenums">			<div class="modal-footer"></xmp>
+													<xmp class="prettyprint linenums">				<button type="button" class="btn btn-default" data-dismiss="modal">Упустить шанс</button></xmp>
+													<xmp class="prettyprint linenums">				<button type="button" class="btn btn-primary">Стать JavaScript разработчиком</button></xmp>
+													<xmp class="prettyprint linenums">			</div></xmp>
+													<xmp class="prettyprint linenums">		</div></xmp>
+													<xmp class="prettyprint linenums">	</div></xmp>
+													<xmp class="prettyprint linenums"></div></xmp>																					
+												</div><!-- /.code-html -->
+											<!-- CSS code -->
+												<div class="code-css hide">											
+												</div><!-- /.code-css -->
+											<!-- JS code -->	
+												<div class="code-js show">
+													<pre   class="prettyprint">$(document).ready(function(){</pre>
+													<pre   class="prettyprint">//подпишемся на событие click элемента c id="#launch-modal"</pre>
+													<pre   class="prettyprint">	$('#launch-modal').click(function() {</pre>
+													<pre   class="prettyprint">//активируем контент c id="myModal", как модальное окно</pre>
+													<pre   class="prettyprint">		$('#myModal').modal({</pre>
+													<pre   class="prettyprint">//установим всплывающему окну следующие параметры:</pre>
+													<pre   class="prettyprint">			backdrop: 'static', /* Забыли что это значит?! Смотрим више!)  */</pre>
+													<pre   class="prettyprint">			keyboard: true</pre>
+													<pre   class="prettyprint">		});</pre>
+													<pre   class="prettyprint">	});</pre>
+													<pre   class="prettyprint">});</pre>											
+												</div><!-- / .code-js -->
+											</div><!-- /.code -->
+											<div class="documentation">
+												Документация:
+											  <span class="syntax">
+													<a href="https://api.jquery.com/category/selectors/"target="_blank">jquery selectors</a>
+													<a href="https://api.jquery.com/click/"				target="_blank"> click</a>
+											  </span>
+											  <span class="btn-more-documentation" title="Больше">
+												  <img src="dist/image/code-example/details.png">
+											  </span>
+											  <span class="btn-hide-more-documentation hide" title="Меньше">
+												  <img src="dist/image/code-example/details.png">
+											  </span>
+											  <span class="more-documentation hide">
+												  <br>
+											  </span>
+											</div><!-- /.documentation -->
+										</div><!-- /.code-example -->
+									</div><!-- / #example-structure -->	
+								<!-- / CODE EXAMPLE -->																																		
 								<hr>
 								<div id="modal-event">
 									<h4>События с модальным окном</h4>
@@ -546,33 +675,33 @@ $(document).ready(function(){
 										<tr>
 											<td>show.bs.modal</td>
 											<td>Событие происходит, когда вызывается метод <code>show()</code>, предназначенный для открытия модального окна. Если модальное окно вызывается с помощью клика (click), то элемент, который вызвал открытие модального окна, будет доступен как свойство <code>relatedTarget</code> события.<br>Например:
-			<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myModal'</span><span class="pun">).</span><span class="pln">on</span><span class="pun">(</span><span class="str">'show.bs.modal'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
-			</span><span class="com">// Что-то сделать...</span><span class="pln">
-			</span><span class="pun">})</span></pre>
+												<pre class="prettyprint">$('#myModal').on('show.bs.modal', function() {</pre>
+												<pre class="prettyprint">	// Что-то сделать...</pre>
+												<pre class="prettyprint">})</pre>
 											</td>
 										</tr>
 										<tr>
 											<td>shown.bs.modal</td>
 											<td>Событие происходит, когда модальное окно становится видимым для пользователя, т.е. когда оно будет полностью отрисовано с помощью стилей CSS. Если модальное окно вызывается с помощью клика (click), то элемент, который вызвал открытие модального окна будет доступен как свойство <code>relatedTarget</code> события.<br>Например:
-			<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myModal'</span><span class="pun">).</span><span class="pln">on</span><span class="pun">(</span><span class="str">'shown.bs.modal'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
-			</span><span class="com">// Что-то сделать...</span><span class="pln">
-			</span><span class="pun">})</span></pre>
+												<pre class="prettyprint">$('#myModal').on('shown.bs.modal', function() {</pre>
+												<pre class="prettyprint">	// Что-то сделать...</pre>
+												<pre class="prettyprint">})</pre>
 											</td>
 										</tr>
 										<tr>
 											<td>hide.bs.modal</td>
 											<td>Событие происходит, когда вызывается метод hide(), который предназначен для скрытия модального окна.<br>Например:
-			<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myModal'</span><span class="pun">).</span><span class="pln">on</span><span class="pun">(</span><span class="str">'hide.bs.modal'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
-			</span><span class="com">// Что-то сделать...</span><span class="pln">
-			</span><span class="pun">})</span></pre>
+												<pre class="prettyprint">$('#myModal').on('hide.bs.modal', function() {</pre>
+												<pre class="prettyprint">	// Что-то сделать...</pre>
+												<pre class="prettyprint">})</pre>
 											</td>
 										</tr>
 										<tr>
 											<td>hidden.bs.modal</td>
 											<td>Событие происходит, когда модальное окно становится полностью невидимым для пользователя, т.е. когда будут отработаны полностью все CSS-свойства, выполняющие этот процесс.<br>Например:
-			<pre class="prettyprint"><span class="pln">$</span><span class="pun">(</span><span class="str">'#myModal'</span><span class="pun">).</span><span class="pln">on</span><span class="pun">(</span><span class="str">'hidden.bs.modal'</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
-			</span><span class="com">// Что-то сделать...</span><span class="pln">
-			</span><span class="pun">})</span></pre>
+												<pre class="prettyprint">$('#myModal').on('hidden.bs.modal', function() {</pre>
+												<pre class="prettyprint">	// Что-то сделать...</pre>
+												<pre class="prettyprint">})</pre>
 											</td>
 										</tr>
 										</tbody>
@@ -595,78 +724,144 @@ $(document).ready(function(){
 									<li>footer (футер) - блок <code>div</code> с классом <code>.modal-footer</code>.</li>
 								</ul>
 								<br>
-								<p>Ниже размещен <b>HTML код всплывающего окна</b>. Вам осталось только включить воображение и воплотить все свои идеи в жизнь с помощью знакомых CSS & HTML. Например что-то такое:</p>
+								<p>Ниже размещен <b>HTML код всплывающего окна</b>. Вам осталось только включить воображение и воплотить все свои идеи в жизнь с помощью знакомых CSS & HTML. Например, создать что-то такое:</p>
 								<div class="image-in-article">
 									<img src="dist/image/popup-fine.png" title="Пример" alt="Модальное окно" style="width:50em;">
 								</div>
 								<p>HTML код модального окна, в самом простом его представлении, выглядит следующим образом:</p>
 								<!-- CODE EXAMPLE -->
-								<div class="code-example">
-									<div id="buttons">
-										<span id="html" 	class="btn-html active">HTML</span>
-										<span id="css"  	class="btn-css">CSS</span>
-										<span id="js" 		class="btn-js">JavaScript</span>
-										<span id="black"	class="btn-black"></span>
-										<span id="white"	class="btn-white"></span>
-										<span id="download" title="Скачать пример"><img src="dist/image/code-example/folder_download.png"></span>
-										<span id="run"		title="Смотреть пример"><img src="dist/image/code-example/play.png"></span>
-										<span id="copy" 	title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
-									</div>
-
-									<div id="code" class="code">
-
-										<!-- HTML code -->
-										<div id="code-html" class="show">
-											<xmp class="prettyprint linenums">
-<div id="myModal" class="modal fade">
-<div class="modal-dialog">
-<div class="modal-content">
-<!-- Заголовок  -->
-<div class="modal-header">
-	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-	<h4 class="modal-title">Заголовок модального окна</h4>
-</div>
-<!-- Содержимое -->
-<div class="modal-body">
-	Содержимое модального окна...
-</div>
-<!-- Футер -->
-<div class="modal-footer">
-	<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-	<button type="button" class="btn btn-primary">Сохранить изменения</button>
-</div>
-</div>
-</div>
-</div>
-											</xmp>
+									<div id="example-structure">
+										<div class="faq">
+										<button type="button" class="btn btn-default btn-xs faq-code-examlpe">Что значат кнопки? </button>
+										<div class="what-button-means hide">
+											<table class="table table-bordered table-striped">
+												<tbody>
+													<tr>
+														<td>
+															просмотреть работающий пример нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/play.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															cкачать работающий пример нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/folder_download.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															копировать код нажмите на кнопку 
+														</td>
+														<td>
+															<img src="dist/image/code-example/copy.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															переключить язык нажмите на кнопки
+														</td>
+														<td>
+															<img src="dist/image/code-example/css.png">
+														</td>
+														<td>
+															в левом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															получить больше документации нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/details.png">
+														</td>
+														<td>
+															в левом нижнем углу
+														</td>
+													</tr>										
+												</tbody>	
+											</table>
 										</div>
-									</div><!-- /.code -->
-
-									<div id="documentation">
-										Документация:
-										<span class="syntax">
-											<a href="http://www.w3schools.com/tags/att_global_data.asp"> data-</a>
-											<a href="http://www.w3schools.com/bootstrap/bootstrap_buttons.asp"> btn</a>
-											<a href="http://www.w3schools.com/html/html_classes.asp"> class</a>
-											<a href="http://www.w3schools.com/tags/att_global_id.asp"> id</a>
-										</span>
-										<span id="btn-more-documentation" title="Больше">
-											<img src="dist/image/code-example/details.png">
-										</span>
-										<span id="btn-hide-more-documentation" class="hide" title="Меньше">
-											<img src="dist/image/code-example/details.png">
-										</span>
-										<span id="more-documentation" class="hide">
-											<br>
-										</span>
-									</div>
-								</div><!-- / CODE EXAMPLE -->
+										</div><!-- /.faq -->
+										<div class="code-example">
+											<div id="buttons">
+											  <span class="btn-html active">HTML</span>
+											  <span class="btn-css">CSS</span>
+											  <span class="btn-js">JavaScript</span>
+											  <span class="download" 			title="Скачать пример"><a href="example/modal-structure.html" download><img src="dist/image/code-example/folder_download.png"></a></span>
+											  <span class="run"					title="Смотреть пример"><a href="example/modal-structure.html" target="_blank"><img src="dist/image/code-example/play.png"></a></span>
+											  <span class="copy btn-clipboard" 	title="Копировать код" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+											</div>
+											<div id="code" class="code">
+											<!-- HTML code -->
+												<div  class="code-html show">																																		
+													<xmp class="prettyprint"><div id="myModal" class="modal fade"></xmp>
+													<xmp class="prettyprint">	<div class="modal-dialog"></xmp>
+													<xmp class="prettyprint">		<div class="modal-content"></xmp>
+													<xmp class="prettyprint">			<!-- Заголовок  --></xmp>
+													<xmp class="prettyprint">			<div class="modal-header"></xmp>
+													<xmp class="prettyprint">				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button></xmp>
+													<xmp class="prettyprint">				<h4 class="modal-title">Заголовок модального окна</h4></xmp>
+													<xmp class="prettyprint">			</div></xmp>
+													<xmp class="prettyprint">			<!-- Содержимое --></xmp>
+													<xmp class="prettyprint">			<div class="modal-body"></xmp>
+													<xmp class="prettyprint">				Содержимое модального окна...</xmp>
+													<xmp class="prettyprint">			</div></xmp>
+													<xmp class="prettyprint">			<!-- Футер --></xmp>
+													<xmp class="prettyprint">			<div class="modal-footer"></xmp>
+													<xmp class="prettyprint">				<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button></xmp>
+													<xmp class="prettyprint">				<button type="button" class="btn btn-primary">Сохранить изменения</button></xmp>
+													<xmp class="prettyprint">			</div></xmp>
+													<xmp class="prettyprint">		</div></xmp>
+													<xmp class="prettyprint">	</div></xmp>
+													<xmp class="prettyprint"></div></xmp>																			
+												</div><!-- /.code-html -->
+											<!-- CSS code -->
+												<div class="code-css hide">											
+												</div><!-- /.code-css -->
+											<!-- JS code -->	
+												<div class="code-js hide">																																										
+												</div><!-- / .code-js -->
+											</div><!-- /.code -->
+											<div class="documentation">
+												Документация:
+											  <span class="syntax">
+													<a href="http://www.w3schools.com/tags/att_global_data.asp" 		target="_blank"> data-</a>
+													<a href="http://www.w3schools.com/bootstrap/bootstrap_buttons.asp"	target="_blank"> btn</a>
+													<a href="http://www.w3schools.com/html/html_classes.asp"			target="_blank"> class</a>
+													<a href="http://www.w3schools.com/tags/att_global_id.asp"			target="_blank"> id</a>
+											  </span>
+											  <span class="btn-more-documentation" title="Больше">
+												  <img src="dist/image/code-example/details.png">
+											  </span>
+											  <span class="btn-hide-more-documentation hide" title="Меньше">
+												  <img src="dist/image/code-example/details.png">
+											  </span>
+											  <span class="more-documentation hide">
+												  <br>
+											  </span>
+											</div><!-- /.documentation -->
+										</div><!-- /.code-example -->
+									</div><!-- / #example-structure -->	
+								<!-- / CODE EXAMPLE -->		
+								<hr>								
 							</div>
 						</li>
 					</ol>
 				</div><!-- /#description-instruction -->
-			</div><!-- /#instruction -->
-			<hr>
+			</div><!-- /#instruction -->			
 			<div id="examples">
 			<div id="title-examples" class="box-title">
 				<h3>
@@ -687,83 +882,143 @@ $(document).ready(function(){
 						<div id="collapseOne" class="panel-collapse collapse in">
 							<div class="panel-body">
 								<!-- CODE EXAMPLE -->
-								<div class="code-example">
-									<div id="buttons">
-										<span id="html" 	class="btn-html">HTML</span>
-										<span id="css"  	class="btn-css">CSS</span>
-										<span id="js" 		class="btn-js active">JavaScript</span>
-										<span id="black"	class="btn-black"></span>
-										<span id="white"	class="btn-white"></span>
-										<span id="download" title="Скачать пример"><img src="dist/image/code-example/folder_download.png"></span>
-										<span id="run"		title="Смотреть пример"><img src="dist/image/code-example/play.png"></span>
-										<span id="copy" 	title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
-									</div>
-
-									<div id="code" class="code">
-
-										<!-- HTML code -->
-										<div id="code-html" class="hide">
-											<xmp class="prettyprint linenums">
-<!-- Модальное окно -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Закрыть">
-					<span aria-hidden="true">×</span>
-				</button>
-				<h4 class="modal-title" id="myModalLabel">Заголовок модального окна</h4>
-			</div>
-			<div class="modal-body">
-				Содержимое модального окна...
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-				<button type="button" class="btn btn-primary">Сохранить изменения</button>
-			</div>
-		</div>
-	</div>
-</div>
-											</xmp>
+									<div id="every-5-minute">
+										<div class="faq">
+										<button type="button" class="btn btn-default btn-xs faq-code-examlpe">Что значат кнопки? </button>
+										<div class="what-button-means hide">
+											<table class="table table-bordered table-striped">
+												<tbody>
+													<tr>
+														<td>
+															просмотреть работающий пример нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/play.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															cкачать работающий пример нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/folder_download.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															копировать код нажмите на кнопку 
+														</td>
+														<td>
+															<img src="dist/image/code-example/copy.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															переключить язык нажмите на кнопки
+														</td>
+														<td>
+															<img src="dist/image/code-example/css.png">
+														</td>
+														<td>
+															в левом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															получить больше документации нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/details.png">
+														</td>
+														<td>
+															в левом нижнем углу
+														</td>
+													</tr>										
+												</tbody>	
+											</table>
 										</div>
-										<!-- JS code -->
-										<div id="code-js" class="show">
-<pre   class="prettyprint linenums">
-<code class="language-javascript">
-$(window).load(function() {
-// вызываем метод setInterval, который будет вызывать модальное окно каждые 5 минут, если оно не открыто
-setInterval(function() {
-// Если окно не открыто (т.е. не имеет класс in)
-if (!$("#myModal").hasClass("in")) {
-// то открыть модальное окно
-$("#myModal").modal('show');
-}
-}, 300000);
-});
-</code>
-</pre>
-										</div>
-									</div><!-- /.code -->
-
-									<div id="documentation">
-										Документация:
-										<span class="syntax">
-											<a href="http://www.w3schools.com/jsref/met_win_setinterval.asp"> setInterval</a>
-											<a href="http://www.w3schools.com/js/js_if_else.asp"> if</a>
-											<a href="https://api.jquery.com/category/selectors/"> jquery selectors</a>
-											<a href="https://api.jquery.com/click/"> click</a>
-										</span>
-										<span id="btn-more-documentation" title="Больше">
-											<img src="dist/image/code-example/details.png">
-										</span>
-										<span id="btn-hide-more-documentation" class="hide" title="Меньше">
-											<img src="dist/image/code-example/details.png">
-										</span>
-										<span id="more-documentation" class="hide">
-											<br>
-										</span>
-									</div>
-								</div><!-- / CODE EXAMPLE -->
+										</div><!-- /.faq -->
+										<div class="code-example">
+											<div id="buttons">
+											  <span class="btn-html">HTML</span>
+											  <span class="btn-css">CSS</span>
+											  <span class="btn-js active">JavaScript</span>
+											  <span class="download" 			title="Скачать пример"><a href="example/open-every-n-minute/simple-modal.html" download><img src="dist/image/code-example/folder_download.png"></a></span>
+											  <span class="run"					title="Смотреть пример"><a href="example/open-every-n-minute/simple-modal.html" target="_blank"><img src="dist/image/code-example/play.png"></a></span>
+											  <span class="copy btn-clipboard" 	title="Копировать код" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+											</div>
+											<div id="code" class="code">
+											<!-- HTML code -->
+												<div  class="code-html hide">																								
+													<xmp class="prettyprint"><!-- Модальное окно --></xmp>	
+													<xmp class="prettyprint"><div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></xmp>
+													<xmp class="prettyprint">	<div class="modal-dialog" role="document"></xmp>
+													<xmp class="prettyprint">		<div class="modal-content"></xmp>
+													<xmp class="prettyprint">			<div class="modal-header"></xmp>
+													<xmp class="prettyprint">				<button type="button" class="close" data-dismiss="modal" aria-label="Закрыть"></xmp>
+													<xmp class="prettyprint">					<span aria-hidden="true">×</span></xmp>
+													<xmp class="prettyprint">				</button></xmp>
+													<xmp class="prettyprint">				<h4 class="modal-title" id="myModalLabel">Заголовок модального окна</h4></xmp>
+													<xmp class="prettyprint">			</div></xmp>
+													<xmp class="prettyprint">			<div class="modal-body"></xmp>
+													<xmp class="prettyprint">				Содержимое модального окна...</xmp>
+													<xmp class="prettyprint">			</div></xmp>
+													<xmp class="prettyprint">			<div class="modal-footer"></xmp>
+													<xmp class="prettyprint">				<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button></xmp>
+													<xmp class="prettyprint">				<button type="button" class="btn btn-primary">Сохранить изменения</button></xmp>
+													<xmp class="prettyprint">			</div></xmp>
+													<xmp class="prettyprint">		</div></xmp>
+													<xmp class="prettyprint">	</div></xmp>
+													<xmp class="prettyprint"></div></xmp>																											
+												</div><!-- /.code-html -->
+											<!-- CSS code -->
+												<div class="code-css hide">											
+												</div><!-- /.code-css -->
+											<!-- JS code -->	
+												<div class="code-js show">
+													<pre   class="prettyprint">$(window).load(function() {</pre>
+													<pre   class="prettyprint">// вызываем метод setInterval, который будет вызывать модальное окно каждые 5 минут, если оно не открыто</pre>
+													<pre   class="prettyprint">	setInterval(function() {</pre>
+													<pre   class="prettyprint">	// Если окно не открыто (т.е. не имеет класс in)</pre>
+													<pre   class="prettyprint">		if (!$("#myModal").hasClass("in")) {</pre>
+													<pre   class="prettyprint">			// то открыть модальное окно</pre>
+													<pre   class="prettyprint">			$("#myModal").modal('show');</pre>
+													<pre   class="prettyprint">		}</pre>
+													<pre   class="prettyprint">	}, 300000);</pre>
+													<pre   class="prettyprint">});</pre>
+													
+												</div><!-- / .code-js -->
+											</div><!-- /.code -->
+											<div class="documentation">
+												Документация:
+											    <span class="syntax">
+													<a href="http://www.w3schools.com/jsref/met_win_setinterval.asp"target="_blank"> setInterval</a>
+													<a href="http://www.w3schools.com/js/js_if_else.asp"			target="_blank"> if</a>
+													<a href="https://api.jquery.com/category/selectors/"			target="_blank"> jquery selectors</a>
+													<a href="https://api.jquery.com/click/"							target="_blank"> click</a>												
+											    </span>
+											    <span class="btn-more-documentation" title="Больше">
+												    <img src="dist/image/code-example/details.png">
+											    </span>
+											    <span class="btn-hide-more-documentation hide" title="Меньше">
+												    <img src="dist/image/code-example/details.png">
+											    </span>
+											    <span class="more-documentation hide">
+												  <br>
+											    </span>
+											</div><!-- /.documentation -->
+										</div><!-- /.code-example -->
+									</div><!-- / #example-structure -->	
+								<!-- / CODE EXAMPLE -->									
 							</div>
 						</div>
 					</div>
@@ -778,84 +1033,142 @@ $("#myModal").modal('show');
 						<div id="collapseTwo" class="panel-collapse collapse">
 							<div class="panel-body">
 								<!-- CODE EXAMPLE -->
-								<div class="code-example">
-									<div id="buttons">
-										<span id="html" 	class="btn-html">HTML</span>
-										<span id="css"  	class="btn-css">CSS</span>
-										<span id="js" 		class="btn-js active">JavaScript</span>
-										<span id="black"	class="btn-black"></span>
-										<span id="white"	class="btn-white"></span>
-										<span id="download" title="Скачать пример"><img src="dist/image/code-example/folder_download.png"></span>
-										<span id="run"		title="Смотреть пример"><img src="dist/image/code-example/play.png"></span>
-										<span id="copy" 	title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
-									</div>
-
-									<div id="code" class="code">
-
-										<!-- HTML code -->
-										<div id="code-html" class="hide">
-											<xmp class="prettyprint linenums">
-<!-- Кнопки, открывающие модальное окно myModal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-content="Содержимое 1...">Открыть модальное окно с содержимым 1</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-content="Содержимое 2...">Открыть модальное окно с содержимым 2</button>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-content="Содержимое 1...">Открыть модальное окно с содержимым 3</button>
-
-<!-- Модальное окно myModal -->
-<div class="modal fade" id="myModal" tabindex="-1">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
-				<h4 class="modal-title">Заголовок модального окна</h4>
-			</div>
-			<div class="modal-body">
-				<p id="content"></p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-			</div>
-		</div>
-	</div>
-</div>
-											</xmp>
+									<div id="example-change-txt">
+										<div class="faq">
+										<button type="button" class="btn btn-default btn-xs faq-code-examlpe">Что значат кнопки? </button>
+										<div class="what-button-means hide">
+											<table class="table table-bordered table-striped">
+												<tbody>
+													<tr>
+														<td>
+															просмотреть работающий пример нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/play.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															cкачать работающий пример нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/folder_download.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															копировать код нажмите на кнопку 
+														</td>
+														<td>
+															<img src="dist/image/code-example/copy.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															переключить язык нажмите на кнопки
+														</td>
+														<td>
+															<img src="dist/image/code-example/css.png">
+														</td>
+														<td>
+															в левом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															получить больше документации нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/details.png">
+														</td>
+														<td>
+															в левом нижнем углу
+														</td>
+													</tr>										
+												</tbody>	
+											</table>
 										</div>
-										<!-- JS code -->
-										<div id="code-js" class="show">
-										<pre   class="prettyprint linenums">
-<code class="language-javascript">
-// при открытии модального окна
-$('#myModal').on('show.bs.modal', function (event) {
-// получить кнопку, которая его открыло
-var button = $(event.relatedTarget)
-// извлечь информацию из атрибута data-content
-var content = button.data('content')
-// вывести эту информацию в элемент, имеющий id="content"
-$(this).find('#content').text(content);
-})
-</code>
-										</pre>
-										</div>
-									</div><!-- /.code -->
-
-									<div id="documentation">
-										Документация:
-										<span class="syntax">
-											<a href="https://api.jquery.com/find/"> .find</a>
-											<a href="http://api.jquery.com/on/"> .on</a>
-											<a href="https://api.jquery.com/category/selectors/"> jquery selectors</a>
-											<a href="https://api.jquery.com/click/"> click</a>
-										</span>
-										<span id="btn-more-documentation" title="Больше">
-											<img src="dist/image/code-example/details.png">
-										</span>
-										<span id="btn-hide-more-documentation" class="hide" title="Меньше">
-											<img src="dist/image/code-example/details.png">
-										</span>
-										<span id="more-documentation" class="hide">
-											<br>
-										</span>
-									</div>
-								</div><!-- / CODE EXAMPLE -->
+										</div><!-- /.faq -->
+										<div class="code-example">
+											<div id="buttons">
+											  <span class="btn-html">HTML</span>
+											  <span class="btn-css">CSS</span>
+											  <span class="btn-js active">JavaScript</span>
+											  <span class="download" 			title="Скачать пример"><a href="example/change-contents/simple-modal.html" download><img src="dist/image/code-example/folder_download.png"></a></span>
+											  <span class="run"					title="Смотреть пример"><a href="example/change-contents/simple-modal.html" target="_blank"><img src="dist/image/code-example/play.png"></a></span>
+											  <span class="copy btn-clipboard" 	title="Копировать код" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+											</div>
+											<div id="code" class="code">
+											<!-- HTML code -->
+												<div  class="code-html  hide">																								
+													<xmp class="prettyprint"><!-- Кнопки, открывающие модальное окно myModal --></xmp>	
+													<xmp class="prettyprint"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-content="Содержимое 1...">Открыть модальное окно с содержимым 1</button></xmp>	
+													<xmp class="prettyprint"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-content="Содержимое 2...">Открыть модальное окно с содержимым 2</button></xmp>	
+													<xmp class="prettyprint"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-content="Содержимое 1...">Открыть модальное окно с содержимым 3</button></xmp>	
+													<xmp class="prettyprint"><!-- Модальное окно myModal --></xmp>	
+													<xmp class="prettyprint"><div class="modal fade" id="myModal" tabindex="-1"></xmp>	
+													<xmp class="prettyprint">	<div class="modal-dialog"></xmp>	
+													<xmp class="prettyprint">		<div class="modal-content"></xmp>	
+													<xmp class="prettyprint">			<div class="modal-header"></xmp>	
+													<xmp class="prettyprint">				<button type="button" class="close" data-dismiss="modal"><span>×</span></button></xmp>	
+													<xmp class="prettyprint">				<h4 class="modal-title">Заголовок модального окна</h4></xmp>	
+													<xmp class="prettyprint">			</div></xmp>	
+													<xmp class="prettyprint">			<div class="modal-body"></xmp>	
+													<xmp class="prettyprint">				<p id="content"></p></xmp>	
+													<xmp class="prettyprint">			</div></xmp>	
+													<xmp class="prettyprint">			<div class="modal-footer"></xmp>	
+													<xmp class="prettyprint">				<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button></xmp>	
+													<xmp class="prettyprint">			</div></xmp>	
+													<xmp class="prettyprint">		</div></xmp>	
+													<xmp class="prettyprint">	</div></xmp>	
+													<xmp class="prettyprint"></div></xmp>																														
+												</div><!-- /.code-html -->
+											<!-- CSS code -->
+												<div class="code-css hide">											
+												</div><!-- /.code-css -->
+											<!-- JS code -->	
+												<div class="code-js show">													
+													<pre   class="prettyprint">// при открытии модального окна</pre>
+													<pre   class="prettyprint">$('#myModal').on('show.bs.modal', function (event) {</pre>
+													<pre   class="prettyprint">		// получить кнопку, которая его открыло</pre>
+													<pre   class="prettyprint">		var button = $(event.relatedTarget)</pre>
+													<pre   class="prettyprint">		// извлечь информацию из атрибута data-content</pre>
+													<pre   class="prettyprint">		var content = button.data('content')</pre>
+													<pre   class="prettyprint">		// вывести эту информацию в элемент, имеющий id="content"</pre>
+													<pre   class="prettyprint">		$(this).find('#content').text(content);</pre>
+													<pre   class="prettyprint">})</pre>										
+												</div><!-- / .code-js -->
+											</div><!-- /.code -->
+											<div class="documentation">
+												Документация:
+											  <span class="syntax">
+													<a href="https://api.jquery.com/find/"				target="_blank"> .find</a>
+													<a href="http://api.jquery.com/on/"					target="_blank"> .on</a>
+													<a href="https://api.jquery.com/category/selectors/"target="_blank"> jquery selectors</a>
+													<a href="https://api.jquery.com/click/"				target="_blank"> click</a>													 
+											  </span>
+											  <span class="btn-more-documentation" title="Больше">
+												  <img src="dist/image/code-example/details.png">
+											  </span>
+											  <span class="btn-hide-more-documentation hide" title="Меньше">
+												  <img src="dist/image/code-example/details.png">
+											  </span>
+											  <span class="more-documentation hide">
+												  <br>
+											  </span>
+											</div><!-- /.documentation -->
+										</div><!-- /.code-example -->
+									</div><!-- / #example-structure -->	
+								<!-- / CODE EXAMPLE -->																		
 							</div>
 						</div>
 					</div>
@@ -870,83 +1183,141 @@ $(this).find('#content').text(content);
 						<div id="collapseThree" class="panel-collapse collapse">
 							<div class="panel-body">
 								<!-- CODE EXAMPLE -->
-								<div class="code-example">
-									<div id="buttons">
-										<span id="html" 	class="btn-html">HTML</span>
-										<span id="css"  	class="btn-css">CSS</span>
-										<span id="js" 		class="btn-js active">JavaScript</span>
-										<span id="black"	class="btn-black"></span>
-										<span id="white"	class="btn-white"></span>
-										<span id="download" title="Скачать пример"><img src="dist/image/code-example/folder_download.png"></span>
-										<span id="run"		title="Смотреть пример"><img src="dist/image/code-example/play.png"></span>
-										<span id="copy" 	title="Копировать код" class="btn-clipboard" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
-									</div>
-
-									<div id="code" class="code">
-
-										<!-- HTML code -->
-										<div id="code-html" class="hide">
-											<xmp class="prettyprint linenums">
-<!-- Кнопка, открывающая модальное окно -->
-<input type="button" class="btn btn-primary open-modal" value="Открыть модальное окно">
-
-<!-- HTML-код модального окна-->
-<div id="myModal" class="modal fade">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title">Заголовок модального окна</h4>
-			</div>
-			<div class="modal-body">
-				<p>Содержимое модального окна...</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-			</div>
-		</div>
-	</div>
-</div>
-											</xmp>
+									<div id="example-show-msg">
+										<div class="faq">
+										<button type="button" class="btn btn-default btn-xs faq-code-examlpe">Что значат кнопки? </button>
+										<div class="what-button-means hide">
+											<table class="table table-bordered table-striped">
+												<tbody>
+													<tr>
+														<td>
+															просмотреть работающий пример нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/play.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															cкачать работающий пример нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/folder_download.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															копировать код нажмите на кнопку 
+														</td>
+														<td>
+															<img src="dist/image/code-example/copy.png">
+														</td>
+														<td>
+															в правом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															переключить язык нажмите на кнопки
+														</td>
+														<td>
+															<img src="dist/image/code-example/css.png">
+														</td>
+														<td>
+															в левом верхнем углу
+														</td>
+													</tr>
+													<tr>
+														<td>
+															получить больше документации нажмите на кнопку
+														</td>
+														<td>
+															<img src="dist/image/code-example/details.png">
+														</td>
+														<td>
+															в левом нижнем углу
+														</td>
+													</tr>										
+												</tbody>	
+											</table>
 										</div>
-										<!-- JS code -->
-										<div id="code-js" class="show">
-											<pre   class="prettyprint linenums">
-<code class="language-javascript">
-$(document).ready(function(){
-//при нажатию на элемент, имеющий класс .open-modal, открыть модальное окно
-$('.open-modal').click(function(){
-$('#myModal').modal('show');
-});
-//отобразить сообщение, когда модальное окно будет полностью скрыто от пользователя
-$("#myModal").on('hidden.bs.modal', function(){
-alert("Модальное окно было успешно закрыто.");
-});
-});
-</code>
-											</pre>
-										</div>
-									</div><!-- /.code -->
-
-									<div id="documentation">
-										Документация:
-										<span class="syntax">
-											<a href="https://api.jquery.com/ready/"> .ready</a>
-											<a href="http://api.jquery.com/on/"> .on</a>
-											<a href="https://api.jquery.com/category/selectors/"> jquery selectors</a>
-											<a href="https://api.jquery.com/click/"> click</a>
-										</span>
-										<span id="btn-more-documentation" title="Больше">
-											<img src="dist/image/code-example/details.png">
-										</span>
-										<span id="btn-hide-more-documentation" class="hide" title="Меньше">
-											<img src="dist/image/code-example/details.png">
-										</span>
-										<span id="more-documentation" class="hide">
-											<br>
-										</span>
-									</div>
-								</div><!-- / CODE EXAMPLE -->
+										</div><!-- /.faq -->
+										<div class="code-example">
+											<div id="buttons">
+											  <span class="btn-html">HTML</span>
+											  <span class="btn-css">CSS</span>
+											  <span class="btn-js active">JavaScript</span>
+											  <span class="download" 			title="Скачать пример"><a href="example/simple-carousel.html" download><img src="dist/image/code-example/folder_download.png"></a></span>
+											  <span class="run"					title="Смотреть пример"><a href="example/simple-carousel.html" target="_blank"><img src="dist/image/code-example/play.png"></a></span>
+											  <span class="copy btn-clipboard" 	title="Копировать код" data-clipboard-target=".show"><img src="dist/image/code-example/copy.png"></span>
+											</div>
+											<div id="code" class="code">
+											<!-- HTML code -->
+												<div  class="code-html hide">																								
+													<xmp class="prettyprint"><!-- Кнопка, открывающая модальное окно --></xmp>
+													<xmp class="prettyprint"><input type="button" class="btn btn-primary open-modal" value="Открыть модальное окно"></xmp>
+													<xmp class="prettyprint"><!-- HTML-код модального окна--></xmp>
+													<xmp class="prettyprint"><div id="myModal" class="modal fade"></xmp>
+													<xmp class="prettyprint">	<div class="modal-dialog"></xmp>
+													<xmp class="prettyprint">		<div class="modal-content"></xmp>
+													<xmp class="prettyprint">			<div class="modal-header"></xmp>
+													<xmp class="prettyprint">				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></xmp>
+													<xmp class="prettyprint">				<h4 class="modal-title">Заголовок модального окна</h4></xmp>
+													<xmp class="prettyprint">			</div></xmp>
+													<xmp class="prettyprint">			<div class="modal-body"></xmp>
+													<xmp class="prettyprint">				<p>Содержимое модального окна...</p></xmp>
+													<xmp class="prettyprint">			</div></xmp>
+													<xmp class="prettyprint">			<div class="modal-footer"></xmp>
+													<xmp class="prettyprint">				<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button></xmp>
+													<xmp class="prettyprint">			</div></xmp>
+													<xmp class="prettyprint">		</div></xmp>
+													<xmp class="prettyprint">	</div></xmp>
+													<xmp class="prettyprint"></div></xmp>																												
+												</div><!-- /.code-html -->
+											<!-- CSS code -->
+												<div class="code-css hide">											
+												</div><!-- /.code-css -->
+											<!-- JS code -->	
+												<div class="code-js show">												
+													<pre   class="prettyprint">$(document).ready(function(){</pre>
+													<pre   class="prettyprint">		//при нажатию на элемент, имеющий класс .open-modal, открыть модальное окно</pre>
+													<pre   class="prettyprint">		$('.open-modal').click(function(){</pre>
+													<pre   class="prettyprint">			$('#myModal').modal('show');</pre>
+													<pre   class="prettyprint">		});</pre>
+													<pre   class="prettyprint">		//отобразить сообщение, когда модальное окно будет полностью скрыто от пользователя</pre>
+													<pre   class="prettyprint">		$("#myModal").on('hidden.bs.modal', function(){</pre>
+													<pre   class="prettyprint">			alert("Модальное окно было успешно закрыто.");</pre>
+													<pre   class="prettyprint">		});</pre>
+													<pre   class="prettyprint">});</pre>											
+												</div><!-- / .code-js -->
+											</div><!-- /.code -->
+											<div class="documentation">
+												Документация:
+											  <span class="syntax">
+													<a href="https://api.jquery.com/ready/"				target="_blank"> .ready</a>
+													<a href="http://api.jquery.com/on/"					target="_blank"> .on</a>
+													<a href="https://api.jquery.com/category/selectors/"target="_blank"> jquery selectors</a>
+													<a href="https://api.jquery.com/click/"				target="_blank"> click</a>											
+											  </span>
+											  <span class="btn-more-documentation" title="Больше">
+												  <img src="dist/image/code-example/details.png">
+											  </span>
+											  <span class="btn-hide-more-documentation hide" title="Меньше">
+												  <img src="dist/image/code-example/details.png">
+											  </span>
+											  <span class="more-documentation hide">
+												  <br>
+											  </span>
+											</div><!-- /.documentation -->
+										</div><!-- /.code-example -->
+									</div><!-- / #example-structure -->	
+								<!-- / CODE EXAMPLE -->																	
 							</div>
 						</div>
 					</div>
