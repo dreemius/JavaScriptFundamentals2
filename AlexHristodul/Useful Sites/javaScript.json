@@ -1,0 +1,68 @@
+{ 
+	
+	"documentation" : {
+		
+		"dreemius_slide" : "http://slides.com/dreemius - 'Презентация Евгения Калюжного по JavaScript'",
+		"web_dev_book"   : "https://drive.google.com/folderview?id=0B03L_OmlM9g7flcwQ0NyUjdJX2xSY1AzRGkzYl9nMVlnQ19ZRTVZQ21jeEZhVzlkdGp6UW8&usp=drive_web",
+		"exersiseJS"     : "http://www.itmathrepetitor.ru/zadachi-po-javascript-iz-knigi-vyrazitelnyjj-javascript/", 
+		"gabrahimov_book": "http://gabdrahimov.ru/javascript-oglavlenie",
+		"resources_JS"   : "https://github.com/sorrycc/awesome-javascript",
+		"learn_JS_ProfW" : "http://professorweb.ru/",
+		"help_web_master": "http://help.yandex.ru/webmaster/",
+		"Library_effects": "https://codyhouse.co/",
+		"freecodecamp"   : "http://www.freecodecamp.com/map",
+		"codecademy"     : "https://www.codecademy.com/",
+		"codeschool"     : "https://www.codeschool.com/",
+		"parserJS"       : "http://esprima.org/",
+		"js_transform"   : "http://jsbeautifier.org/",
+		"regexp_map"     : "http://regexper.com",
+		"regexp_manual"  : "http://gskinner.com",
+		"all_for_web_dev": "http://vladmaxi.net/",
+		"online_game_JS" : "https://screeps.com/",
+		"emulation"      : "https://jsfiddle.net/",
+		"code_pen_emu"   : "http://codepen.io/",
+		"learn_video"    : "http://loftblog.ru/"
+ 		
+	},
+	
+	"framework" : {
+	
+		"bootstrap_en"   : "http://getbootstrap.com/",
+		"bootstrap_ru"   : "http://mybootstrap.ru/",
+		"angularJS"      : "http://angular.ru/",
+		"backbone.js"    : "http://backbonejs.org/",
+		"underscore"     : "http://underscorejs.org/",
+		"react.js"       : "http://reactjs.net/",
+		"meteor"         : "https://www.meteor.com/",
+		"jquery"         : "https://jquery.com/",
+		"ember.js"       : "http://emberjs.com/",
+		"spine.js"       : "http://spinejs.com/",
+		"knockoutJS"     : "http://knockoutjs.com/",
+		"batman.js"      : "http://batmanjs.org/",
+		"knockback"      : "http://kmalakoff.github.io/knockback/",
+		"moment.js"      : "http://momentjs.com/",
+		"agility.js"     : "http://agilityjs.com/",
+		"closure"        : "https://developers.google.com/closure/library/?csw=1",
+		"dojo"           : "http://dojotoolkit.org/",
+		"yui"            : "http://yuilibrary.com/",
+		"can"            : "http://canjs.com/"
+	
+	},
+	
+	"plugins" : {
+	
+		"responsify.js"  : "http://responsifyjs.space/ - 'Адаптивное изображение'",
+		"booking.js"     : "http://booking.timekit.io/ - 'Делаем симпатичный виджет для букинга за минуты'",
+		"missplate"      : "http://xavi.github.io/miss-plete/ - 'Плагин для автозаполнения'",
+		"post.css"       : "http://postcss.parts/ - 'Удобный каталог плагинов для PostCSS'",
+		"highway"        : "https://github.com/ashh640/Highway - 'Библиотека для роуитнга без зависимостей'"
+		
+	},
+	
+	"jquery" : {
+		
+		"light_box"      : "http://leandrovieira.com/projects/jquery/ligthbox/"
+		
+	}
+	
+}
