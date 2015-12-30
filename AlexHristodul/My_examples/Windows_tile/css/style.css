@@ -1,0 +1,223 @@
+/* flexible media */
+article, aside, details, figcaption, figure, footer, header, menu, nav, section, img {
+	display: block;
+}
+
+/* mobile first */
+/* flexible grid */
+.container .cols.col-1 {width: 33.33333332%;}
+.container .cols.col-2,
+.container .cols.col-3,
+.container .cols.col-4,
+.container .cols.col-5,
+.container .cols.col-6,
+.container .cols.col-7,
+.container .cols.col-8,
+.container .cols.col-9,
+.container .cols.col-10,
+.container .cols.col-11,
+.container .cols.col-12 {width: 100%;}
+
+.container .cols {
+	background-color: #5cb85c;
+	border-left: 5px solid #036;
+	border-right: 5px solid #036;
+	position: relative;
+	font-size: 1.5em;
+	overflow: hidden;
+	float: left;
+	margin: 0 0 1em;
+	padding: 1em;
+	height: 150px;
+}
+
+.container .cols:hover {
+	border: 2px solid #fff;
+}
+
+.container:before,
+.container:after,
+.row:after,
+.row:before,
+.clear:before,
+.clear:after {
+	content: "";
+	display: table;
+}
+
+.container:after,
+.row:after,
+.clear:after {
+	clear: both;
+}
+
+/* ================================================ */
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #036;
+	font: 100%/1.5em Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+.container {
+	width: 90%;
+	margin: 50px auto;
+	background-color: #036;
+}
+
+.container .cols span {
+	position: absolute;
+	top: 8em;
+}
+
+.icons {
+	background-image: url(../img/Icons.png);
+	position: absolute;
+	max-width: 100%;
+	left: 30%;
+	top: 20%;
+	width: 75px;
+	height: 75px;
+}
+
+.about {
+	background-position: 25% 0;
+}
+
+.portfolio {
+	background-position: 50% 0;
+	left: 40%;
+}
+
+.photos {
+	background-position: 75% 0;
+}
+
+.test {
+	background-position: 97% 0;
+}
+
+.hire {
+	background-position: 0 40%;
+	left: 40%;
+}
+
+.blog {
+	background-position: 100% 40%;
+	left: 0;
+	top: 0;
+	width: 250px;
+	height: 150px;
+}
+
+.contact {
+	background-position: 23% 40%;
+}
+
+#header {
+	border: 5px solid #036;
+	height: 75px;
+	background-color: transparent;
+	padding: 0;
+}
+
+#header:hover,
+#text:hover {
+	border: 5px solid #036;
+}
+
+#home {
+	background-color: #39f;
+}
+
+#about {
+	background-color: #f9be3e;
+}
+
+#portfolio {
+	background-color: #d3583e;
+}
+
+#photos {
+	background-color: #59b0e2;
+}
+
+#testimonials {
+	background-color: #32af95;
+}
+
+#hire {
+	background-color: #86a73f;
+}
+
+#blog {
+	background-color: #151a26;
+}
+
+#contact {
+	background-color: #7e5b8c;
+}
+
+.container .cols.col-1,
+.container .cols.col-9 {
+	background-color: transparent;
+	height: 100px;
+	padding-top: 4em;
+
+}
+
+#facebook {
+	background-image: url(../img/Icons.png);
+	background-position: 48% 91%;
+	background-size: 39em;
+}
+
+#twitter {
+	background-image: url(../img/Icons.png);
+	background-position: 72% 91%;
+	background-size: 39em;
+}
+
+#google {
+	background-image: url(../img/Icons.png);
+	background-position: 97% 91%;
+	background-size: 39em;
+}
+
+#text {
+	border: 5px solid #036;
+	background-color: transparent;
+	text-align: right;
+	height: 120px;
+}
+
+@media only screen and (min-width: 321px) {
+	/* flexible grid */
+	.container .cols.col-1 {width: 8.3333333333332%;}
+	.container .cols.col-2 {width: 16.666666667%;}
+	.container .cols.col-3 {width: 25%;}
+	.container .cols.col-4 {width: 33.333333333%;}
+	.container .cols.col-5 {width: 41.666666667%;}
+	.container .cols.col-6 {width: 50%;}
+	.container .cols.col-7 {width: 58.333333333%;}
+	.container .cols.col-8 {width: 66.666666667%;}
+	.container .cols.col-9 {width: 75%;}
+	.container .cols.col-10 {width: 83.33333333%;}
+	.container .cols.col-11 {width: 91.66666667%;}
+	.container .cols.col-12 {width: 100%;}
+
+	#blog h3,
+	#blog span,
+	#blog p {
+		position: absolute;
+		left: 40%;
+	}
+}

@@ -1,82 +1,90 @@
 showCodeExample = (function () {
-	
-	var codeRow					= document.querySelector(".code-example"),	
-		buttonHTML 				= document.querySelector("#html"),
-		buttonCSS				= document.querySelector("#css"),
-		buttonJS				= document.querySelector("#js"),
-		buttonBlackCode			= document.querySelector(".btn-black"),
-		buttonWhiteCode			= document.querySelector(".btn-white"),
-		buttonCopyCode			= document.querySelector("#copy"),
-		htmlCode 				= document.querySelector("#code-html"),
-		cssCode 				= document.querySelector("#code-css"),
-		jsCode 					= document.querySelector("#code-js"),
-		codeText				= document.querySelector("#code"),
-		instruction				= document.querySelector(".instruction"),
-		buttonDocumentation 	= document.querySelector("#btn-more-documentation"),
-		buttonHideMoreDoc		= document.querySelector("#btn-hide-more-documentation"),
-		showMoreDocumentation 	= document.querySelector("#more-documentation");
-	
-	function showCode(name) {
-		if(name === "html") {
-			clearButtonActivity ();
-			buttonHTML.className="btn-html active";
-			htmlCode.className="show";
-		}else if(name === "css") {
-			clearButtonActivity ();
-			buttonCSS.className="btn-css active";
-			cssCode.className="show";
-		}else if(name === "js") {
-			clearButtonActivity ();
-			buttonJS.className="btn-js active";
-			jsCode.className="show";
-		}else if(name === "black") {
-			codeText.className="";
-			codeRow.className="code-example black";
-			buttonBlackCode.className="btn-black background-black";
-		}else if(name === "white") {
-			codeText.className="code";
-			codeRow.className="code-example";
-		}else if(name === "copy") {
-			new Clipboard('.btn-clipboard');
-		}else if(name === "more-documentation") {
-			showMoreDocumentation.className="";
-			buttonDocumentation.className="hide";
-			buttonHideMoreDoc.className="";
-		}else if(name === "hide-more-documentation") {
-			showMoreDocumentation.className="hide";
-			buttonHideMoreDoc.className="hide";
-			buttonDocumentation.className="";
-		}
+	function run(name) {
+
+		var el						= document.getElementById(name),
+			codeRow					= el.querySelector(".code-example"),
+			faq						= el.querySelector(".what-button-means"),
+			buttonFAQ				= el.querySelector(".faq-code-examlpe"),
+			buttonHTML 				= el.querySelector(".btn-html"),
+			buttonCSS				= el.querySelector(".btn-css"),
+			buttonJS				= el.querySelector(".btn-js"),
+			buttonBlackCode			= el.querySelector(".btn-black"),
+			buttonWhiteCode			= el.querySelector(".btn-white"),
+			buttonCopyCode			= el.querySelector(".copy"),
+			htmlCode 				= el.querySelector(".code-html"),
+			cssCode 				= el.querySelector(".code-css"),
+			jsCode 					= el.querySelector(".code-js"),
+			codeText				= el.querySelector(".code"),
+			buttonDocumentation 	= el.querySelector(".btn-more-documentation"),
+			buttonHideMoreDoc		= el.querySelector(".btn-hide-more-documentation"),
+			showMoreDocumentation 	= el.querySelector(".more-documentation");
 		
-		function clearButtonActivity () {
-			buttonHTML.className	="btn-html";
-			buttonCSS.className		="btn-css";
-			buttonJS.className		="btn-js";
-			htmlCode.className		="hide";
-			cssCode.className		="hide";
-			jsCode.className		="hide";
+		showCode = (function showCode() {
+			
+			el.addEventListener("click", function(event) {
+				var target = event.target;			
+				
+				if(target.className == "btn-html") {
+					clearButtonActivity ();
+					target.className="btn-html active";
+					htmlCode.className="show";
+				}else if(target.className === "btn-css") {
+					clearButtonActivity ();
+					target.className="btn-css active";
+					cssCode.className="show";
+				}else if(target.className === "btn-js") {
+					clearButtonActivity ();
+					target.className="btn-js active";
+					jsCode.className="show";
+				}else if(target.className === "black") {
+					codeText.className="";
+					codeRow.className="code-example black";
+					buttonBlackCode.className="btn-black background-black";
+				}else if(target.className === "white") {
+					codeText.className="code";
+					codeRow.className="code-example";
+				}else if(target.className === "copy") {
+					new Clipboard('.btn-clipboard');
+				}else if(target.className === "btn-more-documentation") {
+					target.className="btn-more-documentation hide";
+					showMoreDocumentation.className="more-documentation";
+					buttonHideMoreDoc.className="btn-hide-more-documentation";
+				}else if(target.className === "btn-hide-more-documentation") {
+					target.className="btn-hide-more-documentation hide";
+					showMoreDocumentation.className="more-documentation hide";				
+					buttonDocumentation.className="btn-more-documentation";
+				}else if(target.className === "btn btn-default btn-xs faq-code-examlpe") {
+					faq.className="what-button-means";
+					buttonFAQ.className="btn btn-success btn-xs faq-code-examlpe-active";
+					buttonFAQ.innerHTML="Скрыть описание"
+				}else if(target.className === "btn btn-success btn-xs faq-code-examlpe-active") {
+					faq.className="what-button-means hide";
+					buttonFAQ.className="btn btn-default btn-xs faq-code-examlpe";
+					buttonFAQ.innerHTML="Что значат кнопки?"
+				}
+				
+				function clearButtonActivity () {
+					buttonHTML.className	="btn-html";
+					buttonCSS.className		="btn-css";
+					buttonJS.className		="btn-js";
+					htmlCode.className		="hide";
+					cssCode.className		="hide";
+					jsCode.className		="hide";
+				}
+			})
+		}())
+	}	
+		
+		return {
+			init : function(id){
+				run(id);
+			}
 		}
-	}
-	
-	function setEventListener() {
-		buttonHTML.addEventListener("click",	  		function showHTML(event)		{	showCode("html")					});
-		buttonCSS.addEventListener("click",		  		function showCSS(event)			{	showCode("css")						});
-		buttonJS.addEventListener("click",		  		function showJS(event)			{	showCode("js") 						});
-		buttonBlackCode.addEventListener("click", 		function showBlackCode(event)	{	showCode("black")					});
-		buttonWhiteCode.addEventListener("click", 		function showWhiteCode(event) 	{	showCode("white")					});
-		buttonCopyCode.addEventListener("click",  		function copyCode(event) 		{	showCode("copy");					});
-		buttonDocumentation.addEventListener("click", 	function showMoreDoc(event) 	{	showCode("more-documentation");		});
-		buttonHideMoreDoc.addEventListener("click",  	function hideMoreDoc(event) 	{	showCode("hide-more-documentation");});
-	}
-
-	
-
-	
-	return {
-		init : function(){
-	 		setEventListener()
-		}
-	}
 }());
 
-showCodeExample.init();
+showCodeExample.init("example-show-msg");
+showCodeExample.init("example-change-txt");
+showCodeExample.init("every-5-minute");
+showCodeExample.init("example-simple");
+showCodeExample.init("example-js");
+showCodeExample.init("example-structure");
