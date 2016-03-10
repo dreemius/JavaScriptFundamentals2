@@ -1,0 +1,214 @@
+
+/*-- <STYLE FOR NAVIGATION> --*/
+.navigation {
+    margin-bottom: 1em;
+    padding: 0.3em 1em;
+    width: auto;
+    border-radius:  3em 0.01em ;
+    background: rgba(211, 211, 211, 0.55);
+    font-weight: bold;
+}
+
+.navigation > span {
+    padding: 0.2em 0.5em;
+}
+
+.navigation > span > a {
+	text-decoration: none;
+	color: rgba(165, 94, 19, 0.65);
+}
+.navigation > span > a:hover {
+    color: rgba(165, 94, 19, 0.88);
+}
+
+#navigation-instruction {
+    width: 40em;
+}
+
+#nav-tags > .main-tag {
+    margin: 0.1em 0.5em;
+    padding:    0.1em 0.7em;
+    border-radius:  3em 0.01em  0.01em 3em ;
+    float:  right;
+    background: rgba(62, 175, 26, 0.56);
+    color:  white;
+    cursor: default;
+}
+/*-- </ STYLE FOR NAVIGATION> --*/
+
+/*-- <STYLE FOR SHOW CODE EXAMPLE> --*/
+/*-- Show code --*/
+.show {
+	display: block;
+	overflow: auto;
+    width:  100%;
+    height: 19.8em;
+}
+
+.hide {
+    display: none;
+}
+	
+.code-example {
+    position: relative;
+    border: 0.2em solid grey;
+    width: 55em;
+    height: 25em;
+	margin: 1em 1em 1em 0.1em;
+}
+
+/*-- Buttons --*/
+.code-example > #buttons 		{	padding-bottom: 3em;}
+
+.code-example > .buttons-black 	{	background: black; 	}
+
+.code-example > #buttons > .btn-html, .btn-css, .btn-js {
+    padding: 0.37em 1em;
+    background: slategrey;
+    text-align: center;
+	text-decoration: none;
+    color: white;
+    font-weight: bold;
+	border-bottom: 0.3em solid slategrey;
+    cursor: default;
+}
+
+.code-example > #buttons > .btn-html, .btn-css, .btn-js  	{ float:left; }
+
+.code-example > #buttons > .btn-html:hover, .btn-css:hover, .btn-js:hover{ background: lightgrey; }
+.code-example > #buttons > .btn-html:hover	{ border-bottom: 0.3em solid rgb(236, 133, 25); }
+.code-example > #buttons > .btn-css:hover 	{ border-bottom: 0.3em solid rgb(45, 139, 255); }
+.code-example > #buttons > .btn-js:hover 	{ border-bottom: 0.3em solid rgb(239, 231, 2); 	}
+
+
+.code-example > #buttons > .btn-html.active, .btn-css.active, .btn-js.active  { background: rgba(16, 15, 15, 0.8); }
+.code-example > #buttons > .btn-html.active { border-bottom: 0.3em solid rgb(236, 133, 25); }
+.code-example > #buttons > .btn-css.active 	{ border-bottom: 0.3em solid rgb(45, 139, 255); }
+.code-example > #buttons > .btn-js.active 	{ border-bottom: 0.3em solid rgb(239, 231, 2); 	}
+
+.code-example > #buttons > .run, .copy, .download   {
+    float:right;
+	padding: 0.5em 1em;
+}
+
+.code-example > #buttons > .run      {  padding-top: 0.4em;  }
+
+.code-example > #buttons > .download {  padding-top: 0.2em;  }
+
+.btn-white, .btn-black {
+    width: 1.2em;
+    height: 1.2em;
+    margin: 0.5em 0.5em;
+    float: left;
+    border: 0.1em solid black;
+}
+
+.btn-white {    background:white; }
+
+.btn-black {
+    margin-left: 4em;
+    background: black;
+}
+
+.btn-white:hover, .btn-black:hover {    border: 0.1em solid grey; }
+.btn-white.background-black, .btn-black.background-black  {	border: 0.1em solid white;}
+
+/*-- Show text Code --*/
+.code {  background: #f8f7f2; }
+
+/*-- Documentation row --*/
+.code-example >.documentation {
+    position: absolute; bottom: 0;
+    padding: 0.2em 0.5em;
+    width:  100%;
+    background: lightgrey;
+	color: rgba(165, 94, 19, 0.72);
+}
+
+.syntax a, .more-documentation  a {
+	text-decoration: none;
+	cursor: help;
+}
+
+.syntax  a:hover, .more-documentation  a:hover  {	text-decoration: underline; }
+
+.code-example >.documentation > .btn-more-documentation, .btn-hide-more-documentation  {
+	float:right;
+}
+/*-- </STYLE FOR SHOW CODE EXAMPLE> --*/
+
+
+/*-- <STYLE FOR DESCRIPTION> --*/
+.image-in-article {
+    padding: 2em;
+}
+
+.image-in-article > img {
+    width: 55em;
+    border-radius: 0.3em;
+}
+
+.lists {
+    color: rgba(165, 94, 19, 0.72);
+}
+
+.lists-text {
+    padding-left: 0.5em;
+    color: grey;
+}
+
+.box-title {
+    padding: 1em;
+}
+
+.small-code {
+    font-size: 0.85em;
+    overflow: auto;
+}
+
+#share {
+	padding: 1em;
+	margin: 1em;
+}
+#recomendation {
+	width: 55em;
+	margin: 1em;
+}
+.recomendation-article	{
+	float:  left;
+	padding: 2em;
+}
+.recomendation-libes {
+	float:  right;
+	padding: 2em;
+}
+/*-- </STYLE FOR DESCRIPTION> --*/
+
+/*-- </STYLE FOR SITEBAR> --*/
+.right-sitebar {
+    padding: 1em 1em 1em 0;
+    border-radius: 0.5em;
+    background: rgba(240, 248, 255, 0.6);
+    color: rgba(165, 94, 19, 0.72);
+	
+}
+
+.right-sitebar > ul {
+	padding-left: 0;
+	margin: 1em;
+}
+
+.right-sitebar > ul > li            {  list-style: none;  }
+
+.right-sitebar > ul > li > ul > li  {  list-style: none;  }
+
+.right-sitebar > ul > li > ul       {  padding-left: 1em;  }
+
+.right-sitebar a       {  color:grey;  }
+
+.right-sitebar a:hover {
+	text-decoration:none;
+    color: rgba(165, 94, 19, 0.94);
+}
+
+

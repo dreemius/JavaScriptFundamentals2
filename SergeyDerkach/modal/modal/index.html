@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>modal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this page -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- div -->
+<div class="content">
+    <!-- Button to trigger modal -->
+    <a href="#myModal" role="button" class="btn" data-toggle="modal">Запустить демонстрацию модального элемента</a>
+
+    <!-- Modal -->
+    <!-- div modal block   -->
+    <div class="content main">
+        <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <!-- modal header -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">?</button>
+                <h3 id="myModalLabel">Заголовок модального элемента</h3>
+            </div>
+            <!-- modal body -->
+            <div class="modal-body">
+                <p>Некое изящное тело…</p>
+            </div>
+            <!--  modal footer -->
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+                <button class="btn btn-primary">Сохранить изменения</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a data-toggle="modal" href="remote.html" data-target="#modal">Нажать</a>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

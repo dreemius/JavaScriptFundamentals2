@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Introduction to carousel</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" id="start">Начало</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#" id="demo">Демо</a></li>
+            <li>
+              <div class="iMenu" id="first-menu">
+                <a href="#" class="install">Инструкция</a><br/><br/>
+                <a href="#" class="install">Начало</a><br/>
+                <a href="#pointers" class="install">Указатели</a><br/>
+                <a href="#content" class="install">Содержание</a><br/>
+                <a href="#control" class="install">Управление</a><br/>
+                <a href="#settings" class="install">Настройка</a><br/>
+                <a href="#end" class="install">Заключение</a>
+              </div>
+            </li>
+            <li>
+              <div class="iMenu" id="second-menu">
+                <a href="#" class="full-code">Готовый код</a><br/><br/>
+                <a href="#" class="full-code">Html</a><br/>
+                <a href="#code-js" class="full-code">JavaScript</a>
+              </div>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container_1" id="start_page">
+      <h3>Здраствуйте дорогие Веб-разработчики!!!</h3>
+      <h4>На этом замечательном сайте у Вас есть возможность <br/>
+          познакомиться с крутым "Bootstrap" эфектом под названием:</h4>
+      <hr/><h1>***<span>CAROUSEL</span>***</h1><hr/>
+      <p><span class="p-first-word">"Карусель"(carousel)</span> - это автоматически-последовательное отображение изображений,
+        но также оно может отображать последние завершенные проекты,отзывы ваших клиентов, описание специальных предложений,
+        ссылки на новости или последние статьи из блога. В этой статье мы рассмотрим,
+        как создать слайдер с помощью компонента Carousel в Twitter Bootstrap 3.
+      </p><br/>
+      <p>Первым делом Вам нужно скачать библиотеку Bootstrap 3.<br/>Для этого переходим на
+        <a href="http://getbootstrap.com/">официальный сайт</a><br/>--> жмём на кнопку "Download Bootstrap"<br/>
+        --> в открытом окне жмём на такую же кнопку<br/>--> разархивируйте файл в папку с вашим проектом!<br/>
+        Чтобы узнать как подключить библиотеку прочитайте <a href="http://bootstrap-ru.com/300/getting-started/">это</a><br/>
+        или взгляните на пример в разделе <a href="#" class="full-code">"Готовый код"</a>
+      </p>
+      <p>
+        Чистосердечно желаю Вам удачи и научиться качественно использовать библиотеку Twitter Bootstrap 3.<br/>
+        С уважением iPhoenix© development :)
+      </p>
+    </div>
+    <p>
+  <div class="container_1" id="instruction">
+      <h2>Подробное руководство по подключению:<br/> "Bootstrap Carousel"</h2><br/>
+      <hr/>
+      <p>Cлайдер Bootstrap 3 делится на несколько частей:</p>
+      <ul><b>
+        <li>Индикаторы,</li>
+        <li>Содержание слайда,</li>
+        <li>Элементы управления.</li>
+      </b></ul>
+      <div>Для начала создаём элемент <span class="el-wrap">&lt;div&gt;</span>.
+        <div class="code-view"><xmp>
+           <!-- Создание элемента div и преобразование его в carousel -->
+           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+             ...
+           </div>
+        </xmp></div>
+        Чтобы переобразовать элемент <span class="el-wrap">&lt;div&gt;</span> в слайдер, мы добавляем имена классов:
+        <b><em>carousel</em></b> и <b><em>slide</em></b>.<br/>
+        Класс <b><em>carousel</em></b> создает эффект «карусели», то есть изменяет слайды по кругу.<br/>
+        Класс <b><em id="pointers">slide</em></b> добавляет скользящую анимацию из правой или левой стороны.<br/>
+        <hr/>
+        <span class="p-first-word">Указатели</span> - это маленькие круги в нижней части слайдера,
+        они определяют текущее положение слайда и количество слайдов.
+        Указатели создаются с помощью упорядоченного списка.
+        <div class="code-view"><xmp>
+          <!-- Индикаторы -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+        </xmp></div>
+        Упорядоченный список имеет класс <b><em>carousel-indicators</em></b>, который преобразует дочерние элементы в виде небольших кругов.
+        Каждый элемент <span class="el-wrap">&lt;li&gt;</span> должен иметь атрибут <em>data-target</em> с идентификатором родительского контейнера.
+        Он также должен иметь атрибут <em id="content">data-slide-to</em> с уникальным цифровым значением, чтобы ссылаться на конкретный слайд,
+        значения должны начинаться с "0".
+        <hr/>
+        <span class="p-first-word">Содержание слайда</span> - это важнейшая часть слайдера, именно здесь мы разместим наше содержание для слайдера.
+        Содержание определяется с помощью класса <b><em>carousel-inner</em></b>.
+        Этот элемент <span class="el-wrap">&lt;div&gt;</span> может иметь неограниченное количество вложенных <span class="el-wrap">&lt;div&gt;</span>-ов.
+        Первый элемент должен быть активным по умолчанию, так что добавьте класс <b><em>active</em></b>.
+        <div class="code-view"><xmp>
+          <!-- Содержание слайдов -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <!-- Здесь вы можете прописать своё изображение -->
+              <img src="..." alt="...">
+              <div class="carousel-caption">
+                <h3>Название слайда</h3>
+                <p>Информация</p>
+              </div>
+            </div>
+            <!-- Здесь вы можете добавить ещё слайды -->
+            ...
+          </div>
+        </xmp></div>
+        Каждый элемент с классом <b><em>item</em></b> имеет два подраздела: <span class="el-wrap">&lt;img&gt;</span> и <b><em>carousel-caption</em></b>.
+        Изображение используется в качестве фона для слайда.
+        Элемент с классом <b><em>carousel-caption</em></b> расположен над изображением, и используется в качестве заголовка слайда.
+        Внутри <b><em>carousel-caption</em></b>, мы можем добавить <span class="el-wrap">&lt;h3&gt; &lt;/h3&gt;</span>
+        или <span class="el-wrap" id="control">&lt;p&gt; &lt;/p&gt;</span> теги, или даже оба.
+        <hr/>
+        <span class="p-first-word">Управление</span> осуществляется стрелками влево и вправо, они используются для изменения слайдов вручную.
+        <div class="code-view"><xmp>
+          <!-- Элементы управления -->
+          <a class="left carousel-control" href="#carousel-example-generic" 
+			role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" 
+			role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </xmp></div>
+        Там должно быть два элемента: по одному для каждого направления.
+        Первый элемент будет иметь <span class="el-wrap">&lt;span&gt;</span> элемент с классами <em><b>glyphicon glyphicon-chevron-left</b></em>,
+        который является значком со стрелкой влево, а второй элемент будет иметь классы <em><b>glyphicon glyphicon-chevron-right</b></em>,
+        это стрелка вправо. В Bootstrap, чтобы отобразить иконки, мы можем использовать шрифты вместо изображений.
+        <hr/>
+        Вот и всё! Вы успешно создали слайдер для вашего сайта.<br/>
+        Кроме того, вы не написали ни строчки кода <b id="settings">JavaScript</b>, но bootstrap.js сделал все за вас.
+        <hr/>
+        <h2>Настройки Carousel</h2>
+        Для дополнительной настройки слайдера можно добавить несколько атрибутов <b>data-*</b> для родительского контейнера карусели.
+          <ul>
+            <li>
+              <b>"data-interval"</b> используется для указания интервала времени между переключением слайдов.
+              Он принимает числовое значение, и число должно быть в миллисекундах.
+            </li>
+            <li>
+              <b>"data-pause"</b> используется для определения момента, когда событие "пауза" будет вызвано.
+              Например, когда оно равно <b>"hover"</b>, переключение слайдов останавливается, когда мышь находится над слайдером.
+            </li>
+            <li>
+              <b>"data-wrap"</b> является булевым атрибутом и позволяет установить, следует ли возобновить переключение слайдов,
+              если конец списка слайдов будет достигнут.
+            </li>
+          </ul>
+        <hr/>
+        <h2>Настройка с jQuery</h2>
+        Если вы хотели бы использовать <b>jQuery</b> и <b>data-*</b> атрибуты, Bootstrap позволяет инициализацию с помощью <b>JavaScript</b>.
+        Для этого вы можете написать следующий код:
+        <div class="code-view"><xmp>
+          $('.carousel').carousel();
+        </xmp></div>
+        Настройки карусели могут быть установлены с помощью параметров. Например:
+        <div class="code-view"><xmp>
+          $('.carousel').carousel({
+            interval : 5000,    // интервал показа слайдов 5 секунд;
+            pause    : 'hover', // пауза при наведении;
+            wrap     : true,    // возобновление цикла показа слайдов;
+            keyboard : true     // использование клавиатуры;
+          });
+        </xmp></div>
+        Вы также можете вызвать вручную события слайдера, используя следующий код:
+          <ul>
+            <li>.carousel("pause") // пауза</li>
+            <li>.carousel("cycle") // включить слайды</li>
+            <li>.carousel(3)       // показать четвертый слайд</li>
+            <li>.carousel("prev")  // показать предыдущий слайд</li>
+            <li>.carousel("next")  // показать следующий слайд</li>
+          </ul>
+        Приведенные выше методы могут быть вызваны из любого кода <b>JavaScript</b>, чтобы управлять обычной работой слайдера.
+        Я считаю, что <b id="end">prev</b> и <b>next</b> методы очень полезны если я хочу показать мои собственные кнопки вместо стандартных стрелок.
+        Особенно, когда они находятся за пределами макета карусели.
+        <hr/>
+        <h2>Заключение</h2>
+        Эта статья должна быть полезной для тех, кто хочет узнать как создать слайдер без написания тысячи строк кода в <b>JavaScript</b>.
+        Без сомнения, это позволит увеличить скорость разработки.
+        Самое главное, что это решение кроссбраузерно, так что вам не придется рвать на себе волосы, чтобы заставить его работать в старых браузерах.
+      </div>
+  </div>
+    <div class="container_1" id="full_code">
+      <h2>HTML</h2>
+      <hr/>
+      <xmp>
+        <!DOCTYPE html>
+        <html lang="ru">
+        <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Bootstrap carousel</title>
+
+          <!-- Подключаем Bootstrap CSS -->
+          <link href="css/bootstrap.min.css" rel="stylesheet">
+
+          <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+          <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+          <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+        </head>
+        <body>
+
+          <div id="carousel-examplу-generic" class="carousel slide">
+
+            <!-- Индикаторы -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Содержание слайдов -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <!-- Здесь вы можете прописать своё изображение -->
+                <img src="..." alt="...">
+                <div class="carousel-caption">
+                  <h3>Название слайда</h3>
+                  <p>Информация</p>
+                </div>
+              </div>
+              <div class="item">
+                <!-- Здесь вы можете прописать своё изображение -->
+                <img src="..." alt="...">
+                <div class="carousel-caption">
+                  <h3>Название слайда</h3>
+                  <p>Информация</p>
+                </div>
+              </div>
+              <!-- Здесь вы можете добавить ещё слайды -->
+              ...
+            </div>
+
+            <!-- Элементы управления -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+		
+		<!-- Вызов carousel прямо в файле HTML -->
+        <script type="text/javascript">
+          $(document).ready(function(){
+			 // Вызываем "Карусель"
+			$('.carousel').carousel({
+				interval: 7000, // интервал показа слайдов;
+				pause: 'hover', // пауза;
+				wrap: true,     // возобновление цикла показа слайдов;
+				keyboard: true  // использование клавиатуры;
+			});
+          });
+        </script>
+		
+        <!-- jQuery (необходимо для Bootstrap's JavaScript плагины) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Подключаем Bootstrap JavaScript -->
+        <!-- Включает все компилированные плагины -->
+        <script src="js/bootstrap.min.js"></script>
+        </body>
+        </html>
+      </xmp>
+      <div id="code-js"></div>
+      <br/><br/>
+      <h2>JavaScript</h2>
+      <hr/>
+      <xmp>
+        /* ========================================================================
+        * Bootstrap: carousel.js v3.3.5
+        * http://getbootstrap.com/javascript/#carousel
+        * ========================================================================
+        * Copyright 2011-2015 Twitter, Inc.
+        * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+        * ======================================================================== */
+
+
+        +function ($) {
+        'use strict';
+
+        // CAROUSEL CLASS DEFINITION
+        // =========================
+
+        var Carousel = function (element, options) {
+        this.$element    = $(element)
+        this.$indicators = this.$element.find('.carousel-indicators')
+        this.options     = options
+        this.paused      = null
+        this.sliding     = null
+        this.interval    = null
+        this.$active     = null
+        this.$items      = null
+
+        this.options.keyboard && this.$element.on('keydown.bs.carousel', $.proxy(this.keydown, this))
+
+        this.options.pause == 'hover' && !('ontouchstart' in document.documentElement) && this.$element
+        .on('mouseenter.bs.carousel', $.proxy(this.pause, this))
+        .on('mouseleave.bs.carousel', $.proxy(this.cycle, this))
+        }
+
+        Carousel.VERSION  = '3.3.5'
+
+        Carousel.TRANSITION_DURATION = 600
+
+        Carousel.DEFAULTS = {
+        interval: 5000, // интервал показа слайдов;
+        pause: 'hover', // пауза;
+        wrap: true,     // возобновление показа слайдов;
+        keyboard: true  // использование клавиатуры;
+        }
+
+        Carousel.prototype.keydown = function (e) {
+        if (/input|textarea/i.test(e.target.tagName)) return
+        switch (e.which) {
+        case 37: this.prev(); break
+        case 39: this.next(); break
+        default: return
+        }
+
+        e.preventDefault()
+        }
+
+        Carousel.prototype.cycle = function (e) {
+        e || (this.paused = false)
+
+        this.interval && clearInterval(this.interval)
+
+        this.options.interval
+        && !this.paused
+        && (this.interval = setInterval($.proxy(this.next, this), this.options.interval))
+
+        return this
+        }
+
+        Carousel.prototype.getItemIndex = function (item) {
+        this.$items = item.parent().children('.item')
+        return this.$items.index(item || this.$active)
+        }
+
+        Carousel.prototype.getItemForDirection = function (direction, active) {
+        var activeIndex = this.getItemIndex(active)
+        var willWrap = (direction == 'prev' && activeIndex === 0)
+        || (direction == 'next' && activeIndex == (this.$items.length - 1))
+        if (willWrap && !this.options.wrap) return active
+        var delta = direction == 'prev' ? -1 : 1
+        var itemIndex = (activeIndex + delta) % this.$items.length
+        return this.$items.eq(itemIndex)
+        }
+
+        Carousel.prototype.to = function (pos) {
+        var that        = this
+        var activeIndex = this.getItemIndex(this.$active = this.$element.find('.item.active'))
+
+        if (pos > (this.$items.length - 1) || pos < 0) return
+
+        if (this.sliding)       return this.$element.one('slid.bs.carousel', function () { that.to(pos) })
+        if (activeIndex == pos) return this.pause().cycle()
+
+        return this.slide(pos > activeIndex ? 'next' : 'prev', this.$items.eq(pos))
+        }
+
+        Carousel.prototype.pause = function (e) {
+        e || (this.paused = true)
+
+        if (this.$element.find('.next, .prev').length && $.support.transition) {
+        this.$element.trigger($.support.transition.end)
+        this.cycle(true)
+        }
+
+        this.interval = clearInterval(this.interval)
+
+        return this
+        }
+
+        Carousel.prototype.next = function () {
+        if (this.sliding) return
+        return this.slide('next')
+        }
+
+        Carousel.prototype.prev = function () {
+        if (this.sliding) return
+        return this.slide('prev')
+        }
+
+        Carousel.prototype.slide = function (type, next) {
+        var $active   = this.$element.find('.item.active')
+        var $next     = next || this.getItemForDirection(type, $active)
+        var isCycling = this.interval
+        var direction = type == 'next' ? 'left' : 'right'
+        var that      = this
+
+        if ($next.hasClass('active')) return (this.sliding = false)
+
+        var relatedTarget = $next[0]
+        var slideEvent = $.Event('slide.bs.carousel', {
+        relatedTarget: relatedTarget,
+        direction: direction
+        })
+        this.$element.trigger(slideEvent)
+        if (slideEvent.isDefaultPrevented()) return
+
+        this.sliding = true
+
+        isCycling && this.pause()
+
+        if (this.$indicators.length) {
+        this.$indicators.find('.active').removeClass('active')
+        var $nextIndicator = $(this.$indicators.children()[this.getItemIndex($next)])
+        $nextIndicator && $nextIndicator.addClass('active')
+        }
+
+        var slidEvent = $.Event('slid.bs.carousel', { relatedTarget: relatedTarget, direction: direction })
+        if ($.support.transition && this.$element.hasClass('slide')) {
+        $next.addClass(type)
+        $next[0].offsetWidth // force reflow
+        $active.addClass(direction)
+        $next.addClass(direction)
+        $active
+        .one('bsTransitionEnd', function () {
+        $next.removeClass([type, direction].join(' ')).addClass('active')
+        $active.removeClass(['active', direction].join(' '))
+        that.sliding = false
+        setTimeout(function () {
+        that.$element.trigger(slidEvent)
+        }, 0)
+        })
+        .emulateTransitionEnd(Carousel.TRANSITION_DURATION)
+        } else {
+        $active.removeClass('active')
+        $next.addClass('active')
+        this.sliding = false
+        this.$element.trigger(slidEvent)
+        }
+
+        isCycling && this.cycle()
+
+        return this
+        }
+
+
+        // CAROUSEL PLUGIN DEFINITION
+        // ==========================
+
+        function Plugin(option) {
+        return this.each(function () {
+        var $this   = $(this)
+        var data    = $this.data('bs.carousel')
+        var options = $.extend({}, Carousel.DEFAULTS, $this.data(), typeof option == 'object' && option)
+        var action  = typeof option == 'string' ? option : options.slide
+
+        if (!data) $this.data('bs.carousel', (data = new Carousel(this, options)))
+        if (typeof option == 'number') data.to(option)
+        else if (action) data[action]()
+        else if (options.interval) data.pause().cycle()
+        })
+        }
+
+        var old = $.fn.carousel
+
+        $.fn.carousel             = Plugin
+        $.fn.carousel.Constructor = Carousel
+
+
+        // CAROUSEL NO CONFLICT
+        // ====================
+
+        $.fn.carousel.noConflict = function () {
+        $.fn.carousel = old
+        return this
+        }
+
+
+        // CAROUSEL DATA-API
+        // =================
+
+        var clickHandler = function (e) {
+        var href
+        var $this   = $(this)
+        var $target = $($this.attr('data-target') || (href = $this.attr('href'))
+                      && href.replace(/.*(?=#[^\s]+$)/, ''))
+        if (!$target.hasClass('carousel')) return
+        var options = $.extend({}, $target.data(), $this.data())
+        var slideIndex = $this.attr('data-slide-to')
+        if (slideIndex) options.interval = false
+
+        Plugin.call($target, options)
+
+        if (slideIndex) {
+        $target.data('bs.carousel').to(slideIndex)
+        }
+
+        e.preventDefault()
+        }
+
+        $(document)
+        .on('click.bs.carousel.data-api', '[data-slide]', clickHandler)
+        .on('click.bs.carousel.data-api', '[data-slide-to]', clickHandler)
+
+        $(window).on('load', function () {
+        $('[data-ride="carousel"]').each(function () {
+        var $carousel = $(this)
+        Plugin.call($carousel, $carousel.data())
+        })
+        })
+
+        }(jQuery);
+      </xmp>
+    </div>
+
+    <div class="container" id="carousel">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img alt="First slide" src="img/Girls_1.jpg">
+          </div>
+          <div class="item">
+            <img alt="Second slide" src="img/Girls_2.jpg">
+          </div>
+          <div class="item">
+            <img alt="Third slide" src="img/Girls_3.jpg">
+          </div>
+          <div class="item">
+            <img alt="Fours slide" src="img/Girls_4.jpg">
+          </div>
+          <div class="item">
+            <img alt="Fifth slide" src="img/Girls_5.jpg">
+          </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div><!-- /.container -->
+
+    <footer>
+      <h4>iPhoenix© development 2015</h4>
+      <h5>10a/38 Nebesnoy_Sotni str., Chernivtsi, Ukraine, phone: +38 (099) 233-77-48</h5>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="dist/js/jquery-2.1.4.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
