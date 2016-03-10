@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>EXAMPLE</title>
+
+
+    <!-- STYLE -->
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="../../../dist/css/style.css" type="text/css" />
+    <!-- Code text style -->
+    <link rel="stylesheet" href="../../../dist/js/google-code-prettify/styles/default.css" type="text/css"  />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+	<div class="container">
+		<div style="text-align:center;">
+			Ниже приведён код работающего примера. Для просмотра работающего примера нажмите на кнопку "Открыть модальное окно". 
+			<hr>
+			<!-- HTML код кнопки -->
+			<input id="launch-modal" type="button" class="btn btn-primary" value="открыть модальное окно">
+			<div class="modal fade" id="myMmodal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+							<h4 class="modal-title">Заголовок модального окна</h4>
+						</div>
+						<div class="modal-body">
+							<p id="content"></p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<a href="simple-modal.html" download class="btn btn-success" data-toggle="modal">Cкачать этот пример</a>
+			<hr>
+			<a href="../../../index.html" class="btn btn-success" data-toggle="modal" target="_blank">Продолжить чтение статьи</a>
+			<hr>
+		</div>	
+    </div><!-- /.container -->
+
+
+    <!-- SCRIPTS -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- Code Example -->
+    <script src="../../../dist/js/codeExample.js" defer></script>
+    <!-- view Code -->
+    <script src="../../../dist/js/google-code-prettify/src/run_prettify.js"></script>
+    <!-- copy Code -->
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../../dist/js/bootstrap.min.js"></script>
+	<script src="changeContents.js"></script>
+
+  </body>
+</html>

@@ -1,52 +1,49 @@
-function Kettle(name){
+function Kettle(name) {
     this.name = name;
+<<<<<<< HEAD
+
+=======
     this.isBoiling = false;
-    this.turnOff = function(){
+    this.turnOff = function(){ //please move this function to prototype
         this.isBoiling = false;
         console.log(this.name + ' is Off');
     };
+>>>>>>> 78ab2b581f4073188393b8ac97225ad666b27eca
 }
+
 Kettle.prototype = {
-    turnOn : function() {
+    turnOn   : function() {
         this.isBoiling = true;
         console.log(this.name + " is On");
+    },
+    turnOff  : function(){
+        this.isBoiling = false;
+        console.log(this.name + " is Off");
+    },
+    showName : function(){
+        console.log(this.name);
     }
-}
+};
 
 function Electronic_Kettle(name){
     Kettle.apply(this,arguments);
 }
 
 Electronic_Kettle.prototype = {
-    turnOn: function(){
+    turnOn   : function () {
         console.log("The button is pressed");
-        Kettle.prototype.turnOn.apply(this,arguments);
+        Kettle.prototype.turnOn.apply(this, arguments);
+    },
+    showName : function(){
+        console.log(this.name);
     }
 };
 
 inheritense(Kettle,Electronic_Kettle);
 var electKettle = new Electronic_Kettle('Ket');
-console.log(electKettle.name);
+electKettle.showName();
 electKettle.turnOn();
 electKettle.turnOff();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function inheritense (parent, child) {
     var tempChild = child.prototype;

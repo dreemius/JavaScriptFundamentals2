@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>EXAMPLE</title>
+
+
+    <!-- STYLE -->
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="../dist/css/style.css" type="text/css" />
+    <!-- Code text style -->
+    <link rel="stylesheet" href="../dist/js/google-code-prettify/styles/default.css" type="text/css"  />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+	<div class="container">
+		<div style="text-align:center;">
+			Ниже приведён работающий пример.
+			<hr>
+			<!-- Стили CSS -->
+			<style type="text/css">
+				h2{
+					margin: 0;
+					color: #666;
+					padding-top: 90px;
+					font-size: 52px;
+					font-family: "trebuchet ms", sans-serif;
+				}
+				.item{
+					background: #333;
+					text-align: center;
+					height: 300px !important;
+				}
+				.carousel2{
+					margin: 20px 0;
+				}
+				.control-buttons{
+					text-align:center;
+				}
+				.examplecarusel{
+					margin: 20px;
+				}
+			</style>
+
+			<!-- HTML код карусели -->
+			<div class="examplecarusel">
+				<div id="myCarousel2" class="carousel slide" data-interval="3000" data-ride="carousel">
+					<!-- Слайды карусели -->
+					<div class="carousel-inner">
+						<!-- 1 слайд -->
+						<div class="active item">
+							<h2>Слайд №1</h2>
+							<div class="carousel-caption">
+								<h3>Заголовок 1 слайда</h3>
+								<p>Описание 1 слайда...</p>
+							</div>
+						</div>
+						<div class="item">
+							<h2>Слайд №2</h2>
+							<div class="carousel-caption">
+								<h3>Заголовок 2 слайда</h3>
+								<p>Описание 2 слайда...</p>
+							</div>
+						</div>
+						<div class="item">
+							<h2>Слайд №3</h2>
+							<div class="carousel-caption">
+								<h3>Заголовок 3 слайда</h3>
+								<p>Описание 3 слайда...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Кнопки управления -->
+				<div style="margin-top: 20px; text-align:center;">
+					<input type="button" class="btn btn-info start-slide" value="Старт">
+					<input type="button" class="btn btn-info pause-slide" value="Пауза">
+					<input type="button" class="btn btn-info prev-slide" value="Предыдущий">
+					<input type="button" class="btn btn-info next-slide" value="Следующий">
+					<input type="button" class="btn btn-info slide-one" value="Слайд 1">
+					<input type="button" class="btn btn-info slide-two" value="Слайд 2">
+					<input type="button" class="btn btn-info slide-three" value="Слайд 3">
+				</div>
+			</div>
+			<hr>
+			<a href="run-carousel-by-js.html" download class="btn btn-success" data-toggle="modal">Cкачать этот пример</a>
+			<hr>
+			<a href="../index.html" class="btn btn-success" data-toggle="modal" target="_blank">Продолжить чтение статьи</a>
+			<hr>
+		</div>	
+    </div><!-- /.container -->
+
+
+    <!-- SCRIPTS -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- Code Example -->
+    <script src="../dist/js/codeExample.js" defer></script>
+    <!-- view Code -->
+    <script src="../dist/js/google-code-prettify/src/run_prettify.js"></script>
+    <!-- copy Code -->
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/master/dist/clipboard.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+  <!-- Скрипт на языке JavaScript -->
+  <script type="text/javascript">
+	  $(document).ready(function(){
+		  // Инициализирует карусель
+		  $(".start-slide").click(function(){
+			  $("#myCarousel2").carousel('cycle');
+		  });
+		  // Останавливает процесс автоматической смены слайдов карусели
+		  $(".pause-slide").click(function(){
+			  $("#myCarousel2").carousel('pause');
+		  });
+		  // Осуществляет переход на предыдущий слайд
+		  $(".prev-slide").click(function(){
+			  $("#myCarousel2").carousel('prev');
+		  });
+		  // Осуществляет переход на следующий слайд
+		  $(".next-slide").click(function(){
+			  $("#myCarousel2").carousel('next');
+		  });
+		  // Осуществляет переход на 0 слайд карусели
+		  $(".slide-one").click(function(){
+			  $("#myCarousel2").carousel(0);
+		  });
+		  // Осуществляет переход на 1 слайд карусели
+		  $(".slide-two").click(function(){
+			  $("#myCarousel2").carousel(1);
+		  });
+		  // Осуществляет переход на 2 слайд карусели
+		  $(".slide-three").click(function(){
+			  $("#myCarousel2").carousel(2);
+		  });
+	  });
+  </script>
+
+</html>

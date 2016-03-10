@@ -1,0 +1,87 @@
+/* flexible media */
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+	display: block;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* flexible grid */
+.container .cols.col-1 {width: 8.3333333333332%;}
+.container .cols.col-2 {width: 16.666666667%;}
+.container .cols.col-3 {width: 25%;}
+.container .cols.col-4 {width: 33.333333333%;}
+.container .cols.col-5 {width: 41.666666667%;}
+.container .cols.col-6 {width: 50%;}
+.container .cols.col-7 {width: 58.333333333%;}
+.container .cols.col-8 {width: 66.666666667%;}
+.container .cols.col-9 {width: 75%;}
+.container .cols.col-10 {width: 83.33333333%;}
+.container .cols.col-11 {width: 91.66666667%;}
+.container .cols.col-12 {width: 100%;}
+
+.container .cols {
+	float: left;
+	margin: 0 0 1em;
+	padding: 0 1em;
+	background-color: #FD4;
+	text-align: center;
+}
+
+.container:before,
+.container:after,
+.row:after,
+.row:before,
+.clear:before,
+.clear:after {
+	content: "";
+	display: table;
+}
+
+.container:after,
+.row:after,
+.clear:after {
+	clear: both;
+}
+/* ================================================ */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../img/zolotoe-pole.jpg);
+	background-attachment: fixed;
+	background-size: 100% 150%;
+	font: 100%/1.5em Arial, Helvetica, sans-serif;
+	color: #000;
+}
+
+.container {
+	width: 90%;
+	margin: 75px auto;
+	padding: 15px;
+	border-radius: 15px;
+	background-color: #D2D2D2;
+}
+
+@media screen and (max-width: 320px) {
+	/* flexible grid */
+	.container .cols.col-1,
+	.container .cols.col-2,
+	.container .cols.col-3,
+	.container .cols.col-4,
+	.container .cols.col-5,
+	.container .cols.col-6,
+	.container .cols.col-7,
+	.container .cols.col-8,
+	.container .cols.col-9,
+	.container .cols.col-10,
+	.container .cols.col-11,
+	.container .cols.col-12 {width: 100%;}
+}

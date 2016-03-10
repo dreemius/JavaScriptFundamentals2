@@ -1,0 +1,30 @@
+{
+	"documentation" : {
+	
+		"w3school"       : "http://w3.org",
+		"learn_html"     : "http://htmlbook.ru",
+		"learn_online"   : "https://htmlacademy.ru/",
+		"haml"           : "http://www.haml-converter.com",
+		"text_generator" : "http://blindtextgenerator.com/ru"
+	
+	},
+	
+	"freelance_exchange" : {
+	
+		"freelancehunt"  : "https://freelancehunt.com/",
+		"freelance.com"  : "http://freelance.com.ua/",
+		"free-lance.ua"  : "http://free-lance.ua/",
+		"freelance_ua"   : "http://freelance.ua/",
+		"freelancer"     : "https://www.freelancer.com/",
+		"freelancim"     : "http://freelansim.ru/",
+		"freelance"      : "https://freelance.ru/",
+		"proffstore"     : "https://ru.proffstore.com/",
+		"weblancer"      : "https://www.weblancer.net/",
+		"moguza"         : "http://moguza.ru/",
+		"upwork"         : "https://www.upwork.com/",
+		"etxt"           : "http://www.etxt.ru/",
+		"fl"             : "https://www.fl.ru/"
+		
+	
+	}
+}
