@@ -1,0 +1,21 @@
+.block-header {
+    background-color: #f4f4f6;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+    
+    position: relative;
+    text-align: center;
+    z-index: 5;
+}
+#container1{
+	margin-top: 45px;
+}
+
+}
+h5 {
+	color: #696969;
+	
+
+}
+.row-2 {
+	margin-top: 50px;
+}
