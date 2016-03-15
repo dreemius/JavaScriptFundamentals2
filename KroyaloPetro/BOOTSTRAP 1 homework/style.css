@@ -1,0 +1,51 @@
+/* Styles go here */
+.header{
+  background:     rgb(249,249,249);
+  position:       relative;
+  
+}
+.himg{
+  float:          right;
+  height:         99%;
+  width:          99.9%;
+  max-height:     100px;
+  max-width:      300px;
+}
+.dimg{
+  height:         250px;
+  width:          250px;
+  margin:         auto;
+  display:        none;
+}
+@media screen and (min-width: 20em){
+  .dimg{
+    display:      block;
+  }
+}
+.txtblock{
+  text-align:     center; 
+}
+.between{
+  width:          300px;
+  margin:         auto;
+}
+.imgbox{
+  padding-bottom: 60px;
+  padding-top:    60px;
+}
+.footer{
+  background:     rgb(244,244,244);
+  position:       relative;
+}
+.fimg{
+  height:         99%;
+  width:          99.9%;
+  max-height:     165px;
+}
+.contic{
+  border-style:   solid;
+  background:     rgb(230,230,230);
+}
+body{
+  background:     rgb(244,244,244);
+}
