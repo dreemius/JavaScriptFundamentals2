@@ -1,0 +1,42 @@
+{	
+	"responsivDesign" : {
+	
+		"media_quaries"	   : "http://www.stackoverflow.com",
+		"media_quaries_2"  : "http://dev.bowdenweb.com",
+		"file_manager"     : "https://cp.timeweb.ru/fileman/",
+		"viewport_rezizer" : "http://lab.maltewasssermann.com/viewport-rezizer/",
+		"responsiv_view"   : "http://www.responsinator.com",
+		"responsiv_test"   : "http://designmodo.com/responsiv-test/",
+		"responsiv_is"     : "http://responsive.is",
+		"check_layout"     : "http://quirktools.com/screenfly/",
+		"cool_peactures"   : "http://elitefon.ru/",
+		"templates"        : "http://pro-cod.ru/",
+		"examples"         : "http://starwebdesign.com.ua/blog/"
+		
+	},
+
+	"cms" : {
+	
+		"joomla"           : "http://www.joomla.org",
+		"wordPress"        : "https://wordpress.org",
+		"drupal"           : "https://www.drupal.org",
+		"modx"             : "http://modx.com",
+		"typo3"            : "http://typo3.org"
+		
+	},
+	
+	"color" : {
+	
+		"colors"           : "https://coolors.co/",
+		"adobe_color"      : "https://color.adobe.com/ru/create/color-wheel/",
+		"color_shame"      : "http://colorscheme.ru/",
+		"swiss_color"      : "http://swisscolors.net/"
+		
+	},
+	
+	"host" : {
+	
+		"ukraine"	       : "http://www.ukraine.com.ua"
+		
+	}
+}

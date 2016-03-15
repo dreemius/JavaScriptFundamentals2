@@ -1,0 +1,103 @@
+body {
+	background-image: url(../img/Fon.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+img {
+	width: 100%;
+}
+hr {
+	border: 0;
+	height: 3px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+footer {
+	text-align: center;
+	color: black;
+	clear:both;
+	margin-top: -90px;
+}
+.container_1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-image: url(../img/Fon_div.jpg);
+	background-size: contain;
+	border: 2px solid black;
+	border-radius: 30px;
+	margin: 120px auto;
+	text-align: center;
+	min-height: 550px;
+	width: 875px;
+}
+.container_1 h1 span {
+	color: darkred;
+}
+.p-first-word {
+	font-size: large;
+	color: crimson;
+}
+.code-view {
+	background-color: #a6e1ec;
+	border-left: 4px solid black;
+	font-weight: bold;
+}
+.el-wrap {
+	background-color: #a6e1ec;
+	font-weight: bold;
+}
+.iMenu {
+	background-color: #222;
+	overflow: hidden;
+	position: fixed;
+}
+.iMenu a {
+	color: #8c8c8c;
+	text-decoration: none;
+}
+.iMenu a:hover {
+	color: white;
+}
+.modal-content {
+	margin-top: 200px;
+}
+#start:hover, #demo:hover, #first-menu:hover, #second-menu:hover {
+	background-color: black;
+}
+#first-menu {
+	margin-top: 2px;
+	padding: 13px;
+	height: 48px;
+}
+#first-menu:hover {
+	height: auto;
+}
+#second-menu {
+	margin: -7px 108px;
+	padding: 22px;
+	height: 55px;
+}
+#second-menu:hover {
+	height: auto;
+}
+#modal {
+	display: none;
+	text-align: center;
+}
+#instruction {
+	display: none;
+	text-align: left;
+	padding: 25px;
+}
+#instruction h2, #full_code h2 {
+	text-align: center;
+	color: crimson;
+}
+#full_code {
+	text-align: left;
+	display: none;
+}
+#modal a {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	/*margin: 300px 425px;*/
+}

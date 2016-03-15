@@ -1,0 +1,32 @@
+.logo {
+	width: 121px;
+	height: 170px;
+}
+
+.html {
+	background: url('../img/html.png') center no-repeat;
+}
+
+.css {
+	background: url('../img/css.png') center no-repeat;
+}
+
+.js {
+	background: url('../img/js.png') center no-repeat;
+}
+
+hr {
+	height: 1px !important;
+	width: 40%;
+	color: #000;
+	background-color: #000;
+}
+
+.footer-nav {
+	margin-top: 20px;
+	margin-bottom: 0 !important;
+}
+
+.footer-link {
+	line-height: 50px;
+}
