@@ -106,6 +106,3 @@ ul li{
 li{
     padding-left: 19px;
 }
-@media screen and (max-width: 370px) {
-    #content_img1,#content_img2,#content_img3 { display:none; }
-}
