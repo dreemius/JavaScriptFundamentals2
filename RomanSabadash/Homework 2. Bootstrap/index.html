@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Homework 2. Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+</head>
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="#">Programming Languages</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Front-end<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">HTML</a></li>
+							<li><a href="#">CSS</a></li>
+							<li><a href="#">JS</a></li> 
+						</ul>
+					</li>
+					<li><a href="#">Some link</a></li> 
+					<li><a href="#">Some link</a></li> 
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="hidden-xs col-sm-12 col-md-4 logo html" data-toggle="tooltip" data-placement="bottom" title="HyperText Markup Language"></div>
+			<div class="col-xs-12 col-sm-12 col-md-8">
+				<h2>HyperText Markup Language</h2>
+				<p>Standard markup language used to create web pages. Along with CSS, and JavaScript, HTML is a cornerstone technology used to create web pages, as well as to create user interfaces for mobile and web applications. Web browsers can read HTML files and render them into visible or audible web pages. HTML describes the structure of a website semantically along with cues for presentation, making it a markup language, rather than a programming language.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 center-block">
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="hidden-xs col-sm-12 col-md-4 col-md-push-8 logo css" data-toggle="tooltip" data-placement="bottom" title="Cascading Style Sheets"></div>
+			<div class="col-xs-12 col-sm-12 col-md-8 col-md-pull-4">
+				<h2>Cascading Style Sheets</h2>
+				<p>Style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 center-block">
+				<hr>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="hidden-xs col-sm-12 col-md-4 logo js" data-toggle="tooltip" data-placement="bottom" title="JavaScript"></div>
+			<div class="col-xs-12 col-sm-12 col-md-8">
+				<h2>JavaScript</h2>
+				<p>High-level, dynamic, untyped, and interpreted programming language. It has been standardized in the ECMAScript language specification. Alongside HTML and CSS, it is one of the three essential technologies of World Wide Web content production; the majority of websites employ it and it is supported by all modern Web browsers without plug-ins. JavaScript is prototype-based with first-class functions, making it a multi-paradigm language, supporting object-oriented, imperative, and functional programming styles.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 center-block">
+				<hr>
+			</div>
+		</div>		
+	</div>
+
+	<div class="container">
+		<div class="row form-group">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<label for="gettext"><p>Type your text, please:</p></label>
+				<textarea class="form-control" rows="5" id="gettext"></textarea>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Open modal window</button>
+				<button class="btn btn-default" type="button" id="reset">Clear textarea</button>
+			</div>
+		</div>
+	
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Modal Window</h4>
+					</div>
+					<div class="modal-body">
+						<label for="settext"><p>Output text:</p></label>
+						<textarea class="form-control" rows="5" id="settext" disabled></textarea>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-default footer-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-9 col-md-6"><a class="navbar-brand" href="#">Programming Languages</a></div>
+   				<div class="col-xs-4 col-sm-1 col-md-2 text-center footer-link"><a class="btn btn-link">HTML</a></div>
+   				<div class="col-xs-4 col-sm-1 col-md-2 text-center footer-link"><a class="btn btn-link">CSS</a></div>
+   				<div class="col-xs-4 col-sm-1 col-md-2 text-center footer-link"><a class="btn btn-link">JS</a></div>
+   			</div>
+		</div>
+	</nav>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
