@@ -3,35 +3,32 @@
 <head>
     <meta charset="UTF-8"/>
     <title>The bootstrap homework 1</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
-<div class="container-fluid">
-    <div class="row">
+<div id="main" class="container">
+    <div id="grey_cont" class="row">
         <header>
             <div class="col-sm-12 col-lg-12">
-                <div class="well well-sm">
-                   <p id="header_title"><span id="logo_pocket"><img id="img_pocket" class="img-responsive" width="25" height="25" src="images/logo-pocket.png"></span>
-                       <span id="logo_firefox"><img id="img_firefox" class="img-responsive" width="25" height="25" src="images/logo-firefox.png"></span>
-                       <span id="title">Pocket и Firefox объединили усилия!
-                       <a id="header_link" target="_blank" href="https://blog.mozilla.org/blog/2015/06/02/firefox-puts-you-in-control-of-your-online-life/">Подробнее</a>
-                           <span>›</span></span></p>
-                </div>
+                <p id="header_title"><span id="logo_pocket"><img id="img_pocket" class="img-responsive" width="25" height="25" src="images/logo-pocket.png"></span>
+                    <span id="logo_firefox"><img id="img_firefox" class="img-responsive" width="25" height="25" src="images/logo-firefox.png"></span>
+                    <span id="title">Pocket и Firefox объединили усилия!<a id="header_link" target="_blank" href="https://blog.mozilla.org/blog/2015/06/02/firefox-puts-you-in-control-of-your-online-life/">Подробнее</a>
+                           <span>›</span>
+                    </span>
+                </p>
             </div>
         </header>
     </div>
     <div id="content_row1" class="row">
-        <div id="content_img1" class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4">
+        <div id="content_img1" class="col-xs-12 col-sm-12 col-md-5">
             <img  src="images/img_screen.png">
         </div>
-        <div id="content_text1" class="col-xs-12 col-sm-6 col-md-4">
+        <div id="content_text1" class="col-xs-12 col-sm-12 col-md-7">
             <h5>Сохраняйте статьи, видео и многое другое.</h5>
             <p>Мало времени? Нажимайте кнопку Pocket на панели инструментов Firefox и легко сохраняйте статьи,
                 видео, веб-страницы и другие материалы, к которым вы хотите вернуться позже.
@@ -40,22 +37,23 @@
     </div>
     <div class="row line"></div>
     <div id="content_row2" class="row">
-        <div id="content_text2" class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4">
+        <div id="content_img2" class="col-xs-12 col-sm-12 col-md-5 col-md-push-7 ">
+            <img src="images/img_devices.png">
+        </div>
+        <div id="content_text2" class="col-xs-12 col-sm-12 col-md-7 col-md-pull-5 ">
             <h5>Смотрите в любое время, в любом месте.</h5>
             <p>Pocket автоматически синхронизирует материалы между вашим телефоном, планшетом и компьютером,
                 позволяя просматривать сохраненные материалы везде, даже без подключения к Интернет.
             </p>
         </div>
-        <div id="content_img2" class="col-xs-12 col-sm-6 col-md-4">
-            <img src="images/img_devices.png">
-        </div>
+
     </div>
     <div class="row line"></div>
     <div id="content_row3" class="row">
-        <div id="content_img3" class="col-xs-12 col-sm-6 col-md-offset-2 col-md-4">
+        <div id="content_img3" class="col-xs-12 col-sm-12 col-md-5">
             <img src="images/img_logo.png">
         </div>
-        <div id="content_text3" class="col-xs-12 col-sm-6 col-md-4">
+        <div id="content_text3" class="col-xs-12 col-sm-12 col-md-7">
             <h5>Работает в дороге.</h5>
             <p>Сохраняйте материалы из телефона, планшета и любимых приложений, таких как Twitter, Flipboard и YouTube.
                 Где бы вы ни были, заинтересовавшие вас материалы будут удобно организованы и легкодоступны.
