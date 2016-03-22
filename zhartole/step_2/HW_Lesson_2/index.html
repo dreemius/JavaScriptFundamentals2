@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JS Courses - Lesson 2. Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="dist/css/style.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+</head>
+<body>
+	<nav id="head-menu" class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="#">Frameworks</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Front-end<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#bootstrap">Bootstrap</a></li>
+							<li><a href="#foundation">Foundation</a></li>
+							<li><a href="#materialize">Materialize</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">JavaScript<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#angular">AngularJS</a></li>
+							<li><a href="#ember">Ember.js</a></li>
+							<li><a href="#react">React.js</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav><!-- / #head-menu -->
+
+	<div id="content" class="container-fluid">
+		<section id="text-form">
+			<div class="row form-group">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-8 text-center">
+							<h1>REMEMBER</h1>
+							<p>Big <img src="../../HW_Lesson_7/image/big-brother.png" alt="big brother"> Brother <br> is watching you</p>
+						</div>
+						<div class="col-xs-8">
+							<label for="gettext"><p>When you write:</p></label>
+							<textarea class="form-control" rows="5" id="gettext"></textarea>
+						</div>
+						<div class="col-xs-4 text-center buttons">
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Big brother see</button>
+							<button class="btn btn-default" type="button" id="reset">Clear</button>
+						</div>
+					</div>
+
+					<div class="modal fade" id="myModal" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Modal Window</h4>
+								</div>
+								<div class="modal-body">
+									<!--label for="settext">Output text:</label>
+									<textarea class="form-control" rows="5" id="settext" disabled></textarea-->
+									<div id="settext">
+
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</section><!-- / #text-form -->
+		<section id="front-end">
+			<div class="container">
+				<section id="bootstrap">
+					<div class="row">
+						<div class="hidden-xs col-sm-12 col-md-4 img bootstrap" data-toggle="tooltip" data-placement="left" title="Bootstrap"></div>
+						<div class="col-xs-12 col-sm-12 col-md-8">
+							<h2>Bootstrap</h2>
+							<p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
+								Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>
+						</div>
+					</div>
+				</section>
+				<section id="foundation">
+					<div class="row">
+						<div class="hidden-xs col-sm-12 col-md-4 col-md-push-8 img foundation" data-toggle="tooltip" data-placement="right" title="Foundation"></div>
+						<div class="col-xs-12 col-sm-12 col-md-8 col-md-pull-4">
+							<h2>Foundation</h2>
+							<p>A Framework for any device, medium, and accessibility. Foundation is a family of responsive front-end frameworks that make it easy to design beautiful responsive websites, apps and emails that look amazing on any device. Foundation is semantic, readable, flexible, and completely customizable. We’re constantly adding new resources and code snippets, including these handy HTML templates to help get you started!</p>
+						</div>
+					</div>
+				</section>
+				<section id="materialize">
+					<div class="row">
+						<div class="hidden-xs col-sm-12 col-md-4 img materialize" data-toggle="tooltip" data-placement="left" title="Materialize"></div>
+						<div class="col-xs-12 col-sm-12 col-md-8">
+							<h2>Materialize</h2>
+							<p>A modern responsive front-end framework based on Material Design. Materialize simplifies life for developers and the users they serve.</p>
+						</div>
+					</div>
+				</section>
+			</div><!-- / .container -->
+		</section><!-- / #front-end -->
+		<section id="javascript">
+			<div class="container">
+				<section id="angular">
+					<div class="row">
+						<div class="hidden-xs col-sm-12 col-md-4 img angular" data-toggle="tooltip" data-placement="left" title="AngularJS"></div>
+						<div class="col-xs-12 col-sm-12 col-md-8">
+							<h2>AngularJS</h2>
+							<p>AngularJS is a toolset for building the framework most suited to your application development. It is fully extensible and works well with other libraries. Every feature can be modified or replaced to suit your unique development workflow and feature needs. Read on to find out how.</p>
+						</div>
+					</div>
+				</section>
+				<section id="ember">
+					<div class="row">
+						<div class="hidden-xs col-sm-12 col-md-4 col-md-push-8 img ember" data-toggle="tooltip" data-placement="right" title="Ember.js"></div>
+						<div class="col-xs-12 col-sm-12 col-md-8 col-md-pull-4">
+							<h2>Ember.js</h2>
+							<p>Ember.js is built for productivity. Designed with developer ergonomics in mind, its friendly APIs help you get your job done—fast.</p>
+						</div>
+					</div>
+				</section>
+				<section id="react">
+					<div class="row">
+						<div class="hidden-xs col-sm-12 col-md-4 img react" data-toggle="tooltip" data-placement="left" title="React.js"></div>
+						<div class="col-xs-12 col-sm-12 col-md-8">
+							<h2>React.js</h2>
+							<p>React abstracts away the DOM from you, giving a simpler programming model and better performance. React can also render on the server using Node, and it can power native apps using React Native.</p>
+						</div>
+					</div>
+				</section>
+			</div><!-- /.container -->
+		</section><!-- / #javascript -->
+	</div><!-- /.container-fluid -->
+
+	<nav class="navbar navbar-default footer-menu" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-9 col-md-6"><a class="navbar-brand" 	href="#">Frameworks</a></div>
+   				<div class="col-xs-4 col-sm-1 col-md-2"><a class="btn btn-link"		href="#front-end">Front-end</a></div>
+   				<div class="col-xs-4 col-sm-1 col-md-2"><a class="btn btn-link" 	href="#javascript">LavaScript</a></div>
+   			</div>
+		</div>
+	</nav>
+
+	<script src="dist/js/jquery.min.js" defer></script>
+	<script src="dist/js/bootstrap.min.js" defer></script>
+	<script src="dist/js/identefication-bootstrap.js" defer></script>
+	<script src="dist/js/showText.js" defer></script>
+</body>
+</html>
