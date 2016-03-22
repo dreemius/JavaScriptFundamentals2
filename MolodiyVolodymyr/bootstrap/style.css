@@ -1,0 +1,26 @@
+@charset "utf-8";
+body{
+	background-color:rgb(255,255,255);
+	}
+	
+header{margin-bottom:25px;background-color:#FF5500;}
+.search-ontop{margin-top:10px;
+margin-bottom:10px;}	
+	h1{
+	color:orange;
+	display:inline;
+	
+	}
+	h2{
+		color:rgb(153,153,102);
+		display:inline;
+		}
+		.navbar-nav{background-color:rgb(51,0,0);}
+		
+		.btn-google-plus{background-color:#DD4B39;color:white;}
+        .btn-linkedin{background-color:#007BB6;color:white;}
+		.btn-facebook{background-color:#3B5998;color:white;}
+		.btn-twitter{background-color:#55ACEE;color:white;}
+		.bottom-social{display:inline;}
+		footer{background-color:#FF5500;margin-top:25px;margin 0px auto;}
+		
