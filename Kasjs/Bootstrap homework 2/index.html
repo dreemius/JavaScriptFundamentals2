@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>The bootstrap homework 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="main" class="container">
+    <div id="grey_cont" class="row">
+        <header>
+            <div class="col-xs-12 col-sm-12 col-md-2">
+                <div class="dropdown">
+                    <button class="btn btn-info btn-md dropdown-toggle" id="menu" data-toggle="dropdown">First menu
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu"  aria-labelledby="menu">
+                        <li><a href="#">Sub_menu_1</a></li>
+                        <li><a href="#">Sub_menu_2</a></li>
+                        <li><a href="#">Sub_menu_3</a></li>
+                        <li><a href="#">Sub_menu_4</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-10">
+                <p id="header_title"><span id="logo_pocket"><img id="img_pocket" class="img-responsive" width="25" height="25" src="images/logo-pocket.png"></span>
+                    <span id="logo_firefox"><img id="img_firefox" class="img-responsive" width="25" height="25" src="images/logo-firefox.png"></span>
+                    <span id="title">Pocket и Firefox объединили усилия!<a id="header_link" target="_blank" href="https://blog.mozilla.org/blog/2015/06/02/firefox-puts-you-in-control-of-your-online-life/">Подробнее</a>
+                           <span>›</span>
+                    </span></p>
+            </div>
+        </header>
+    </div>
+    <div id="content_row1" class="row">
+        <div id="content_img1" class="col-xs-12 hidden-xs col-sm-12 col-md-5">
+            <img  src="images/img_screen.png">
+        </div>
+        <div id="content_text1" class="col-xs-12 col-sm-12 col-md-7">
+            <h5>Сохраняйте статьи, видео и многое другое.</h5>
+            <p>Мало времени? Нажимайте кнопку Pocket на панели инструментов Firefox и легко сохраняйте статьи,
+                видео, веб-страницы и другие материалы, к которым вы хотите вернуться позже.
+            </p>
+        </div>
+    </div>
+    <div class="row line"></div>
+    <div id="content_row2" class="row">
+        <div id="content_img2" class="col-xs-12 hidden-xs col-sm-12 col-md-5 col-md-push-7 ">
+            <img src="images/img_devices.png">
+        </div>
+        <div id="content_text2" class="col-xs-12 col-sm-12 col-md-7 col-md-pull-5 ">
+            <h5>Смотрите в любое время, в любом месте.</h5>
+            <p>Pocket автоматически синхронизирует материалы между вашим телефоном, планшетом и компьютером,
+                позволяя просматривать сохраненные материалы везде, даже без подключения к Интернет.
+            </p>
+        </div>
+
+    </div>
+    <div class="row line"></div>
+    <div id="content_row3" class="row">
+        <div id="content_img3" class="col-xs-12 hidden-xs col-sm-12 col-md-5">
+            <img src="images/img_logo.png">
+        </div>
+        <div id="content_text3" class="col-xs-12 col-sm-12 col-md-7">
+            <h5>Работает в дороге.</h5>
+            <p>Сохраняйте материалы из телефона, планшета и любимых приложений, таких как Twitter, Flipboard и YouTube.
+                Где бы вы ни были, заинтересовавшие вас материалы будут удобно организованы и легкодоступны.
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div id="modal_part" class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+            <form>
+                <label>Enter some text</label>
+                <input id="text" class="form-control" type="text" placeholder="some text here">
+            </form>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+
+            <button type="button" class="btn btn-success btn-md" id='modal_start'>Start modal</button>
+            <div class="modal fade" id="modal" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Header</h4>
+                        </div>
+                        <div class="modal-body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="footer_part" class="row">
+        <footer>
+            <div id="logo_footer" class="col-xs-12 col-sm-12 col-lg-5">
+                <a id="iphone" href="https://getpocket.com/apps/link/pocket-iphone?s=fflearnmore"><img id="app" src="images/app_store.png"></a>
+                <a id="android" href="https://getpocket.com/apps/link/pocket-android?s=fflearnmore"><img src="images/img_google_play.png"></a>
+            </div>
+            <div id="copyright" class="col-sm-12 col-lg-7">
+                <nav>
+                    <ul>
+                        <li><a href="https://getpocket.com/tos" target="_blank">Условия использования</a></li>
+                        <li><a href="https://getpocket.com/privacy" target="_blank">Политика конфиденциальности</a></li>
+                        <li>© 2015 Read It Later</li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+
+</div>
+</body>
+</html>
