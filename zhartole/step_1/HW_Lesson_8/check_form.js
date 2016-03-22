@@ -1,5 +1,6 @@
 /**      Create by zhartole 24.11.15    **/
 
+
 var formValidator = (function(){
 	var input = null,
 	    count = 1;
