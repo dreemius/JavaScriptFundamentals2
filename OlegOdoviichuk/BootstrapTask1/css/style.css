@@ -24,12 +24,12 @@ span {
 nav.main-menu li {
 	list-style: none;
 	display: inline-block;
+	padding-top: 20px;
 	margin-right: 25px;
-	padding-top: 20px
 }
-.main-menu li:nth-child(5){
+/*.main-menu li:nth-child(5){
 	margin-right: 0;
-}
+}*/
 
 .bl {
 	border: 1px solid #ccc;
@@ -37,14 +37,40 @@ nav.main-menu li {
 .main-menu a {
 	color: white;
 	text-decoration: none;
-	font-size: 1.8em;
+	font-size: 1.6em;
 	line-height: 0.5em;
 }
 .main-menu a:hover  {
 	color: #90d5a6;
 	text-shadow: 0 0 15px white;
 }
+.nav .open > a {
+	background-color: black !important;
+}
 
+.dropdown-menu {
+	min-width: 120px;
+	background: #90d5a6;
+	opacity: 0.9;
+	border-radius: 0 0 5% 5% ;
+	padding-right: 0 !important;
+}
+
+.dropdown-menu li{
+	padding-left: 10px;
+	display: block;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+
+.dropdown-menu li:hover {
+	background: #2e3347;
+	color: white;
+}
+.dropdown-menu li:nth-of-type(3):hover {
+	border-radius: 0 0 10% 10%;
+}
 .nav {
 	background-color: black;
 }
