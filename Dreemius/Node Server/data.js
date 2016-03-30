@@ -1,0 +1,1 @@
+[{"id" : 1, "url": "http://desktopwallpapers.org.ua/mini/201507/40069.jpg","alt": "фото автомобиля","description" : "Этот текст должен опысывать автомобиль"}]
