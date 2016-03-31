@@ -1,0 +1,40 @@
+.header{
+  background-color: #C0C0C0;
+  position: relative;
+  text-align: center;
+  padding-bottom: 30px;
+  border-style: solid;
+}
+.header-text{
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+}
+.pug-image {
+  height: 250px;
+  margin: 0 auto;
+}
+.pug-image-save{
+  display: none;
+}
+@media screen and (min-width: 32em){
+ .pug-image-save {
+   display: block;
+ }
+}
+.pug-text{
+  font-size: 30px;
+  margin: auto;
+}
+.pug-image2{
+  height: 250px;
+  margin: 0 auto;
+}
+.footer{
+  background-color: #000000;
+  position: relative;
+  text-align: center;
+  padding-bottom: 30px;
+  border-style: solid;
+  color: white;
+}
