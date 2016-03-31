@@ -1,0 +1,95 @@
+#logo {
+	margin-top: -20px;	
+}
+#logo img {
+	max-width: 170px;
+	height: auto;
+}
+.nav div:nth-child(2) {
+	font-size: 1.6em;
+	text-align: center;
+	color:  #90d5a6;
+	padding-top: 10px;
+	text-shadow: 3px 1px 0 #2e3347;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+span {
+	color: #90d5a6;
+	font-weight: bold;
+	text-shadow: 3px 1px 0 #2e3347;
+	font-size: 2em;
+}
+
+nav.main-menu li {
+	list-style: none;
+	display: inline-block;
+	padding-top: 20px;
+	margin-right: 25px;
+}
+/*.main-menu li:nth-child(5){
+	margin-right: 0;
+}*/
+
+.bl {
+	border: 1px solid #ccc;
+}
+.main-menu a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.6em;
+	line-height: 0.5em;
+}
+.main-menu a:hover  {
+	color: #90d5a6;
+	text-shadow: 0 0 15px white;
+}
+.nav .open > a {
+	background-color: black !important;
+}
+
+.dropdown-menu {
+	min-width: 120px;
+	background: #90d5a6;
+	opacity: 0.9;
+	border-radius: 0 0 5% 5% ;
+	padding-right: 0 !important;
+}
+
+.dropdown-menu li{
+	padding-left: 10px;
+	display: block;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+
+.dropdown-menu li:hover {
+	background: #2e3347;
+	color: white;
+}
+.dropdown-menu li:nth-of-type(3):hover {
+	border-radius: 0 0 10% 10%;
+}
+.nav {
+	background-color: black;
+}
+
+.row:nth-child(2){
+	border-top: 5px solid #2e3347;
+}
+.row:not(:first-child) {
+	background: #877b7d;
+	font-size: 1.3em;
+	padding-top: 50px;
+}
+
+.icons:hover {
+	box-shadow:inset 0 0 0 0 #2e3347;
+	padding: 10px;
+}
+
+ul {
+	color: #2e3347;
+	font-weight: bold;
+}

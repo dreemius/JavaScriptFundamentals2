@@ -1,0 +1,59 @@
+#head-menu {
+	background: black;
+}
+#head-menu a.dropdown-toggle {
+	color:white;
+}
+#head-menu a.dropdown-toggle:focus {
+	color:black;
+}
+#text-form .text-center p{
+	font-size:1.2em;
+}
+.buttons {
+	padding-top:5em;
+}
+#content {
+	padding: 0em;
+}
+section div section {
+	margin:1em 0em;
+	padding:2em;
+	box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+section div section:hover {
+	box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+#front-end {
+	background:lightgreen;
+}
+#javascript {
+	background:gold;
+}
+.img {
+	width: 120px;
+	height: 170px;
+}
+
+.bootstrap	{  background: url('../img/bootstrap.png') center no-repeat;  }
+
+.foundation {  background: url('../img/foundation.png') center no-repeat;  }
+
+.materialize {  background: url('../img/materialize.png') center no-repeat;  }
+
+.angular {  background: url('../img/angularjs.png') center no-repeat;  }
+.ember 	 {  background: url('../img/emberjs.png') center no-repeat;  }
+.react 	 {  background: url('../img/react.png') center no-repeat;  }
+
+
+nav.footer-menu {
+	margin-bottom: 0rem;
+	background:black;
+}
+nav.footer-menu .container .row div {
+	line-height: 5rem;
+	text-align: center;
+}
+nav.footer-menu .container .row div a:hover {
+	color:white;
+}
