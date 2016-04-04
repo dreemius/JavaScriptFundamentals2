@@ -22,7 +22,7 @@ h3{
     color: #565656;
 }
 .navbar-nav>li>a {
-    margin-left:10px;
+    margin-left:11px;
     margin-bottom:30px;
     height: 50px;
     width: 50px;
@@ -83,6 +83,10 @@ input[placeholder="Search..."]{
 	display:inline;
 	border-style:none;
 }
+input[placeholder="email"]{
+	width:700px;
+	margin-left:10px;
+}
 a[role='button']:hover{
 	background-color:rgb(51,51,51);background-image:none;
 }
@@ -90,14 +94,20 @@ a[role='button']:hover{
     max-width:250px;
 }
 .form-horizontal .control-label {
+	float:left;
+	padding-top:25px;
     color:white;
-	font-size:18px;
+	
 	
 }
 .bottomlink{
     padding-top:50px;
     color:white;
 }
+.navbar-nav{
+	margin: 0px 0px; 
+}
+.navbar-nav>li{display:inline-block;}
 .navbar-nav>li:first-of-type{
     padding-top:15px;
     color:white;

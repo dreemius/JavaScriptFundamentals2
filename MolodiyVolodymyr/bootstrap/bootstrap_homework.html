@@ -10,6 +10,8 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!--load font awesome-->
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+
+
 <title>Bootstrap</title>
 </head>
 
@@ -17,6 +19,7 @@
 <div class="container-fluid">
 
 <header >
+
 <h3>snug</h3>
 
 <form class="navbar-form navbar-right" role="search">
@@ -47,7 +50,7 @@
 
 <div class="bgimage img-responsive">
  
-  <h1 class="text-center">Awesome trips</h1>
+  <h1 id="trip" class="text-center">Awesome trips</h1>
  <h2 class="text-center">Best destinations for travellers</h2>
  
  <ul class="list-inline">
@@ -73,7 +76,7 @@
         <p class="text-justify photo-description">Fearing the actions of Superman are left unchecked, Batman takes on the man of steel,
  while the world wrestles with what kind of a hero it really needs.
 With Batman and Superman fighting each other, a new threat, Doomsday, is created by Lex Luthor. It's up to you.</p>
-        <p><a href="#" class="btn btn-default" role="button">Read more...</a> 
+        <p><a href="#" class="btn btn-default" role="button" data-id="readmore">Read more...</a> 
         <a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-paperclip"></span>Add to favourites</a></p>
      </div>
   </div>
@@ -85,7 +88,7 @@ With Batman and Superman fighting each other, a new threat, Doomsday, is created
         <p class="text-justify photo-description">Fearing the actions of Superman are left unchecked, Batman takes on the man of steel,
  while the world wrestles with what kind of a hero it really needs.
 With Batman and Superman fighting each other, a new threat, Doomsday, is created by Lex Luthor. It's up to you.</p>
-        <p><a href="#" class="btn btn-default" role="button">Read more... </a> 
+        <p><a href="#" class="btn btn-default" role="button" data-id="readmore">Read more... </a> 
         <a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-paperclip"></span>Add to favourites</a></p>
        </div>
   </div>
@@ -97,7 +100,7 @@ With Batman and Superman fighting each other, a new threat, Doomsday, is created
         <p class="text-justify photo-description">Fearing the actions of Superman are left unchecked, Batman takes on the man of steel,
  while the world wrestles with what kind of a hero it really needs.
 With Batman and Superman fighting each other, a new threat, Doomsday, is created by Lex Luthor. It's up to you.</p>
-       <p><a href="#" class="btn btn-default" role="button">Read more...</a>
+       <p><a href="#" class="btn btn-default" role="button" data-id="readmore">Read more...</a>
        <a href="#" class="btn btn-default" role="button"><span class="glyphicon glyphicon-paperclip"></span>Add to favourites</a></p>
      </div>
   </div>
@@ -119,10 +122,10 @@ With Batman and Superman fighting each other, a new threat, Doomsday, is created
 </nav>
 </div>
 
-<div class="col-lg-5 col-lg-offset-2 col-md-9 col-sm-12 col-xs-12">
+<div class="col-lg-4 col-lg-offset-3 col-md-9 col-sm-12 col-xs-12">
    <form class="form-horizontal" role="form">
     <div class="form-group">
-    <label class="control-label " for="email">Subscribe:</label>
+    <label class="control-label " for="email">Subscribe</label>
     <div class=" input-group">
       <input type="email" class="form-control" id="email" placeholder="email" aria-describedby="basic-addon2">
      <span class="input-group-btn">
@@ -133,7 +136,7 @@ With Batman and Superman fighting each other, a new threat, Doomsday, is created
  </form> 
 
 <ul class="nav navbar-nav  social">
-<li class="fa fa-lg">Follow us:</li>
+<li>Follow us</li>
                 <li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"> <i class="fa fa-lg fa-facebook"></i></a></li>
                 <li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-lg fa-twitter"></i></a></li>
                 <li><a href="#" data-toggle="tooltip" data-placement="top" title="Google-plus"><i class="fa fa-lg fa-google-plus" ></i></a></li>
@@ -143,12 +146,11 @@ With Batman and Superman fighting each other, a new threat, Doomsday, is created
 </div>
 </footer>
 </div>
-
 <script>
+//tooltip
 $( "a" ).hover(function() {
  $(this).tooltip('toggle');
 });
 </script>
-
 </body>
 </html>
