@@ -1,0 +1,43 @@
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="main.js"></script>
+
+	<style>
+		.bold {
+			font-weight: bold;
+		}
+	</style>
+
+</head>
+
+<body ng-app="App">
+	<div ng-controller="userListCtrl">
+
+		<input type="text" id="name" ng-model="name">
+		<input type="text" id="pass" ng-model="pass">
+		<input type="checkbox" id="weight" ng-model="weight">
+		<input type="button" id="name" value="add" ng-click=add()>
+		<br />
+		<div>
+			<span ng-if="name">Name:</span> <span ng-class="{bold: weight}">{{name}}</span>
+			<span ng-if="name && pass">; </span>
+			<span ng-if="pass">Pass:</span> <span ng-class="{bold: weight}">{{pass}}</span>
+		</div>
+
+		<div>
+			<ul ng-repeat="item in list">
+				<li>
+					User name: <span ng-class="{bold: weight}">{{item.name}}</span>
+					User pass: <span ng-class="{bold: weight}">{{item.pass}}</span>
+					<a href="#" data-uid="item.id"
+						 ng-click="remove(item.id)"> Delete</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</body>
+
+</html>
