@@ -27,6 +27,6 @@ var onServer = function(req, resp){
         read("." + action, 'text/javascript');
     }
 
-}
+};
 	
 http.createServer(onServer).listen('8081');

@@ -3,7 +3,7 @@ var http = require ('http'),
 
 var generateJson = function(data) {
     return JSON.stringify(data);
-}
+};
 
 	
 var onServer = function(req, resp){
@@ -19,7 +19,7 @@ var onServer = function(req, resp){
     }
     
 
-}
+};
 	
 http.createServer(onServer).listen('8081');
 
