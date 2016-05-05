@@ -3,7 +3,6 @@ var filmLoader = (function(){
 	var input = $('#search'),
 		searchBtn = $('#btnSearch'),
 		resultContainer = $('#result'),
-
 		row = _.template('<div class="row"><%=item1%><%=item2%></div>'),
 
 		compiled = _.template('<div class="col-xs-6">\
@@ -69,6 +68,15 @@ var filmLoader = (function(){
 	}
 	init();
 
+	function function_name(argument) {
+		var module = require('module');
+	}
+
+	function test (){}
+	function () {
+
+	}
+
 	return {
 		//don't change
 		buildTable : function(data) {
@@ -82,5 +90,3 @@ var filmLoader = (function(){
 window.onDataLoaded = function(list) {
 	filmLoader.buildTable(list);
 };
-
-
