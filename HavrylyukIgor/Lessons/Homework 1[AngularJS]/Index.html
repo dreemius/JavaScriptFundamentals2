@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AngularJS_HW1</title>
+<link rel="stylesheet" href="angular_example.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
+<script src="angular_example.js"></script>
+</head>
+
+<body ng-app="App">
+	<div ng-controller="userListCtrl">
+      <input type="text" id="name" ng-model="name" ng-class="{changeFont: bold}">
+	  <input type="text" id="pass" ng-model="pass"ng-class="{changeFont: bold}" >
+      <input type="text" id="country" ng-model="country" ng-class="{changeFont: bold}">
+      <input type="text" id="city" ng-model="city" ng-class="{changeFont: bold}">
+      <input type="checkbox" ng-model="bold">
+      <input type="button" id="name" value="add" ng-click=add()>
+    
+		<br />
+	
+	<div>
+			<span ng-if="name" >Name:</span> {{name}}
+			<span ng-if="name && pass">; </span>
+			<span ng-if="pass">Pass:</span> {{pass}}
+            <span ng-if="pass && country">; </span>
+            <span ng-if="country">Country:</span> {{country}}
+            <span ng-if="country && city">; </span>
+            <span ng-if="city">City:</span> {{city}}
+            
+      </div>
+
+		<div>
+			<ul ng-repeat="item in list">
+				<li>
+					User name:<strong>{{item.name}}</strong> 
+					User pass:<strong ng-bind="item.pass" ></strong>
+                    User country:<strong ng-bind="item.country"></strong>   
+                    User city:<strong ng-bind="item.city"></strong>   
+                    <a href="#" data-uid="item.id"
+						 ng-click="remove(item.id)"> Delete</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</body>
+</html>
