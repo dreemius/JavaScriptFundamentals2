@@ -20,9 +20,22 @@ myApp.controller('userListCtrl', ['$scope', function($scope) {
             }
         })
     }
+    
+    function checkDublicate () {
+        var isDublicate = false;
+        angular.forEach($scope.list, function(val){
+            if((val.name == $scope.name) && 
+               (val.pass == $scope.pass) && 
+               (val.word == $scope.word) &&
+               isDublicate == false){
+                isDublicate = true;    
+            }
+        })
+        return isDublicate;
+    }
 
     $scope.add = function() {
-        addItem();
+        !checkDublicate() && addItem();
     };
     $scope.remove = function(id) {
         removeItem(id);

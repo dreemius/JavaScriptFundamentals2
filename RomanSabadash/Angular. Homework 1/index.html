@@ -21,16 +21,16 @@
 		<input type="button" id="name" value="add" ng-click=add()>
 		<br />
 		<div>
-			<span ng-if="name">Name:</span> <span ng-class="{bold: weight}">{{name}}</span>
-			<span ng-if="name && pass">; </span>
+			<span ng-if="name">Name:</span> <span ng-class="{bold: weight}">{{name}}</span
+			><span ng-if="name && pass">, </span>
 			<span ng-if="pass">Pass:</span> <span ng-class="{bold: weight}">{{pass}}</span>
 		</div>
 
 		<div>
 			<ul ng-repeat="item in list">
 				<li>
-					User name: <span ng-class="{bold: weight}">{{item.name}}</span>
-					User pass: <span ng-class="{bold: weight}">{{item.pass}}</span>
+					User name: <span ng-class="{'bold': weight}">{{item.name}}</span>
+					User pass: <span ng-class="{'bold': weight}">{{item.pass}}</span>
 					<a href="#" data-uid="item.id"
 						 ng-click="remove(item.id)"> Delete</a>
 				</li>
