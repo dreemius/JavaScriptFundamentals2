@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Angular lesson 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/bootstrap.min.css">
+</head>
+
+
+<body ng-app="App">
+<div class="container" ng-controller="userListCtrl">
+    <div class="col-sm-12 input-sets">
+        <div class="col-sm-3">
+            <input class="form-control" type="text" id="name" ng-model="name" placeholder="Enter name">
+        </div>
+        <div class="col-sm-3">
+            <input class="form-control" type="text" id="pass" ng-model="pass"  placeholder="Enter password">
+        </div>
+        <div class="col-sm-3">
+            <input class="form-control" type="text" id="word" ng-model="word"  placeholder="Enter word">
+        </div>
+        <div class="col-sm-3">
+            <input class="form-control btn-success" type="button" value="add" ng-click=add()>
+        </div>
+    </div>
+
+    <br>
+    <div class="well first">
+        <span ng-if="name"><strong>Name:</strong></span> {{name}}
+        <span ng-if="name && pass">; </span>
+        <span ng-if="pass"><strong>Pass:</strong></span> {{pass}}
+        <span ng-if="pass && word">; </span>
+        <span ng-if="word"><strong>Word:</strong></span> {{word}}
+
+    </div>
+    <br>
+    <div class="well">
+        <ul ng-repeat="item in list">
+            <li class='text-success' ng-class="{'bold' : strong}">
+                User name:<strong>{{item.name}}</strong> |
+                User pass:<strong ng-bind="item.pass"></strong> |
+                User word:<strong ng-bind="item.word"></strong> |
+                <label>Make bolder -->
+                    <input type="checkbox"  ng-model="strong">
+                </label>
+                <a href="#" data-uid="item.id"
+                   ng-click="remove(item.id)"> Delete</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="dist/angular.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>

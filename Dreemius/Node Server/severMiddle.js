@@ -3,11 +3,11 @@ var http = require ('http'),
 
 var generateJson = function(data) {
     return JSON.stringify(data);
-}
+};
 
 var setResponce = function (resp, data) {
     resp.end(data);
-} 
+} ;
 	
 var onServer = function(req, resp){
        
@@ -21,6 +21,6 @@ var onServer = function(req, resp){
         setResp(generateJson({test: "property", another: [1,2,3]}));    
     }
 
-}
+};
 	
 http.createServer(onServer).listen('8081');
