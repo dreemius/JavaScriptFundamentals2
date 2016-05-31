@@ -2,7 +2,7 @@ angular.module('directive',[])
     .directive('myDirective',function(){
         return{
             scope :{
-                me:'='
+                users:'='
             },
             templateUrl: "template.html"
         }

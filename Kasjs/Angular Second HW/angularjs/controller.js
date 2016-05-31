@@ -1,7 +1,8 @@
 angular.module('controller',[])
-    .controller('myController',[ '$scope','myService',function($scope,myService){
+    .controller('myController',['myService',function(myService){
+        var self = this;
         myService.async().then(function(response){
-           $scope.myData = response;
+          self.myData = response;
         });
 
     }]);
