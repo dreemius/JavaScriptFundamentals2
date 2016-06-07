@@ -1,0 +1,18 @@
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script src="index.js"></script>
+<body ng-app="myApp" ng-controller="myController">
+    <div ng-hide="listMode">
+        <span>First Name:</span><input type="text" ng-model="firstName">
+        <span>Last Name:</span><input type="text" ng-model="lastName">
+        <button ng-click="addUser()">Add User</button> <br><br>
+        <button ng-click="listMode = !listMode">Show users list</button>
+    </div>
+    <div ng-show="listMode">
+        <span>Filter: </span><input type="text" ng-model="filter"> <br><br>
+        <button ng-click="listMode = !listMode">Hide users list</button> <br>
+        <show-user users="users" filter = "filter" ></show-user>
+    </div>
+</body>
+</html>
+
