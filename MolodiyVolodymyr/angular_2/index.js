@@ -1,28 +1,32 @@
 angular.module("myApp.panel.ctrl", ['myApp.panel.service'])
-.controller("panelCtrl", [ "panelService", function( panelService) {
-   var user = panelService.getUser();
-   this.fullName = [user.firstName, user.secondName,user.birthDate];
+.controller("panelCtrl", ["$scope","panelService", function($scope, panelService) {
+   this.usersList = panelService.getUser();
  }]);
 
 angular.module("myApp.panel.service", [])
 .factory("panelService", function(){
     function getUser (){
-        return {
+        return [{
             firstName: "John",
             secondName: "Doe",
             birthDate:'02-30-2222'
-        }
+        },
+		{
+            firstName: "Will",
+            secondName: "Smith",
+            birthDate:'02-30-1967'
+        }]
     }
     return {getUser : getUser};
 });
 
 angular.module("myApp.panel.directive", [])
 .directive("panelDirective", function(){
-    return {
-	  scope: {
-		    users: "="
+   return {
+	 scope: {
+	   users: "="
 			},
-      templateUrl: 'my-customer.html'
+     templateUrl: 'my-customer.html'
     };
 });
 
