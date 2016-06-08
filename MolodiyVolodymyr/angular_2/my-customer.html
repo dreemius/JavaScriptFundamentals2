@@ -1,1 +1,7 @@
-<li ng-repeat='item in users '>{{item}}</li>
+<input type="text" ng-model="test">
+<ul ng-repeat='item in users | filter:test'>
+ <li>{{item.firstName}}</li>
+ <li>{{item.secondName}}</li>
+ <li>{{item.birthDate}}</li>
+</ul>
+ 

@@ -4,39 +4,42 @@
 <meta charset="utf-8">
 <title>Ang-1</title>
 <link rel="stylesheet" href="ang1.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
-<script src="ang1.js"></script>
 </head>
 
 <body ng-app="App">
-	<div ng-controller="userListCtrl">
-      <input type="text" id="name" ng-model="name" ng-class="{fontToggle: bold}">
-	  <input type="text" id="pass" ng-model="pass"ng-class="{fontToggle: bold}" >
-      <input type="text" id="email" ng-model="email" ng-class="{fontToggle: bold}">
-      <input type="checkbox" ng-model="bold">
-     
-      <input type="button" id="name" value="add" ng-click=add()>
-		<br />
-		<div>
-			<span ng-if="name" >Name:</span> {{name}}
-			<span ng-if="name && pass">; </span>
-			<span ng-if="pass">Pass:</span> {{pass}}
-            <span ng-if="pass && email">; </span>
-            <span ng-if="email">E-mail:</span> {{email}}
-      </div>
+ <div ng-controller="userListCtrl">
+    
+    <input type="text" id="name" ng-model="name" >
+    <input type="text" id="pass" ng-model="pass" >
+    <input type="text" id="email" ng-model="email">
+    <input type="button" id="name" value="add" ng-click=add()>
+ <br />
+  
+  <div>
+	 <span ng-if="name" >Name:</span> {{name}}
+	 <span ng-if="name && pass">; </span>
+	 <span ng-if="pass">Pass:</span> {{pass}}
+	 <span ng-if="pass && email">; </span>
+	 <span ng-if="email">E-mail:</span> {{email}}
+  </div>
+  
+  <div>
+  <ul ng-repeat="item in list">
+   <li>
+     <span ng-class="{boldText:important}">User name:</span>
+     <strong>{{item.name}}</strong> 
+	 <span ng-class="{boldText:important}">User pass:</span>
+     <strong ng-bind="item.pass"></strong>
+     <span ng-class="{boldText:important}">User email:</span>
+     <strong ng-bind="item.email"></strong>   
+     <input type="checkbox" ng-model="important" >         
+     <a href="#" data-uid="item.id" ng-click="remove(item.id)"> Delete</a>
+	</li>
+   </ul>
+ </div>
 
-		<div>
-			<ul ng-repeat="item in list">
-				<li>
-					User name:<strong>{{item.name}}</strong> 
-					User pass:<strong ng-bind="item.pass" ></strong>
-                    User email:<strong ng-bind="item.email"></strong>   
-                    <a href="#" data-uid="item.id"
-						 ng-click="remove(item.id)"> Delete</a>
-				</li>
-			</ul>
-		</div>
-
-	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.6/angular.min.js"></script>
+<script src="ang1.js"></script>   
 </body>
 </html>
