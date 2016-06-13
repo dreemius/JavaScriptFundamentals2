@@ -1,0 +1,45 @@
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>angular Homework-2</title>
+</head>
+
+<body ng-controller="dashboardCtrl">
+<input type="text" id="firstName" ng-model="firstName"/>
+<input type="text" id="lastName" ng-model="lastName"/>
+<input type="button" id="btnLoad" value="add" ng-click='add()'/>
+<br/>
+
+<div>
+    <span ng-if="firstName">Name:</span> {{firstName}}
+    <span ng-if="lastName">LastName:</span> {{lastName}}
+    <span ng-if="firstName  && lastName">; </span>
+
+</div>
+<dashboard-Directive users="usersList"></dashboard-Directive>
+
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script src="js/index.js"></script>
+
+<script type="text/ng-template" id="my-modal.html">
+    <h1>List</h1>
+    <div>
+        <ul>
+            <li ng-repeat='item in users | filter : inf'>
+
+                User Name:    <strong>{{item.firstName}}</strong>
+                User LastName:<strong>{{item.lastName|uppercase}}</strong>
+
+                <a href="#" data-id="item.id" ng-click='remove(item.id)'> Delete</a>
+            </li>
+        </ul>
+
+        <input class="form-control" type='text' ng-model="inf" placeholder="Filter"/>
+
+    </div>
+</script>
+
+</body>
+
+</html>

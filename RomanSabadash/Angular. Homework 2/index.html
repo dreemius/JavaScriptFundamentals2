@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app='informationApp'>
+<head>
+	<title>Filter Information</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+</head>
+<body ng-controller='filterCtrl'>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+			    <input type='text' class='form-control' placeholder='Search' ng-model='search'/>
+               {{search}}
+                <filter-text data='information' select-user="search"></filter-text>
+			</div>
+		</div>
+	</div>
+
+<script src="app.js"></script>
+<script src="controller.js"></script>
+<script src="service.js"></script>
+<script src="directive.js"></script>
+
+</body>
+</html>
