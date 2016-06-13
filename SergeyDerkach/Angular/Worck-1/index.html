@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>angular Homework</title>
+
+  </head>
+
+  <body>
+
+<html>
+
+<body ng-app="App">
+	<div ng-controller="userListCtrl">
+
+		<input type="text" id="name" ng-model="name">
+		<input type="text" id="age" ng-model="age">
+		<input type="text" id="street" ng-model="street">
+		<input type="text" id="pass" ng-model="pass">
+		<input type="button" id="name" value="add" ng-click=add()>
+		<br />
+		<div>
+			<span ng-if="name">Name:</span> {{name}}
+			<span ng-if="age">Age:</span> {{age}}
+			<span ng-if="street">Street:</span> {{street}}
+			<span ng-if="name  && age  && street && pass">; </span>
+			<span ng-if="pass">Pass:</span> {{pass}}
+		</div>
+
+		<div>
+			<ul ng-repeat="item in list">
+				<li>
+					User name:<strong>{{item.name}}</strong>
+					User Age:<strong>{{item.age}}</strong>
+					User Street:<strong>{{item.street}}</strong>
+					User pass:<strong ng-bind="item.pass"></strong>
+					<a href="#" data-uid="item.id"
+						 ng-click="remove(item.id)"> Delete</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+</body>
+
+</html>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
