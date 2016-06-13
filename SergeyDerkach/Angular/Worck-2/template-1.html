@@ -1,0 +1,15 @@
+<h1>List</h1>
+<div>
+    <ul>
+        <li ng-repeat='item in users | filter : inf'>
+
+            User Name:    <strong>{{item.firstName}}</strong>
+            User LastName:<strong>{{item.lastName|uppercase}}</strong>
+
+            <a href="#" data-id="item.id" ng-click='remove(item.id)'> Delete</a>
+        </li>
+    </ul>
+
+    <input class="form-control" type='text' ng-model="inf" placeholder="Filter"/>
+
+</div>
