@@ -1,0 +1,14 @@
+<html>
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+ <script src="angular3.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="panelCtrl">
+  <div ng-hide="showme">
+  <span>First Name: </span><input type="text"  ng-model="firstName">
+  <span>Second Name: </span><input type="text"  ng-model="secondName">
+  <input type="button"  value="add" ng-click="setUser()"><br><br>
+  </div>
+<panel-directive users="usersList"><br><br>
+</div>
+</body>
+</html>
