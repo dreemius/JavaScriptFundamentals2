@@ -1,0 +1,42 @@
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Homework-3</title>
+</head>
+
+<body ng-controller="dashboardCtrl">
+<input type="text" id="girlName" ng-model="girlName"/>
+<input type="text" id="girlType" ng-model="girlType"/>
+<input type="button" id="btnLoad" value="Add User" ng-click='addUser()'/>
+<br/><br/>
+<input type="button" id="btnLoadList" value="Add List" ng-click='ev=!ev; addList();'/>
+<div>
+    <span ng-if="girlName">Name:</span> {{girlName}}
+    <span ng-if="lastName">LastName:</span> {{girlType}}
+    <span ng-if="girlName  && girlType">; </span>
+
+</div>
+<dashboard-Directive ng-show="ev" users="usersList"></dashboard-Directive>
+
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script src="js/index.js"></script>
+
+<script type="text/ng-template" id="template-1.html">
+<h1>List</h1>
+<div>
+    <ul>
+        <li ng-repeat='item in users | filter : inf'>
+            Girl Name: <strong>{{item.girlName|uppercase}}</strong>
+            Girl Type: <strong>{{item.girlType|uppercase}}</strong>
+
+            <a href="#" data-id="item.id" ng-click='remove(item.id)'> Delete</a>
+        </li>
+    </ul>
+
+    <input class="form-control" type='text' ng-model="inf" placeholder="Filter">
+</div>
+</script>
+</body>
+
+</html>
