@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html ng-app='informationApp'>
+<head>
+	<title>Filter Information</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+</head>
+<body ng-controller='filterCtrl'>
+
+	<div class="container">
+		<div class="row" ng-show="searchField">
+			<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+				<div class="row">
+					<div class="col-md-4 text-center">
+						<input type='text' class='form-control' placeholder='Name' ng-model='name'>
+					</div>
+					<div class="col-md-4 text-center">
+						<input type='text' class='form-control' placeholder='Surname' ng-model='surname'>
+					</div>
+					<div class="col-md-2 text-center">
+						<input type='text' class='form-control' placeholder='Birthday' ng-model='birthday'>
+					</div>
+					<div class="col-md-2 text-right">
+						<button class="btn btn-default" ng-click="addInformation()">Add</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	<br>
+		<div class="row" ng-show="tableInformation">
+			<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+				<filter-text data='information'>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-right">
+				<button class="btn btn-default" ng-click="toogleInformation(); toogleSearchField()">Show/Hide</button>
+			</div>
+		</div>
+	</div>
+
+<script src="app.js"></script>
+<script src="controller.js"></script>
+<script src="service.js"></script>
+<script src="directive.js"></script>
+
+</body>
+</html>
