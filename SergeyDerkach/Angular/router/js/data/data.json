@@ -1,0 +1,68 @@
+[
+  {
+    "name": "HTC",
+    "price": 12458,
+    "popular": true,
+    "date": 1467440203727
+  },
+  {
+    "name": "Sony",
+    "price": 12458,
+    "popular": true,
+    "date": 1467440203727
+  },
+  {
+    "name": "HTC",
+    "price": 12458,
+    "popular": true,
+    "date": 1467440203727
+  },
+  {
+    "name": "HTC",
+    "price": 12458,
+    "popular": true,
+    "date": 1467440203727
+  },
+  {
+    "name": "Sony",
+    "price": 32458,
+    "popular": false,
+    "date": 1467440203727
+  },
+  {
+    "name": "Sony",
+    "price": 32458,
+    "popular": false,
+    "date": 1467440203727
+  },
+  {
+    "name": "Sony",
+    "price": 12458,
+    "popular": false,
+    "date": 1467440203727
+  },
+  {
+    "name": "HTC",
+    "price": 12458,
+    "popular": true,
+    "date": 1467440203727
+  },
+  {
+    "name": "HTC",
+    "price": 12458,
+    "popular": true,
+    "date": 1467440203727
+  },
+  {
+    "name": "HTC",
+    "price": 12458,
+    "popular": true,
+    "date": 1467440203727
+  },
+  {
+    "name": "HTC",
+    "price": 12458,
+    "popular": true,
+    "date": 1467440203727
+  }
+]
