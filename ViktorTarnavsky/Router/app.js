@@ -48,8 +48,8 @@ angular
     .controller('MainController', MainController);
 
 function MainController(itemsService, $scope) { 
-    console.log(itemsService.getList())
-    $scope.phones = itemsService.getList()
+    console.log(itemsService.getList());
+    $scope.phones = itemsService.getList();
     
 }
 
@@ -104,18 +104,14 @@ function PopularItemsController(popularItemsService, $scope) {
 angular
     .module('catalogApp')
     .service('popularItemsService', popularItemsService);
-function popularItemsService(itemsService) { 
-    var itemsList = itemsService.getList()
+function popularItemsService(itemsService) {
+    var itemsList = itemsService.getList();
+	
     function getPopularList(){
-        var popularList = []
-        angular.forEach(itemsList, function(item, key) {
-            if(item.popular){
-                popularList.push(itemsList[key]);
-            }
-        })
-        return popularList
+        return itemsList.filter(function(item) {
+            return item.popular;         
+        }) 
     }
-
     return {getPopularList: getPopularList};
 }
 
