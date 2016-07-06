@@ -1,0 +1,17 @@
+<h2>Popular Phones</h2>
+<table class="table table-hover table-striped table-bordered">
+    <thead>
+        <tr>
+            <td>Модель</td>
+            <td>Цена</td>
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr ng-repeat="phone in ls.popularPhones">
+            <td>{{ phone.name }}</td>
+            <td>${{ phone.price }}</td>
+        </tr>
+        
+    </tbody>
+</table>
